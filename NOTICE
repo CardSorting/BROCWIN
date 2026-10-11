@@ -1,0 +1,25 @@
+HEAV3NS-BROCWIN / HEAV3NS-COMBO
+Repository preparation dated 2026-10-11
+
+This source and research project incorporates an inherited installation,
+an independently developed compatibility foundation, local integration work,
+and institutionally commissioned research. No exclusive authorship is claimed.
+
+Preserve attribution to original Elsword/fork developers, CardSorting /
+JoySword Online contributors, Wine-Assembly contributors, Microsoft platform
+contributors, websockets contributors, and the recorded local human and agent
+maintainers. Original individual authorship cannot be inferred from binaries.
+
+The project LICENSE covers eligible project source and documentation only.
+It does not license original game/client/server binaries, game assets, fonts,
+third-party logos, installed Microsoft components, credentials or database data.
+Third-party notices and licenses remain applicable to their respective works.
+
+Wine-Assembly's retained LICENSE states MIT, while its package.json states ISC.
+This discrepancy is recorded, not resolved by this notice. See LICENSES/README.md
+and docs/open-source-release.md before distributing a dependency or patch.
+
+BROCWIN and HEAV3NS-COMBO names were introduced on 2026-10-09. Preserve earlier
+Theseus names and dated records. Naming and trademarks are not transferred by
+the source license. No endorsement by original vendors or upstream projects
+is implied.

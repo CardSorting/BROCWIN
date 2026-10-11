@@ -1,0 +1,197 @@
+{
+  "schema": "heav3ns.brocwin.publication-archive/v1",
+  "version": "1.0.1",
+  "publicationDate": "2026-10-11",
+  "sealedAt": "2026-10-11T20:54:02.626275+00:00",
+  "title": "HEAV3NS-BROCWIN Curatorial Research and Publication Commission",
+  "issuingAuthority": "MAJO, Executive Chair, HEAV3NS",
+  "commissionedResearcher": "Dr. GPT",
+  "engineeringState": "closed-frozen",
+  "clientAcceptance": "blocked",
+  "knowledgeBaseline": "1.4.1",
+  "files": {
+    "01-environment-as-executable-artifact.html": {
+      "sha256": "896680afa8f95b45c44f135425f9aa459df3df1ae0f3fa40f7ef3a23edb003c8",
+      "bytes": 17827
+    },
+    "01-environment-as-executable-artifact.md": {
+      "sha256": "e45bab5e43e2dd451519ea13126794465c1d018f930a6376a5fa559f72f79bb5",
+      "bytes": 16655
+    },
+    "01-environment-as-executable-artifact.pdf": {
+      "sha256": "4b262b5fcf3c3a0b9d35bc2b49b17be788767802fc33e5d40b6200469655926a",
+      "bytes": 134560
+    },
+    "02-handoff-and-roadmap.html": {
+      "sha256": "02f7b82cd5981c637a27d77f55198d6ff68784fdf1d14568e91fa6e941989f0b",
+      "bytes": 19279
+    },
+    "02-handoff-and-roadmap.md": {
+      "sha256": "2fbf9030b4f6c2cdfe5a22932e32801caf0248e3bee9433967e0191065765f1c",
+      "bytes": 16665
+    },
+    "02-handoff-and-roadmap.pdf": {
+      "sha256": "4e43f35d197e7226b4306b72c4cb20dd9b09e50c5546f153d58ba69f07ed4bcc",
+      "bytes": 181804
+    },
+    "03-technical-white-paper.html": {
+      "sha256": "8fec42fd2f0282096309579edfd18768921f1518ddaf10e465bfa4939b5ef40d",
+      "bytes": 39618
+    },
+    "03-technical-white-paper.md": {
+      "sha256": "3025226ee58d4d68e4899f00c9532caa8191aa9325c76b2699d98feff51deebb",
+      "bytes": 33471
+    },
+    "03-technical-white-paper.pdf": {
+      "sha256": "b55879c6f0e1ccf97c27b6f6c5e19e27143711ddfdb70b11124d8469a022f7fd",
+      "bytes": 245273
+    },
+    "build_publications.py": {
+      "sha256": "2f4adf9d27c7c5cd4755ed0c052a1d52220a1ca2a8fad777524ce87b3eb0c88b",
+      "bytes": 23226
+    },
+    "evidence-index.html": {
+      "sha256": "5bdf1839f722b456b7312f814565ba4342efa0071e3481b9ee3a9933860717c1",
+      "bytes": 17780
+    },
+    "evidence-index.md": {
+      "sha256": "c321054d248e78a6813e62d1d8cda9fd2d82fece25b883faee8424fcb4d893da",
+      "bytes": 14506
+    },
+    "evidence-index.pdf": {
+      "sha256": "56abaf7879e368f3920030ad356102796a6a7c59e9dd92d16ae89b28ddb757c4",
+      "bytes": 153679
+    },
+    "evidence-ledger.json": {
+      "sha256": "db7cd7774310aed256ff08d0c4914c828bce089b21a09e2ec047bb9937d60497",
+      "bytes": 19359
+    },
+    "figures/architecture.mmd": {
+      "sha256": "c1abf852b2389a7e05820d9f4939261707afa732b12351842939c2c08e8a5576",
+      "bytes": 529
+    },
+    "figures/architecture.svg": {
+      "sha256": "5766a022905cb4f4ca7ac1a0182f34b5f081242bfd18d58177aa022cd0a3554f",
+      "bytes": 4392
+    },
+    "production-record.json": {
+      "sha256": "ba1f7bca5dede517b8c970bf64627d68978220e0cc2dd80ab5eaf4ab2b2a6f0a",
+      "bytes": 1133
+    },
+    "publication-facts.json": {
+      "sha256": "e88609aa07eaa1a812581f772ea82851605cc31e9f0a595f075c5fb71a371d02",
+      "bytes": 1785
+    },
+    "publication.css": {
+      "sha256": "9b0ff21ded988beb7a118feec3abc726a72da44d49abeedd7492d83d6d9a9881",
+      "bytes": 1128
+    },
+    "README.md": {
+      "sha256": "cf267c444117bd26b1b7cd1f31d53476f580280798154c6864179cd4049a17bb",
+      "bytes": 2860
+    },
+    "verify_publications.py": {
+      "sha256": "374afc52a9059d340ce7b9997c893b2136d840c3a020499c1f836b9b95ade1c4",
+      "bytes": 2352
+    }
+  },
+  "repositoryRootAtPublication": "C:\\Users\\media\\Downloads\\JoySword-Theseus",
+  "citedEvidence": {
+    "theseus/reports/performance/heap-control-20261011/run-01/result.json": "c210b5f5af52f9dbd031e6419796f37a075eb5365ca9a969f05ba450c4c6686e",
+    "theseus/reports/performance/heap-control-20261011/run-02/result.json": "9a90436426b62353a6e56119f6621144ba314c5be537f21f215b619f973bc5a3",
+    "theseus/reports/performance/heap-control-20261011/source-audit-review.json": "269e60f8e0996368e4e722adba85b6316475ff4e034e8656c47644060c274cd4",
+    "theseus/reports/performance/heap-control-20261011/identity.json": "1cf55eb7a3dd03fde3c06eb5a25bcb2c152d24c0fbc9cf4530af70e5e19c10fd",
+    "theseus/reports/performance/heap-control-20261011/run-01/first-visible-scene.png": "4f12b33a2ad234a12046b8e4e96e6e315e15f8061d66b41400b01458a8ac3987",
+    "theseus/reports/performance/heap-control-20261011/run-01/final-canvas.png": "4f12b33a2ad234a12046b8e4e96e6e315e15f8061d66b41400b01458a8ac3987",
+    "theseus/reports/performance/heap-control-20261011/run-02/first-visible-scene.png": "4f12b33a2ad234a12046b8e4e96e6e315e15f8061d66b41400b01458a8ac3987",
+    "theseus/reports/performance/heap-control-20261011/run-02/final-canvas.png": "33b0efaee6621e9b8767607ab34b1872d27f472a43f83e9a6f3224b361d9167d",
+    "theseus/reports/performance/kernel-profile-control-20261011/source-audit-review.json": "3df2e5d9455b61897827be7015a3f764c73d696b08672e8f19e9a44a08e4b191",
+    "theseus/reports/performance/kernel-profile-control-20261011/profile-summary.json": "2453efdc653be5a95fbc2c85953f878f27431e9a73ed0bd65b6ef232270846ad",
+    "theseus/reports/performance/heap-free-20261011/final-source-validation.json": "0db30f4511d7ff195bebe049349a8a7cab6f904483a2e9850f6873feef8dcbad",
+    "theseus/reports/performance/heap-free-20261011/compiled-validation.json": "2af7b945382969899806eb830abb18f101b55bc85c81e0dbf1fcd7845e841c4a",
+    "theseus/reports/performance/heap-free-20261011/microbenchmark-summary.json": "3f829965c0c39372ff7736e9d03a3f20c2163616ac927ece011d07bee537988e",
+    "theseus/reports/performance/heap-candidate-20261011/source-audit-review.json": "e5cf137b02aab54b4c9cf294f7f43c34e9ce9ba13b1bd15c1637aa4f0f4b0758",
+    "theseus/reports/performance/heap-candidate-20261011/run-01/result.json": "546f761bf51dc49d773cf061638498c03ea6e664516fc8413991ed5f4acc655a",
+    "theseus/reports/performance/heap-candidate-20261011/run-02/result.json": "7ddc1e6c694f346c99b6865b5df78b3991419ed2bd897a1747bea17a087fbd0b",
+    "theseus/wiki/changes/0014-heap-free-ownership.md": "0818be22f31e557833f6ab0aa03b75f1531ddd0696421248586c92ee90182e8a",
+    "theseus/wiki/closeout.md": "c2cd9433f0bc579ecac2d2e08945306b8183df77ee686fa2f66b898d161634a9",
+    "theseus/reports/frozen-closeout-20261011/independent-review.json": "7ae9d693cd27001ad7b04f9991dd682fc01360f6c8e3710fadbac68e720c715b",
+    "theseus/reports/frozen-closeout-20261011/validation-1.4.1.json": "580fc0897a75a521ea319293a6881be32f14150ba552abccbab0164574d8a7d1",
+    "theseus/reports/frozen-closeout-20261011/frozen-state.json": "df194fcf69aeca921fedaef4a2843ecf915084ca2d283fad97f42696fb6cd4ca",
+    "theseus/wiki/frozen-sources/benchmark_startup.py": "ad992490edb8f1607c95d0787b99ab98e83863e75f1324c2bc5de6876d826698",
+    "theseus/wiki/frozen-sources/test_benchmark_observation.py": "a6b8c82674435f8fad04ec5db3420ad1680ddf429c251407212a5ea41fbf7a23",
+    "theseus/wiki/frozen-sources/10-helpers.wat": "086cb82a8acb172fce358d8c83562ce64a8c5f9d267c87d7f8ae16ac5bb412e2",
+    "theseus/wiki/frozen-sources/test-heap-reservation-rollback.js": "b8f9f12d03c0cf2ba8fd4109f9ae1655992070db9a3934ab930fa963f0534a20",
+    "theseus/reports/performance/heap-reservation-20261011/control.json": "4737f3130670d7671e0ce47e1ee25ebb811997c67c25f9ac91d93116495b19cf",
+    "theseus/reports/performance/heap-reservation-20261011/candidate-source.json": "423c265c62e01fcd28150e402e081b8da5d2c24663d963ca6e6815fb22b89ac0",
+    "theseus/reports/performance/heap-reservation-20261011/source-suites.json": "c2de56b9690d7ad543061c6aec5831b1b82a115bce3f45bbb5086417365f9906",
+    "theseus/wiki/changes/0015-heap-reservation-rollback.md": "5ec2e5cb0c891923eeed14b3ed85987a60185e354200df16728b92d23e262c7d",
+    "theseus/reports/browser/20261011T145806Z/review.json": "ebcbe9e6bf017e210ecd65b393efe16fe5112ba0b56e63630f13bfade6f678e3",
+    "theseus/reports/browser/20261011T145806Z/revival-failure.json": "1967cc9d99065410c453671b812d7bd97887cc13df298d15b2ddb89230c3b4c5",
+    "theseus/wiki/acceptance-session.md": "713f7724dd644223ef33af3b56c4a8e6c0eff0a6c38a2d3927d1f177b19b3201",
+    "theseus/wiki/compatibility.md": "cf3a3a1c6d5403fb07798a6204f090ff4e1bd39bfaf9cfe33c8b3c05565e7674",
+    "theseus/wiki/issues.md": "b884f3334d0faf0d230c602d1cae2952960ca79c50b274c2288ba958f9b61fb7",
+    "theseus/wiki/execution.md": "7ee0e29fb53d9d644ea8f5900fdbf7459aceeefb4c8f72e97dfc58d392ed2bd9",
+    "theseus/wiki/loading.md": "8142cf07e9823a860b3d8d9252eb12cc973c580de94b95b99c2ff632fd51e813",
+    "theseus/tools/wine-assembly/src/main.watx": "dd2e96a2878bde50cdf7ce9451a90930505f84b194d619460580f9144670a823",
+    "theseus/tools/wine-assembly/src/07-decoder.wat": "fc0d62f4bb47548f5e2da8a3802f009d0d7bd6b32e55187fd045e484321d507e",
+    "theseus/tools/wine-assembly/src/04-cache.wat": "a757b1be4c830a961707f11c5a771e4fed6d577e894d6b3ead8ac2d07e96b4de",
+    "theseus/tools/wine-assembly/lib/pe.js": "8eaf88581143bd507555210f25a8ac2bd73bb62c34910bef8eaead835d75e597",
+    "theseus/tools/wine-assembly/lib/dll-loader.js": "1e8cb50f6e824a5aa78ae03fffb5d25198607eff1201374c58a2f099f0bc1530",
+    "theseus/tools/wine-assembly/host.js": "d2cb9119e1ce1dbd0cbef2359fff0faaa63a5205442ebed4e579b7c5553be0c8",
+    "theseus/browser/main.js": "1193d22c212fd95d263ec4dadfd36f380592b372eeb06fec83ab4c73ae68cf59",
+    "theseus/wiki/graphics.md": "871e078b510bb415a11e49efea0337ea9a8d8a8154bb451df8f1de9831edef91",
+    "theseus/wiki/audio-input.md": "442ab882a8a300be67841279a9fc661692d6139f53e588e9b3137e0ec75ced87",
+    "theseus/wiki/network.md": "a3d9406e4464cc36568e98dc2cbd6c2068f9460222f40dfb32c2efd3b12411fc",
+    "theseus/browser/local_server_wire.js": "cc65dc948ca1d77b6c9e38ed6e15c5fcc3beb660b08d83e0543b3f38c7924b69",
+    "theseus/browser/network.py": "69aaba422304f8f5abfd1309f33ff7d590f08f291ed1c24cb76cb6522eccb905",
+    "theseus/compose.yml": "362d6df81fcd9a778dbcf9737596d734b0a7e66e64f101affdaf382b56b196c4",
+    "theseus/wiki/storage.md": "eec8a870f7afffb06ceda60600072c98062cba57ecf8f1b3318f9a27f7f8c15f",
+    "theseus/browser/serve.py": "7aa2691a909723dd2be6d7d0de6069a8f7dbb69ade7be25ec94c71043ecab408",
+    "theseus/wiki/threads-memory.md": "facde7fd02ff6a8859bf9652ea49e4f31229b7b489290f97c25d55f624eb4b26",
+    "theseus/tools/wine-assembly/src/10-helpers.wat": "086cb82a8acb172fce358d8c83562ce64a8c5f9d267c87d7f8ae16ac5bb412e2",
+    "theseus/tools/wine-assembly/src/09a-handlers2-runtime.wat": "7df1aedff8175d8ad1a7bda9b08b8dfead70998e62b89954427aa28cbf971430",
+    "theseus/wiki/performance.md": "96baf9432b7222ec916048c2b6ab794651f1d9af348175112887f1f3743aad3a",
+    "theseus/wiki/changes/0013-runtime-startup-cache.md": "41f7100d9427a188e9116c826f35af381475ca666ca3d273ba39e83c091e8f9a",
+    "theseus/reports/performance/validation-20261011/summary.json": "987917b9f0eb7068aa0082fe825e8adea82436f61d3adedf9d16fcc2e8a7a3db",
+    "theseus/reports/performance/baseline-visible-20261011/run-01/result.json": "88d1c05adf5ea075d3d2cb1647a1b0c0562022f8d9aa915ff4f9fb6c3a19cc92",
+    "theseus/reports/performance/baseline-visible-20261011/run-02/result.json": "e34d5bccacdeffbb08eafab833574d38ac022fbb2fe9ad5ba3da6883c0f16878",
+    "theseus/reports/performance/candidate-20261011/run-01/result.json": "ba1e08f759ca76c940da510063ff4e5171959b8b539163ddb9e34f3f0d070211",
+    "theseus/reports/performance/candidate-20261011/run-02/result.json": "a4b7076704367e20d89075af93850ac14f7ee6fb517e66224b719968f6934ce0",
+    "theseus/reports/performance/control-repeat-20261011/run-01/result.json": "ae98c470ca8a90794c821acf4e258548dbb671aeb92e4f74aa30d5ab2beb92c0",
+    "theseus/reports/performance/control-repeat-20261011/run-02/result.json": "3044d41223fcceedf7d9f79f41c2da195f3bfe7f1d3114f173ac179c29b1e96c",
+    "theseus/provenance.json": "142e33dba470a146b58217c0a22974c5859abf12fcc86b6cf8b256dbe75b8423",
+    "theseus/browser/provenance.json": "04ce6d83ee4ab65cdf7766af27ffe06fb952cc2dd1e1960064bb2d342f6751e9",
+    "theseus/browser/dependencies.json": "1b61e551e094b2bd26a74a7401ee666c023d21dcc38b0779003fc08a24f47a0d",
+    "theseus/wiki/provenance.md": "6137b73e8e61708dc74708f2c1dd59fb9e27514c7cf018037f93b672914eb127",
+    "theseus/wiki/changes/0012-session-send-serialization.md": "5e9956ea384994898b48ae27d2cfecff8933a60f231fd65bb2587b54dae7abae",
+    "theseus/reports/serial-ownership-20261011T142300Z/candidate-integration-validation.json": "c8910821c231f93e487d82dfbf194f29b053eab76ad55c8cbb47d9843161391e",
+    "theseus/wiki/build-recovery.md": "6af115858fdc97ebfffa687be75242171a612969c3f6476e2b729696bdabb50d",
+    "theseus/wiki/generated/identity.json": "6d5129fb6d22c47c856fcce06863bf9177b607ecd503d14c88631db910426a54",
+    "theseus/wiki/releases/1.4.1.json": "3d91bdd9d21791d7306d8612a9972aae2e282123c2bc1d65a5e0f0828e680591",
+    "theseus/checkpoints/brocwin-knowledge-1.4.1.zip": "b9d33128bb33fac164d92e2afe3fa6020cda697156d2e15310c73dc53a74efdd",
+    "theseus/browser/generated/manifest.json": "2a827b50d70068e9ab741e29764b628d7b0b9ec35fca0e41bc4dd36ce39e07be",
+    "theseus/browser/patches/wine-assembly.patch": "8b763bd478e619d1c95f37a429ecc840e04952b010d00d52007accc092638e2b",
+    "theseus/reports/performance/heap-control-20261011/observer/benchmark_startup.py": "91dd12a6f38aa663ac67d24b18ea94f6710fbbbff697eae3fd02239cb1f367e8",
+    "theseus/reports/performance/heap-control-20261011/observer/startup_telemetry.js": "74d1294bd561a707d8b4ee716a954f016def1a09cd54263198574f3a5c2871b3",
+    "theseus/reports/performance/heap-control-20261011/run-01/samples.jsonl": "244cf68d2279ac92c064737c125a93ba444df9d26c4337e886b88b44c7403696",
+    "theseus/reports/performance/heap-control-20261011/run-02/samples.jsonl": "ed371c9a0ab17ddcaccf514d7677dd4087cf780d5601ba30b82dab533a308a22"
+  },
+  "originalArtifactLocations": [
+    "client/data",
+    "theseus/reports",
+    "theseus/checkpoints",
+    "theseus/browser/reference",
+    "theseus/tools/wine-assembly"
+  ],
+  "excluded": [
+    "credentials and private configuration",
+    "database contents",
+    "original game/platform binaries",
+    "large original evidence",
+    "full dependency checkout"
+  ],
+  "provenance": "Contributor distinctions in evidence-index.md and project provenance records; commissioned researcher is not sole engineering author.",
+  "distribution": "Local publication delivery only; no external upload or public hosting.",
+  "integrityScope": "SHA-256 verifies enumerated bytes; no digital signature, peer-review endorsement or archival-format certification claimed."
+}

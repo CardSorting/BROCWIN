@@ -1,0 +1,75 @@
+# BROCWIN source/documentation repository. Ignoring is not a redistribution grant.
+# Custody copies remain on disk; tracked files require a separate history review.
+/.env
+.env.*
+!.env.example
+*.env
+*.env.*
+!*.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.git-credentials
+credentials*.json
+
+# Original/recovered game content, native state, evidence and third-party installs.
+/recovered/
+/recovery/
+/runtime/
+/reports/
+/checkpoints/
+/tools/
+/asset-catalog.json
+/browser/generated/
+/browser/reference/
+/browser/patches/
+/wiki/generated/
+/wiki/frozen-sources/
+
+# Native/platform binaries and archive payloads are not part of the source release.
+*.exe
+*.dll
+*.sys
+*.pdb
+*.kom
+*.wasm
+*.rar
+*.7z
+*.zip
+*.bak
+*.mdf
+*.ldf
+*.dmp
+*.log
+*.jsonl
+
+# Local caches and build/editor state.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+build/
+dist/
+coverage/
+htmlcov/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Sealed publications remain immutable locally. Prefer sources plus reviewed PDFs.
+publications/**/__pycache__/
+publications/**/*.html
+
+# Temporary release preparation output.
+/release-preparation/
+
+# Local-only credential-bearing provisioners and private baseline metadata.
+/isolate.py
+/profile.py
+/baseline.json

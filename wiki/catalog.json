@@ -1,0 +1,731 @@
+{
+  "schema": "brocwin.knowledge-catalog/v1",
+  "version": "1.4.1",
+  "protocol": "BROCWIN",
+  "client": "HEAV3NS-COMBO",
+  "introduced": "2026-10-09",
+  "acceptance": "blocked",
+  "subsystems": [
+    {
+      "id": "execution",
+      "page": "execution.md",
+      "implementation": [
+        "theseus/browser/main.js",
+        "theseus/tools/wine-assembly/host.js",
+        "theseus/tools/wine-assembly/src/main.watx",
+        "theseus/tools/wine-assembly/src/07-decoder.wat",
+        "theseus/browser/runtime_cache.js",
+        "theseus/browser/startup_telemetry.js",
+        "theseus/browser/benchmark_startup.py"
+      ],
+      "tests": [
+        "theseus/browser/test_runtime.cjs",
+        "theseus/browser/test_movhlps.cjs",
+        "theseus/browser/test_runtime_cache.py",
+        "theseus/browser/test_artifact_cache.cjs",
+        "theseus/browser/test_startup_telemetry.cjs",
+        "theseus/browser/test_benchmark_observation.py"
+      ],
+      "evidence": [
+        "game-064427",
+        "candidate-161827",
+        "game-070137",
+        "game-080540",
+        "game-010733",
+        "game-024047",
+        "game-043232",
+        "game-053950",
+        "game-071553",
+        "game-092157",
+        "game-105626",
+        "sse-policy-validation",
+        "revival-sse-policy",
+        "game-123040",
+        "heap-locality-validation",
+        "revival-heap-locality",
+        "native-revival-reference",
+        "native-revival-persistence",
+        "game-133104",
+        "snapshot-copy-validation",
+        "snapshot-copy-integrated-validation",
+        "game-145806",
+        "revival-send-serialization",
+        "kernel-startup-profile",
+        "observation-gate-validation",
+        "heap-ownership-compiled",
+        "heap-startup-control",
+        "heap-startup-candidate-observer-limit",
+        "frozen-closeout-independent-review"
+      ]
+    },
+    {
+      "id": "loading",
+      "page": "loading.md",
+      "implementation": [
+        "theseus/tools/wine-assembly/src/08-pe-loader.wat",
+        "theseus/tools/wine-assembly/src/08b-dll-loader.wat",
+        "theseus/tools/wine-assembly/lib/dll-loader.js",
+        "theseus/browser/platform_dlls.py",
+        "theseus/browser/shader_validator.py"
+      ],
+      "tests": [
+        "theseus/browser/test_platform.cjs",
+        "theseus/browser/test_shader_validator.cjs",
+        "theseus/tools/wine-assembly/test/test-pe-dll-static-tls.js",
+        "theseus/tools/wine-assembly/test/test-dll-init-order.js"
+      ],
+      "evidence": [
+        "tls-validation",
+        "thread-validation"
+      ]
+    },
+    {
+      "id": "windows",
+      "page": "windows-contracts.md",
+      "implementation": [
+        "theseus/tools/wine-assembly/src/09an-theseus-platform.wat",
+        "theseus/tools/wine-assembly/src/09ao-theseus-fls.wat",
+        "theseus/tools/wine-assembly/src/09ap-theseus-actctx.wat",
+        "theseus/tools/wine-assembly/src/09aq-crypto.wat",
+        "theseus/browser/platform_dlls.py"
+      ],
+      "tests": [
+        "theseus/browser/test_runtime.cjs",
+        "theseus/browser/test_crypto.cjs",
+        "theseus/browser/test_processes.cjs"
+      ],
+      "evidence": [
+        "game-064427",
+        "keyboard-reference"
+      ]
+    },
+    {
+      "id": "threads-memory",
+      "page": "threads-memory.md",
+      "implementation": [
+        "theseus/tools/wine-assembly/lib/thread-manager.js",
+        "theseus/tools/wine-assembly/lib/guest-worker.js",
+        "theseus/tools/wine-assembly/lib/guest-thread-host.js",
+        "theseus/tools/wine-assembly/lib/guest-rpc.js",
+        "theseus/tools/wine-assembly/lib/mem-utils.js",
+        "theseus/tools/wine-assembly/src/00-regions.wat",
+        "theseus/tools/wine-assembly/src/10-helpers.wat",
+        "theseus/tools/wine-assembly/lib/worker-imports.js",
+        "theseus/tools/wine-assembly/lib/app-profiles.js",
+        "theseus/tools/wine-assembly/src/09a0b-handlers-base-late.wat",
+        "theseus/tools/wine-assembly/src/09ai-d3d-render-lifetime.wat",
+        "theseus/tools/wine-assembly/src/09a-handlers2-runtime.wat"
+      ],
+      "tests": [
+        "theseus/tools/wine-assembly/test/test-dll-thread-attach-wait.js",
+        "theseus/tools/wine-assembly/test/test-worker-sparse-thread-stack.js",
+        "theseus/tools/wine-assembly/test/test-pe-static-tls.js",
+        "theseus/browser/test_sparse_resources.cjs",
+        "theseus/browser/test_sparse_textures.cjs",
+        "theseus/browser/test_sparse_color_transfers.cjs",
+        "theseus/tools/wine-assembly/test/test-heap-arena-metadata-pressure.js",
+        "theseus/browser/test_high_image_allocations.cjs",
+        "theseus/browser/test_high_image_realloc.cjs",
+        "theseus/browser/test_worker_wall_clock.cjs",
+        "theseus/browser/test_worker_sse.cjs",
+        "theseus/browser/test_heap_arena_locality.cjs",
+        "theseus/tools/wine-assembly/test/test-elsword-send-serialization.js",
+        "theseus/tools/wine-assembly/test/test-heap-free-ownership.js",
+        "theseus/tools/wine-assembly/test/test-heap-free-list-cycle.js",
+        "theseus/tools/wine-assembly/test/test-heap-free-block-validation.js",
+        "theseus/tools/wine-assembly/test/test-heap-shrink.js",
+        "theseus/tools/wine-assembly/test/test-global-flags.js",
+        "theseus/tools/wine-assembly/test/test-d3d-render-lifetime.js",
+        "theseus/tools/wine-assembly/test/test-heap-reservation-rollback.js"
+      ],
+      "evidence": [
+        "game-022355",
+        "game-033829",
+        "thread-validation",
+        "tls-validation",
+        "game-064427",
+        "heap-metadata-validation",
+        "game-210727",
+        "game-010733",
+        "capture-stall-validation",
+        "game-024047",
+        "heap-tail-validation",
+        "game-043232",
+        "game-053950",
+        "high-image-validation",
+        "game-071553",
+        "worker-clock-validation",
+        "game-092157",
+        "revival-end-notification",
+        "game-105626",
+        "sse-policy-validation",
+        "revival-sse-policy",
+        "game-123040",
+        "heap-locality-validation",
+        "revival-heap-locality",
+        "native-revival-reference",
+        "native-revival-persistence",
+        "game-133104",
+        "serial-duplicate-diagnosis",
+        "serial-observer-validation",
+        "game-145806",
+        "revival-send-serialization",
+        "serial-ownership-diagnostic",
+        "serial-ownership-observations",
+        "send-serialization-validation",
+        "send-serialization-integrated-validation",
+        "heap-ownership-source",
+        "heap-ownership-compiled",
+        "heap-ownership-microbenchmark",
+        "heap-startup-control",
+        "heap-startup-candidate-observer-limit",
+        "heap-reservation-control",
+        "heap-reservation-source",
+        "heap-reservation-suites",
+        "frozen-closeout",
+        "frozen-closeout-independent-review"
+      ]
+    },
+    {
+      "id": "graphics",
+      "page": "graphics.md",
+      "implementation": [
+        "theseus/tools/wine-assembly/src/09ad-handlers-d3d9.wat",
+        "theseus/tools/wine-assembly/src/09al-d3d-reset.wat",
+        "theseus/tools/wine-assembly/src/09am-d3d-color.wat",
+        "theseus/tools/wine-assembly/src/09af-d3d-shader-ir.wat",
+        "theseus/tools/wine-assembly/lib/d3d9-host.js",
+        "theseus/tools/wine-assembly/lib/d3d9-backend.js",
+        "theseus/tools/wine-assembly/lib/d3d9-shader.js",
+        "theseus/tools/wine-assembly/src/10b-gdi-font.wat",
+        "theseus/tools/wine-assembly/lib/validated-artifact-cache.js"
+      ],
+      "tests": [
+        "theseus/browser/test_swapchain.cjs",
+        "theseus/browser/test_swapchain_web.py",
+        "theseus/browser/test_stretch_rect.cjs",
+        "theseus/browser/test_stretch_rect_web.py",
+        "theseus/browser/test_skinning.cjs",
+        "theseus/browser/test_shader_link_web.py",
+        "theseus/browser/test_shader_relative_web.py",
+        "theseus/browser/test_font_cells.cjs",
+        "theseus/browser/test_font_phantoms.cjs",
+        "theseus/browser/test_artifact_cache.cjs"
+      ],
+      "evidence": [
+        "font-validation",
+        "uniform-validation",
+        "game-064427",
+        "candidate-161827",
+        "game-070137",
+        "font-phantom-validation",
+        "original-font-path",
+        "game-080540",
+        "game-043232",
+        "game-105626",
+        "game-123040",
+        "game-133104",
+        "snapshot-copy-validation",
+        "snapshot-copy-integrated-validation",
+        "game-145806"
+      ]
+    },
+    {
+      "id": "network",
+      "page": "network.md",
+      "implementation": [
+        "theseus/browser/network.py",
+        "theseus/browser/local_server_wire.js",
+        "theseus/tools/wine-assembly/src/09d-winsock.wat",
+        "theseus/tools/wine-assembly/src/09d8-winsock-events.wat",
+        "theseus/tools/wine-assembly/src/09d9-winsock-overlapped.wat",
+        "theseus/tools/wine-assembly/lib/winsock-overlapped.js",
+        "theseus/runtime.py",
+        "theseus/tools/wine-assembly/lib/app-profiles.js"
+      ],
+      "tests": [
+        "theseus/browser/test_network.py",
+        "theseus/browser/test_network_wasm.py",
+        "theseus/browser/test_network_wasm.cjs",
+        "theseus/browser/test_winsock_events.cjs",
+        "theseus/browser/test_winsock_overlapped.cjs",
+        "theseus/browser/test_wire_diagnostics.cjs",
+        "theseus/tools/wine-assembly/test/test-vlan-shared-pump.js",
+        "theseus/tools/wine-assembly/test/test-elsword-send-serialization.js"
+      ],
+      "evidence": [
+        "game-051337",
+        "game-053844",
+        "game-064427",
+        "ack-owner",
+        "engine-timer",
+        "candidate-161827",
+        "game-070137",
+        "game-080540",
+        "game-000646",
+        "network-concurrency-validation",
+        "game-010733",
+        "game-043232",
+        "game-053950",
+        "game-071553",
+        "game-105626",
+        "game-123040",
+        "game-133104",
+        "serial-duplicate-diagnosis",
+        "serial-observer-validation",
+        "snapshot-copy-integrated-validation",
+        "game-145806",
+        "serial-ownership-diagnostic",
+        "serial-ownership-observations",
+        "send-serialization-validation",
+        "send-serialization-integrated-validation"
+      ]
+    },
+    {
+      "id": "audio-input",
+      "page": "audio-input.md",
+      "implementation": [
+        "theseus/tools/wine-assembly/lib/browser-input.js",
+        "theseus/tools/wine-assembly/lib/renderer-input.js",
+        "theseus/tools/wine-assembly/lib/host-window.js",
+        "theseus/tools/wine-assembly/src/09a8-handlers-directx.wat",
+        "theseus/tools/wine-assembly/lib/host-audio.js",
+        "theseus/tools/wine-assembly/lib/audio-worklet-host.js",
+        "theseus/tools/wine-assembly/lib/audio-voice-worklet.js"
+      ],
+      "tests": [
+        "theseus/browser/test_keyboard_modifiers.cjs",
+        "theseus/browser/test_input_web.py",
+        "theseus/browser/test_capture_input.py",
+        "theseus/tools/wine-assembly/test/test-directinput-device.js",
+        "theseus/tools/wine-assembly/test/test-keyboard-message-lparam.js",
+        "theseus/tools/wine-assembly/test/test-directsound-enumerate.js"
+      ],
+      "evidence": [
+        "keyboard-reference",
+        "modifier-validation",
+        "game-064427",
+        "audio-194707",
+        "candidate-161827",
+        "input-live-validation",
+        "game-070137",
+        "original-input-path",
+        "game-080540",
+        "game-043232",
+        "game-105626",
+        "game-123040",
+        "game-133104",
+        "game-145806",
+        "revival-send-serialization"
+      ]
+    },
+    {
+      "id": "storage",
+      "page": "storage.md",
+      "implementation": [
+        "theseus/browser/prepare.py",
+        "theseus/browser/serve.py",
+        "theseus/tools/wine-assembly/lib/filesystem.js",
+        "theseus/tools/wine-assembly/lib/vfs-persistence.js",
+        "theseus/assets.py",
+        "theseus/isolate.py",
+        "theseus/checkpoint.py",
+        "theseus/snapshot.py"
+      ],
+      "tests": [
+        "theseus/browser/test_server.py",
+        "theseus/test_assets.py",
+        "theseus/browser/test_runtime.cjs"
+      ],
+      "evidence": [
+        "native-baseline",
+        "game-053844",
+        "game-064427",
+        "game-070137",
+        "game-105626",
+        "game-123040",
+        "game-133104",
+        "game-145806"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "native-baseline",
+      "path": "theseus/baseline.json",
+      "kind": "inherited native checkpoint"
+    },
+    {
+      "id": "game-022355",
+      "path": "theseus/reports/browser/20261009T022355Z/review.json",
+      "kind": "browser failure"
+    },
+    {
+      "id": "game-033829",
+      "path": "theseus/reports/browser/20261009T033829Z/review.json",
+      "kind": "browser failure"
+    },
+    {
+      "id": "game-041843",
+      "path": "theseus/reports/browser/20261009T041843Z/review.json",
+      "kind": "browser bounded pass"
+    },
+    {
+      "id": "game-051337",
+      "path": "theseus/reports/browser/20261009T051337Z/review.json",
+      "kind": "browser failure"
+    },
+    {
+      "id": "game-053844",
+      "path": "theseus/reports/browser/20261009T053844Z/review.json",
+      "kind": "browser instrumented bounded pass"
+    },
+    {
+      "id": "game-064427",
+      "path": "theseus/reports/browser/20261009T064427Z/review.json",
+      "kind": "browser bounded pass without execution breakpoints"
+    },
+    {
+      "id": "tls-validation",
+      "path": "theseus/reports/browser/dll-static-tls-20261009T050830Z/validation.json",
+      "kind": "contract regression"
+    },
+    {
+      "id": "thread-validation",
+      "path": "theseus/reports/browser/thread-attach-20261009T041509Z/validation.json",
+      "kind": "contract regression"
+    },
+    {
+      "id": "font-validation",
+      "path": "theseus/reports/browser/font-cells-20261008T222932Z/validation.json",
+      "kind": "native comparison"
+    },
+    {
+      "id": "uniform-validation",
+      "path": "theseus/reports/browser/relative-uniforms-20261009T005501Z/validation.json",
+      "kind": "shader equivalence and compile measurement"
+    },
+    {
+      "id": "ack-owner",
+      "path": "theseus/reports/browser/20261009T064427Z/original-ack-owner.json",
+      "kind": "bounded original code and RTTI"
+    },
+    {
+      "id": "engine-timer",
+      "path": "theseus/reports/browser/20261009T064427Z/original-engine-timer.json",
+      "kind": "bounded original code"
+    },
+    {
+      "id": "keyboard-reference",
+      "path": "theseus/browser/reference/keyboard-modifiers.json",
+      "kind": "native mapping reference"
+    },
+    {
+      "id": "modifier-validation",
+      "path": "theseus/reports/browser/modifier-input-20261009T160349Z/validation.json",
+      "kind": "maintenance contract regression and patch restoration"
+    },
+    {
+      "id": "audio-194707",
+      "path": "theseus/reports/browser/20261008T194707Z/review.json",
+      "kind": "interrupted browser audio observation; no final collection"
+    },
+    {
+      "id": "candidate-161827",
+      "path": "theseus/reports/browser/20261009T161827Z/review.json",
+      "kind": "previous modifier candidate; original login/village/options bounded replay"
+    },
+    {
+      "id": "knowledge-validation",
+      "path": "theseus/reports/browser/brocwin-knowledge-20261009T164836Z/validation.json",
+      "kind": "knowledge integrity regression and preserved-artifact checks"
+    },
+    {
+      "id": "input-live-validation",
+      "path": "theseus/reports/browser/input-live-20261010T065524Z/validation.json",
+      "kind": "DirectInput live-state/message-snapshot contract regression"
+    },
+    {
+      "id": "game-070137",
+      "path": "theseus/reports/browser/20261010T070137Z/review.json",
+      "kind": "previous live-input candidate; isolated skills/awakening, defeat/first-return and persistence"
+    },
+    {
+      "id": "original-input-path",
+      "path": "theseus/reports/browser/20261010T070137Z/original-input-path.json",
+      "kind": "bounded original DirectInput creation and immediate-state update code"
+    },
+    {
+      "id": "font-phantom-validation",
+      "path": "theseus/reports/browser/font-followup-20261010T074425Z/validation.json",
+      "kind": "NT original/fitted phantom native regressions and rejected alternatives"
+    },
+    {
+      "id": "original-font-path",
+      "path": "theseus/reports/browser/font-followup-20261010T074425Z/original-font-path.json",
+      "kind": "bounded existing original font call sites and quality argument"
+    },
+    {
+      "id": "game-080540",
+      "path": "theseus/reports/browser/20261010T080540Z/review.json",
+      "kind": "historical font-phantom candidate; original login/village/Skills/Options bounded replay"
+    },
+    {
+      "id": "game-195820",
+      "path": "theseus/reports/browser/20261010T195820Z/review.json",
+      "kind": "historical final-boss exit before victory/results"
+    },
+    {
+      "id": "game-210727",
+      "path": "theseus/reports/browser/20261010T210727Z/review.json",
+      "kind": "historical defeat rewards/return; second-cycle arena exhaustion"
+    },
+    {
+      "id": "heap-metadata-validation",
+      "path": "theseus/reports/heap-metadata-20261010T232432Z/validation.json",
+      "kind": "arena metadata pressure failing control and nine regressions"
+    },
+    {
+      "id": "game-233733",
+      "path": "theseus/reports/browser/20261010T233733Z/review.json",
+      "kind": "heap candidate partial replay interrupted by capture request read PermissionError"
+    },
+    {
+      "id": "game-000646",
+      "path": "theseus/reports/browser/20261011T000646Z/review.json",
+      "kind": "historical arena-repair replay; first area clear, second area transport loss; retry harness confirmed"
+    },
+    {
+      "id": "network-concurrency-validation",
+      "path": "theseus/reports/network-concurrency-20261011T005500Z/validation.json",
+      "kind": "two shared-Wasm stream races; failing controls, repaired canonical/compat modules and transport regressions"
+    },
+    {
+      "id": "game-010733",
+      "path": "theseus/reports/browser/20261011T010733Z/review.json",
+      "kind": "historical pre-tail-repair runtime; original victory/rewards/return, later death/failure and worker loading stall"
+    },
+    {
+      "id": "original-event-names",
+      "path": "theseus/reports/network-concurrency-20261011T005500Z/original-event-names.json",
+      "kind": "read-only original event table; correction names ACK 172 without assigning old timeout cause"
+    },
+    {
+      "id": "capture-stall-validation",
+      "path": "theseus/reports/capture-stall-20261011T024047Z/validation.json",
+      "kind": "capture-only hung-worker evidence retention, no guest writes or extra RPC"
+    },
+    {
+      "id": "game-024047",
+      "path": "theseus/reports/browser/20261011T024047Z/review.json",
+      "kind": "historical pre-tail-repair runtime; failed revival and repeat entry, zero native wins"
+    },
+    {
+      "id": "heap-tail-validation",
+      "path": "theseus/reports/heap-tail-20261011T042900Z/validation.json",
+      "kind": "eight-byte arena retirement: failing preserved control, main/compat and memory checks"
+    },
+    {
+      "id": "game-043232",
+      "path": "theseus/reports/browser/20261011T043232Z/review.json",
+      "kind": "historical fbdfcc7e build: two area clears, failed revival, failure rewards, event676 termination during return"
+    },
+    {
+      "id": "game-053950",
+      "path": "theseus/reports/browser/20261011T053950Z/review.json",
+      "kind": "historical fbdfcc7e build: original victory/reward/interactive return; second-cycle loading corrupts allocator metadata"
+    },
+    {
+      "id": "high-image-validation",
+      "path": "theseus/reports/high-image-20261011T071500Z/validation.json",
+      "kind": "high-image sparse placement and owned lower-block realloc: preserved failing controls, canonical build and affected regressions"
+    },
+    {
+      "id": "game-071553",
+      "path": "theseus/reports/browser/20261011T071553Z/review.json",
+      "kind": "sealed high-image repair build: repeated loading, one native-confirmed win and three returns; independent revival failure"
+    },
+    {
+      "id": "worker-clock-validation",
+      "path": "theseus/reports/worker-clock-20261011T091913Z/validation.json",
+      "kind": "Worker wall-clock local read: old real-Worker control fails, candidate and affected regressions/build pass; integrated revival failure remains"
+    },
+    {
+      "id": "game-092157",
+      "path": "theseus/reports/browser/20261011T092157Z/review.json",
+      "kind": "final worker-clock build: two Forest entries/returns, untraced failed revival and bounded end-game caller trace; zero native wins"
+    },
+    {
+      "id": "revival-end-notification",
+      "path": "theseus/reports/browser/20261011T092157Z/revival-failure.json",
+      "kind": "untraced revival failure and separate original event201 caller: continue disabled during death animation; runtime timing cause remains open"
+    },
+    {
+      "id": "game-105626",
+      "path": "theseus/reports/browser/20261011T105626Z/review.json",
+      "kind": "historical SSE-policy build: two failed attempts/returns, attacks and two skills; countdown initializes but revival fails, zero native wins"
+    },
+    {
+      "id": "sse-policy-validation",
+      "path": "theseus/reports/browser/sse-policy-20261011T105000Z/validation.json",
+      "kind": "existing SSE policy and shared inheritance: control failure, actual Worker/native math/instruction/skinning/build checks"
+    },
+    {
+      "id": "revival-sse-policy",
+      "path": "theseus/reports/browser/20261011T105626Z/revival-failure.json",
+      "kind": "two untraced current deaths with ordinary Z inputs; initialized countdown stops with disabled policy, exact scheduling cause unresolved"
+    },
+    {
+      "id": "game-123040",
+      "path": "theseus/reports/browser/20261011T123040Z/review.json",
+      "kind": "historical arena-locality build: Forest route/two skills/failure/return; untraced revival failure, one native attempt and zero wins/stones"
+    },
+    {
+      "id": "heap-locality-validation",
+      "path": "theseus/reports/heap-free-locality-20261011T122400Z/validation.json",
+      "kind": "control scan-bound failure, candidate and existing heap/runtime/Worker/build checks; integration outcome is separate game-123040"
+    },
+    {
+      "id": "revival-heap-locality",
+      "path": "theseus/reports/browser/20261011T123040Z/revival-failure.json",
+      "kind": "128 validated current observations; disabled uninitialized continue, six Z pulses, native reference and original deadline; remaining cost unresolved"
+    },
+    {
+      "id": "native-revival-reference",
+      "path": "theseus/reports/native-revival-20261011T120600Z/review.json",
+      "kind": "unchanged original Windows client revival succeeds; separate from browser acceptance; see delayed persistence correction"
+    },
+    {
+      "id": "native-revival-persistence",
+      "path": "theseus/reports/native-revival-20261011T120600Z/persistence-addendum.json",
+      "kind": "delayed native persistence corrects stale immediate-exit SELECT without changing the sealed native review"
+    },
+    {
+      "id": "game-133104",
+      "path": "theseus/reports/browser/20261011T133104Z/review.json",
+      "kind": "final snapshot-copy build: original first-area clear, event676 termination with duplicate serial241; no completed winning cycle"
+    },
+    {
+      "id": "snapshot-copy-validation",
+      "path": "theseus/reports/draw-snapshot-copy-20261011T132600Z/validation.json",
+      "kind": "preserved control/candidate copy contracts, draw/lifetime/Worker/native StretchRect/build checks; two unavailable guest-render fixtures"
+    },
+    {
+      "id": "serial-duplicate-diagnosis",
+      "path": "theseus/reports/serial-duplicate-20261011T140500Z/diagnosis.json",
+      "kind": "current duplicate-serial follow-up: original read/increment boundaries; live callers and runtime cause unresolved"
+    },
+    {
+      "id": "serial-observer-validation",
+      "path": "theseus/reports/draw-snapshot-copy-20261011T132600Z/capture-observer.json",
+      "kind": "existing bounded header/thread/exit observer passes after current serial241 anomaly"
+    },
+    {
+      "id": "snapshot-copy-integrated-validation",
+      "path": "theseus/reports/draw-snapshot-copy-20261011T132600Z/final-validation.json",
+      "kind": "sealed final integration/identity/log verification: 248 identities and 39 images; original area clear followed by serial241 duplication/event676, acceptance blocked"
+    },
+    {
+      "id": "serial-ownership-diagnostic",
+      "path": "theseus/reports/browser/20261011T141838Z/review.json",
+      "kind": "sealed old-build diagnostic: shared original counter outside locks; probes alter scheduling, no reproduced duplicate"
+    },
+    {
+      "id": "serial-ownership-observations",
+      "path": "theseus/reports/serial-ownership-20261011T142300Z/counter-observations.json",
+      "kind": "121 bounded original getter/increment ownership observations; not a captured duplicated interleaving"
+    },
+    {
+      "id": "send-serialization-validation",
+      "path": "theseus/reports/serial-ownership-20261011T142300Z/candidate-validation.json",
+      "kind": "seven passing original-PE/actual-wrapper/critical-section/unwind/profile/build/runtime checks; fixture is not gameplay"
+    },
+    {
+      "id": "game-145806",
+      "path": "theseus/reports/browser/20261011T145806Z/review.json",
+      "kind": "final integrated original send-serialization replay: former gate and return pass; revival fails, native one attempt/zero wins/zero stones"
+    },
+    {
+      "id": "revival-send-serialization",
+      "path": "theseus/reports/browser/20261011T145806Z/revival-failure.json",
+      "kind": "current Low-settings revival failure15.567354 sampled seconds, six Z pulses; original closure/timing dependency remains"
+    },
+    {
+      "id": "send-serialization-integrated-validation",
+      "path": "theseus/reports/serial-ownership-20261011T142300Z/candidate-integration-validation.json",
+      "kind": "62 reviewed images/248 identities/407 increasing serials; unchanged native services/files; incomplete all11 acceptance"
+    },
+    {
+      "id": "kernel-startup-profile",
+      "path": "theseus/reports/performance/kernel-profile-control-20261011/source-audit-review.json",
+      "kind": "bounded original startup worker profile with matching source audit; intentional stop before login"
+    },
+    {
+      "id": "observation-gate-validation",
+      "path": "theseus/reports/performance/observation-smoke-20261011T200008Z/result.json",
+      "kind": "four visible synthetic observer lifecycle checks; no original application acceptance"
+    },
+    {
+      "id": "heap-ownership-source",
+      "path": "theseus/reports/performance/heap-free-20261011/final-source-validation.json",
+      "kind": "sixteen passing allocator source regressions and nine expected ownership control failures"
+    },
+    {
+      "id": "heap-ownership-compiled",
+      "path": "theseus/reports/performance/heap-free-20261011/compiled-validation.json",
+      "kind": "eleven ownership checks on both prepared modules and runtime/locality checks; later startup pair incomplete, duration unverified"
+    },
+    {
+      "id": "heap-ownership-microbenchmark",
+      "path": "theseus/reports/performance/heap-free-20261011/microbenchmark-summary.json",
+      "kind": "matched constructed allocation pairs including shallow overhead; not startup or frame performance"
+    },
+    {
+      "id": "heap-startup-control",
+      "path": "theseus/reports/performance/heap-control-20261011/source-audit-review.json",
+      "kind": "matched headed control cold/warm original login and thirty-second progress; exact file audit"
+    },
+    {
+      "id": "heap-startup-candidate-observer-limit",
+      "path": "theseus/reports/performance/heap-candidate-20261011/source-audit-review.json",
+      "kind": "candidate cold screenshot timeout and later reviewed warm-profile initialization; incomplete performance comparison"
+    },
+    {
+      "id": "frozen-closeout",
+      "path": "theseus/reports/frozen-closeout-20261011/frozen-state.json",
+      "kind": "frozen prepared/source inventory; explicit observer drift and unbuilt reservation rollback"
+    },
+    {
+      "id": "heap-reservation-control",
+      "path": "theseus/reports/performance/heap-reservation-20261011/control.json",
+      "kind": "two failed rollback controls; provisional reservations accumulate"
+    },
+    {
+      "id": "heap-reservation-source",
+      "path": "theseus/reports/performance/heap-reservation-20261011/candidate-source.json",
+      "kind": "two passing source-compiled rollback cases; canonical builds pending"
+    },
+    {
+      "id": "heap-reservation-suites",
+      "path": "theseus/reports/performance/heap-reservation-20261011/source-suites.json",
+      "kind": "retained affected source suites; bounded source-only evidence"
+    },
+    {
+      "id": "frozen-closeout-independent-review",
+      "path": "theseus/reports/frozen-closeout-20261011/independent-review.json",
+      "kind": "2229 frozen identities match; final12suite source pass, untested observer refinements, no owned benchmark/test remaining"
+    }
+  ],
+  "gameplayBaselineEvidence": "game-064427",
+  "currentBuildEvidence": null,
+  "serverScope": {
+    "execution": "native-local",
+    "porting": "excluded",
+    "clarified": "2026-10-10",
+    "clientInteroperability": "required"
+  },
+  "frozenState": {
+    "path": "theseus/reports/frozen-closeout-20261011/frozen-state.json",
+    "sha256": "df194fcf69aeca921fedaef4a2843ecf915084ca2d283fad97f42696fb6cd4ca"
+  }
+}

@@ -1,0 +1,31 @@
+# 0012 - Serialize original client packet construction and sending
+
+[Wiki](../README.md) · [Network](../network.md) · [Acceptance](../acceptance-session.md)
+
+Date: 2026-10-11. Contributor: Codex /root; no delegated agents. This is a client compatibility correction for the original compiled executable. Native services, SQL, protocol, authentication, packet encryption and gameplay rules remain unchanged.
+
+## Evidence and correction
+
+The sealed [133104 failure](../../reports/browser/20261011T133104Z/exit-failure.json) records distinct 74-byte and 58-byte packets using serial241, followed26.435ms later by original event676 and process termination. The native authentication verdict was not captured. [Original disassembly](../../reports/serial-duplicate-20261011T140500Z/diagnosis.json) shows a shared context lookup whose lock is released before the serial getter, packet construction and later increment.
+
+The separate, sealed [141838 diagnostic](../../reports/browser/20261011T141838Z/review.json) contains121 read-only breakpoint observations and17 reviewed images on the unchanged build. Main worker0 and the original `KSession::Tick` worker9 use the same context/counter. The socket and context-map locks are unowned at the getter/increment observations; one main post-increment sample sees socket owner7. Its131 accepted game packets remain increasing: the actual duplicated-counter interleaving was not captured in this diagnostic replay. Breakpoints affect scheduling, and raw frame candidates beyond the first two are not accepted as stack unwinds.
+
+The [deterministic helper check](../../reports/serial-ownership-20261011T142300Z/interleaving-result.json) executes the original four-byte getter/increment functions in two BROCWIN instances. Reading both before either increment returns241 twice. See its [scope correction](../../reports/serial-ownership-20261011T142300Z/interleaving-correction.json): the counter-only example is illustrative, and the control's queue labels were conceptual, not actual queue operations.
+
+[app-profiles.js](../../tools/wine-assembly/lib/app-profiles.js) now wraps original `KSession::SendPacket` at331be510 with the socket's existing recursive critical section at `session->socket+20098`. Ownership begins before construction and ends after the unchanged routine returns. Its195-byte x86 wrapper occupies verified zero padding at3329d230 in the original mapped `.text` tail. A trampoline executes the displaced five-byte prologue and rejoins331be515. Null sockets go directly through the original path. A normal stack SEH registration returns ContinueSearch during exception search and releases ownership on unwind. The original on-disk EXE is unchanged.
+
+The existing patch mechanism checks all grouped entry/helper/socket/padding fingerprints before any write. A mismatched part leaves the whole group unchanged. No packet header is rewritten in the host or relay, no event or deadline is suppressed, and no new interpreter tier, protocol or backend is introduced. [Assembly provenance](../../reports/serial-ownership-20261011T142300Z/wrapper-assembly.json) retains exact bytes, labels and Capstone disassembly.
+
+## Validation and candidate identity
+
+[Validation](../../reports/serial-ownership-20261011T142300Z/candidate-validation.json) retains successful commands, timings and log hashes for the installed x86 wrapper, existing War Wind/Baldur profile checks, critical-section ownership, RtlUnwind handlers, canonical build and integrated runtime. [The wrapper test](../../tools/wine-assembly/test/test-elsword-send-serialization.js) checks the actual original PE fingerprints, complete rejection on any mismatched part, contended real API thunks, guest queue order241/242, original arguments/return/register preservation, early failure, null sockets, recursion, exception search and actual RtlUnwind followed by waiter progress. The packet body is a bounded fixture; this is not gameplay acceptance.
+
+Dependency pin remains `d7854bc6c6bd0319ca33b5f31a465602e2ce0686`. Main Wasm remains `c38c94850b55c6adc2981f4a277d80a3732f5b4f8c275d246949c92fe810eb3d`, compatibility remains `c2380511aeb9632886c0ff2790276dbfdf6c1c89193b20174dd5d0acaaae8ef8`. Prepared patch is `00924af439b7248b11b70c394b2ca9f57844f0702592cae0962023496b6e206b`; preparation and bootstrap check passed. [Preflight](../../reports/serial-ownership-20261011T142300Z/candidate-preflight.json) freezes248 identities before replay. The sealed 145806 review below is current-build evidence; older captures remain tied to their own builds.
+
+## Integrated outcome: blocked at revival
+
+[145806](../../reports/browser/20261011T145806Z/review.json) verifies login, existing character, town/menus, Tree of El, original sword/Flame Geyser/Roll, first-area clear and the previously failing gate into area two. 407 accepted game packets remain increasing, with no original process exit or network observer errors. [Read-back](../../reports/browser/20261011T145806Z/installed-wrapper.json) confirms the installed entry/wrapper bytes.62 images were individually reviewed; 248 identities match. Native services/files retain their identities.
+
+Independent revival still fails despite original Low settings: final dead state first sampled 15.567354 seconds after death already has policy 1, initialized 1/countdown 9.985714 and stones 9. Six ordinary Z pulses do not revive. Original reward/automatic Ruben return and post-return movement/menu interaction pass, but native totals are one attempt, zero wins, zero stones and zero dungeon ED; SQL EXP69567/ED2237 unchanged. [Integration validation](../../reports/serial-ownership-20261011T142300Z/candidate-integration-validation.json) and [all eleven steps](../acceptance-session.md) retain exact limits. No first or second winning cycle and no complete port are claimed. The remaining original death/continue execution timing dependency is not isolated; no server/timer/eligibility bypass.
+
+Provenance: original game/fork developers, Wine-Assembly/WATX/platform contributors and earlier maintainers retain attribution. Tools: existing BROCWIN compatibility mechanism, canonical WATX build, Node, Python, pefile, Capstone, Edge/Playwright and guarded read-only native/SQL observers.

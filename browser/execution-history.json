@@ -1,0 +1,1434 @@
+{
+  "schema": "theseus.execution-history/v1",
+  "objective": "The complete original game operating through one browser-native runtime",
+  "acceptance": "incomplete",
+  "contributor": "Codex /root",
+  "agentsSpawned": 0,
+  "timeConvention": "Capture identifiers are UTC; work began on 2026-10-07 in America/Denver",
+  "entries": [
+    {
+      "stage": "input inspection",
+      "result": "Confirmed compiled x2.exe and original DLLs; inherited KOM catalog and native checkpoint preserved. No source recovered or invented."
+    },
+    {
+      "stage": "execution architecture",
+      "result": "Pinned Wine-Assembly d7854bc6c6bd0319ca33b5f31a465602e2ce0686. Original x86 executes in browser Wasm; no native process-launch or streaming path exists in the integration."
+    },
+    {
+      "stage": "build reproducibility",
+      "result": "Corrected dependency checkout line endings after a sealed compiler provenance check rejected CRLF conversion. Preserved source changes as a patch against the pinned commit."
+    },
+    {
+      "capture": "20261008T021630Z",
+      "result": "Original FMOD startup stopped at EncodePointer. Renderer creation order also exposed an integration error; corrected before further capture."
+    },
+    {
+      "capture": "20261008T021941Z",
+      "result": "Invalid early execution-state evidence: worker DLL initialization did not receive strict mode, so unsupported calls were logged and startup continued. No gameplay was verified. Strict propagation and stop-state reporting were corrected."
+    },
+    {
+      "capture": "20261008T022103Z",
+      "result": "Strict startup stopped at GetThreadTimes in the original CRT. Added shared active interpreter time accounting with its approximation documented."
+    },
+    {
+      "capture": "20261008T022723Z",
+      "result": "Stopped at InitializeSListHead. Added shared 64-bit atomic list operations; four real Wasm workers later verified 4,000 unique concurrent insertions without loss."
+    },
+    {
+      "captures": [
+        "20261008T022923Z",
+        "20261008T023004Z",
+        "20261008T023027Z",
+        "20261008T023055Z"
+      ],
+      "result": "Installed msvcrt.dll returned FALSE. Loader diagnostics were missing from the worker transport; added forwarding to expose the real failure."
+    },
+    {
+      "captures": [
+        "20261008T023122Z",
+        "20261008T023204Z"
+      ],
+      "result": "Disassembly found InitializeCriticalSectionEx flag 0x04000000. The argument-tracing wrapper read an idle parent instance and showed invalid zero arguments; that trace was rejected as evidence and disabled in the Theseus launcher. Added the static critical-section flag to the actual lock implementation."
+    },
+    {
+      "capture": "20261008T023349Z",
+      "result": "Stopped at FlsAlloc. Added per-thread FLS storage and native x86 callback execution. Full fiber switching remains unsupported."
+    },
+    {
+      "capture": "20261008T023717Z",
+      "result": "Installed mfc42.dll reached LFENCE. Added x86 fence decoding to a Wasm atomic fence. The initial handler-count mismatch caused a test hang; corrected both dispatch bounds and table count. Moved large FLS state onto the guest heap when memory-layout shake gates rejected fixed-region growth."
+    },
+    {
+      "capture": "20261008T024423Z",
+      "result": "Full build gates and callback/fence tests passed. Original MFC100 stopped at ActivateActCtx(NULL). Implemented default-context stack semantics and exception cases."
+    },
+    {
+      "capture": "20261008T024708Z",
+      "result": "Original MFC100 advanced to GetMonitorInfoW. Added UTF-16 monitor information using the runtime's actual screen metrics; A/W structure and buffer tests pass."
+    },
+    {
+      "capture": "20261008T025055Z",
+      "result": "Stopped at CreateActCtxW with flags 0x88 and MFC resource 2. PE inspection found no RT_MANIFEST. Data-only Windows reference calls returned 1813; implemented resource-tree-dependent failures and retained explicit traps for present manifests."
+    },
+    {
+      "capture": "20261008T025323Z",
+      "result": "Stopped at PathFindExtensionW. Screenshot inspected: blank guest display, diagnostic boot shell only, zero guest frames. Implemented UTF-16 pointer lookup with Windows-verified edge cases."
+    },
+    {
+      "capture": "20261008T025756Z",
+      "result": "Full build passed before the filename change. Stopped at PathFindFileNameW. Windows queries and system-library disassembly established colon and trailing-separator behavior; shared A/W implementation passes 527 captured Windows path cases plus a DBCS trail-byte test."
+    },
+    {
+      "captures": [
+        "20261008T030237Z",
+        "20261008T030320Z",
+        "20261008T030509Z"
+      ],
+      "result": "All 12 DLL initializers returned TRUE. CORRECTION to the initial interpretation of reaching the executable entry: that address contained zeros because the worker staged only the first 8 MiB of x2.exe. Exit 0xC000DE05 represented an access violation in the compatibility runtime, not a game-level exit. Late logging RPCs also read a released memory reference; guarded that diagnostic path."
+    },
+    {
+      "capture": "20261008T030721Z",
+      "result": "Connected worker loading to the existing PE section-tail hydration routine. Added a worker-path regression test and a launch-time check comparing mapped entry bytes with the original file. The original C++ startup now executes and throws std::runtime_error."
+    },
+    {
+      "captures": [
+        "20261008T030807Z",
+        "20261008T031101Z"
+      ],
+      "result": "Exception report now receives EIP/ESP from the executing Wasm instance and reads std::exception's message. Message is 'bad locale name'. CRT disassembly requests numeric GetLocaleInfoW fields; the inherited implementation returned UTF-16 '0'. Added genuine en-US integer/string field values with Windows-checked A/W counts and buffer bounds."
+    },
+    {
+      "capture": "20261008T031331Z",
+      "result": "Numeric locale behavior let original startup advance to LookupPrivilegeValueW. Added Unicode lookup sharing the retained virtual token model, tested all 27 classic privileges, invalid inputs and UTF-16 error cases; no host token changes."
+    },
+    {
+      "capture": "20261008T031807Z",
+      "result": "Stopped at InternetOpenW in the original HTTP_WRAPPER_KOG startup. Added owned A/W session strings and retained access, proxy, bypass and flags. Request transport remains the inherited offline model and is not networking acceptance."
+    },
+    {
+      "captures": [
+        "20261008T032147Z",
+        "20261008T032236Z"
+      ],
+      "result": "Original code now calls ExitProcess(2). No game frames observed. Full API-name trace saved; original WinMain disassembly confirms the expected launcher argument and subsequent initialization calls. Investigating the failing startup branch without patching the game."
+    },
+    {
+      "stage": "full validation after locale, token and WinINet session changes",
+      "result": "All dependency build gates passed, including 5 memory layout modes, 20,000 compiler comparison cases (19,970 match, 30 declined, zero mismatches), provenance checks and Wasm data overlaps. A locale flag was initially misclassified as a region address; expressed it as bit 29 without changing the gate. Token, WinINet session and integrated compatibility tests pass. Bootstrap pin/patch check passes. Wasm SHA-256 f7dd0e7d95284050d0461bed3a41fa5be4dbce9f4f5a95e2f15bd308812c9e6b."
+    },
+    {
+      "captures": [
+        "20261008T032406Z",
+        "20261008T032453Z",
+        "20261008T032538Z",
+        "20261008T032702Z"
+      ],
+      "result": "Original WinMain accepts its launcher argument. Disassembly and code traces found the graphics-bootstrap exit: the client parses PE exports directly, but synthetic kernel32 handles had no mapped export directory. GetSystemDirectoryW fell through to an old Unicode fallback. Native filename queries also established ERROR_INVALID_NAME for the original Mslu probe."
+    },
+    {
+      "capture": "20261008T033120Z",
+      "result": "Generated and mapped four platform export adapters, identified as reconstructed code with hashed local export metadata. All calls converge on the existing Wasm runtime. Startup reached GetThreadPreferredUILanguages; implemented the en-US/neutral-en query and buffer contracts. A test caught and corrected literal encoding that inserted extra zeros into MULTI_SZ."
+    },
+    {
+      "captures": [
+        "20261008T033357Z",
+        "20261008T033747Z"
+      ],
+      "result": "Startup advanced through StrCmpW to StrCpyW. StrCmpW shares inherited en-US collation; a comparison with Windows exposes incomplete canonical Unicode equivalence. Added StrCpyW, StrCatW and StrStrW using UTF-16 code units. 42 native reference cases pass, including the SHLWAPI-specific empty-needle NULL result."
+    },
+    {
+      "capture": "20261008T034241Z",
+      "result": "Actual client called Direct3DCreate9, created X2, enumerated files and spawned a browser worker. Verbose tracing substantially slowed the 40-second capture. Screenshot inspected: blank display, zero game frames."
+    },
+    {
+      "capture": "20261008T034345Z",
+      "result": "Longer run without verbose tracing stopped at EnumProcessModules. Zero game frames. This run began before the strict dynamic/thread-loading audit edits; a fresh capture after those changes is needed to validate that complete source identity."
+    },
+    {
+      "stage": "loader lifecycle audit and build",
+      "evidence": "../reports/browser/build-20261008T034725Z/build.log",
+      "result": "Propagated strict initialization failures through dynamic DLL, COM and thread notification paths instead of swallowing them. Activation contexts now clean up even when notification callbacks fail or no notifier exists. Targeted dynamic-load/COM and teardown tests pass. Full build gates pass with 4501 APIs, 5 memory-layout modes and 20,000 compiler comparisons (zero mismatches)."
+    },
+    {
+      "capture": "20261008T035037Z",
+      "result": "Strict browser execution passes EnumProcessModules and reaches GetModuleFileNameExA for the executable. The stack contains 17 actual module handles and a required size of 68 bytes. Added ANSI/Unicode module path queries using the current loader's paths; native truncation and invalid-handle behavior was measured. No game frames."
+    },
+    {
+      "stage": "module query integration and validation",
+      "evidence": "../reports/browser/build-20261008T035631Z/build.log",
+      "result": "Module enumeration reads the real mapped EXE/DLL table and supports partial buffers and Windows output-write order. Module filename tests cover the executable, a relocated DLL, truncation, terminators, untouched sentinels and invalid handles. Full build gates pass with 4505 APIs; Wasm SHA-256 5cc5a9fe27540ea989636298f0eb02bc672a91776c64cf8d105330e0aa05bc51. Integrated base-runtime, WinINet and HTTP tests and the preserved patch check also passed after module enumeration."
+    },
+    {
+      "capture": "20261008T035453Z",
+      "result": "Screenshot inspected: one guest-rendered GameHelper.ini load-error dialog, not a rendered game scene. Execution samples showed 300 ms retries at original EIP 0x328e7f43. Found that the browser launch retained the VFS default C:\\ while the inherited native launcher starts beside x2.exe. Added that working-directory setup. The initial response-hash instrumentation ran too late and Chromium had evicted most bodies; corrected capture to hash script responses immediately on completion."
+    },
+    {
+      "capture": "20261008T035953Z",
+      "result": "After setting C:\\joysword as the working directory, original execution opened data036.kom and read GameHelper.ini's 1922 compressed bytes at offset 3906465. Direct zlib inflation matches the inherited 4323-byte recovery exactly (reports/browser/gamehelper-archive-check.json). Original startup advances to GetNativeSystemInfo. All 88 observed page runtime scripts match their manifest hashes; zero game frames."
+    },
+    {
+      "stage": "native system query",
+      "result": "Added GetNativeSystemInfo through the existing x86 virtual-system information implementation; the browser host's architecture is not the emulated architecture. Tests verify the 36-byte structure, page size, allocation granularity and stdcall cleanup through a relocated kernel32 adapter. API count is 4506; full build validation after this small addition remains pending."
+    },
+    {
+      "captures": [
+        "20261008T040301Z",
+        "20261008T040536Z",
+        "20261008T040915Z"
+      ],
+      "result": "GetNativeSystemInfo passes, but original startup reaches EIP zero without ExitProcess. Corrected the diagnostic to report the executing worker rather than idle parent registers. Opt-in instruction tracing at 0x32853850 finds shifted UTF-8 conversion arguments after WS2_32 ordinal 12. The inherited loader used WSOCK32's ordinal table: ordinal 12 incorrectly invoked the three-argument ioctlsocket instead of one-argument inet_ntoa, consuming the next call's arguments. No game frames."
+    },
+    {
+      "stage": "Winsock ordinal correction",
+      "result": "Read local SysWOW64 WS2_32 and WSOCK32 export tables with separate source hashes; ordinals 10, 11 and 12 differ. Added the correct WS2_32 routing while preserving WSOCK32 routing. Recorded nine native inet_ntoa formatting cases without network operations and added ordinal/stack regression coverage to the integrated runtime tests. Full build and fresh browser validation are in progress."
+    },
+    {
+      "stage": "system query and Winsock validation",
+      "evidence": "../reports/browser/build-20261008T041722Z/",
+      "result": "Full dependency build passed with 4506 APIs, five layout modes, 19,970 compiler matches, 30 declined cases and zero mismatches. Wasm SHA-256 6a355121833c057a158103e7f8b2591a3e87df5ba5ea7ff4a2372a3a205320d7. Integrated platform, base-runtime, WinINet, HTTP boundary tests and preserved source-patch check pass. The optional upstream directsound-ordinals test could not execute because test/binaries/calc.exe is absent; equivalent Winsock mapping and stack checks passed in test_platform.cjs."
+    },
+    {
+      "capture": "20261008T041723Z",
+      "result": "The Winsock ordinal correction clears the original stack failure; execution advances to AddFontResourceW for a bundled Tahoma font. Screenshot inspected: blank application display, no game scene. Added shared A/W font registration/removal through the existing real font parser. Both original bundled fonts pass registration, byte retention, glyph metrics, reference-count and invalid-file tests through a mapped gdi32 adapter. Wider Unicode paths explicitly stop pending registry work; no truncated-path fallback."
+    },
+    {
+      "stage": "font integration validation",
+      "evidence": "../reports/browser/build-20261008T042440Z/",
+      "result": "Build gates initially rejected divergent A/W entry routes; routed both through one shared conversion core without changing the gate. Full build then passed with 4508 APIs; Wasm SHA-256 77723af1c67dbd16938a9c105391da6e426ddba16d93f9332523e0615e96b8db. Original-font tests pass, and the existing upstream font-resource test still registers 20 scalable fonts across 28 mounts and renders glyph pixels through Wasm. Preserved source-patch check passes."
+    },
+    {
+      "capture": "20261008T042441Z",
+      "result": "Original startup passes font registration and stops at dynamically resolved D3D9 DebugSetMute, called from original D3DX9_43 at RVA 0x19454. Disassembled the installed release D3D9 export: no shared-state or return-value write, plain RET. Original D3DX supplies BOOL and pops it itself. Added that release-only binding and tested the original push/call/pop sequence through the mapped D3D9 export adapter. Reference disassembly and file hashes are in reference/graphics-debug.json; debug-driver behavior remains unverified."
+    },
+    {
+      "capture": "20261008T042929Z",
+      "result": "The release DebugSetMute binding passes. The next diagnostic said '<ord>', but original D3DX disassembly identifies an indirect COM call to IDirect3DDevice9::QueryInterface for IID_IDirect3DDevice9Ex during texture setup. Both base D3D9 and Device9 query handlers were fail-fast stubs. Implemented full IID matching for IUnknown and each base interface, retained identity on success and E_NOINTERFACE/null output for unsupported interfaces. Native base-object reference and x86 COM lifetime tests pass. No game frames; all 88 observed runtime script hashes match."
+    },
+    {
+      "stage": "return-only implementation audit",
+      "result": "Duplicate-code gate rejected the new release DebugSetMute body. Consolidated four identical inherited handlers using API handler aliases and shared their exact return-only ABI with the verified release export. The quiet-function inventory falls from 243 to 240 by code consolidation, not by completing those inherited omissions. Recorded the reviewed inventory delta and native evidence in upstream docs/silent-handler-inventory.md; classifier and fail-fast policy are unchanged. Full build rerun is in progress."
+    },
+    {
+      "stage": "D3D interface integration validation",
+      "evidence": "../reports/browser/build-20261008T044049Z/",
+      "result": "All build gates pass after the reviewed handler consolidation, including five memory layouts, compiler comparisons with zero mismatches and data overlap checks. API count 4509; Wasm SHA-256 e130b7466b5bcfa408f6fcaa2e63dbb50d3f3305a112760d0b8e02fded288bbf. Platform/DebugSetMute ABI, native-reference COM interface/lifetime and existing D3D9 device compatibility tests pass. Source pin/patch reproduction check passes. A fresh original-client browser run is in progress."
+    },
+    {
+      "capture": "20261008T044050Z",
+      "result": "Original D3DX passes its Device9Ex interface probe and startup stops at GetAdaptersInfo with a null output buffer and a size pointer initially zero. Screenshot inspected: blank application display, zero frames. All observed runtime script hashes match. Added a virtual adapter query tied to the existing Winsock IPv4 address, with x86 IP_ADAPTER_INFO layout and Windows buffer contracts. Native reference retains no host network identity. Targeted tests pass for buffer sizes, invalid pointers, stdcall cleanup and agreement with gethostname/gethostbyname across three virtual addresses; full build is running."
+    },
+    {
+      "stage": "IP Helper integration validation",
+      "evidence": "../reports/browser/build-20261008T044915Z/",
+      "result": "Full build gates pass with 4510 APIs and zero compiler mismatches. Targeted platform tests and patch reproduction check pass. Wasm SHA-256 1f2e884f5be6fe85fadb2db0f6b5ab6c0a5033e5bb8d3e1af86505863c0c16f7. A fresh original-client browser capture is running."
+    },
+    {
+      "stage": "virtual networking regression and address audit",
+      "result": "Existing upstream virtual Winsock suite passes 46/46 checks and hostname suite passes 6/6. These are compatibility tests, not game/server acceptance. The native numeric conversion reference exposed a signed comparison rejecting IPv4 values with the high bit set; inet_addr and numeric gethostbyname now reject only the parser failure sentinel. Added native conversion/ordinal checks and numeric resolver coverage; platform tests pass. The currently running browser capture uses the preceding GetAdaptersInfo build; a new build is being validated for the signed-address correction."
+    },
+    {
+      "capture": "20261008T044920Z",
+      "result": "GetAdaptersInfo passes in original startup. Four additional worker initializations are observed before execution stops at WSACreateEvent. The capture records two GDI updates; the screenshot was inspected and remains blank, with no game scene. Runtime script identities match. Added unnamed manual-reset event creation and validated closure through the shared kernel owner. Native event lifetime and error fixtures pass against both single-thread and ThreadManager implementations. Full build is running; socket event association and enumeration remain pending."
+    },
+    {
+      "stage": "Winsock event lifecycle build",
+      "evidence": "../reports/browser/build-20261008T045852Z/",
+      "result": "Full 4512-API build and source-patch check passed, with shared synchronization handle queries propagated to worker and CLI hosts. Wasm SHA-256 e06c31671ada3867f1de2f2bb0b9e306f79c5e3238b835837779d11ff430abb0."
+    },
+    {
+      "capture": "20261008T045858Z",
+      "result": "Original WSACreateEvent succeeds and startup stops at WSAEventSelect(socket 0x53000000, event 0x000e0005, mask 0x21): read and close notifications. Implemented event association, serialized recording/enumeration/reset, rearming after read/accept or blocked write, and transport notification hooks. Native loopback reference and both runtime host backends pass stream transitions, partial reads, backpressure, event inheritance, reset errors and socket reuse. OOB/QoS/address-change events still trap explicitly. Full build initially flagged delegated cleanup naming; using the established handler-delegation convention corrected it without changing the check. The wire regression exposed two fixtures assuming accepted sockets default to blocking; native Windows confirms nonblocking inheritance (10035 on an empty receive), so the fixtures now explicitly select the blocking mode they test."
+    },
+    {
+      "stage": "socket event integration validation",
+      "evidence": "../reports/browser/build-20261008T051037Z/",
+      "result": "Full 4514-API/272-host-import build passes all gates, including compiler comparisons with zero mismatches. Wasm SHA-256 03e90731e50d598c65197afbdd078cfae3cef2ff4ded6b7f40b758702a1ab475. Both event host backends, 46 socket checks, 33 wire checks, core runtime/platform tests and worker resource inheritance pass. Patch check found CRLF drift in the new untracked WAT fragment; normalized its working copy to the preserved LF patch and the reproduction check now passes. No executable bytes changed by that normalization. The preceding WSAEventSelect-stop screenshot was inspected and remains blank. A fresh original-client browser run is in progress."
+    },
+    {
+      "capture": "20261008T051042Z",
+      "result": "The original client passes socket event registration and remains executing for 240 seconds without a new unsupported-call failure. Two GDI updates, no D3D frames; inspected screenshot remains blank. All 88 observed runtime scripts match their manifest identities. Worker samples show changing instruction addresses and allocation-intensive original code rather than a fixed wait. Added periodic capture progress and minute screenshots for a longer diagnostic run. UDP event notifications and queued-datagram rearming also pass in both host backends."
+    },
+    {
+      "capture": "20261008T051607Z",
+      "result": "The 900-second original-client run stayed executing with four GDI updates and no D3D frames. Final screenshot inspected: blank. All observed runtime scripts match. Two caught lua_longjmp pointer throws preceded repeated startup worker creation. From about 565 seconds the main thread repeatedly samples original luaV_execute at 0x331a1f57 while its bytecode pointer advances through unmapped addresses. This is an unresolved execution defect, not successful loading. Added read-only capture probes for guest stacks, original Lua state, sparse-memory use, exception objects and guest text logs; a fresh run uses the unchanged Wasm binary."
+    },
+    {
+      "capture": "20261008T053117Z",
+      "evidence": "../reports/browser/20261008T053117Z/",
+      "result": "The read-only capture locates a zeroed Lua CClosure at guest 0x6932991c during DLG_Notice_Background.lua PC 103 (SetOverTex). A preceding 512x512 ARGB texture at 0x62310004 spans physical backing 0x14aa9000 and 0x13ffd000. Its contiguous zero_memory interval includes the live closure backing at 0x14b8091c. Region mappings, allocation bytes, Lua call state and decoded original instructions are preserved. The final screenshot was inspected and remains blank: four GDI updates and no D3D frame. The preceding two Lua syntax errors match the unchanged missing comma in a BattleFieldBuffTemplet.lua constant; no original data was edited."
+    },
+    {
+      "stage": "split guest allocation repair",
+      "result": "Codex /root reused existing guest_memset/guest_memmove for D3D9 texture/buffer initialization, recycled heap blocks and Win32 HeapAlloc/HeapReAlloc. Six real-Wasm fragmentation cases pass (texture, buffer, zeroed heap, split destination reallocation, split source reallocation, free-list reuse). The original three reproductions failed before the correction by overwriting guard allocations. D3D9 host texture snapshots now verify every source page and gather non-affine spans while preserving the unchanged-level cache fast path. Split texture command publication, dirty sequence, sampled address-reuse fingerprint and unmapped-interior failure checks pass, as do upstream snapshot-cache and residency tests. Full build and integrated client verification are pending."
+    },
+    {
+      "stage": "split-memory repair integration build",
+      "evidence": "../reports/browser/build-20261008T074043Z/",
+      "result": "Full 4514-API/272-import build and source-patch reproduction check pass with zero compiler mismatches. Wasm SHA-256 7148780300beff2877d90e942205b963b1abc6d96651a0a433b8e14f9c0195ff. Focused fragmentation, heap API/lifetime, D3D buffer and texture cache/residency regressions pass. A new 900-second original-client capture is starting."
+    },
+    {
+      "stage": "follow-up allocation page audit",
+      "evidence": "../reports/browser/build-20261008T074043Z/followup-before.json and followup-after.json",
+      "result": "Before the follow-up repair, all five added real-Wasm cases overwrite live neighboring allocations: LocalAlloc, GlobalAlloc, CoTaskMemAlloc, calloc and RtlZeroMemory. All eleven fragmentation cases pass after applying guest_memset to those public allocation/clear paths. calloc additionally checks its 64-bit product before truncating x86 size_t, returns NULL/ENOMEM on allocation failure, and never clears an unmapped NULL address; zero-count behavior is retained. This follow-up source is not part of the still-running 20261008T074033Z capture and has not yet received a full integration build."
+    },
+    {
+      "capture": "20261008T074033Z",
+      "stage": "live comparison past previous failure",
+      "evidence": "../reports/browser/20261008T074033Z/closure-after-repair.json",
+      "result": "At more than 600 seconds the original client has continued into new worker activity and five GDI updates, without the previous fixed Lua loop. The same guest Lua closure at 0x6932991c is intact (type 6, isC 1, C function 0x3284ee30), whereas the preceding capture recorded it zeroed. The old texture mapping has already been released. No D3D game scene is verified; the complete capture is still running."
+    },
+    {
+      "capture": "20261008T074033Z",
+      "result": "Completed 900-second run: all 88 observed script identities match; seven GDI updates, no GPU frame, inspected final screenshot blank. The previous erased Lua CClosure remains intact. Startup later reports repeated real allocation failures (0x110000 commit, 0x100068 payload) after exhausting the 316 MiB sparse backing pool. From about 812 seconds, samples repeatedly scan original callback-dispatch code at 0x328545e0..0x3285461b with derived count 0xfffe. Causality of this later loop remains unverified. The next integration enables the existing bigMemory allocation ladder because exhaustion is now measured, enables the probed programmable renderer required by original FX assets, and adds callback bounds, virtual socket and graphics diagnostics plus capture deadline extensions. No original binaries or assets were modified."
+    },
+    {
+      "stage": "color-surface allocation follow-up",
+      "evidence": "../reports/browser/build-20261008T074043Z/color-before.json and color-after.json",
+      "result": "The D3D9 color constructor also overwrote a live neighbor in a fragmented real-Wasm allocation. Replacing its physical memory.fill with existing guest_memset makes all twelve cases pass. Existing GlobalAlloc reuse, cross-worker GlobalFlags and full D3D9 color-surface lifecycle/transfer tests pass. Source audit identifies additional non-affine color upload/readback and copy paths still needing correction; allocation correctness does not verify complete rendering."
+    },
+    {
+      "stage": "follow-up allocation integration build",
+      "evidence": "../reports/browser/build-20261008T075944Z/",
+      "result": "Full 4514-API/272-import build and preserved-patch reproduction check pass. Wasm SHA-256 8efdfc263a51cdbbcd219bcd6f26d7b28f9f7be16e6448e761a3666856ad5841. All twelve fragmentation cases and focused lifecycle checks pass. New capture runs the same original client with larger-memory opt-in and probed programmable graphics; no scene or gameplay has been verified."
+    },
+    {
+      "capture": "20261008T075934Z",
+      "result": "Completed 1012.89 seconds with 2 GiB Wasm memory, 392847360 live sparse bytes, no logged OOM and all 88 observed script identities matching. Five GDI updates, no GPU frame; final screenshot inspected blank. Read-only snapshots show object 0x3547758c originally holding valid callback vector 0x7cb9859c..0x7cb985b8, later overwritten with Lua nodes and UTF-16 original inventory text (begin/end/capacity become 0x00610073/0x0065006d/0x00740020). Original dispatch derives count 0xfffe. This defect is independent of the preceding OOM. Graphics diagnostics report probed:null and deviceCount:0; previous references to a probed renderer were too broad. The existing programmable profile is enabled, but a successful backend probe/render is not established."
+    },
+    {
+      "stage": "color transfer integration build",
+      "evidence": "../reports/browser/build-20261008T081917Z/",
+      "result": "Full 4514-API/272-import build gates and preserved-patch check pass. Wasm c708c3c966a815a5c0470f04163b19bd795a36cbc4b38646c7dacb48b4776f96, source patch 5c07e5cf52a6dd08b39dcba48fbb653e4659f2201e9c5d4a6d1fcff473b326b9. Host color creation/upload/readback/backbuffer readback and UpdateSurface now use complete guest-page spans; paired WAT internal descriptors carry guest source addresses and CPU copies reuse guest_memmove. Four existing host paths fail prior regressions and pass after correction; the fifth tests the new descriptor contract. Fourteen real-Wasm fragmentation cases pass, including both split UpdateSurface directions. Color lifecycle, 30 direct plus 30 worker alias checks, texture snapshot/cache and residency tests pass. These are compatibility checks, not original-game rendering acceptance."
+    },
+    {
+      "capture": "20261008T081907Z",
+      "result": "Opt-in static watchpoint verifies reporting on the executing worker: initialization, allocator clearing and original callback-vector population are captured with registers and stacks. Initial low addresses undergo temporary allocations before the game object is constructed. Stopped deliberately to add pointer-based arming; no failure cause inferred from these ordinary initialization writes. The subsequent capture 20261008T082239Z arms at the original global pointer 0x33471d38 plus offset 0x18c. Watchpoints change timing and disable interpreter optimizations, explicitly recorded."
+    },
+    {
+      "capture": "20261008T082805Z",
+      "stage": "captured original Reset contract",
+      "evidence": "../reports/browser/20261008T082805Z/reset-analysis.json",
+      "result": "Original calls at 0x32842980 return D3DERR_INVALIDCALL for presentation DWORDs [0,0,22,2,0,0,1,65537,1,1,77,3,0,0]. Device locks, scene and external-reference checks were clear. Original DXUT recovery destroys and recreates graphics objects; this supplies a plausible, not yet proven, connection to the later stale callback. Final screenshot inspected blank. The exact parameter regression failed before the repair."
+    },
+    {
+      "stage": "multi-backbuffer presentation integration",
+      "evidence": "../reports/browser/build-20261008T084848Z/",
+      "result": "Codex /root implemented retained DISCARD queues up to three buffers in the same WAT device lifecycle and ordered software/WebGL presentation consumers. Captured count2/flags3 parameters, normalized queries, distinct identities/storage, lock/reference restrictions, reset cleanup, triple queue advancement and COPY retention pass in real-Wasm direct/worker tests. WebGL1, WebGL2 and actual shared WebGL worker verify displayed/queued colors. Full 4514-API/272-import build gates pass; Wasm 15ede757374f22d5cc08340dfb6c7531cfe1dc84a1cc377ea9df4baa87af22f8, patch 45d1efab9ce91c99200180496013bc967342dc2f1a6b691963986d697c4d92bf. Multi-buffer readback cost and unsupported modes remain explicit."
+    },
+    {
+      "capture": "20261008T084930Z",
+      "result": "Ordinary original-client capture stops incomplete after 73.813 seconds at UNIMPLEMENTED API Direct3DShaderValidatorCreate9, called by the original dynamic d3dcompiler_43.dll at return address 0x761f2851. Original modules initialize successfully. Final screenshot inspected blank, no game frame. This run does not directly trace Reset's return or establish elimination of the older callback defect."
+    },
+    {
+      "stage": "compiled shader validator integration",
+      "evidence": "shader_validator.py, test_shader_validator.cjs and reference/shader-validator.json",
+      "result": "Codex /root inspected the locally installed x86 d3d9.dll and prepared a separately attributed compiled guest component, preserving every original mapped section and security flags. Reconstructed initialization calls the original cookie initializer; only the shader-validator factory is exported. D3D9's generated adapter imports that component, while other APIs retain their Wasm routes. Fifteen local native-reference cases pass via real relocated x86/Wasm code, including valid shaders, invalid tokens, exact diagnostics and callback/object lifetime. Native reference uses the installed 64-bit DLL; historical parity remains unverified. No original game input or installed OS library changed. Platform regression, loopback server and patch reproduction checks pass. Capture 20261008T091042Z starts the full original client with the integrated component; no game rendering has yet been verified."
+    },
+    {
+      "capture": "20261008T091042Z",
+      "evidence": "../reports/browser/20261008T091042Z/",
+      "result": "Completed 197.75 seconds, stopped incomplete, zero game frames, no observed source mismatches, final screenshot inspected blank. Captured compiler source bytes exactly match recovered XRenderer.fx SHA-256 81492f17c9ef17155224229dca589e3d183cd2806573b4c0ffc4bf245211249a. Client passes the former shader-validator trap. The new misleading <ord> diagnostic is identified from original x86 call 0x3291cf6f through D3D9 vtable offset 0x7c: UpdateTexture. The earlier stale-callback issue is not yet tested to the previous elapsed horizon."
+    },
+    {
+      "stage": "UpdateTexture reconstruction and native correction",
+      "result": "Codex /root implemented actual same-device SYSTEMMEM-to-DEFAULT transfers, matching mip tails, independent cube faces, per-face dirty consumption, raw compressed/uncompressed copies and ordered render-target uploads. Direct and actual worker tests pass eighteen format/type combinations and eighteen GPU-storage uploads, including failure visibility/retry and no repeated copy after asynchronous suspension. Sixteen real-Wasm sparse tests pass including split source and split destination UpdateTexture. A hidden native reference window (never the game) established that locked source and destination are accepted; an initial incorrect lock-rejection implementation was removed. Eight native return/readback cases now match in both Wasm routes. Existing texture snapshot cache, texture lifecycle and color lifecycle tests pass. Final full build and original-client follow-up are pending."
+    },
+    {
+      "stage": "UpdateTexture integration build",
+      "evidence": "../reports/browser/build-20261008T092902Z/",
+      "result": "Full build gates and patch reproduction check pass. Wasm 022cd6ce0634a9b872eb7610c13ce9b199a96e71aa12caafc47a02e8a135e879, patch 2e22867ffdd275199438ab09a586a0690ea8ff98ebf707025dfb9cc5ca16bed6. Capture 20261008T092920Z runs the full original client with this runtime and original shader-refusal counters included in read-only execution samples. Acceptance remains incomplete."
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T092920Z",
+      "outcome": "Original browser login UI visible, incorrectly sized; gameplay unverified",
+      "evidence": {
+        "schema": "theseus.capture-review/v1",
+        "contributor": "Codex /root",
+        "run": "20261008T092920Z",
+        "wasmSha256": "022cd6ce0634a9b872eb7610c13ce9b199a96e71aa12caafc47a02e8a135e879",
+        "elapsedSeconds": 614.3129999999983,
+        "stateAtStop": "executing",
+        "finishedByCaptureRequest": "save-original-login-evidence",
+        "verifiedGameplay": false,
+        "reviewedImages": [
+          "at-000241.png",
+          "at-000302.png",
+          "at-000362.png",
+          "browser.png"
+        ],
+        "observed": "Original login artwork, text fields and buttons appear in the upper-left; presentation is confined to approximately 194x173 guest pixels with incorrect window sizing. Black at 241/302 seconds; login visible at 362 seconds and final image.",
+        "frames": 16937,
+        "frameKinds": {
+          "gdi": 2,
+          "gpu": 16935
+        },
+        "shaderCreation": {
+          "made": 80,
+          "refused": 0
+        },
+        "limits": [
+          "No credentials entered, original servers stopped, no authentication/server exchange or gameplay verified",
+          "Frame count includes presentations of unchanged images and does not measure unique animation frames",
+          "Previous callback defect not observed during this 614-second run; longer-term lifetime remains unverified"
+        ],
+        "sourceMismatches": []
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T094145Z",
+      "finding": "Direct3D9 GetAdapterMonitor returned NULL for adapter0, inconsistent with USER. Original DXUT uses the failed query work rectangle to size its window; capture records pointer-like x/y and clipped client height.",
+      "change": "Adapter0 shares existing USER primary monitor handle, invalid ordinal returnsNULL. Native reference and actual COM ABI regression pass after failing before repair. Quiet-handler inventory decreases240to239 for exactly this handler; classifier unchanged.",
+      "validation": [
+        "inspect_d3d_interfaces.py",
+        "test_d3d.cjs"
+      ],
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T095108Z",
+      "outcome": "Original login remains visible with corrected initial monitor bounds; later 200x200 resize and first input check remain unresolved.",
+      "evidence": "../reports/browser/20261008T095108Z/review.json",
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "outcome": "Integrated local TCP transport implemented and contract-tested through actual Wasm and shipped JS; original native backend started, no native client.",
+      "wasmSha256": "8a41ce18e559189812e0b385475d970d68fc2b27cda192e537c096cc0dd6e367",
+      "tests": [
+        "test_network.py (5 cases; 131 sequential orderly streams)",
+        "test_network_wasm.py (76813-byte exchange)",
+        "test_winsock_events.cjs (both backends)",
+        "test_server.py (range/isolation)",
+        "full dependency build gates",
+        "bootstrap.py --check"
+      ],
+      "startup": "Docker engine was stopped; started existing Docker Desktop, then existing joysword-theseus-sql container and five original services through scoped runtime.py. No original Windows game client was launched.",
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T101040Z",
+      "finding": "Original DXUT directly reuses D3DPRESENT_PARAMETERS after Reset; zeroed width/height lead to SetWindowPos(509,356,6,27) and the original minimum-size clamp to 200x200.",
+      "reference": "Local installed native x86 and x64 D3D9 retain resolved width/height/format/count in four measured cases each, contrary to the published Reset prose.",
+      "change": "Page-aware Reset caller parameter writeback now copies the resolved retained fields after successful backend completion.",
+      "validation": [
+        "Native-reference test_swapchain.cjs failed before fix and passed after on direct and worker paths",
+        "Upstream reset/presentation tests",
+        "Full build and patch check"
+      ],
+      "evidence": "../reports/browser/build-20261008T101940Z/validation.json",
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T101949Z",
+      "outcome": "Reset correction verified with original 800x600 login; no input or server exchange verified. GPU window-origin placement and absent DOM input binding identified.",
+      "evidence": "../reports/browser/20261008T101949Z/review.json",
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T103154Z",
+      "outcome": "Original login accepts username and masked password after wiring the existing DOM bridge. D3D9 client-origin composition preserves caption/borders. Log-in stops at missing CryptAcquireContextA, before a server connection.",
+      "evidence": "../reports/browser/20261008T103154Z/review.json",
+      "captureLimit": "Guest memory released at stop caused inspection failure; final runtime state, duration and source comparison were not collected.",
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T110157Z",
+      "outcome": "Original login passes cryptographic initialization; stops at WSASocketW(2,1,6,NULL,0,1), before TCP. Capture survives released guest memory and preserves final metadata with no observed source mismatch.",
+      "evidence": "../reports/browser/20261008T110157Z/review.json",
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T112734Z",
+      "outcome": "Original login rendered; capture interrupted by transient Windows progress-file replacement access denial, not a guest failure. No input/authentication/TCP exchange.",
+      "evidence": "../reports/browser/20261008T112734Z/review.json",
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "change": "WSASocketW/shared startup/last-error; stream overlapped I/O and scheduler completion; fragmented socket ring repair; capture publishing retries.",
+      "validation": "../reports/browser/build-20261008T114923Z/validation.json",
+      "nativeReference": "reference/winsock-overlapped.json",
+      "verifiedGameplay": false
+    },
+    {
+      "date": "2026-10-08",
+      "contributor": "Codex /root",
+      "capture": "../reports/browser/20261008T114919Z",
+      "outcome": "Stopped before guest launch: static server route list predates new winsock-overlapped.js. Restarted the same local serve.py with current explicit routes.",
+      "verifiedGameplay": false
+    },
+    {
+      "stage": "original browser authentication and channel selection",
+      "capture": "../reports/browser/20261008T114946Z",
+      "wasmSha256": "4971383b932be4ddc5e4a2bb13222f696f778eee076ed8182a6870d9cfa6b51e",
+      "patchSha256": "9a1b15133cd43c4e859e852bc317c6522e28a097d469eec4c9804b5119c8659b",
+      "result": "Original login progressed over real local TCP to GenesisServer/channel list; channel click entered connecting state then trapped at WSASendTo. Nine-argument call has two WSABUFs totaling 15 bytes and no OVERLAPPED/callback. No game state or protocol packet was synthesized.",
+      "elapsedSeconds": 848.359,
+      "frames": 7178,
+      "sourceMismatches": [],
+      "review": "../reports/browser/20261008T114946Z/review.json",
+      "unverified": [
+        "Character selection",
+        "World entry",
+        "Browser gameplay",
+        "Server browser-native execution"
+      ]
+    },
+    {
+      "stage": "original datagram API and fixed-local UDP byte transport",
+      "wasmSha256": "16dc5ecd06b42d0fc1d80ff6d54ee6989cf4aa071207df8cbfc125e9abb5dd69",
+      "patchSha256": "b83ff1bc86d50de8f7464844575f823f6d7eb37e7e84c1bfff7cb9f7f97c5078",
+      "evidence": "../reports/browser/build-20261008T121930Z",
+      "result": "WSASendTo implemented through original guest Winsock and existing vln frame transport. Scatter buffers preserve whole UDP packets; synchronous/nonblocking/event completion, queue backpressure and native IPv4 size limit are supported. Local relay resolves only owned native server endpoints and retains browser-session isolation.",
+      "validation": [
+        "Eight native x64 WSASendTo cases",
+        "Both host event backends and actual Worker RPC",
+        "Shipped Wasm/JS/real TCP+UDP echo including zero/max datagrams",
+        "Six network tests; 46 upstream Winsock checks; event and Worker import regressions",
+        "All build gates, prepare and pinned-patch check"
+      ],
+      "discoveredAndCorrected": [
+        "Python 3.11 high-level DatagramTransport drops empty packets; raw async socket I/O preserves them",
+        "Cancel native receive operations before closing UDP handles",
+        "Native thread-exit overlapped status differs from closesocket status"
+      ],
+      "remaining": [
+        "Socket IOCP",
+        "Datagram receive scatter/gather",
+        "UDP ICMP notifications and external peer routes",
+        "Original gameplay verification"
+      ],
+      "nextCapture": "../reports/browser/20261008T121952Z"
+    },
+    {
+      "at": "2026-10-08T12:44:52.004774+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T121952Z",
+      "result": "Original TCP login/channel/game-server transition and UDP request/reply verified; original character selection screen appears. Main thread then stalls during equipment attachment because CX2UnitViewerUI base model is null. Actual character load and world entry are not verified.",
+      "review": "../reports/browser/20261008T121952Z/review.json",
+      "tools": [
+        "Wasm/WebGL runtime",
+        "Playwright/Edge",
+        "pefile",
+        "Capstone",
+        "read-only guest-memory capture"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T13:01:09.717885+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T124743Z",
+      "result": "Harness error: six-second requested wait exceeded five-second action limit after channel click. No model snapshots obtained. Original login/channel screen reproduced; no new gameplay result.",
+      "correction": "Input batches validate before any action. Bad inputs/extensions are recorded as rejected requests while capture remains active. Two focused tests pass."
+    },
+    {
+      "at": "2026-10-08T13:21:10.764114+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T130109Z",
+      "review": "../reports/browser/20261008T130109Z/review.json",
+      "result": "MOTION_ELSWORD_COMMON.X is already failed in the resource cache before the traced character-preview lookup. The failed load occurs earlier; original recovered asset is present with matching catalog hash. First-load failure is not yet identified.",
+      "visualLimit": "Final image retains server/channel screen with Connecting to the server. This run did not present the character screen previously observed in 20261008T121952Z.",
+      "tools": [
+        "original x86 in Wasm/WebGL",
+        "Playwright/Edge",
+        "pefile",
+        "Capstone",
+        "bounded read-only breakpoint snapshots"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T13:34:43.586828+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T132145Z",
+      "review": "../reports/browser/20261008T132145Z/review.json",
+      "result": "Original first-load KSM parser returns E_FAIL for Motion_Elsword_LK.x. Archive bytes/length and first 128 bytes match recovered input. Later Motion_Elsword_Common.x passes header and skeleton loading; original parser reports error 0xf2 from mesh helper 0x329158a0 at bone index 7, then E_FAIL. Failed object enters resource cache before channel selection. Exact inner mesh error not yet captured.",
+      "tools": [
+        "original x86 KSM parser in Wasm",
+        "Playwright/Edge",
+        "Capstone",
+        "pefile",
+        "read-only guest snapshots"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T13:57:20.271526+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/build-20261008T135543Z",
+      "diagnosis": "Original D3DX GenerateAdjacency nests vertex/index read locks. The compatibility runtime rejected a second lock, causing both KSM model loads to fail and the later null-base-model attachment loop.",
+      "change": "Count successful buffer locks; each Unlock decrements toward zero. Native extra Unlock succeeds without underflow. Existing draw checks keep buffers unavailable while any lock remains.",
+      "validation": [
+        "Native x64 locks and exact original mesh inputs",
+        "1410 native adjacency entries match x86 D3DX in Wasm",
+        "Existing D3D9 buffer regression and full build gates"
+      ],
+      "nextCapture": "theseus/reports/browser/20261008T135544Z",
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T14:03:32.576143+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T135544Z",
+      "review": "../reports/browser/20261008T135544Z/review.json",
+      "result": "Blank game canvas and stopped status. Worker 1 MSVCR100 thread attach failed at EIP 0x399388c0 before any graphics frame. This capture does not test the nested buffer lock fix in the integrated model load.",
+      "nextCapture": "../reports/browser/20261008T140120Z",
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T14:19:55.013408+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T140120Z",
+      "review": "../reports/browser/20261008T140120Z/review.json",
+      "result": [
+        "Original LK and Common motion models reach load state 2, confirmed by saved resource-cache memory and filename reads.",
+        "Original login receives input, presents server list and character selection; actual TCP and UDP exchange with original local servers.",
+        "Existing TheseusOne level 3 character is displayed, with displaced body parts. The exact deformation/animation fault is not yet diagnosed; visual parity is incomplete.",
+        "Original Start Game begins Loading Character and worker 2 traps on missing EnumProcesses. No world entry or gameplay verified."
+      ],
+      "tools": [
+        "Wasm original x86 execution",
+        "Edge/Playwright",
+        "read-only guest resource-cache traversal",
+        "pefile/Capstone"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T14:59:20Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T142152Z",
+      "review": "../reports/browser/20261008T142152Z/review.json",
+      "result": [
+        "Original browser login, server/channel selection and existing character display completed. Start Game connected to game-server TCP ports 9300 and 9301 without the earlier EnumProcesses trap.",
+        "1831.859 seconds, 16335 presentations, no observed source mismatch. Rendering then failed to link d3d_color0 between stages; final image is stale character selection with displaced character parts.",
+        "One outgoing UDP datagram unsupported. Shader breakpoint plans observed no hits. Exact failing shader pair, world entry, gameplay and deformation cause remain unverified.",
+        "Separate real-Wasm regression reproduced shader constants rejecting fragmented guest arrays. The repair passes 32 layouts, invalid spans and recorded-state application; integrated replay pending."
+      ],
+      "tools": [
+        "Wasm original x86 execution",
+        "Edge/Playwright",
+        "read-only guest memory and breakpoint observations",
+        "pefile/Capstone"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T15:21:00Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T150019Z",
+      "review": "../reports/browser/20261008T150019Z/review.json",
+      "result": [
+        "1050.782 seconds, 4942 presentations and no observed source mismatch. Original Start Game reaches Moving to the village map and the existing render failure; the displaced preview persists after the shader-constant span repair.",
+        "Structured worker diagnostics preserve the exact native VS1.1 IR and both generated GLSL stages. VS writes position/fog but no diffuse; fixed PS initially reads diffuse before overwriting with texture factor.",
+        "Local native hardware/software draws accept missing diffuse outputs. Entirely unwritten diffuse reads opaque white on both paths; fixed texture-factor draws also succeed. Specular alpha differs and is outside the repair.",
+        "Shared WebGL backend now supplies measured opaque white only when VS1.1 omits the entire diffuse output and the pixel stage declares it. Real/partial shader writes are preserved. Thirty WebGL1/2 native-reference/captured-IR cases pass, including 18 previously failing links. Full game replay pending."
+      ],
+      "tools": [
+        "Wine-Assembly original x86 execution",
+        "Edge/Playwright",
+        "Python/ctypes native D3D9",
+        "Node",
+        "WATX"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T15:52:28.885371+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T152214Z",
+      "review": "../reports/browser/20261008T152214Z/review.json",
+      "result": [
+        "Original login, channel selection, existing level-3 character and Start Game in the same browser runtime",
+        "Ruben Village and Lake Noahs render beyond the formerly failing shader pair",
+        "Arrow movement and jumping; Z sword swing and combo prompt visible",
+        "1545.015 seconds, 2827 presentations, no observed JS mismatch or graphics error.",
+        "Visibly displaced character body parts",
+        "40 unsupported outgoing UDP datagrams; destinations not captured",
+        "No enemy hit/damage or saved progression verified. Original servers remain native."
+      ],
+      "additionalEvidence": "../reports/browser/skinning-math/review.json",
+      "additionalValidation": "320 D3DX matrix/quaternion comparisons pass; narrow routine/input scope, not skeletal-animation proof.",
+      "tools": [
+        "Wine-Assembly original x86 execution",
+        "Edge/Playwright",
+        "Python/ctypes native D3DX",
+        "Node",
+        "read-only guest memory"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T16:25:26.605866+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T155253Z/review.json",
+      "result": [
+        "4907 presentations, no observed source mismatch or graphics error; deformed character remains.",
+        "Bounded route metadata identifies 40 rejected self-unicast UDP datagrams.",
+        "Submitted character vertices are already displaced before a projection-only vertex shader."
+      ],
+      "additionalEvidence": "../reports/browser/skinning-mesh/review.json",
+      "additionalValidation": "MOVHLPS: 128 exact register/flag cases. Original D3DX UpdateSkinnedMesh: 21 controlled cases each with SSE on and off. Four native-measured software vertex-processing device modes. Actual Wasm UDP self/distinct-local socket deliveries pass.",
+      "changes": "Shared runtime now includes MOVHLPS, software vertex-processing state, and copied self-unicast delivery through the existing Winsock receive path. New application replay pending.",
+      "tools": [
+        "Wine-Assembly original x86 execution",
+        "Edge/Playwright",
+        "Python/ctypes native D3DX and D3D9",
+        "Node",
+        "Capstone disassembly",
+        "read-only draw snapshots"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T16:56:39.133762+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T162555Z/review.json",
+      "result": [
+        "1427.344 seconds / 4642 presentations, no source mismatch or graphics error.",
+        "Lake Noahs entry and field movement; character geometry and shader unchanged from control.",
+        "Private UDP self-probes delivered; later self-probe uses the transport-owned native source port, exposing the next routing gap."
+      ],
+      "changes": "Host-only bounded UDP mapping metadata and reflection of a session's own mapped self-probe are now integrated. Payload bytes stay unchanged; another session/source and arbitrary native destinations are rejected. No native UDP socket or external connection is created for reflection.",
+      "validation": [
+        "test_network.py: six tests pass, including two-session mapping/receive/isolation and unchanged external-destination restrictions.",
+        "test_wire_diagnostics.cjs: mapping metadata validation, capacity, lifetime, snapshot copies and backpressure pass.",
+        "test_network_wasm.py: actual mapped self-probe receive/event/source identity for 0, 2, 10, 4097 and 65507 bytes, plus existing stream/private-UDP checks, pass."
+      ],
+      "pending": "Original-game replay of mapped self-probe repair.",
+      "tools": [
+        "Wine-Assembly",
+        "Edge/Playwright",
+        "Node",
+        "Python/pefile/Capstone/zlib",
+        "Windows Get-NetUDPEndpoint",
+        "Microsoft Direct3D format documentation",
+        "Wine format implementation reference"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T17:36:50.469797+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T170055Z/review.json",
+      "result": [
+        "1471.172 seconds / 6911 presentations; no observed source mismatch or graphics error.",
+        "Original login, channel/character selection, Start Game and Lake Noahs traversal in the browser.",
+        "Two mapped 2-byte self-probes reflected through the existing transport; zero rejected datagrams. Protocol completion and wider peer traffic unverified.",
+        "Character deformation remains; no enemy hit/damage/defeat or saved progression verified.",
+        "Bounded conversion breakpoints observed no hits; absence is not evidence the path never executes."
+      ],
+      "correction": "Earlier projection-only shader descriptions were incomplete: captured c4..c7 are world-view-projection. Face/hair source matching is verified; matching counts alone did not identify other parts.",
+      "changes": "Shared nonindexed fixed vertex blending and MaxVertexBlendMatrices=4; indexed fixed-blend capability remains zero.",
+      "validation": [
+        "Seven original x86 D3DX conversions match native metadata and output vertex bytes exactly without a controlled capability override.",
+        "48 software and 96 WebGL1/2 pixel comparisons pass against 12 native D3D9 cases. Interior channels differ by at most 1/255; software coverage matches exactly; WebGL differs at 0-2 edge pixels per 32x32 case.",
+        "Full runtime build gates pass."
+      ],
+      "pending": "Integrated original-game replay of vertex-blend capability repair.",
+      "tools": [
+        "Wine-Assembly",
+        "WATX",
+        "Node",
+        "Python/ctypes",
+        "Capstone",
+        "Edge/Playwright",
+        "Microsoft Direct3D documentation"
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T19:12:43.068462+00:00",
+      "capture": "20261008T173745Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T173745Z/review.json",
+      "result": "Four observed original indexed conversions return S_OK with influences 1,2,1,1 and valid FVF. A diagnostic screenshot timeout ends the run at 849.188 seconds / 4402 presentations before a character preview.",
+      "changes": "Screenshot timeout becomes a recorded nonfatal observation. Actual pending-font timeout/recovery check passes; later 175734Z survives two timeouts.",
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-08T19:12:43.068462+00:00",
+      "capture": "20261008T175734Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T175734Z/review.json",
+      "result": [
+        "Original login, channel/character selection, Start Game and Lake Noahs in the same browser Wasm/WebGL application.",
+        "Assembled character preview and inspected movement/jump/combat poses after the vertex-blend capability repair.",
+        "Complete 55-draw character-select observation includes seven programmable character draws; six shaders contain relative bone-constant reads.",
+        "Normal browser movement and jump inputs traverse the field.",
+        "Quick Clear displays 800 EXP/1500 currency for an already-completed Tobu quest; reward acceptance advances the displayed character from level 3 to 4 and presents the next Tree of El quest.",
+        "Original dungeon map, F8 queue, confirmation, countdown and loading enter Tree of El (Normal).",
+        "Z attacks show 626 damage and a three-hit combo; continued Z/X input shows Mars defeat and ED +16 displays.",
+        "A skill input is followed by MP reduction, a cooldown and drops; the exact skill animation and per-drop accounting are not established.",
+        "Enemy attacks reduce player HP and knock the character down; subsequent attack input continues.",
+        "Read-only database observation after disconnect retains level 4, EXP 4600, currency 1783, versus EXP 4531/currency 1639 at the earlier query.",
+        "Final transport reports eight private self-datagrams, 32 mapped self-probes, zero rejected datagrams and no queued bytes.",
+        "Two screenshot timeouts are recorded without terminating this run; later images and final evidence succeed."
+      ],
+      "limits": [
+        "Full original-game functionality and behavioral/pixel parity remain incomplete.",
+        "Dungeon completion, boss behavior, death/revival and broader combat/content remain unverified.",
+        "Text is visibly clipped; font diagnostics and the later repair require a separate integrated replay.",
+        "Terrain visibility, full animation correctness, audio and usable performance remain unverified.",
+        "The existing backend and database remain native; their browser-native port is incomplete.",
+        "Only one existing account/character and this bounded progression path were exercised.",
+        "No independent pre-reward database balance; the displayed 800 EXP/1500 reward is not a measured database delta.",
+        "No packet synthesis. UDP self-probes still repeat; counters do not prove protocol completion or multiplayer parity.",
+        "Shared-memory diagnostic reads are not atomic. Breakpoints and concurrent reference tools affected timing; presentation totals are not a benchmark."
+      ],
+      "agentsSpawned": [],
+      "changes": "Post-capture DOM click hold supports 0..5000ms (default80), validates the whole batch and records actual button/hold parameters. Launcher status now distinguishes bounded observed gameplay from incomplete full parity."
+    },
+    {
+      "at": "2026-10-08T19:45:36.975252+00:00",
+      "capture": "20261008T191425Z",
+      "contributor": "Codex /root",
+      "agentsSpawned": [],
+      "evidence": "../reports/browser/20261008T191425Z/review.json",
+      "result": [
+        "Original login, server/channel selection, character selection and Lake Noahs entry in the single Wasm/WebGL application.",
+        "TheseusOne reloads at level 4 and remains assembled in preview and the world.",
+        "Registered Tahoma glyph cache observed live: S width 7, cell height 16. The registered-outline versus bitmap-alias repair is exercised by the original font path.",
+        "Read-only live sound-manager observation: FMOD system allocated, enabled byte zero, channel manager absent. Sound initialization remains incomplete."
+      ],
+      "limits": [
+        "Full functionality and behavioral/pixel parity remain incomplete.",
+        "Small HUD, channel and quest text remain visibly degraded; the alias repair does not resolve all text defects.",
+        "Native comparison screenshots use different game dimensions (1280x720 versus browser 800x600 backbuffer), so they are not pixel comparisons.",
+        "Audio output, general animation correctness, terrain visibility and usable performance remain unverified.",
+        "Native backend/database are still required. Dungeon completion, boss, death/revival and wider multiplayer/content remain unverified.",
+        "One font breakpoint changed scheduling; diagnostic shared-memory reads are not atomic. Frame totals are not a performance benchmark.",
+        "Two 5-second screenshot timeouts occurred; later captures and final collection succeeded."
+      ],
+      "changes": "Registered outline font takes precedence over a different bitmap alias; exact bitmap families retain the original mapper. Small font metrics regression and 48 atlas cases verified; full text parity remains incomplete."
+    },
+    {
+      "at": "2026-10-08T20:05:04.407875+00:00",
+      "capture": "20261008T194707Z",
+      "contributor": "Codex /root",
+      "agentsSpawned": [],
+      "evidence": "../reports/browser/20261008T194707Z/review.json",
+      "result": [
+        "Original login, server/channel selection and assembled level-4 TheseusOne preview in the same Wasm/WebGL application.",
+        "Original sound-manager vtable 0x332d2ed8 at 0x35a074f4: enabled byte at +0x30 is 1, channel manager at +0x38 is 0x35b05464, FMOD system at +0x3c is 0x35990f44. Before enumeration repair, enabled byte and channel manager were zero.",
+        "Original FMOD_System_PlaySound entry 0x33e15cb0 observed in guest worker 0, called from original return address 0x32911807.",
+        "Browser Web Audio context runs at 48000 Hz with one playing stereo 16-bit buffer. Repeated shared-memory observations contain changing nonzero PCM.",
+        "Last saved progress has no graphics lastError; original code was executing when collection was interrupted."
+      ],
+      "limits": [
+        "Full browser-native port and original behavior/pixel parity remain incomplete; backend/database still native.",
+        "Daemon restart stopped capture and local web server. No final result.json, final source-response audit or clean browser teardown was collected.",
+        "World entry was not replayed on this audio build before interruption. Earlier world/combat evidence belongs to earlier explicitly identified builds.",
+        "Nonzero shared PCM and a running Web Audio context do not establish audible quality, timing, correct music/effects, or final output waveform parity.",
+        "Small text remains degraded. Native Windows selected installed Tahoma (SHA b890858df485549d20fcb0a2c519dffe9c5c155d16b55e0b9252d6e66db555e5), not the supplied file, despite private registration. Earlier Tahoma atlas comparisons are platform behavior, not same-font conformance.",
+        "Terrain visibility, general animation accuracy, usable performance, dungeon completion, boss/death/revival and wider multiplayer/content remain unverified.",
+        "Read-only shared-memory observations are not atomic. Bounded breakpoints and concurrent reference tests altered scheduling; frame totals are not a benchmark."
+      ],
+      "changes": "DirectSound A/W enumerates default plus actual virtual Web Audio endpoint. UTF-16, cancellation, reentrant stack-owned callbacks, null-callback error, ordinal3 and Create8 endpoint identity implemented in shared runtime. Tests and full build passed. Browser capture interrupted externally."
+    },
+    {
+      "at": "2026-10-08T20:36:09.232299+00:00",
+      "capture": "20261008T202022Z",
+      "contributor": "Codex /root",
+      "agentsSpawned": [],
+      "evidence": "../reports/browser/20261008T202022Z/review.json",
+      "changes": "Shared hint size-state reset, actual grayscale GETINFO and cache separation, SHZ zone movement; read-only actual AudioBuffer observer. Bounded font tests and full build pass.",
+      "result": [
+        "Original login and server/channel selection rendered in the same browser-native Wasm/WebGL application.",
+        "Original FMOD manager is enabled, with channel manager allocated, on the font-state/SHZ build.",
+        "Changing nonzero shared stereo16 PCM is decoded into the active AudioBufferSource buffer: both channels contain finite nonzero Float32 values in a running 48000Hz Web Audio context.",
+        "Observed JavaScript response hashes match the prepared manifest; final graphics lastError is null."
+      ],
+      "limits": [
+        "Full port incomplete; original backend remains native.",
+        "My invalid optional font-probe offset0x1000a0 exceeded the unchanged0x100000 worker limit and caused capture.py to finalize at805.203seconds. This is a harness/request error, not an observed game crash.",
+        "No character preview or world entry was reached on this build before capture ended.",
+        "Final browser screenshot and one periodic screenshot timed out; diagnostics and final result were collected.",
+        "Audible quality, timing and full waveform fidelity remain unverified.",
+        "Small in-game text remains visibly defective despite bounded native-reference font improvement. Full visual, gameplay and performance parity remain unverified."
+      ]
+    },
+    {
+      "at": "2026-10-08T21:24:13.620709+00:00",
+      "capture": "20261008T203622Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T203622Z/review.json",
+      "result": [
+        "Original login, server/channel selection, assembled level-4 character preview, Start Game and Lake Noahs in the same Wasm/WebGL application.",
+        "Field movement changes the character position from the signpost to the stairs. This run does not separately verify an airborne jump pose.",
+        "The original world map opens and closes, followed by the original dungeon map, Tree of El selection, F8 queue, confirmation, countdown and Tree of El (Normal) entry.",
+        "Browser Z attacks display a three-hit combo and damaged enemy health. A skill input is followed by reduced MP, a cooldown, a dropped bag and a changed EXP bar; exact damage, reward accounting and skill animation are not established.",
+        "Changing nonzero stereo PCM and nonzero samples in active submitted Web Audio buffers are observed during login, field and dungeon execution, with running audio context and no sampled nonfinite values.",
+        "All 124 frozen runtime source files and 105 integration source files match their manifest hashes and the working files at review; the observed JavaScript response audit also reports no mismatch."
+      ],
+      "limits": [
+        "Full original-game functionality and behavioral/rendering parity remain incomplete.",
+        "The run stops at the existing StretchRect implementation when the original client requests D3DTEXF_LINEAR. Surface dimensions and formats were not captured before memory teardown.",
+        "Dungeon completion, boss combat and death/revival are not verified. The final image has an empty-looking HP bar but no completed death or revival UI.",
+        "Small text remains defective; antialiasing and positive-height font-cell layout still need repair. The expanded native font experiments are references, not production fixes.",
+        "Audio quality, waveform fidelity, timing, complete animation/terrain rendering and usable performance remain unverified.",
+        "The server binaries and database remain native backend dependencies. Broader multiplayer and complete economy/persistence behavior remain unverified.",
+        "Requests 25 through 29 mistakenly used actions instead of input, producing screenshots without controls. Request 39 was written after capture had stopped and was never consumed.",
+        "The eight identical adjacent mouse breakpoints in request21 sampled one instruction visit repeatedly, not eight input updates. Shared memory observations are non-atomic and diagnostic work changes timing.",
+        "Final runtime graphics/audio memory was already released; last live samples are the relevant observations. The presentation count is not a performance benchmark."
+      ],
+      "agentsSpawned": [],
+      "changes": "This is the frozen replay of the prior font-instruction/SHZ and DirectSound enumeration repairs, with breakpoint-request error recovery. No runtime mutation during capture."
+    },
+    {
+      "at": "2026-10-08T21:41:37.638729+00:00",
+      "contributor": "Codex /root",
+      "agentsSpawned": [],
+      "evidence": "../reports/browser/stretch-20261008T214137Z/validation.json",
+      "changes": [
+        "Replaced whole-surface-only StretchRect with one ordered color COPY operation in the canonical WAT/software/WebGL runtime.",
+        "Implemented native reference cases and integrated API/render tests; WebGL copies remain on the GPU.",
+        "Corrected an existing adapter test that supplied invalid SwapEffect=0; production validation unchanged."
+      ],
+      "result": {
+        "fullBuild": "PASS all gates, 4525 APIs; WAT artifacts built from canonical source closure",
+        "nativeWasm": {
+          "softwareDirect": 52,
+          "softwareWorker": 52,
+          "parkedWorkerCopies": 30,
+          "pointPixels": "exact",
+          "maximumLinearChannelDifference": 1,
+          "HRESULTs": "exact",
+          "sixArgumentStdcall": "pass",
+          "errorPropagation": "pass"
+        },
+        "nativeWebGL": {
+          "webgl1Direct": 30,
+          "webgl2Direct": 30,
+          "sharedRenderWorker": 30,
+          "maximumLinearChannelDifference": 1,
+          "renderedSource": "pass",
+          "boundDestination": "pass",
+          "sampledTextureInvalidation": "pass",
+          "copyWithoutCPUReadback": "pass",
+          "browser": "154.0.4258.62"
+        },
+        "regressions": {
+          "colorSurfacesDirectWorker": "PASS",
+          "sparseColorTransfers": 5,
+          "WebGLBackbufferQueues": "PASS WebGL1/2 and shared worker",
+          "adapterAndCaps": "PASS after correcting pre-existing zero SwapEffect in test fixture to valid DISCARD"
+        }
+      },
+      "limits": [
+        "Full original-client replay pending.",
+        "Driver behavior measured locally on NVIDIA GTX 1060 through 64-bit Windows D3D9; broad driver parity not established.",
+        "Linear rounding differs by at most one in the recorded cases; XRGB unused stored byte is not compared.",
+        "Depth/stencil and ordinary CPU-authoritative texture sources still trap.",
+        "Native servers, text rendering, full gameplay/audio/performance acceptance remain incomplete."
+      ]
+    },
+    {
+      "at": "2026-10-08T22:19:07.999701+00:00",
+      "capture": "20261008T214146Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T214146Z/review.json",
+      "result": [
+        "Original login, channel selection, level-4 character preview and Lake Noah field entry execute on the StretchRect candidate in the same browser application.",
+        "The original Tree of El map, party-queue confirmation, countdown and loading screen appear. This run does not reach dungeon combat.",
+        "The native GameServer logs reject dungeon loading because the user remains in S_FIELD_MAP instead of the required S_ROOM. The browser subsequently shows the field HUD and sky without terrain.",
+        "Eight distinct mouse-update visits observe two released and six held left-button states at client point (385,319). The sampled click reaches original DirectInput state and closes the dialog; subsequent UI behavior remains inconsistent.",
+        "Nonzero PCM and active stereo Web Audio buffers remain observed; the context runs and no graphics backend error is reported.",
+        "All 234 frozen runtime/integration files match their recorded hashes and the working files before the next edit."
+      ],
+      "limits": [
+        "Full original-game functionality and behavioral/rendering parity remain incomplete.",
+        "The repaired StretchRect call site was armed but not reached. Native-reference and browser-backend tests pass separately; an original-game replay past the former trap remains required.",
+        "The cause of the dungeon room/field state mismatch is unresolved. Duplicate confirmation inputs, ordering and timing have not been isolated. Server checks were not bypassed.",
+        "The alternative current-members route was not reached after the state mismatch. Later modal/system-menu recovery did not restore the field scene.",
+        "Small text, positive-height font-cell layout and antialiasing remain defective. Font measurements are not yet production fixes.",
+        "Mouse timing, animation, full terrain rendering, audio fidelity and usable performance remain unverified. Diagnostic breakpoints alter scheduling.",
+        "Native server binaries and database remain backend dependencies. Multiplayer, complete economy/persistence, dungeon completion and death/revival remain unverified.",
+        "Screenshot requests 18 and 25 timed out, as did two automatic screenshots. Presentation counts are not performance benchmarks."
+      ],
+      "agentsSpawned": [],
+      "changes": "Frozen replay of the integrated filtered StretchRect repair; no production runtime changes during capture."
+    },
+    {
+      "at": "2026-10-08T22:43:27.382538+00:00",
+      "contributor": "Codex /root",
+      "agentsSpawned": [],
+      "evidence": "../reports/browser/font-cells-20261008T222932Z/validation.json",
+      "changes": [
+        "NT logical font cells and 26.6 linear advances",
+        "bounded hdmx device advances",
+        "NT horizontal contours and square-boundary dropout/stub tests",
+        "separate logical-cell and NT/Win98 bitmap cache identities"
+      ],
+      "result": {
+        "broadCases": 2470,
+        "extentMatchesBefore": 1747,
+        "extentMatchesAfter": 2470,
+        "pixelMatchesBefore": 1072,
+        "pixelMatchesAfter": 2260,
+        "priorPixelMatchesLost": 0,
+        "focusedCases": 148,
+        "focusedPixelMatches": 136,
+        "focusedExtentAndCellMetrics": "pass",
+        "malformedHdmxCases": 9,
+        "build": "pass",
+        "regressions": [
+          {
+            "command": [
+              "node",
+              "theseus/tools/wine-assembly/test/test-wat-gdi-default-bitmap-font.js"
+            ],
+            "exitCode": 0,
+            "seconds": 10.860000000000582,
+            "log": "test-wat-gdi-default-bitmap-font-checked.log"
+          },
+          {
+            "command": [
+              "node",
+              "theseus/tools/wine-assembly/test/test-wat-font-resource.js"
+            ],
+            "exitCode": 0,
+            "seconds": 11.031000000002678,
+            "log": "test-wat-font-resource-checked.log"
+          },
+          {
+            "command": [
+              "node",
+              "theseus/tools/wine-assembly/test/test-wat-truetype-hinting.js"
+            ],
+            "exitCode": 0,
+            "seconds": 10.452999999994063,
+            "log": "test-wat-truetype-hinting-checked.log"
+          },
+          {
+            "command": [
+              "node",
+              "theseus/browser/test_font_cells.cjs"
+            ],
+            "exitCode": 0,
+            "seconds": 11.187999999994645,
+            "log": "test_font_cells-checked.log"
+          }
+        ],
+        "registrationAndModeSHZChecks": "pass; first two entries in regressions.json"
+      },
+      "limits": [
+        "Full original-game functionality and behavioral/rendering parity remain incomplete.",
+        "Original-game UI and dungeon replay on this font build remains pending.",
+        "210 of 2470 broad sampled bitmaps still differ. Antialiasing, complete TEXTMETRIC fields and other glyph/font paths are not established.",
+        "test-wat-truetype-metrics.js fails the Liberation Sans o bitmap both before and after this repair; the local native NT bitmap differs from both. The golden expectation remains unchanged.",
+        "The optional original Win98 Arial font oracle is unavailable locally. Existing Win98 raster semantics are retained separately.",
+        "The previous dungeon replay remains blocked by native server S_FIELD_MAP versus S_ROOM; its cause is unresolved. The repaired StretchRect game call site still requires replay.",
+        "Native server binaries and database remain dependencies; complete gameplay, multiplayer, economy, audio, terrain and performance acceptance is outstanding."
+      ]
+    },
+    {
+      "at": "2026-10-08T23:49:06.983922+00:00",
+      "capture": "20261008T224327Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T224327Z/review.json",
+      "result": [
+        "Original login, channel selection, level-4 character preview, Lake Noah field, skill window/tutorial and Tree of El map run in the same browser application on the font-cell candidate.",
+        "Three current-members dungeon entries fail with pending instruction probes. Clearing all probes is followed by successful dungeon entry on the same build with unchanged server settings.",
+        "Browser movement reaches original dungeon enemies. Attacks produce six-hit and twelve-hit combos, damage and enemy removal; skill input reduces MP, displays a cooldown, and is followed by dropped currency collection.",
+        "Read-only original-backend queries before login and after disconnection show EXP 4621 to 4663 and GamePoint 1831 to 1927 for the same level-4 unit.",
+        "The original filtered StretchRect call is reached but traps at the guest RPC opcode boundary before its return. This run proves the missing transport connection, not success of the repair.",
+        "Nonzero PCM and active stereo Web Audio buffers remain observed. Browser render presentations total 8465 before the compatibility trap.",
+        "All 236 frozen runtime/integration source files match recorded hashes; the working files were also audited before the next repair."
+      ],
+      "limits": [
+        "The complete browser-native port and original behavioral/rendering parity remain incomplete.",
+        "StretchRect return is not verified in this run. A later worker-RPC repair requires a new integrated replay.",
+        "Probe overhead is a supported contributor to loading failures, not a controlled benchmark or sole-cause proof. Repeated attempts warm assets and change session state; pending breakpoints disable optimized dispatch.",
+        "Native server executables, local byte transport and the database remain dependencies. Multiplayer, full economy/items, boss encounters, dungeon completion and death/revival remain unverified.",
+        "Remaining font bitmap differences, antialiasing, terrain/rendering parity, audio fidelity and usable performance remain open. Presentation counts are not FPS benchmarks.",
+        "Request39 was rejected before input due to an invalid wait field. Request49 was never consumed. 4 screenshot requests/automatic captures timed out; see result.json for the exact records.",
+        "No native game client, guest game-state writes, database edits, server timeout changes, external infrastructure or subagents were used."
+      ],
+      "agentsSpawned": [],
+      "changes": "Frozen NT font-cell replay; integrated combat discovers the missing StretchRect guest RPC route."
+    },
+    {
+      "at": "2026-10-08T23:51:42.035092+00:00",
+      "stage": "StretchRect guest RPC repair",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/stretch-rpc-20261008T234711Z/validation.json",
+      "result": [
+        "Expanded native-reference regression reproduces the same worker opcode rejection as replay224327Z before the fix.",
+        "The guest broker now routes 0x30017 to the existing D3D9 bridge. All 52 cases pass through four import/render-consumer combinations; full build and RPC error/nested-wait checks pass."
+      ],
+      "limits": [
+        "Guest RPC regression runs in-process with actual software render workers. An actual browser guest-worker replay past the call remains required.",
+        "No new renderer algorithm, guest gameplay logic, source assets or server settings changed."
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-09T00:27:46.613513+00:00",
+      "capture": "20261008T235200Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261008T235200Z/review.json",
+      "result": [
+        "Original login, channel selection, level-4 preview, Lake Noah and Tree of El Normal execute in the integrated browser. Dungeon entry succeeds on the first current-members attempt, without a loading breakpoint.",
+        "Request24 movement and Z input produce a visible three-hit combo, damage and enemy health loss.",
+        "The original filtered StretchRect call returns EAX=0 at 0x3291c09f in guest worker0; the former opcode0x30017 transport failure is passed. Full copy-image fidelity is not established by HRESULT alone.",
+        "The original UI subsequently displays Moving to the Dungeon Result Window with an empty-looking HP bar; the server changes from ROOM to FIELD. This is consistent with defeat, but complete death/revival and the result screen are unverified.",
+        "7473 presentations are recorded; nonzero changing PCM and submitted Web Audio buffers, plus network traffic, continue while rendering waits.",
+        "All 236 frozen sources, both modules and runtime patch match; current sources were audited before diagnostic changes. Database fields sampled before login and after disconnect are unchanged."
+      ],
+      "limits": [
+        "Full port acceptance, original behavioral/visual/audio parity and usable performance remain incomplete.",
+        "The run is ended by capture request29 after a sustained render wait. It reports executing, not a compatibility trap or successful gameplay completion.",
+        "The observed DrawPrimitive wait has no captured queue token or pending payload in this run. Root cause requires further observation.",
+        "Instruction probing was armed only after dungeon terrain appeared and later cleared. The probe changes scheduling and the observations are not atomic.",
+        "The original backend and database remain native. Dungeon completion, bosses, full death/revival, multiplayer and broad economy/item behavior remain unverified.",
+        "Fonts and antialiasing remain imperfect. Screenshot timeouts and presentation counts do not establish rendering fidelity or FPS.",
+        "No native original client, guest-state edits, server-setting changes, external infrastructure or subagents were used."
+      ],
+      "agentsSpawned": [],
+      "changes": "Original-game verification of the repaired worker copy route; new DrawPrimitive completion stall recorded."
+    },
+    {
+      "at": "2026-10-09T00:58:00.916667+00:00",
+      "capture": "20261009T002829Z",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261009T002829Z/review.json",
+      "result": [
+        "Original login, channel selection, assembled level-4 character preview and first Ruben Village frame execute in the same browser runtime. No dungeon or new combat is claimed in this replay.",
+        "Read-only queue observations capture received skinning draws 79554, 109872 and 109877. Their long waits eventually retire and rendering resumes. They are not permanent deadlocks.",
+        "Original VS1.1 IR contains 14/28 relative constant reads. The control translation expands each lookup into 96 comparisons. GPU process CPU samples are near one busy core during the waits; shader compilation remains a hypothesis pending controlled measurement.",
+        "Capture ends by request22 after 1332.422 seconds and 3007 presentations (3005 GPU, 2 GDI), reporting executing without a trap.",
+        "All 236 source identities, both modules and patch match their frozen records and current files before edits. Read-only database balances are unchanged."
+      ],
+      "limits": [
+        "Full browser port acceptance, original behavioral/visual/audio parity and usable performance remain incomplete.",
+        "This replay does not reach the earlier dungeon-result transition. Whether its DrawPrimitive wait has the same cause is unverified.",
+        "Queue observations are asynchronous and process sampling affects timing. Pending payload capture omits textures; it is not a complete draw replay.",
+        "Original backend and database still execute natively. Dungeon completion, bosses, full death/revival, multiplayer and broad economy/item behavior remain unverified.",
+        "No native original game client, guest-state edits, database writes, server-setting changes, external infrastructure or subagents were used."
+      ],
+      "agentsSpawned": [],
+      "changes": "Read-only rendering queue diagnostics connect long received-command waits to captured original skinning shaders."
+    },
+    {
+      "at": "2026-10-09T01:10:58.733257+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/relative-uniforms-20261009T005501Z/validation.json",
+      "result": [
+        "Compact relative vertex uniform arrays and original-register uploads are integrated in the shared production renderer; original x86 game code and assets are unchanged.",
+        "220 new WebGL1/2 production/helper/outline checks pass, including DEF holes and all-DEF banks, updates, nonnumeric addresses, 96/256-register bounds, and point/wireframe uploads.",
+        "Three captured original VS1.1 shaders preserve 21368 output float words across1284 vertices bit-for-bit against the preserved scalar control. Compile/link falls from54.321/160.034/157.900s to0.174/0.343/0.358s on this Edge/ANGLE/NVIDIA driver.",
+        "Existing shader decoding, private addressing/loop/call, production shader/outline/link tests, canonical build and runtime identity checks pass."
+      ],
+      "limits": [
+        "Original-game replay on this candidate is pending; no full port acceptance or full scene/texture parity is claimed.",
+        "Transform feedback adds output capture and omits textures/rasterization. Driver caches are uncontrolled; timings are not cold-cache or gameplay FPS claims.",
+        "Private VS2 nonrelative matrix strict parity fails red83 versus84 on byte-identical candidate/control source. The full control suite times out; only the isolated first failure is baselined. Original assertions remain unchanged.",
+        "Initial baseline harness lacked its IR dependency and the new raw helper test initially used an opaque canvas; both harness errors and corrected results are preserved.",
+        "Backend/database remain native; broader game, audio, font, multiplayer and performance parity remain incomplete."
+      ],
+      "agentsSpawned": [],
+      "changes": "Shared relative vertex uniform lowering and production uploads; original instructions retained."
+    },
+    {
+      "at": "2026-10-09T02:18:04.915219+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261009T011111Z/review.json",
+      "result": [
+        "Original login, channel and character selection, Ruben Village, three Tree of El Normal entries, combat, skills, defeat, reward and town-return flows execute in one browser process on the compact-uniform build.",
+        "The first run displays FAILED at level5 and a reward of 2120 EXP / 50 ED. The second displays 2322 EXP / 54 ED. The third displays zero EXP / zero ED. No dungeon clear or boss victory is claimed.",
+        "Read-only original-backend queries before login and after final character selection/disconnect verify level4 to5, EXP4663 to9105 and GamePoint1927 to2031. The aggregate +4442 EXP / +104 ED equals the first two displayed rewards. Second-run gains appear in the sampled database only after the later character-selection transition.",
+        "First town return omits terrain while actors, UI and movement continue. Character selection/re-entry restores terrain; the second and third returns render town terrain. The first failure remains unresolved.",
+        "The broken complete frame has163 draws; the restored frame has277. A 23-instruction terrain vertex shader accounts for113 restored-frame draws /7366 triangles and is absent from the broken frame. This is evidence of an omitted draw pass, not proof of the upstream cause.",
+        "The omitted terrain shader generates byte-identical GLSL and the same uniform names with preserved control and candidate translators; it has no relative uniform array. A direct translation change for this shader is excluded, while other state/timing effects remain possible.",
+        "A healthy village registry snapshot contains87 .Y resources, all state2 with nonzero mesh pointers. A brief read-only breakpoint in the second loaded dungeon observes original .Y rendering at0x3291ae00; it is cleared before the result/return transition.",
+        "The final sample has nonzero stereo PCM and submitted Web Audio buffers with a running AudioContext. Audible fidelity is unverified.",
+        "Capture finishes by request68 at3861.265 seconds /7283 presentations (7281 GPU,2 GDI), still executing without a runtime trap. All237 frozen source identities, both modules and the patch match the working copies before edits."
+      ],
+      "limits": [
+        "The full browser-native port and original behavioral, visual, audio and performance parity remain incomplete. The original server and database still run natively.",
+        "Intermittent missing town terrain remains unresolved. No source repair is inferred from the two later successful returns. The healthy registry is not evidence of the broken-state registry.",
+        "Only the first run levels up. The third run earns no EXP, so a possible relation between level-up and the missing terrain has not been tested.",
+        "Dungeon clears, bosses, revival within a dungeon, broader multiplayer and economy/item behavior remain unverified.",
+        "Draw captures omit texture pixels; asynchronous memory/queue observations are not atomic. Draw capture and the brief second-dungeon breakpoint change timing. Presentation totals are not performance benchmarks.",
+        "The capture records54 handled Lua C++ throws: two BattleFieldBuffTemplet.lua syntax errors already matched to original malformed bytecode and52 errors from @/work/source_29.lua not investigated here. No causal link to missing terrain is established.",
+        "The separate relative-uniform validation retains the pre-existing private VS2 red83/84 mismatch and full-control-suite timeout. Font raster differences and the pre-existing Liberation Sans golden failure remain open."
+      ],
+      "agentsSpawned": [],
+      "changes": "Integrated replay of the compact relative-uniform renderer; original defeat/reward/return and persistence verified within stated scope. Intermittent terrain omission investigated without a speculative repair."
+    },
+    {
+      "at": "2026-10-09T03:38:08.432031+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261009T022355Z/review.json",
+      "result": [
+        "Original login/channel/character selection, Ruben Village, skill-tree tutorial UI, Tree of El Normal entry, combat, skills, drops and ED pickup execute in one browser session.",
+        "The first area reaches zero remaining monsters; the original exit barrier is broken and the second area loads, displaying the first area as Clear. This is not a dungeon or boss clear.",
+        "Second-area combat ends at zero HP and a reward screen showing 17471 EXP / 347 ED. Read-only native-backend rows confirm level5 to8, EXP9105 to26576 and GamePoint2031 to2378.",
+        "The first town return again lacks terrain while actors and UI render. It remains broken in the final image. Healthy registry has87 .Y resources with state2/nonzero meshes; broken registry has76 unready RUBEN .Y resources with state1/null meshes, and11 other ready .Y resources. Object addresses differ; these are not proven to be the same instances.",
+        "The resource manager is dynamically allocated: renderer=[0x33471d38], manager=[renderer+0x1b4]. This corrects the earlier inline/static-manager interpretation. Its three queue counts are0,85,7 in broken-town observations.",
+        "The resource worker handle0xe1000/slot1 is logged as exited at EIP0. Retained registers and stack are not a live blocked thread. The retained stack passes through the original .XET loader and Lua string interning with Lua state0.",
+        "Original PE static TLS index0 has a12-byte zero template. Main TLS vector contains a block; all10 other observed registered vectors have slot0=0. Both runtime thread creation paths omit static PE TLS initialization. The original worker initialization and .XET loader access their Lua wrapper through FS:[0x2c][index0]. This establishes a runtime defect; a repaired integrated replay is still required to establish its effect on terrain.",
+        "Effect Begin probes return success for8 paired calls on ready marker/MP resources; they do not reach the unready town terrain. Worker-loop probes have zero hits. All breakpoints are removed before capture completion.",
+        "Replay ends by request57 after3700.922 seconds and6412 presentations. All237 frozen source identities, both modules and the patch match before edits."
+      ],
+      "limits": [
+        "Full browser-native acceptance and behavioral, visual, audio and performance parity remain incomplete; original servers/database still run natively.",
+        "Missing first-return terrain is reproduced and its loader investigated, but no repair is tested in this capture. The exact instruction leading the resource worker to exit is not observed.",
+        "A completely white combat frame is observed at request038; rendering resumes at039. Native parity of that frame is unverified. CtrlLeft does not visibly consume an awakening orb.",
+        "Dungeon/boss victory, revival, broad multiplayer, item/economy behavior and broader content remain unverified. Reward item icons are visible but names are not established.",
+        "Asynchronous resource/TLS/stack observations are not atomic; registry may retain exited threads and allocations may be reused. Vector-to-thread mapping is not established. Current resource at a retained pointer is not proof of the original failing resource.",
+        "Breakpoints and diagnostics affect timing; presentation counts are not a performance benchmark. Existing font/VS2 golden differences remain open."
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-09T04:17:45.669759+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261009T033829Z/review.json",
+      "result": [
+        "Fresh original-client browser session reaches login, channel menu and assembled level8 TheseusOne character selection on the executable-TLS repair.",
+        "Startup read-only traversal observes main and three worker vectors with distinct nonzero static TLS blocks. One worker block contains the original Lua wrapper with a nonzero Lua-state pointer, where the control had no block. Exact registry-vector to thread mapping is not established.",
+        "Original UI input requests world entry, but the client stops before Ruben Village. Worker10/tid5 thread initialization reaches msvcrt.dll at0x351ba000 with DLL_THREAD_ATTACH reason2, halt4 and yield9 (critical-section wait). Synchronous callDllMain treats this blocking state as failed initialization and restores the interrupted frame.",
+        "The failure is logged at03:57:43.697Z, followed by worker7 unreachable and transport teardown. Capture ends stopped-incomplete at1150.984 seconds /6497 presentations. All237 frozen sources, both modules and patch match.",
+        "A repeated channel click opens character creation after the menu changes. Back returns to the existing level8 character; no character creation is submitted."
+      ],
+      "limits": [
+        "Terrain-return repair is unverified: this run never reaches the village or dungeon. The preceding missing-terrain failure remains open despite confirmed TLS initialization.",
+        "The critical-section address/owner was not captured before memory teardown. Why contention occurs on this particular run is unverified; do not attribute it exclusively to the TLS change.",
+        "The worker7 unreachable follows the spawn failure; it is not established as an independent root cause.",
+        "Capture request21 times out after the session has already ended; its screenshot is absent. Request4 used an incorrectly converted pointer and is excluded from Lua-state evidence.",
+        "Full port acceptance, DLL static TLS/callback behavior, visual/audio/performance parity and broad gameplay remain incomplete. Servers/database remain native."
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-09T05:02:50.659503+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261009T041843Z/review.json",
+      "result": [
+        "Fresh original-client browser session reaches login, existing level8 character selection and Ruben Village on executable static TLS plus scheduled DLL_THREAD_ATTACH repairs. The previous village-entry startup failure does not occur in this replay.",
+        "The same session enters Tree of El Normal, clears the first area, breaks its attack barrier, loads the second area, performs original combat/skills and ED pickups, then reaches defeat and the original reward screen. This is not a dungeon or boss clear.",
+        "Reward screenshot request-041.png shows 7372 EXP and 138 ED. Read-only isolated database rows exactly match both increments: level8 to9, Exp26576 to33948, GamePoint2378 to2516. Values persist after capture closure.",
+        "The FIRST return to Ruben Village displays terrain and buildings at request-042.png; movement continues at request-043.png. The asynchronous registry traversal observes all87 .Y resources ready with nonzero mesh pointers, including all76 RUBEN .Y resources. The control first return had those76 RUBEN resources in state1 with null meshes.",
+        "Initial village and first-return registries have the same87 ready .Y resources by name, but object-instance continuity is not asserted. Traversal excludes one and three unstable observations respectively.",
+        "Eleven registered TLS vectors have nonzero slot0 blocks after the return. The observed original worker Lua-wrapper pointer at block+4 is retained from startup. Exact registry-vector to live-thread mapping remains unverified.",
+        "A generated startup thunk completion word is observed set to1 during startup. Synthetic guest-x86 regressions separately prove a contended callback resumes under the scheduler; contention in this original-game run was not specifically captured.",
+        "Capture is intentionally closed while executing after2461.516 seconds and5191 presentations. All237 frozen source identities, both Wasm modules and runtime patch match before edits. No worker exit or fatal loader failure appears in the captured console records."
+      ],
+      "limits": [
+        "This is one passing first-return replay, not proof of all transitions or full game parity. Main executable/DLL behavior continues through the shared browser runtime; native server binaries and SQL remain in use.",
+        "DLL static TLS remains incomplete: mapped MFC42.dll and msvcrt.dll both have index0, colliding with the executable. Original MFC code can access the same block offsets; a colliding write was not observed executing and is not established as this terrain failure cause.",
+        "Shared loader-lock serialization across process-load, detach and thread-attach, TLS callbacks, broad content/multiplayer, performance and visual/audio parity remain incomplete.",
+        "Two all-white combat captures (request-026.png and request-029.png) recover in later captures; parity with native behavior is unverified. CtrlLeft did not visibly consume an awakening orb. The black/purple aura cause is not established.",
+        "A delayed Dungeon click followed by K precedes the map opening; this does not establish which action opened it or that the tutorial blocked the click.",
+        "Request25 is rejected for68 actions exceeding the64-action bound; none execute. Corrected input follows. No execution breakpoints are used in this replay.",
+        "A font bundle404 and handled original Lua longjmp error records are retained. They are not erased or counted as fatal runtime failures; their remaining behavior/parity implications are unverified."
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-09T05:33:21.690847+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261009T051337Z/review.json",
+      "result": [
+        "The integrated browser executes the original client through login, channel selection, the existing level9 character, and initial Ruben Village. Terrain, buildings, character and original HUD are visible. The previous DLL_THREAD_ATTACH world-entry failure is not observed.",
+        "Original EXE, MFC42.dll and msvcrt.dll have distinct loader-assigned TLS indices0,1,2. Startup DLL blocks match original mapped image templates, including initialized high-bit values; original executable Lua wrapper/state pointers remain present.",
+        "Seven registry vectors observed during post-login loading contain21 distinct nonzero blocks in slots0..2. The three newly observed worker vectors have the original DLL initialization values. Vector-to-live-thread mapping remains unverified.",
+        "Initial village asynchronous resource traversal observes87 .Y resources, all state2 with nonzero mesh pointers, including all76 RUBEN .Y names. The traversal excludes two unstable observations and is not an atomic or complete object census.",
+        "The original game displays EGS_OPTION_UPDATE_ACK / No response from the server, then calls ExitProcess(-1). Capture ends stopped-incomplete at1031.969 seconds with3113 presentations. This is a failed continuation beyond initial village.",
+        "All237 frozen source identities, both Wasm modules and runtime patch match before further edits. Read-only database values remain level9, Exp33948, GamePoint2516 before login, in initial village and after exit."
+      ],
+      "limits": [
+        "Dungeon entry, combat, rewards and first-town return are NOT verified on this DLL static TLS candidate. The prior041843 replay passed first return on the preceding executable-TLS/thread-attach build; that result is not attributed to this build.",
+        "The options acknowledgement timeout and client exit require protocol/server/client diagnosis. This capture does not establish that the DLL TLS repair caused the timeout.",
+        "Request18 attempted to dismiss the dialog and click Dungeon, but the client had already exited; there is no response or input-history entry for18 and its submitter times out after45 seconds. The reviewed final image still contains the dialog. Earlier commentary that dismissal was completed was premature.",
+        "Original Lua longjmp/error records are retained. Broad content, visual/audio parity, modifier/awakening behavior, performance and multiplayer remain unverified.",
+        "Native server binaries and SQL remain in use. Shared loader serialization, nonempty TLS callbacks, over-alignment and TLS unload/reclamation remain outside the verified repair scope."
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-09T06:38:59.257750+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261009T053844Z/review.json",
+      "result": [
+        "The unchanged DLL static TLS candidate executes original login, channel selection, level9 character selection, Ruben Village, Tree of El Normal, both first areas and their breakable exits, Banthus boss-area combat, defeat/reward and the FIRST town return in one browser process.",
+        "The first area displays CLEAR at request-026.png; the second reaches zero remaining enemies at request-043.png and its exit opens. Banthus and original quest objective are visible at request-046.png. Player defeat follows; Banthus is NOT defeated and no dungeon victory is established.",
+        "Reward request-050.png displays9190 EXP and157 ED. Read-only backend values exactly match: level9 to10, Exp33948 to43138, GamePoint2516 to2673. The values remain present after browser closure.",
+        "First return request-051.png displays Ruben ground and buildings. Movement continues at request-052.png and the session remains executing in the final image. Initial and first-return registries contain the same87 ready .Y names with nonzero mesh pointers, including76 RUBEN names. Initial traversal excludes0 unstable observations; return excludes2. Addresses do not prove instance continuity.",
+        "Post-return PE metadata shows executable TLS index0, MFC42 index1 and msvcrt index2. Eleven registered vectors hold33 distinct nonzero blocks across these slots. Registry membership is not proof that every retained thread remains live.",
+        "An input batch containing ControlRight, A and X is followed by two charged awakening orbs being consumed and a57-second countdown at request-037.png. Later images show the countdown progressing. This verifies observed activation in that sequence, not a controlled comparison of left/right modifiers or the unrelated dark aura.",
+        "The Dungeon button alone opens the map between request-014.png and request-015.png. This replay has no K input before map opening, resolving that input ambiguity for this run.",
+        "Bounded original-code breakpoints observe send event573 with option bytes10,0 and AL=true, pending event574 insertion, the original574 ACK handler, removal AL=true and an empty pending list afterward. This successful instrumented exchange does not explain the preceding051337 timeout.",
+        "All237 frozen source identities, both Wasm modules and patch match the browser manifest and current files before edits. Capture ends by request58 after3454.156 seconds /5766 presentations. No ExitProcess or unreachable trap is recorded."
+      ],
+      "limits": [
+        "Full browser-native acceptance is incomplete. Original server binaries and SQL remain native; broad content, multiplayer, item/economy semantics, visual/audio parity and performance are unverified.",
+        "The preceding051337 run on the identical candidate displayed EGS_OPTION_UPDATE_ACK / No response from the server and exited. This replay used breakpoints during startup and the options exchange; armed probes disable the micro-op tier and alter scheduling. It does not resolve that failure or substitute for uninstrumented reproducibility.",
+        "First breakpoint plan has no observed hits and is cleared by request6. The corrected plan is armed by15 and cleared by18 before any dungeon input. Zero hits on the first plan do not prove a code path was absent.",
+        "All-white combat images request-019.png and request-047.png recover in later images. Text defects and54 original Lua longjmp throw records plus a font-bundle404 remain retained; their native parity implications are unresolved.",
+        "Short movement/jump inputs sometimes have no visible effect; longer holds traverse the platforms. Scheduling, original animation state and modifier handling have not been separated experimentally. Earlier unsuccessful ControlLeft observations remain historical evidence.",
+        "Nonempty TLS callbacks, over-alignment, unload/reclamation and common loader-lock synchronization with concurrent DLL loads and thread publication remain outside the verified repair scope. No direct OOM rollback test was added.",
+        "The first TLS phase helper attempt fails before issuing any guest read because the archive had not yet been copied. preserve-candidate.py then copies and verifies the same candidate as051337; the helper succeeds. No source rebuild or preparation occurs during this capture.",
+        "The static timer block subtracts a float and dispatches expired records. Live decrement values, units, timeout-handler reachability and send/receive ordering in the failed run remain unverified."
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-09T07:30:26.411765+00:00",
+      "contributor": "Codex /root",
+      "evidence": "../reports/browser/20261009T064427Z/review.json",
+      "result": [
+        "The unchanged DLL static TLS candidate executes original login, channel selection, the persisted level10 character, Ruben Village, Tree of El Normal, first-area CLEAR and its exit, second-area combat, player defeat and the FIRST town return in one browser process without execution breakpoints or pointer watchpoints.",
+        "First-area CLEAR is visible in request-025.png; second-area entry in028 and combat in029 through031. Request032 shows the depleted HP/result transition. Request033 is the FIRST town return, with terrain/buildings; request034 confirms movement near the mailbox. This run does NOT reach Banthus, clear the second area or verify dungeon victory/revival.",
+        "Read-only database rows show level10 unchanged, Exp43138 to45864 (+2726) and GamePoint2673 to2726 (+53), retained after browser closure. The immediate after-defeat sample remains at the baseline; the later first-return sample and closure sample contain the gains. The reward panel amount is NOT visually verified in this replay.",
+        "Initial and FIRST-return registries contain the same87 ready .Y mesh names with nonzero pointers, including76 RUBEN names. Initial traversal excludes1 unstable observation and return excludes2. Object-instance continuity and atomicity are not asserted.",
+        "Mapped executable/MFC42/msvcrt TLS indices are0/1/2. Eleven retained registered vectors contain33 distinct nonzero blocks across those slots after return. This does not identify which registered threads remain live.",
+        "A batch containing ControlRight, A and X is followed by one awakening orb being consumed and a25-second countdown in request023, then7 seconds in024. Later attempted activation in33 is not confirmed. Modifier equivalence, failed skill inputs and the dark aura remain unverified.",
+        "Original Dungeon-button map/countdown, System menu and Keyboard Setting screen are accessible. Settings are inspected, Cancel is clicked, and no binding is changed or saved.",
+        "The options timeout/ExitProcess observed in051337 does not recur in this run. The event574 exchange itself is not directly traced. Pending lists are empty at sampled pre-login, character-select, initial-village and return phases; one racy world-loading sample is excluded.",
+        "Original PE RTTI identifies the ACK timer owner as CX2Main derived from CKTDXStage and CKTDXDeviceHolder. Bounded original code ties its third stack argument to the stage dispatcher and engine step; counter/frequency division establishes seconds. Live step observations are0.013333333656191826 during login loading and0.02500000037252903 in the village. These are not measured FPS or failed-run decrement traces.",
+        "All237 frozen source identities, both modules and patch match the preserved/browser manifest and current files before edits. Capture ends intentionally by request40 at2618.953 seconds /13688 presentations, with no recorded ExitProcess or unreachable trap."
+      ],
+      "limits": [
+        "The full browser-native port remains incomplete. Original server binaries and SQL remain native; broad content, multiplayer, economy, audio, visual and performance parity are unverified.",
+        "No execution breakpoints/watchpoints or guest-state diagnostic writes are used. Capture sampling, bounded asynchronous reads and manual input still add overhead; this is not a performance benchmark or zero-observation replay.",
+        "The preceding051337 options failure is unresolved. A successful run on the same candidate does not establish a timing, TLS, server or micro-op cause. No timer bypass, fabricated ACK or networking change is introduced.",
+        "Skill A/S inputs do not reliably produce confirmed activation; some motion/jump attempts also lack a visible response. Animation/stun state, key mappings and delivery timing remain confounded. Input messages are delivered in a burst across the defeat/return transition around07:21:19 UTC.",
+        "Text defects and the dark combat effect remain visible. All54 original Lua longjmp throws and both font-bundle404 console/HTTP records are retained; their native-parity implications are unresolved.",
+        "Nonempty TLS callbacks, over-alignment, unload/reclamation and common loader-lock synchronization against concurrent DLL loads/thread publication remain outside the verified repair scope. OOM rollback has no direct test.",
+        "The initial copied database helper fails before issuing SQL because its observations file is absent; an empty observations document is initialized and subsequent guarded read-only queries succeed.",
+        "Preparatory raw scans include noninstructions/embedded bytes and a mistaken PE header-only scan; only the asserted bounded recovery artifacts support static-code claims. A post-capture summary command also hits a missing message key for an HTTP error; all errors are retained using optional fields.",
+        "Automatic at-*.png captures are retained but not visually reviewed. Only the41 explicitly listed manual/final images support this review."
+      ],
+      "agentsSpawned": []
+    },
+    {
+      "at": "2026-10-09T16:47:38.888305+00:00",
+      "contributor": "Codex /root",
+      "stage": "Operation Last Light: BROCWIN maintenance and knowledge handoff",
+      "evidence": "../reports/browser/modifier-input-20261009T160349Z/validation.json",
+      "originalClientReplay": "../reports/browser/20261009T161827Z/review.json",
+      "maintainerChange": "../wiki/changes/0001-modifier-identity.md",
+      "result": [
+        "Modifier maintenance: preserved pre-change control fails the new physical-side assertion; candidate passes 108 transitions through direct Wasm, real Worker RPC and the published Worker bitmap, plus 12 real-Edge DOM physical-state checks. Native MapVirtualKeyW mapping reference retained; no native input injection.",
+        "Canonical build and related message-ordering, DirectInput-device, SetKeyboardState, Worker focus and integration-runtime checks pass. Six omitted test/helper sources restore byte-exactly from the patch against the pinned dependency in an isolated Git index.",
+        "Current candidate 20261009T161827Z executes original login, saved level-10 character, Ruben terrain/movement and System/Options open-close, then finishes intentionally while executing after 1485.828 seconds / 5252 presentations. All 240 source identities, both modules and patch match; 22 manual/final images reviewed.",
+        "Established the first BROCWIN / HEAV3NS-COMBO names without retroactive attribution. Added the maintainer wiki, source/evidence extraction and verification, release inventory/archive support, compatibility matrix and issues register.",
+        "No delegated agents, native-game launch, streaming, server mutation, additional infrastructure, expense or security relaxation. Existing original servers supply game protocol behavior."
+      ],
+      "limits": [
+        "Modifier identity repair is a verified independent compatibility defect; its contribution to prior inconsistent skills is not isolated. Polled buffered input can miss complete short presses; Numpad Enter, broader side-key/focus semantics and game skill behavior remain open.",
+        "Capture 20261009T161827Z does not enter a dungeon or test skill activation, defeat/return, victory, revival or new progression persistence; does not trace the options ACK. It retains 54 original Lua throws and two font-bundle 404 records. No old gameplay acceptance is assigned to the new build.",
+        "Knowledge edition sealing is local versioned preservation, not a Git commit or public release. Large original report artifacts and game/platform inputs remain in their original local locations and require separate private preservation."
+      ],
+      "wasm": {
+        "url": "build/wine-assembly.wasm",
+        "sha256": "6b3b36e3ac711814bc2bc4255dabe3f450b6521bc166afd41ddceea78c541009"
+      },
+      "compat": {
+        "url": "build/wine-assembly.compat.wasm",
+        "sha256": "d044fea9abdce12f0e676d6e84c0c2b28472f5b7166f58bb123d5bd9d529724a"
+      },
+      "patchSha256": "abd17ff084336efcb131e0c342a3c34f0ad22d855bbb51f572510ecf971a3419",
+      "acceptance": "incomplete"
+    },
+    {
+      "at": "2026-10-10T07:43:28.289307+00:00",
+      "contributor": "Codex /root",
+      "stage": "BROCWIN live keyboard state maintenance and integrated original-client replay",
+      "evidence": "../reports/browser/input-live-20261010T065524Z/validation.json",
+      "originalClientReplay": "../reports/browser/20261010T070137Z/review.json",
+      "maintainerChange": "../wiki/changes/0002-directinput-live-state.md",
+      "result": [
+        "20261010 input maintenance: failing pre-fix stale-message control retained;108 existing modifier cases and6 live-state press/release cases pass through direct Wasm, real Worker RPC and published bitmap. Canonical build, related input/runtime checks and12 Edge155 physical-state checks pass; first DOM attempt failed with localhost stopped and is retained.",
+        "20261010T070137Z: original login, saved level10 character, Ruben/Skills, isolated Flame Geyser and S-slot activation, isolated ControlLeft awakening after area CLEAR; second-area combat/defeat, FAILURE/rewards and first return with terrain/movement in one browser session.",
+        "20261010T070137Z: reward UI2726 EXP/54 ED matches read-only SQL Exp45864 to48590 and GamePoint2726 to2780, level10 unchanged, retained after browser closure. Keys are released through the defeat transition.",
+        "20261010T070137Z:2195.281 seconds/2983 presentations, intentionally finished while executing;240 sources/both modules/patch match,75 manual/final images reviewed. System/Options opens and closes. No terminal trap or options timeout recorded; failed inputs and original errors retained."
+      ],
+      "limits": [
+        "20261010T070137Z: several attempted inputs during hits and the first Options-close click lack confirmed effects. Long successful holds do not establish all short-press/skill/focus behavior. No second-area CLEAR, Banthus encounter, victory or revival in this run.",
+        "20261010T070137Z: invalid asynchronous loading-phase ACK vector excluded; options-closed probe label predates verified closure. Event574 not traced; passing session does not fixBRC-001. Original54 Lua throws and optional font-bundle404 remain; per-file fallback means404 alone does not prove missing fonts.",
+        "20261010 scope clarification: original native servers and SQL are the separately maintained local backend, excluded from porting. Client interoperability remains required. No native client, streaming, server change, delegated agent or added infrastructure used."
+      ],
+      "wasm": {
+        "url": "build/wine-assembly.wasm",
+        "sha256": "752943f28a7bf09a30fe5c0e6c5b2143c4d08c3a65d1503f006e2a1feacc3643"
+      },
+      "compat": {
+        "url": "build/wine-assembly.compat.wasm",
+        "sha256": "1b56b295d94a24cbf359de03e5b8e506215ab9d7d476af5ccddd15a3700ac86c"
+      },
+      "patchSha256": "6a12a8950d7d00a34bff1a8d82181aedc7b7e09beb5869d621730a5f32052d3e",
+      "acceptance": "incomplete"
+    },
+    {
+      "at": "2026-10-10T08:30:01.794963+00:00",
+      "contributor": "Codex /root",
+      "stage": "BROCWIN NT font-phantom maintenance and integrated original-client UI replay",
+      "evidence": "../reports/browser/font-followup-20261010T074425Z/validation.json",
+      "originalClientReplay": "../reports/browser/20261010T080540Z/review.json",
+      "maintainerChange": "../wiki/changes/0003-font-phantom-coordinates.md",
+      "result": [
+        "20261010 font phantom maintenance: 81 affected cells fail before repair; all 132 regression/control cells pass after repair through canonical GDI APIs using original font bytes. Broad comparison has 2470/2470 exact extents and 2341/2470 exact cropped monochrome bitmaps, 81 gained and none lost. Existing font-mode/cell/Win98 hinting tests, canonical build, preparation and pinned-patch check pass.",
+        "20261010 font diagnosis: 48 private name-only alias GDI outline/bitmap cases preserve the original selected font identity; all 12 sampled horizontal outline ranges match after repair. The bounded HeT bytecode trace locates the original/current right-phantom bearing error. Range agreement is not complete outline or pixel equivalence.",
+        "20261010T080540Z: original login/channel/saved level-10 character, Ruben terrain and left/right movement, Skills/help/Flame Geyser tooltip and System/Options open-close in one browser session. No setting, binding or skill allocation changed. Capture intentionally finishes while executing after 1279.047 seconds and 3570 presentations; 242 frozen sources, both modules and patch match; 30 manual/final images reviewed."
+      ],
+      "limits": [
+        "20261010 font candidate: 129/2470 retained monochrome bitmaps still differ; quality-4 antialiasing, arbitrary glyphs/sizes/transforms and complete visual parity remain open. Original font setup requests quality4, while the broad retained comparison uses quality3. Actual Skills tooltip and Options labels remain visibly damaged in080540.",
+        "20261010T080540Z does not test combat, skill activation, victory/defeat/revival, progression gains or broader parity. The prior070137 gameplay evidence retains its own build. No terminal trap or ACK timeout is recorded, which does not close the preceding intermittent failure. All54 original Lua throws and optional font-bundle404 records remain; one excessive wait is rejected and request16 ignores a misspelled input field.",
+        "20261010 bounded font experiments: removing fitted phantom rounding and reversing MD opcode selection regress native bitmap matches; engine-version40 and reset-CVT/storage variants do not improve them. None of these variants is shipped. A post-TextOut interpreter-global report represents the last cached-strike glyph, so it is excluded from requested-glyph conclusions. Native servers/SQL remain separately maintained locally and unchanged; no delegated agents, native client, streaming or new infrastructure."
+      ],
+      "wasm": {
+        "url": "build/wine-assembly.wasm",
+        "sha256": "2686c8076a493870287b542e1333e8b3ade9ecfc18ccd739a6568fe14099bf89"
+      },
+      "compat": {
+        "url": "build/wine-assembly.compat.wasm",
+        "sha256": "a807e65531334f42818062bfe26de231267d0216c992e425a5a362fea7bed141"
+      },
+      "patchSha256": "8acba382555c7540bea701b305213d31d27b4551504d715e07e5e8e6f59ab598",
+      "acceptance": "incomplete"
+    }
+  ],
+  "unverified": [
+    "Full browser-native client acceptance, broad gameplay, multiplayer, visual/audio and performance parity remain incomplete. Native local servers and SQL are the intended separate backend, outside port scope.",
+    "The first-return terrain regression passes in041843 and053844, on successive TLS/attach builds, including level-ups. These bounded replays do not establish every transition.",
+    "The identical DLL TLS candidate times out on EGS_OPTION_UPDATE_ACK in051337 and passes an instrumented options exchange plus first town return in053844. The timeout cause and uninstrumented reproducibility remain unresolved.",
+    "Banthus combat is observed in053844; boss/dungeon victory, dungeon revival and broader economy/item/content behavior remain unverified.",
+    "Asynchronous observations are not atomic; presentation totals are not performance benchmarks. White combat frames, font defects and original Lua errors remain unverified against native behavior. Isolated ControlLeft awakening is now observed in070137; full skill/modifier/focus equivalence remains unverified.",
+    "Nonempty TLS callbacks, over-alignment, unload/reclamation and common serialization of concurrent DLL loads/thread publication remain outside the tested TLS repair.",
+    "Private VS2 red83/84 and Liberation Sans golden differences remain open. Two older scheduler tests fail before execution in undersized-memory fixtures with both candidate and preserved control."
+  ],
+  "protocol": "BROCWIN",
+  "client": "HEAV3NS-COMBO",
+  "namingIntroduced": "2026-10-09",
+  "maintainerWiki": "../wiki/README.md",
+  "executionBoundary": {
+    "clarified": "2026-10-10",
+    "client": "browser-native original compiled client",
+    "servers": "native-local, separately maintained",
+    "serverPorting": "excluded",
+    "clientInteroperability": "required"
+  }
+}

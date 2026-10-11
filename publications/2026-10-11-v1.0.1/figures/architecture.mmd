@@ -1,0 +1,10 @@
+flowchart TB
+  client[Original PE client / DLLs and KOM resources] --> loader
+  resources[Manifest and local resource host] --> loader
+  subgraph browser[Browser-hosted execution]
+    loader[PE loading and x86 interpretation in Wasm] --> contracts[Reconstructed Windows contracts]
+    contracts --> graphics[WebGL / DOM input / WebAudio adapters]
+    contracts --> winsock[Winsock and vln/1 WebSocket wire]
+  end
+  winsock --> relay[Fixed local byte relay]
+  relay --> native[Original native services and isolated SQL]

@@ -1,0 +1,21 @@
+# 0008 — Read the wall clock inside the guest Worker
+
+[Wiki](../README.md) · [Threads and memory](../threads-memory.md) · [Acceptance](../acceptance-session.md)
+
+Date: 2026-10-11. Contributor: Codex /root, no delegated agents. Native servers, SQL, original game instructions, assets and outcomes are unchanged.
+
+[071553](../../reports/browser/20261011T071553Z/review.json) passes the high-image allocation repair and completes one native-confirmed win across three attempts. Independent Forest revival fails: the live controller disables the original continue policy before final death state4. This ordering is measured; slow execution versus server end timing remains a hypothesis.
+
+The retained main Worker counters record 725,264 slices and 5,540,534 synchronous imports. Shared RPC observations repeatedly catch `real_time_ms` and `net_frame_peek`; idle slots retain their previous import name, so they are not counted as active calls. Source inspection identifies a specific unnecessary dependency: original BROCWIN interpreter time accounting calls `real_time_ms` at entry/exit of every outer slice, while the Worker brokers this import to the page. Its page implementation is simply `Date.now() & 0x7fffffff`, independent of page-owned state and of the published guest clock.
+
+[guest-rpc.js](../../tools/wine-assembly/lib/guest-rpc.js) now evaluates that same wall-clock expression inside the Worker. `get_ticks` still reads the process's published guest clock. Neither clock rate nor original game timers change. This removes page scheduling waits from the accounting boundary; it is not a new interpreter/JIT variant or network protocol. Network polling is unchanged.
+
+[The compiled-runtime regression](../../browser/test_worker_wall_clock.cjs) checks masked values across wrap, separation from the guest clock, nested accounting and a real Worker completing its accounting while the parent cannot service RPC. The preserved 071553 control fails the occupied-parent check. The candidate passes with zero synchronous clock imports. [Validation](../../reports/worker-clock-20261011T091913Z/validation.json) also records passing runtime, RPC exception/nested-wait and capture-observer tests, canonical build, preparation and pin checks.
+
+The capture observer includes the existing optional RPC census, bounded to 32 rows, without guest memory writes. Sealed [092157](../../reports/browser/20261011T092157Z/review.json) retains 66 reviewed images and 246 matching identities. Main and compatibility Wasm remain `8db3a988…` / `d9cf8048…`; JavaScript and patch change to `399d8a2fc8f36a5e74e0bbe52a5c0397b480125f1b85ac9c2b60b46639d30225`. Frozen identities include the new regression source.
+
+**Revival is still blocked on this build.** The first Forest encounter has no armed breakpoint/watchpoint: six ordinary Z pulses and ten stones still produce no continue countdown. Death-animation state 7 precedes final state 4 by 22.198 observed seconds; policy +6b8 is already disabled before state 4. The second same-browser encounter uses one bounded breakpoint and proves the original end-game notification 201 calls the disable function while the actor remains in state 7. [Diagnosis](../../reports/browser/20261011T092157Z/revival-failure.json) separates this caller evidence from the untraced timing, and retains exact mapping/stack artifacts. Native statistics report two attempts, zero wins and zero stones used; read-only saved EXP/ED are unchanged. Both original town returns work.
+
+The specific page round trip is removed and its contract is tested, but no controlled integrated speedup or revival fix is claimed. Measured untraced combat is approximately 0.89 presentations/second; census counts alone do not identify its time cost. The remaining bounded dependency is a measured client execution/timing correction before the authoritative end notification, followed by the full same-build eleven-step replay. Historical victory/skill evidence belongs to earlier patches. No original notification or server timer was bypassed.
+
+Provenance includes original game/fork developers, Wine-Assembly/WATX/platform contributors and prior documented maintenance. Tools: existing Node/WATX, Edge/Playwright, Python, original PE/Capstone inspection and read-only native/SQL observations.

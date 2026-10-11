@@ -1,0 +1,53 @@
+{
+  "schema": "heav3ns.brocwin.publication-facts/v1",
+  "version": "1.0.1",
+  "date": "2026-10-11",
+  "knowledgeBaseline": "1.4.1",
+  "acceptance": "blocked",
+  "currentBuildEvidence": null,
+  "control": [
+    {
+      "condition": "cold-profile",
+      "firstVisibleLoginSeconds": 440.703,
+      "browserVersion": "155.0.4283.45",
+      "progress": {
+        "completed": true,
+        "elapsedSeconds": 31.09400000000096,
+        "stallCriterionSeconds": 60,
+        "initialFrames": 10,
+        "finalFrames": 1083,
+        "frameAdvances": 1073,
+        "maximumObservedNoProgressSeconds": 0.375,
+        "maximumObservationGapSeconds": 0.5470000000004802,
+        "failure": null,
+        "scope": "Observed login frame progression and host lifecycle only; no gameplay or runtime scheduling changes"
+      },
+      "reportedErrors": []
+    },
+    {
+      "condition": "warm-profile",
+      "firstVisibleLoginSeconds": 438.797,
+      "browserVersion": "155.0.4283.45",
+      "progress": {
+        "completed": true,
+        "elapsedSeconds": 31.10900000000038,
+        "stallCriterionSeconds": 60,
+        "initialFrames": 10,
+        "finalFrames": 1090,
+        "frameAdvances": 1080,
+        "maximumObservedNoProgressSeconds": 0.2649999999994179,
+        "maximumObservationGapSeconds": 0.5939999999991414,
+        "failure": null,
+        "scope": "Observed login frame progression and host lifecycle only; no gameplay or runtime scheduling changes"
+      },
+      "reportedErrors": []
+    }
+  ],
+  "inputEntries": 321,
+  "servedObserverIdentities": 211,
+  "reviewedImageFiles": 4,
+  "uniqueReviewedImageHashes": 2,
+  "reservationSourceSuites": 12,
+  "frozenInventoryFiles": 2229,
+  "originalInputsBeforeAfterMatch": true
+}

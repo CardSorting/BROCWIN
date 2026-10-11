@@ -1,0 +1,40 @@
+{
+  "schema": "brocwin.license-notices/v1",
+  "auditedDate": "2026-10-11",
+  "copiedNotices": [
+    {
+      "source": "LICENSE",
+      "copy": "LICENSES/CardSorting-MIT.txt",
+      "sha256": "875e94721676bbf8bb3043e8aa323e355b69b754922dc356c40d5c4c7fa08a68"
+    },
+    {
+      "source": "theseus/tools/wine-assembly/LICENSE",
+      "copy": "LICENSES/Wine-Assembly-MIT.txt",
+      "sha256": "bd001ff0dfcd13740ccdad6d3972c673d70042be601efe498d2bffe677ef1416"
+    },
+    {
+      "source": "theseus/tools/python/websockets-17.1.dist-info/licenses/LICENSE",
+      "copy": "LICENSES/websockets-BSD-3-Clause.txt",
+      "sha256": "0f44514998aca209d3482d10204a8adf2aa4296ff157a36a5c0922f2280632d3"
+    },
+    {
+      "source": "theseus/tools/python/pefile-2024.8.26.dist-info/LICENSE",
+      "copy": "LICENSES/pefile-MIT.txt",
+      "sha256": "b44409c067c6da52bfb54bb6624fb11a7b52157c3a13ae1400232f8196e86ad3"
+    },
+    {
+      "source": "theseus/tools/python/capstone-5.0.7.dist-info/LICENSE.TXT",
+      "copy": "LICENSES/capstone-LICENSE.txt",
+      "sha256": "404bd0cb0137ffb797258f844f53e5273f9b6d5781a1a359a2880411f49a4f30"
+    },
+    {
+      "source": "theseus/tools/python/playwright-1.55.0.dist-info/licenses/LICENSE",
+      "copy": "LICENSES/playwright-Apache-2.0.txt",
+      "sha256": "7fab1461b41970ff376f1c9303a637076bfaaeb71cd12dd3a1c44aaf59a1a2b9"
+    }
+  ],
+  "scope": "Selected retained notices; not a transitive binary-distribution license inventory.",
+  "unresolved": [
+    "Wine-Assembly LICENSE declares MIT; its package.json declares ISC."
+  ]
+}

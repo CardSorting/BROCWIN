@@ -1,0 +1,60 @@
+# BROCWIN runtime performance
+
+**Frozen closeout, 2026-10-11:** the current work session is closed at the user's direction. See [closeout](closeout.md) for the prepared/source distinction, source-only reservation fix and unresolved validation. Engineering and environment changes require the user to reopen work; next actions below are handoff instructions.
+
+Authority: Executive Chair MAJO, 2026-10-11 runtime optimization mandate. Scope and contracts: [change 0013](changes/0013-runtime-startup-cache.md). The original compiled client is immutable. The closed investigation covered runtime startup, with no gameplay investigation.
+
+The retained control and candidate runs use sequential Edge 155.0.4283.45 launches on the same machine, identical viewport, original input manifests and native services. Their environment records state that an existing visible browser remained running; that is historical metadata, not proof of a currently live session. Cold is a fresh profile; warm reuses that condition's profile. OS caches are not flushed. Each condition has one cold and one warm sample, so differences are descriptive rather than statistically established.
+
+The initial exploratory stop at first GPU frame was invalid for login measurement and is excluded. Corrected controls reach the original empty login screen at 435.265 seconds cold and 432.641 seconds warm. Browser launch takes 0.546 / 0.453 seconds; browser-ready takes 1.921 / 1.391 seconds. First GPU presentation at 220.531 / 217.625 seconds is an intermediate empty frame. Candidate login images were individually reviewed: the same original empty login screen, with no credentials or gameplay input.
+
+| Metric | Control cold | Candidate cold | Control warm | Candidate warm |
+| --- | ---: | ---: | ---: | ---: |
+| First visible login, seconds | 435.265 | 450.000 | 432.641 | 459.922 |
+| Runtime loading before execution, seconds | 3.583 | 1.800 | 3.699 | 1.297 |
+| Page resource transfer, decimal MB | 943.386 | 543.652 | 936.004 | 497.619 |
+| Sampled external/backing peak, decimal MB | 1146.892 | 719.539 | 1168.977 | 746.716 |
+| Sampled page JS heap peak, decimal MB | 17.446 | 24.624 | 17.521 | 19.454 |
+
+Loading improves approximately 1.99x cold / 2.85x warm; resource transfer falls 42.4% / 46.8%; external/backing peak falls 37.3% / 36.1%. Sampled JS heap rises; these samples do not isolate allocation causes. End-to-end login is slower in this first pair, not a 3x improvement.
+
+The completed [repeated cold control](../reports/performance/control-repeat-20261011/run-01/result.json) and [repeated warm control](../reports/performance/control-repeat-20261011/run-02/result.json) use the same additional presentation hooks as the candidate. Their [served-file identities](../reports/performance/control-repeat-20261011/identity.json) match the first control. The [six-run summary](../reports/performance/validation-20261011/summary.json) retains all conditions:
+
+| Metric | Repeated control cold | Candidate cold | Repeated control warm | Candidate warm |
+| --- | ---: | ---: | ---: | ---: |
+| First visible login, seconds | 483.406 | 450.000 | 464.813 | 459.922 |
+| Sampled present-gap p95, milliseconds | 52.875 | 40.295 | 48.125 | 38.780 |
+
+Candidate login is 6.9% / 1.1% faster than these repeated controls, but slower than the first controls. This variation and the small sample count do not establish a reproducible startup improvement. The presentation figures cover approximately 30 seconds after login, not long-duration stability. The cache pass remains useful resource-consumption evidence; it does not satisfy the commission's kernel-overhead or continuous-operation requirements.
+
+Warm resource-cache counters record 48 hits, zero misses and 56,477,458 avoided bytes. Edge reports no compiled-module clone hits. Initial login exercises fixed shaders, with no translated-shader or decoded-texture cache hits in these observations; independent constructed-resource fixtures establish their persistence/corruption contracts, not a startup benefit. Three observed GPU programs take roughly 5-13ms each in the cold candidate, so shader compilation does not explain the multi-minute delay.
+
+Telemetry is bounded. Resource timing describes requests visible in the page, not every worker-internal resource. Cumulative browser-process CPU, page heap/external memory and long tasks are proxies; allocation churn and total OS memory are not fully profiled. In the [cold candidate](../reports/performance/candidate-20261011/run-01/result.json), renderer CPU reaches 448.703 seconds by the 473.078-second sample, versus 6.200 seconds for the GPU process. These totals identify CPU-heavy execution, not the responsible kernel operation. Broker call counts contain no service/wait durations, and the runner records no worker CPU profile. Control shader-compilation telemetry is absent because the compiler executes in its worker; candidate compiler timings have no matched control. Scheduling determinism is limited to cache/configuration choices; no deterministic OS/browser scheduling is claimed.
+
+Presentation measurements describe guest-frame notifications and the host compositor, not GPU scanout or physical display latency. The first empty-frame-to-login gap is excluded from steady-state jitter statistics. No scheduler or synchronization API was changed to make those measurements look better.
+
+The fixed cache policy selected from recorded hardware capacity can be replayed with the policy query parameter. Persisted bytes and pure artifacts are digest validated, version scoped and bounded. Edge compiled-module cloning is unsupported on this machine; actual compiled-module persistence is not claimed.
+
+Final hardening after the timed candidate snapshot makes all `Request` objects bypass resource interception, preserving their embedded cancellation signals and response metadata. A focused browser regression covers already-aborted Request/string fetches, byte ranges and native Request response URLs. This guard does not apply to the string-URL workload used in the timed snapshot. The later [validation record](../reports/performance/validation-20261011/validation.json) retains twelve passing focused checks and its runtime identity. [Two existing fixture failures](../reports/performance/validation-20261011/existing-fixture-limits.json) remain separately recorded: the host-rAF fixture's resolver error and the lazy-VFS fixture's missing function linkage. The [visible observation](../reports/performance/validation-20261011/visible-runtime.json) records login at 448.937 seconds with a [retained image](../reports/performance/validation-20261011/visible-login.png); it is not a duration test or a sealed current-build review. Earlier timing samples are not relabeled with the later source identity, and `currentBuildEvidence` remains `null`.
+
+The earlier measured runner stops 30 seconds after visible startup regardless of a larger startup timeout. Those retained identity records hash served files but not the runner, telemetry or HTTP-handler sources. They remain historical evidence with those limits. No current-source or 24/7 reliability claim follows from them.
+
+Preserved evidence: [control identity](../reports/performance/baseline-visible-20261011/identity.json), [candidate identity](../reports/performance/candidate-20261011/identity.json), [cold control](../reports/performance/baseline-visible-20261011/run-01/result.json), [warm control](../reports/performance/baseline-visible-20261011/run-02/result.json). Original login images remain in each run directory.
+
+## Kernel profile and allocator ownership correction
+
+[Change 0014](changes/0014-heap-free-ownership.md) follows a new bounded, visible startup diagnostic. The [sealed source audit](../reports/performance/kernel-profile-control-20261011/source-audit-review.json) verifies 255 runtime/observer identities and all 321 original input files before and after the run. It deliberately stops at 90 seconds before login; it is not a failed application acceptance run or a startup timing sample. The observer retains five raw page/Worker CPU profiles and the matched compiled WAT for function attribution.
+
+In the active worker's approximately 20.147-second sample window, `heap_free_impl` accounts for 521,506 microseconds (2.589% of sampled wall time), while `uop_fast` accounts for approximately 28.0%. Waiting workers' `Atomics.wait` samples represent blocking, not busy CPU. This profile identifies allocator work but does not make it the dominant startup cause. See the [profile summary](../reports/performance/kernel-profile-control-20261011/profile-summary.json).
+
+The correction removes duplicate-free list scans by claiming the existing aligned allocation header atomically before publishing free links or decrementing arena usage. The preserved control accepts deep/cross-instance duplicate frees in nine targeted cases; the replacement passes all eleven ownership cases on both canonical builds and sixteen source regression suites. These tests strengthen an existing defensive invariant; no duplicate free from the original client has been observed. They do not address stale-pointer ABA after legitimate address reuse. Exact identities, superseded fixture results and regression commands are retained in [0014](changes/0014-heap-free-ownership.md).
+
+The [matched allocator measurements](../reports/performance/heap-free-20261011/microbenchmark-summary.json) use the same 512-byte free/reuse pairs, 20,000 warmup pairs and five 100,000-pair repetitions in four fresh Node processes ordered control/candidate/candidate/control. The summary averages the two per-process medians per condition. At depth 0, time rises from 10.458 to 11.914 milliseconds (13.9% overhead). At depths 64, 128 and 512 it falls from 67.054, 69.492 and 68.488 milliseconds to 13.131, 12.617 and 13.264 milliseconds (5.1-5.5x). This removes list-depth scaling from the claim step, with a shallow-list cost; these constructed measurements do not predict original-client startup or frame performance.
+
+The observer now separately bounds startup and requested login observation, retains bounded telemetry plus complete on-disk samples, checks execution and frame progress, and records browser-owned Windows process memory counters. Worker memory is included in renderer process totals without per-worker attribution; working-set sums can double-count shared pages. The frozen observer sources are copied and hashed for each new run. [Four visible synthetic fixtures](../reports/performance/observation-smoke-20261011T200008Z/result.json) verify success, stopped execution, nonrunning state and stalled frame progression.
+
+The new [control pair](../reports/performance/heap-control-20261011/source-audit-review.json) passes at 440.703 seconds cold / 438.797 seconds warm. The [candidate pair](../reports/performance/heap-candidate-20261011/source-audit-review.json) is incomplete: the cold screenshot helper times out at 297.484 seconds while waiting for canvas element stability, before a recorded login. The later warm-profile launch reaches reviewed original login at 457.859 seconds and advances 1,070 frames over 30.906 seconds. This profile follows an interrupted cold launch, so its priming differs from the completed control. Its elapsed time is descriptively longer, and neither run establishes a startup improvement. Both sets retain matching observer/original-input identities; only the manifest and two Wasm modules differ among served files. The capture failure is retained explicitly and the comparison must be repeated after the observer repair. Continuous-operation reliability remains unverified.
+
+## Final source-only finding
+
+[0015](changes/0015-heap-reservation-rollback.md) records failed large-allocation reservation cleanup after commit retry exhaustion. Both source candidate cases and twelve affected source suites pass; the preserved compiled control fails both cases. Canonical builds, patch integration and original application validation remain outstanding under the freeze. This is not an observed original-client leak or a performance measurement.

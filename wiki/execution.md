@@ -1,0 +1,27 @@
+# x86 and WebAssembly execution
+
+Runtime-only startup optimization is documented in [change 0013](changes/0013-runtime-startup-cache.md) and the [performance report](performance.md). The subsequent [allocator correction](changes/0014-heap-free-ownership.md) changes Wasm heap ownership and removes duplicate-free list scans. Interpreter dispatch and guest scheduling remain unchanged. Browser/OS scheduling remains nondeterministic; deterministic cache identity and policy replay do not establish deterministic guest execution.
+
+Historical [145806](../reports/browser/20261011T145806Z/review.json), after [original send serialization](changes/0012-session-send-serialization.md), intentionally finishes in responsive Ruben after passing the earlier area gate. There is no original process exit, Wasm trap or worker hang in this route. Independent revival still fails: first final-dead sample15.567354 seconds after first death already has policy 1; native one attempt / zero wins / zero stones. No profiler or breakpoints run in this capture. Remaining execution/scheduling cost is not isolated; historical profiles below do not measure this exact Low-settings encounter. No interpreter/JIT variant was introduced.
+
+[Wiki home](README.md) · [Implementation and tests](generated/INDEX.md#execution)
+
+Wine-Assembly decodes original x86 into a threaded dispatch representation and executes it in Wasm. API thunk dispatch bridges imported Windows calls. Original Lua, D3DX, FMOD and game logic continue as compiled guest code. The original EXE's preferred base is `0x32830000`; addresses in recovered notes are valid only for the recorded image SHA-256, available in the generated build identity.
+
+`src/main.watx` is the canonical include closure. `07-decoder.wat` decodes instructions, `04-cache.wat` owns dispatch/caching, and `host.js` orchestrates stepping, clocks, imports and workers. `main.js` connects this machinery to this game's manifest and canvas. Consult the source rather than maintaining another dispatch or opcode list here.
+
+## Contract and original dependencies
+
+Startup, original exception handling, rendering preparation, resource decoding and all gameplay use this interpreter. Correct register/stack state, x86 flags, floating-point behavior, memory translation and API calling conventions are essential. [Change 0009](changes/0009-sse-worker-policy.md) enables the existing SSE policy for the original D3DX path and repairs its Worker inheritance. Original-D3DX comparisons, skinning, MOVHLPS and scalar-SSE checks pass within their documented coverage; they do not establish every SIMD path. No interpreter/JIT variant was introduced.
+
+Historical [105626](../reports/browser/20261011T105626Z/review.json) integrates the SSE option through two entries/returns and skills but still fails revival. Its bounded combat profile measures 17 presentations in 15.393 seconds. Historical [123040](../reports/browser/20261011T123040Z/review.json), after [change 0010](changes/0010-heap-arena-locality.md), measures town heap-free self time at 5.82% versus 21.04% in the prior window; 19 presentations in 15.334 seconds still falls short of playable timing. Separate scenes/profiles do not establish a controlled overall speedup. Revival still fails, now with initialization zero and policy disabled at final dead state. The specific remaining client cost is unresolved; see the [acceptance report](acceptance-session.md).
+
+An unimplemented operation must remain an explicit failure until reproduced and implemented. Never change guest instructions or invent success to skip an obstacle. A Wasm `unreachable`, original `ExitProcess`, handled Lua longjmp and deliberate capture closure are distinct outcomes.
+
+Historical [043232](../reports/browser/20261011T043232Z/exit-failure.json) supplies a failure-time exit stack, not just the host's generic `[ExitProcess]` label. Original event 676 reaches dispatch `0x329f95dc`, handler `0x329e3b20` and IAT `0x3329e134` (`KERNEL32.TerminateProcess`) with code -1; the saved caller returns at `0x329f95ee`. [Original-code evidence](../reports/browser/20261011T043232Z/exit-path-reference.json) retains the exact EXE identity and prior bounded disassembly. The triggering traffic/state remains unknown. If termination returns, this original handler later calls null, so changing handle validation alone does not establish a usable return path. Do not bypass the original failure. This dynamic evidence does not retroactively identify the earlier `195820` exit.
+
+## Build, diagnose, repair
+
+Run the canonical build and `node theseus/browser/test_runtime.cjs` from the [runbook](build-recovery.md). Run `test_movhlps.cjs` for that instruction. Capture the executing worker's EIP/registers/stack and source identity before teardown; a stale retained worker snapshot is not a current live execution point. Resolve guest addresses through exported translation helpers. Trace a bounded original path only when needed for an existing defect, and record the scheduling impact of probes.
+
+`064427` ran 2, 618.953 seconds and recorded 13, 688 presentations before an intentional stop, without execution breakpoints/watchpoints. It retained original Lua throws and other limitations. Those totals are not measured FPS, a stress-test guarantee, or evidence that execution timeouts are solved. See [networking](network.md) for the recovered original ACK timer and [issues](issues.md) for unresolved scheduling symptoms.

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="490" viewBox="0 0 820 490">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#50647a"/></marker></defs>
+<rect width="820" height="490" fill="white"/>
+<rect x="285" y="35" width="520" height="285" rx="10" fill="#f3f6fa" stroke="#8ba0b5"/>
+<text x="300" y="57" font-family="Arial" font-size="15" fill="#21364c">Browser execution and reconstructed interfaces</text>
+<rect x="30" y="70" width="210" height="70" rx="5" fill="white" stroke="#344e68"/>
+<text x="135.0" y="97" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#183249">Original client / DLLs</text>
+<text x="135.0" y="121" text-anchor="middle" font-family="Arial" font-size="13" fill="#344e68">x86 instructions; KOM assets</text>
+<rect x="300" y="70" width="220" height="70" rx="5" fill="white" stroke="#344e68"/>
+<text x="410.0" y="97" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#183249">PE loader + x86 / Wasm</text>
+<text x="410.0" y="121" text-anchor="middle" font-family="Arial" font-size="13" fill="#344e68">imports, TLS, dispatch</text>
+<rect x="570" y="70" width="220" height="70" rx="5" fill="white" stroke="#344e68"/>
+<text x="680.0" y="97" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#183249">Windows contracts</text>
+<text x="680.0" y="121" text-anchor="middle" font-family="Arial" font-size="13" fill="#344e68">memory, threads, APIs</text>
+<rect x="300" y="215" width="220" height="70" rx="5" fill="white" stroke="#344e68"/>
+<text x="410.0" y="242" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#183249">Browser adapters</text>
+<text x="410.0" y="266" text-anchor="middle" font-family="Arial" font-size="13" fill="#344e68">WebGL · input · audio</text>
+<rect x="30" y="215" width="210" height="70" rx="5" fill="white" stroke="#344e68"/>
+<text x="135.0" y="242" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#183249">Manifest + resource host</text>
+<text x="135.0" y="266" text-anchor="middle" font-family="Arial" font-size="13" fill="#344e68">local files; range mounts</text>
+<rect x="570" y="215" width="220" height="70" rx="5" fill="white" stroke="#344e68"/>
+<text x="680.0" y="242" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#183249">Winsock + JS wire</text>
+<text x="680.0" y="266" text-anchor="middle" font-family="Arial" font-size="13" fill="#344e68">vln/1 over WebSocket</text>
+<rect x="30" y="380" width="210" height="75" rx="5" fill="white" stroke="#344e68"/>
+<text x="135.0" y="407" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#183249">Local byte relay</text>
+<text x="135.0" y="431" text-anchor="middle" font-family="Arial" font-size="13" fill="#344e68">Python host; fixed targets</text>
+<rect x="300" y="380" width="490" height="75" rx="5" fill="white" stroke="#344e68"/>
+<text x="545.0" y="407" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#183249">Original native services + isolated SQL</text>
+<text x="545.0" y="431" text-anchor="middle" font-family="Arial" font-size="13" fill="#344e68">Local deployment; outside client-port scope</text>
+<path d="M240 105 H300" fill="none" stroke="#50647a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M520 105 H570" fill="none" stroke="#50647a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M410 140 V215" fill="none" stroke="#50647a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M240 250 H270 V175 H410 V140" fill="none" stroke="#50647a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M680 140 V215" fill="none" stroke="#50647a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M680 285 V340 H135 V380" fill="none" stroke="#50647a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M240 417 H300" fill="none" stroke="#50647a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="30" y="355" font-family="Arial" font-size="14" fill="#344e68">Native backend boundary: original packets; existing local state</text>
+<text x="30" y="480" font-family="Arial" font-size="12" fill="#50647a">Repository-derived architecture; arrows are relationships, not measured costs.</text></svg>

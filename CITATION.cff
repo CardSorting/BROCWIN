@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite this research archive and identify the exact knowledge/publication edition used."
+title: "HEAV3NS-BROCWIN: Browser-hosted execution and preservation research"
+type: software
+authors:
+  - name: "HEAV3NS-BROCWIN contributors"
+version: "1.4.1"
+date-released: "2026-10-11"
+license: MIT
+abstract: >-
+  Research archive for original legacy Windows MMO client execution through
+  a synthetic browser-hosted compatibility runtime. Client acceptance remains
+  blocked; no production readiness, 3x startup gain, or long-duration reliability
+  is established. The declared project license covers eligible source and
+  authored documentation, with third-party and original game/platform exclusions
+  documented in LICENSES/README.md. Publication edition 1.0.1 is a separate
+  documentary edition dated 2026-10-11.
+keywords:
+  - software preservation
+  - WebAssembly
+  - Windows compatibility
+  - legacy software
+
+repository-code: "https://github.com/CardSorting/BROCWIN"
+url: "https://github.com/CardSorting/BROCWIN"

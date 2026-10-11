@@ -1,0 +1,30 @@
+'use strict';
+const assert=require('assert');
+const {ArtifactCache,canonical}=require('../tools/wine-assembly/lib/validated-artifact-cache');
+const Shader=require('../tools/wine-assembly/lib/d3d9-shader');
+const Texture=require('../tools/wine-assembly/lib/d3d9-texture');
+const cache=new ArtifactCache('test',null);
+const originalCompile=Shader.compile,originalDecode=Texture.decode;
+cache.install(Shader,Texture);
+// Real shader translation, with returned Map/Set/typed-array ownership retained.
+const words=Uint32Array.from([0xfffe0101,1,0xc00f0000,0x90e40000,65535]);
+const expected=originalCompile(words);
+assert.deepStrictEqual(Shader.compile(words),expected);
+assert.deepStrictEqual(Shader.compile(words),expected);
+const first=Shader.compile(words);first.source='mutated';
+assert.deepStrictEqual(Shader.compile(words),expected,'caller mutation cannot poison cache');
+const bytes=new Uint8Array([0,248,0,0,0,0,0,0]);
+const pixels=originalDecode(bytes,4,4,Texture.DXT1);
+assert.deepStrictEqual(Texture.decode(bytes,4,4,Texture.DXT1),pixels);
+Texture.decode(bytes,4,4,Texture.DXT1).fill(0);
+assert.deepStrictEqual(Texture.decode(bytes,4,4,Texture.DXT1),pixels);
+bytes[0]=1;
+assert.deepStrictEqual(Texture.decode(bytes,4,4,Texture.DXT1),originalDecode(bytes,4,4,Texture.DXT1),
+  'byte mutation must miss rather than return the previous decoded resource');
+assert.throws(()=>Texture.decode(bytes,8,4,Texture.DXT1),/length/);
+assert.throws(()=>Shader.compile(Uint32Array.from([0xfffe0101,1])),/shader|token|instruction|operand|END/i);
+assert.notStrictEqual(canonical(new Uint8Array([1,2])),canonical([1,2]));
+assert.notStrictEqual(canonical({x:-0}),canonical({x:0}));
+assert.notStrictEqual(canonical({x:NaN}),canonical({x:null}));
+assert(cache.stats.hits>=5);
+console.log('PASS real shader/DXT cache equivalence, invalid inputs, invalidation and owned results',cache.stats);

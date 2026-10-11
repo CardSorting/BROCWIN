@@ -1,0 +1,19 @@
+# Chair briefing - Operation Last Light
+
+**Work closed; environment frozen, 2026-10-11.** Edition 1.4.1 preserves the prepared allocator candidate and later source-only reservation rollback separately. The latter passes two source fixture cases and twelve affected source suites, but is absent from the prepared modules/patch. Startup comparison is incomplete, sustained reliability and the 3x target are unproven, and client acceptance remains BLOCKED. [Closeout](closeout.md) records exact boundaries and recovery; no further engineering is scheduled. The findings below remain supporting context.
+
+**2026-10-11 runtime mandate:** [0014](changes/0014-heap-free-ownership.md) corrects an allocator mechanism in the compatibility kernel. Original-startup profiling assigns 2.59% of one Worker's sampled wall intervals to heap freeing. The old defense searched up to 65 list entries on every free and still missed deeper or cross-instance duplicates. Shared atomic ownership removes those searches and prevents the reproduced duplicate ownership before address reuse. The original client remains unchanged; no duplicate free by that client has been demonstrated.
+
+Sixteen source regression suites pass, and the exact built main and compatibility modules each pass all eleven ownership checks. The preserved control fails nine targeted cases. These results verify the kernel correction; the cold observer failure leaves startup comparison incomplete despite a later reviewed warm-profile login, and long-duration performance remains untested. Earlier [0013](changes/0013-runtime-startup-cache.md) cache observations did not establish a reproducible startup improvement or continuous-operation reliability. BRC-019 remains open, the 3x target is aspirational, and `currentBuildEvidence` remains `null` until a matching application review. See the [performance report](performance.md) for comparable measurements and their limits.
+
+The gameplay findings below are retained historical context. They do not define the active engineering queue or verify the new runtime candidate.
+
+[Wiki](README.md) | [Eleven-step acceptance](acceptance-session.md) | [Latest repair](changes/0012-session-send-serialization.md) | [Issues](issues.md)
+
+**BLOCKED: the client is not complete or reliably playable.** Final tested [145806](../reports/browser/20261011T145806Z/review.json) passes original login, existing character, town/menus, Tree of El, attacks/two skills, first-area clear and the gate that previously terminated. Original failed-attempt rewards and automatic town return also work in the same browser session.
+
+[0012](changes/0012-session-send-serialization.md) serializes original packet construction/send under the existing socket lock, including guest exception cleanup. Seven affected checks pass. The replay records407 increasing game serials, zero serial observer errors and no original exit.62 images and248 build/source identities are reviewed and sealed; earlier evidence remains separate.
+
+**Revival still fails.** First final-dead state is sampled 15.567354 seconds after death, already policy 1 with nine stones; six ordinary Z pulses fail despite original Low graphics settings. Native statistics confirm one attempt, zero wins and zero stones used. The remaining client execution/scheduling cost preventing timely original continue handling is not isolated. Victory, winning rewards, reliable combat/effects and two winning cycles remain required; no server/timer/eligibility bypass or broader compatibility expansion.
+
+The [acceptance report](acceptance-session.md) supplies exact build/launch commands, all eleven results, evidence, regressions and nonblocking differences. Native services retain PIDs/readiness and original/reference file hashes. SQL remains level12 EXP69567 ED2237. Server/SQL implementations are unchanged. Original developers and prior contributors retain attribution; no delegated agents, replacement game or new infrastructure.

@@ -1,0 +1,20 @@
+{
+  "schema": "theseus.browser-dependencies/v1",
+  "wineAssembly": {
+    "repository": "https://github.com/vgrichina/wine-assembly",
+    "commit": "d7854bc6c6bd0319ca33b5f31a465602e2ce0686",
+    "directory": "theseus/tools/wine-assembly",
+    "license": "MIT",
+    "role": "x86 execution in WebAssembly, Win32 compatibility, Direct3D translation, browser input/audio/filesystem"
+  },
+  "runtimeTools": {
+    "websockets": "17.1"
+  },
+  "researchTools": {
+    "pefile": "2024.8.26",
+    "capstone": "5.0.7",
+    "playwright": "1.55.0",
+    "emscripten": "4.0.15",
+    "lua": "5.1.5"
+  }
+}

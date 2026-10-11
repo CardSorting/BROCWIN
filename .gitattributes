@@ -1,0 +1,17 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.cff text eol=lf
+*.svg text eol=lf
+*.mmd text eol=lf
+*.ps1 text eol=crlf
+*.pdf binary
+*.png binary
+*.zip binary
+LICENSES/*.txt -text
+# Attributes apply to future Git staging/checkouts, not the retained frozen bytes.

@@ -1,0 +1,21 @@
+{
+  "project": "JoySword Theseus",
+  "upstream": "https://github.com/CardSorting/JoySwordOnline",
+  "sourceCommit": "4c39249b939d79c229e1fd4f63dfd462a90f9060",
+  "sourceDirectory": "C:/Users/media/Downloads/JoySwordOffline - Copy",
+  "createdDate": "2026-10-07",
+  "method": "Physical copy with independent Git history and an internal data junction.",
+  "baseline": "native-combat-v1: playable encounter verified; see baseline.json for evidence and remaining gates",
+  "policy": "Preserve native client, combat scripts and assets until replacements pass comparison with the preceding playable version. Never write to the original installation or database volumes.",
+  "currentProtocol": "BROCWIN",
+  "currentClient": "HEAV3NS-COMBO",
+  "namingIntroduced": "2026-10-09",
+  "maintainerWiki": "wiki/README.md",
+  "executionBoundary": {
+    "clarified": "2026-10-10",
+    "client": "browser-native original compiled client",
+    "servers": "native-local, separately maintained",
+    "serverPorting": "excluded",
+    "clientInteroperability": "required"
+  }
+}

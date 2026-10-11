@@ -1,0 +1,18 @@
+name: joysword-theseus
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: joysword-theseus-sql
+    labels:
+      joysword.project: theseus
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: ${THESEUS_SQL_PASSWORD:?Set the isolated database password}
+    ports:
+      - 127.0.0.1:15433:1433
+    volumes:
+      - baseline-sql:/var/opt/mssql
+volumes:
+  baseline-sql:
+    external: true
+    name: joyswordtheseus-baseline-sql

@@ -1,0 +1,27 @@
+name: Evidence or documentation correction
+description: Correct a claim, citation, provenance record or walkthrough.
+title: "[Evidence]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Engineering is frozen. Do not attach secrets, private raw logs or original game/platform payloads. Use SECURITY.md for sensitive concerns."
+  - type: input
+    id: location
+    attributes:
+      label: Document or source record
+      description: Include the file path and edition or hash if known.
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Observed problem and supporting evidence
+      description: Separate the measured observation from a proposed explanation.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true

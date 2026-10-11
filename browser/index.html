@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HEAV3NS-COMBO</title>
+<link rel="icon" href="data:,">
+<style>
+  :root { color-scheme: dark; font: 15px system-ui, sans-serif; background: #10131b; color: #e5eaf5; }
+  body { margin: 0; }
+  header { display: flex; align-items: center; gap: 20px; padding: 16px 24px; border-bottom: 1px solid #343d51; }
+  strong { font-size: 19px; }
+  button { font: inherit; padding: 8px 18px; cursor: pointer; }
+  #status { flex: 1; }
+  main { max-width: 1280px; margin: 20px auto; }
+  canvas { width: 100%; aspect-ratio: 4/3; display: block; background: black; outline: none; }
+  details { padding: 16px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-height: 24em; overflow: auto; font-size: 12px; }
+  p { color: #aebad1; }
+</style>
+<header><strong>HEAV3NS-COMBO</strong><span id="status" role="status">Preparing browser runtime</span><button id="start" disabled>Start client</button><button id="stop" disabled>Stop</button></header>
+<main>
+  <canvas id="game" width="1024" height="768" tabindex="0" aria-label="Original game output"></canvas>
+  <details open><summary>Execution record</summary>
+    <p id="evidence">Port in progress. Full functionality and behavioral parity remain unverified.</p>
+    <pre id="log" aria-live="polite"></pre>
+    <button id="export">Save execution record</button>
+  </details>
+</main>
+<script src="runtime_cache.js"></script>
+<script src="main.js"></script>
+</html>

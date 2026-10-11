@@ -1,0 +1,15 @@
+name: Documentation question
+description: Ask about the research archive, custody or contributor walkthrough.
+title: "[Docs]: "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Explain which document you read and what remains unclear. Omit private data.
+    validations:
+      required: true
+  - type: input
+    id: edition
+    attributes:
+      label: Document path and edition

@@ -1,0 +1,37 @@
+{
+  "schema": "heav3ns.brocwin.publication-production/v1",
+  "recordedAt": "2026-10-11T20:54:02.614183+00:00",
+  "method": "Existing local Markdown package and headless Edge/Playwright; static local document rendering only; remote requests blocked.",
+  "runtimeOrServiceLaunch": false,
+  "newCompatibilityExperiments": false,
+  "documents": [
+    {
+      "file": "01-environment-as-executable-artifact.pdf",
+      "browserVersion": "155.0.4283.45",
+      "bodyTextCharacters": 15751,
+      "imageCount": 0,
+      "imagesComplete": true
+    },
+    {
+      "file": "02-handoff-and-roadmap.pdf",
+      "browserVersion": "155.0.4283.45",
+      "bodyTextCharacters": 15522,
+      "imageCount": 1,
+      "imagesComplete": true
+    },
+    {
+      "file": "03-technical-white-paper.pdf",
+      "browserVersion": "155.0.4283.45",
+      "bodyTextCharacters": 30685,
+      "imageCount": 1,
+      "imagesComplete": true
+    },
+    {
+      "file": "evidence-index.pdf",
+      "browserVersion": "155.0.4283.45",
+      "bodyTextCharacters": 9066,
+      "imageCount": 0,
+      "imagesComplete": true
+    }
+  ]
+}

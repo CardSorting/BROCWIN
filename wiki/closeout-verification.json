@@ -1,0 +1,21 @@
+{
+  "schema": "brocwin.closeout-verification/v1",
+  "recordedAt": "2026-10-11T20:41:04.228578+00:00",
+  "edition": "1.4.0",
+  "status": "passed",
+  "checks": {
+    "knowledgeGuardTests": 8,
+    "knowledgeGeneratedFiles": 77,
+    "localLinks": 1091,
+    "frozenInventoryFiles": 2229,
+    "preparedIntegrationDriftPairs": 2,
+    "previousEditionsVerified": [
+      "1.0.0",
+      "1.1.0",
+      "1.2.0",
+      "1.3.0"
+    ]
+  },
+  "scope": "Documentation and retained file integrity only; no runtime, application, startup or duration tests performed.",
+  "archiveVerificationCommand": "python theseus/knowledge.py --verify-release 1.4.0"
+}

@@ -1,0 +1,15 @@
+# 0006 — Retire arenas with unusable small tails
+
+[Wiki](../README.md) · [Memory](../threads-memory.md) · [Acceptance](../acceptance-session.md)
+
+Date: 2026-10-11. Contributor: Codex /root; no delegated agents. Original game code, assets, native servers and SQL are unchanged.
+
+[Replay 024047](../../reports/browser/20261011T024047Z/review.json) reached Forest Ruins, deliberately died, and failed to revive despite repeated Z input. It returned through the original failure/reward interface. A second entry returned to town after the native server rejected a loading request in `S_FIELD_MAP` rather than `S_ROOM`. A third entry, with all breakpoints cleared, ended at guest EIP zero and retained metadata-limit OOM records. The last healthy census was 742/1024 arenas, including 85 empty full extents; it is not the failure-time state. These are separate observations, not proof of one common cause.
+
+Bounded allocator diagnosis found a further defect in `heap_arena_free_tail`: an eight-byte remainder is too small for a free block, so the function returned before marking the abandoned arena retired. Even after every allocation was freed, reclamation treated the arena as active. [10-helpers.wat](../../tools/wine-assembly/src/10-helpers.wat) now marks this validated extent retired without publishing the unusable padding as a free block. The table and backing limits are unchanged. Existing handling of usable tails is preserved.
+
+The extended [metadata-pressure regression](../../tools/wine-assembly/test/test-heap-arena-metadata-pressure.js) uses real allocations to fill the 1024 records, frees 341 arenas through a peer Wasm instance, and tests small/large requests with ordinary and eight-byte tails. The preserved `8ba02c22` module fails the small-tail case; the repaired main and compatibility modules pass all four cases. [Validation and exact commands](../../reports/heap-tail-20261011T042900Z/validation.json) retain the related memory checks and source/module identities. This proves the allocator defect; it does not yet establish its role in the original gameplay crash.
+
+The capture-only observer also retains at most two OOM-time arena tables and bounded shared thread observations before the existing import returns. Its regression checks bounded reads, unchanged guest bytes and preservation of the original import/result. No diagnostic changes original instructions or allocation results.
+
+Final integrated replay [043232](../../reports/browser/20261011T043232Z/review.json) is sealed **BLOCKED** on the repaired modules and patch. It clears two Tree of El areas, fails revival at Banthus, receives original failure rewards of 2,625 EXP / 59 ED, then terminates during town return in the original event-676 handler. No OOM or worker-slice timeout was recorded. All 242 source identities, both modules and patch match the frozen build. This verifies the bounded gameplay outcome, not the cause/correction of older intermittent loading failures. See the [acceptance report](../acceptance-session.md) for all eleven steps, exact hashes and remaining dependencies.
