@@ -1,0 +1,1466 @@
+[
+  {
+    "id": "001",
+    "scene": "01",
+    "role": "Dr. GPT",
+    "captionText": "What does it mean for a Windows application to exist outside Windows?",
+    "spokenText": "What does it mean for a Windows application to exist outside Windows?",
+    "wav": "audio/utterance-001.wav"
+  },
+  {
+    "id": "002",
+    "scene": "01",
+    "role": "Dr. GPT",
+    "captionText": "An executable file contains instructions, but instructions alone do not make an application behave.",
+    "spokenText": "An executable file contains instructions, but instructions alone do not make an application behave.",
+    "wav": "audio/utterance-002.wav"
+  },
+  {
+    "id": "003",
+    "scene": "01",
+    "role": "Dr. GPT",
+    "captionText": "It also expects libraries, memory, graphics, input, and services around it.",
+    "spokenText": "It also expects libraries, memory, graphics, input, and services around it.",
+    "wav": "audio/utterance-003.wav"
+  },
+  {
+    "id": "004",
+    "scene": "01",
+    "role": "Dr. GPT",
+    "captionText": "BROCWIN asks whether enough of those conditions can be reconstructed inside a browser to execute an inherited Windows game client.",
+    "spokenText": "Brock win asks whether enough of those conditions can be reconstructed inside a browser to execute an inherited Windows game client.",
+    "wav": "audio/utterance-004.wav"
+  },
+  {
+    "id": "005",
+    "scene": "01",
+    "role": "Dr. GPT",
+    "captionText": "I am Dr. GPT, the commissioned AI researcher presenting this completed experimental cycle for HEAV3NS.",
+    "spokenText": "I am Doctor G P T, the commissioned AI researcher presenting this completed experimental cycle for Heavens.",
+    "wav": "audio/utterance-005.wav"
+  },
+  {
+    "id": "006",
+    "scene": "01",
+    "role": "Dr. GPT",
+    "captionText": "Please begin with the question at the top of our poster: what must accompany software for it to remain executable?",
+    "spokenText": "Please begin with the question at the top of our poster: what must accompany software for it to remain executable?",
+    "wav": "audio/utterance-006.wav"
+  },
+  {
+    "id": "007",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "There are five objects to distinguish.",
+    "spokenText": "There are five objects to distinguish.",
+    "wav": "audio/utterance-007.wav"
+  },
+  {
+    "id": "008",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "The original executable is inherited compiled software.",
+    "spokenText": "The original executable is inherited compiled software.",
+    "wav": "audio/utterance-008.wav"
+  },
+  {
+    "id": "009",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "BROCWIN is the compatibility environment supplying selected conditions that software expects.",
+    "spokenText": "Brock win is the compatibility environment supplying selected conditions that software expects.",
+    "wav": "audio/utterance-009.wav"
+  },
+  {
+    "id": "010",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "The browser hosts the interpreter and its adapters.",
+    "spokenText": "The browser hosts the interpreter and its adapters.",
+    "wav": "audio/utterance-010.wav"
+  },
+  {
+    "id": "011",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "Existing native servers and their database remain outside the browser.",
+    "spokenText": "Existing native servers and their database remain outside the browser.",
+    "wav": "audio/utterance-011.wav"
+  },
+  {
+    "id": "012",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "Finally, the institutional research artifact includes the implementation record, measurements, identities, and limitations.",
+    "spokenText": "Finally, the institutional research artifact includes the implementation record, measurements, identities, and limitations.",
+    "wav": "audio/utterance-012.wav"
+  },
+  {
+    "id": "013",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "HEAV3NS-COMBO names the browser integration; BROCWIN names the compatibility project.",
+    "spokenText": "Heavens Combo names the browser integration; Brock win names the compatibility project.",
+    "wav": "audio/utterance-013.wav"
+  },
+  {
+    "id": "014",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "HEAV3NS is the commissioning and documenting institution in this record.",
+    "spokenText": "Heavens is the commissioning and documenting institution in this record.",
+    "wav": "audio/utterance-014.wav"
+  },
+  {
+    "id": "015",
+    "scene": "02",
+    "role": "Dr. GPT",
+    "captionText": "None of these names means that a complete Windows operating system has been constructed, or that Windows compatibility is complete.",
+    "spokenText": "None of these names means that a complete Windows operating system has been constructed, or that Windows compatibility is complete.",
+    "wav": "audio/utterance-015.wav"
+  },
+  {
+    "id": "016",
+    "scene": "03",
+    "role": "Dr. GPT",
+    "captionText": "The experiment emerged through HEAV3NS-COMBO, integrating a supplied native installation with a browser compatibility runtime.",
+    "spokenText": "The experiment emerged through Heavens Combo, integrating a supplied native installation with a browser compatibility runtime.",
+    "wav": "audio/utterance-016.wav"
+  },
+  {
+    "id": "017",
+    "scene": "03",
+    "role": "Dr. GPT",
+    "captionText": "Before this work there were client and server binaries, game resources, scripts, and a native checkpoint.",
+    "spokenText": "Before this work there were client and server binaries, game resources, scripts, and a native checkpoint.",
+    "wav": "audio/utterance-017.wav"
+  },
+  {
+    "id": "018",
+    "scene": "03",
+    "role": "Dr. GPT",
+    "captionText": "The client was not authored by HEAV3NS.",
+    "spokenText": "The client was not authored by Heavens.",
+    "wav": "audio/utterance-018.wav"
+  },
+  {
+    "id": "019",
+    "scene": "03",
+    "role": "Dr. GPT",
+    "captionText": "The inherited installation is identified with CardSorting's JoySwordOnline repository.",
+    "spokenText": "The inherited installation is identified with Card Sorting's Joy Sword Online repository.",
+    "wav": "audio/utterance-019.wav"
+  },
+  {
+    "id": "020",
+    "scene": "03",
+    "role": "Dr. GPT",
+    "captionText": "Wine-Assembly supplied an existing x86 interpreter and compatibility foundation.",
+    "spokenText": "Wine Assembly supplied an existing x eighty-six interpreter and compatibility foundation.",
+    "wav": "audio/utterance-020.wav"
+  },
+  {
+    "id": "021",
+    "scene": "03",
+    "role": "Dr. GPT",
+    "captionText": "The integration added resource serving, manifests, browser coordination, compatibility corrections, and observation tools.",
+    "spokenText": "The integration added resource serving, manifests, browser coordination, compatibility corrections, and observation tools.",
+    "wav": "audio/utterance-021.wav"
+  },
+  {
+    "id": "022",
+    "scene": "03",
+    "role": "Dr. GPT",
+    "captionText": "BROCWIN and HEAV3NS-COMBO became the project names on October ninth.",
+    "spokenText": "Brock win and Heavens Combo became the project names on October ninth.",
+    "wav": "audio/utterance-022.wav"
+  },
+  {
+    "id": "023",
+    "scene": "03",
+    "role": "Dr. GPT",
+    "captionText": "On October tenth, the scope explicitly retained native servers and SQL while porting the client.",
+    "spokenText": "On October tenth, the scope explicitly retained native servers and S Q L while porting the client.",
+    "wav": "audio/utterance-023.wav"
+  },
+  {
+    "id": "024",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "Preservation needs a precise qualification.",
+    "spokenText": "Preservation needs a precise qualification.",
+    "wav": "audio/utterance-024.wav"
+  },
+  {
+    "id": "025",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "The original files remained unchanged within the documented input audit.",
+    "spokenText": "The original files remained unchanged within the documented input audit.",
+    "wav": "audio/utterance-025.wav"
+  },
+  {
+    "id": "026",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "The image executing in memory was not simply an untouched copy.",
+    "spokenText": "The image executing in memory was not simply an untouched copy.",
+    "wav": "audio/utterance-026.wav"
+  },
+  {
+    "id": "027",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "Loading resolves imports and relocations.",
+    "spokenText": "Loading resolves imports and relocations.",
+    "wav": "audio/utterance-027.wav"
+  },
+  {
+    "id": "028",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "A documented compatibility intervention also installs a guarded send wrapper in mapped code padding, serializing existing packet construction under the original socket lock and providing exception cleanup.",
+    "spokenText": "A documented compatibility intervention also installs a guarded send wrapper in mapped code padding, serializing existing packet construction under the original socket lock and providing exception cleanup.",
+    "wav": "audio/utterance-028.wav"
+  },
+  {
+    "id": "029",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "That intervention must be disclosed.",
+    "spokenText": "That intervention must be disclosed.",
+    "wav": "audio/utterance-029.wav"
+  },
+  {
+    "id": "030",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "It differs from a conventional JavaScript rewrite, but it still alters mapped execution.",
+    "spokenText": "It differs from a conventional JavaScript rewrite, but it still alters mapped execution.",
+    "wav": "audio/utterance-030.wav"
+  },
+  {
+    "id": "031",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "MAJO commissioned the work; compatibility contributors performed the recorded experimentation; my publication role is documentation and presentation.",
+    "spokenText": "MAJO commissioned the work; compatibility contributors performed the recorded experimentation; my publication role is documentation and presentation.",
+    "wav": "audio/utterance-031.wav"
+  },
+  {
+    "id": "032",
+    "scene": "04",
+    "role": "Dr. GPT",
+    "captionText": "These roles do not transfer authorship of inherited software to the institution.",
+    "spokenText": "These roles do not transfer authorship of inherited software to the institution.",
+    "wav": "audio/utterance-032.wav"
+  },
+  {
+    "id": "033",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "At the center of the poster is the paper's architecture diagram.",
+    "spokenText": "At the center of the poster is the paper's architecture diagram.",
+    "wav": "audio/utterance-033.wav"
+  },
+  {
+    "id": "034",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "Its arrows describe relationships, not measured costs.",
+    "spokenText": "Its arrows describe relationships, not measured costs.",
+    "wav": "audio/utterance-034.wav"
+  },
+  {
+    "id": "035",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "On the left are the original client and libraries.",
+    "spokenText": "On the left are the original client and libraries.",
+    "wav": "audio/utterance-035.wav"
+  },
+  {
+    "id": "036",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "The PE loader maps their sections, resolves imports and relocations, and handles initialization metadata.",
+    "spokenText": "The P E loader maps their sections, resolves imports and relocations, and handles initialization metadata.",
+    "wav": "audio/utterance-036.wav"
+  },
+  {
+    "id": "037",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "PE is the Windows executable format.",
+    "spokenText": "P E is the Windows executable format.",
+    "wav": "audio/utterance-037.wav"
+  },
+  {
+    "id": "038",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "Wine-Assembly decodes the original x86 instructions into a dispatch representation and executes them in WebAssembly.",
+    "spokenText": "Wine Assembly decodes the original x eighty-six instructions into a dispatch representation and executes them in WebAssembly.",
+    "wav": "audio/utterance-038.wav"
+  },
+  {
+    "id": "039",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "Reconstructed Windows interfaces supply selected memory, threading, library, and API behavior.",
+    "spokenText": "Reconstructed Windows interfaces supply selected memory, threading, library, and A P I behavior.",
+    "wav": "audio/utterance-039.wav"
+  },
+  {
+    "id": "040",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "An API is a contract describing how software asks its environment to do something.",
+    "spokenText": "An A P I is a contract describing how software asks its environment to do something.",
+    "wav": "audio/utterance-040.wav"
+  },
+  {
+    "id": "041",
+    "scene": "05",
+    "role": "Dr. GPT",
+    "captionText": "The objective was to execute compiled game logic through these contracts, without conventionally rewriting that logic as a web application.",
+    "spokenText": "The objective was to execute compiled game logic through these contracts, without conventionally rewriting that logic as a web application.",
+    "wav": "audio/utterance-041.wav"
+  },
+  {
+    "id": "042",
+    "scene": "06",
+    "role": "Dr. GPT",
+    "captionText": "The browser adapters translate supported Direct3D nine operations and shaders into browser rendering.",
+    "spokenText": "The browser adapters translate supported Direct3D nine operations and shaders into browser rendering.",
+    "wav": "audio/utterance-042.wav"
+  },
+  {
+    "id": "043",
+    "scene": "06",
+    "role": "Dr. GPT",
+    "captionText": "They mediate physical keyboard and mouse input to reconstructed Windows interfaces.",
+    "spokenText": "They mediate physical keyboard and mouse input to reconstructed Windows interfaces.",
+    "wav": "audio/utterance-043.wav"
+  },
+  {
+    "id": "044",
+    "scene": "06",
+    "role": "Dr. GPT",
+    "captionText": "The audio path connects original FMOD and DirectSound behavior with WebAudio.",
+    "spokenText": "The audio path connects original F mod and DirectSound behavior with Web Audio.",
+    "wav": "audio/utterance-044.wav"
+  },
+  {
+    "id": "045",
+    "scene": "06",
+    "role": "Dr. GPT",
+    "captionText": "Resource manifests and browser-accessible range mounts expose original archives and files without flattening their expected namespaces.",
+    "spokenText": "Resource manifests and browser-accessible range mounts expose original archives and files without flattening their expected namespaces.",
+    "wav": "audio/utterance-045.wav"
+  },
+  {
+    "id": "046",
+    "scene": "06",
+    "role": "Dr. GPT",
+    "captionText": "These interfaces are partial.",
+    "spokenText": "These interfaces are partial.",
+    "wav": "audio/utterance-046.wav"
+  },
+  {
+    "id": "047",
+    "scene": "06",
+    "role": "Dr. GPT",
+    "captionText": "Recorded audio includes nonzero sample data and a running context; complete audible quality was not accepted.",
+    "spokenText": "Recorded audio includes nonzero sample data and a running context; complete audible quality was not accepted.",
+    "wav": "audio/utterance-047.wav"
+  },
+  {
+    "id": "048",
+    "scene": "06",
+    "role": "Dr. GPT",
+    "captionText": "Buffered input, focus reliability, text, and rendering still have documented gaps.",
+    "spokenText": "Buffered input, focus reliability, text, and rendering still have documented gaps.",
+    "wav": "audio/utterance-048.wav"
+  },
+  {
+    "id": "049",
+    "scene": "06",
+    "role": "Dr. GPT",
+    "captionText": "Supplying an interface name is only a beginning: its timing, errors, and lifetime behavior also matter.",
+    "spokenText": "Supplying an interface name is only a beginning: its timing, errors, and lifetime behavior also matter.",
+    "wav": "audio/utterance-049.wav"
+  },
+  {
+    "id": "050",
+    "scene": "07",
+    "role": "Dr. GPT",
+    "captionText": "Follow the network arrow out of the browser.",
+    "spokenText": "Follow the network arrow out of the browser.",
+    "wav": "audio/utterance-050.wav"
+  },
+  {
+    "id": "051",
+    "scene": "07",
+    "role": "Dr. GPT",
+    "captionText": "Original client code constructs the game packets.",
+    "spokenText": "Original client code constructs the game packets.",
+    "wav": "audio/utterance-051.wav"
+  },
+  {
+    "id": "052",
+    "scene": "07",
+    "role": "Dr. GPT",
+    "captionText": "Reconstructed Winsock and a WebSocket connection carry their payloads through a constrained local relay to existing native services.",
+    "spokenText": "Reconstructed Winsock and a Web Socket connection carry their payloads through a constrained local relay to existing native services.",
+    "wav": "audio/utterance-052.wav"
+  },
+  {
+    "id": "053",
+    "scene": "07",
+    "role": "Dr. GPT",
+    "captionText": "Those services were deliberately outside the client-port scope.",
+    "spokenText": "Those services were deliberately outside the client-port scope.",
+    "wav": "audio/utterance-053.wav"
+  },
+  {
+    "id": "054",
+    "scene": "07",
+    "role": "Dr. GPT",
+    "captionText": "This arrangement executes client code in the browser; it does not stream pixels from a native game process.",
+    "spokenText": "This arrangement executes client code in the browser; it does not stream pixels from a native game process.",
+    "wav": "audio/utterance-054.wav"
+  },
+  {
+    "id": "055",
+    "scene": "07",
+    "role": "Dr. GPT",
+    "captionText": "It also differs from a JavaScript game remake and from a full-system Windows virtual machine.",
+    "spokenText": "It also differs from a JavaScript game remake and from a full-system Windows virtual machine.",
+    "wav": "audio/utterance-055.wav"
+  },
+  {
+    "id": "056",
+    "scene": "07",
+    "role": "Dr. GPT",
+    "captionText": "Browser-hosted does not mean independent of local files, native services, or private backend state.",
+    "spokenText": "Browser-hosted does not mean independent of local files, native services, or private backend state.",
+    "wav": "audio/utterance-056.wav"
+  },
+  {
+    "id": "057",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "This was an evolving experiment.",
+    "spokenText": "This was an evolving experiment.",
+    "wav": "audio/utterance-057.wav"
+  },
+  {
+    "id": "058",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "Required contracts were investigated through bounded instruction, platform, and original-client comparisons.",
+    "spokenText": "Required contracts were investigated through bounded instruction, platform, and original-client comparisons.",
+    "wav": "audio/utterance-058.wav"
+  },
+  {
+    "id": "059",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "Repairs addressed loading, memory, graphics, input, and network behavior.",
+    "spokenText": "Repairs addressed loading, memory, graphics, input, and network behavior.",
+    "wav": "audio/utterance-059.wav"
+  },
+  {
+    "id": "060",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "Resource caches then reduced recorded loading, transfer, and backing-memory costs, but startup timings varied across the retained runs.",
+    "spokenText": "Resource caches then reduced recorded loading, transfer, and backing-memory costs, but startup timings varied across the retained runs.",
+    "wav": "audio/utterance-060.wav"
+  },
+  {
+    "id": "061",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "An allocator study later demonstrated a local mechanism improvement.",
+    "spokenText": "An allocator study later demonstrated a local mechanism improvement.",
+    "wav": "audio/utterance-061.wav"
+  },
+  {
+    "id": "062",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "The application comparison remained incomplete.",
+    "spokenText": "The application comparison remained incomplete.",
+    "wav": "audio/utterance-062.wav"
+  },
+  {
+    "id": "063",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "A subsequent reservation correction existed only in source-tested form.",
+    "spokenText": "A subsequent reservation correction existed only in source-tested form.",
+    "wav": "audio/utterance-063.wav"
+  },
+  {
+    "id": "064",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "Historical gameplay observations belonged to earlier builds, so their successes could not certify the final candidate.",
+    "spokenText": "Historical gameplay observations belonged to earlier builds, so their successes could not certify the final candidate.",
+    "wav": "audio/utterance-064.wav"
+  },
+  {
+    "id": "065",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "At closeout, full acceptance remained blocked.",
+    "spokenText": "At closeout, full acceptance remained blocked.",
+    "wav": "audio/utterance-065.wav"
+  },
+  {
+    "id": "066",
+    "scene": "08",
+    "role": "Dr. GPT",
+    "captionText": "The research record preserves failed comparisons and unfinished validation alongside successful observations.",
+    "spokenText": "The research record preserves failed comparisons and unfinished validation alongside successful observations.",
+    "wav": "audio/utterance-066.wav"
+  },
+  {
+    "id": "067",
+    "scene": "09",
+    "role": "Dr. GPT",
+    "captionText": "Now look at the measured results.",
+    "spokenText": "Now look at the measured results.",
+    "wav": "audio/utterance-067.wav"
+  },
+  {
+    "id": "068",
+    "scene": "09",
+    "role": "Dr. GPT",
+    "captionText": "The final control pair records visible original login at four hundred forty point seven zero three seconds cold, and four hundred thirty-eight point seven nine seven seconds warm.",
+    "spokenText": "The final control pair records visible original login at four hundred forty point seven zero three seconds cold, and four hundred thirty-eight point seven nine seven seconds warm.",
+    "wav": "audio/utterance-068.wav"
+  },
+  {
+    "id": "069",
+    "scene": "09",
+    "role": "Dr. GPT",
+    "captionText": "That is about seven minutes twenty seconds in each condition.",
+    "spokenText": "That is about seven minutes twenty seconds in each condition.",
+    "wav": "audio/utterance-069.wav"
+  },
+  {
+    "id": "070",
+    "scene": "09",
+    "role": "Dr. GPT",
+    "captionText": "Timing begins immediately before browser-context launch, and includes readiness and the start click.",
+    "spokenText": "Timing begins immediately before browser-context launch, and includes readiness and the start click.",
+    "wav": "audio/utterance-070.wav"
+  },
+  {
+    "id": "071",
+    "scene": "09",
+    "role": "Dr. GPT",
+    "captionText": "Cold means a fresh experiment-specific browser profile.",
+    "spokenText": "Cold means a fresh experiment-specific browser profile.",
+    "wav": "audio/utterance-071.wav"
+  },
+  {
+    "id": "072",
+    "scene": "09",
+    "role": "Dr. GPT",
+    "captionText": "Warm means reuse of that profile.",
+    "spokenText": "Warm means reuse of that profile.",
+    "wav": "audio/utterance-072.wav"
+  },
+  {
+    "id": "073",
+    "scene": "09",
+    "role": "Dr. GPT",
+    "captionText": "Operating-system caches were not flushed; these are not verified whole-machine cold and warm boots.",
+    "spokenText": "Operating-system caches were not flushed; these are not verified whole-machine cold and warm boots.",
+    "wav": "audio/utterance-073.wav"
+  },
+  {
+    "id": "074",
+    "scene": "09",
+    "role": "Dr. GPT",
+    "captionText": "With one sequential run per condition, their small difference is descriptive evidence, not a proven acceleration.",
+    "spokenText": "With one sequential run per condition, their small difference is descriptive evidence, not a proven acceleration.",
+    "wav": "audio/utterance-074.wav"
+  },
+  {
+    "id": "075",
+    "scene": "10",
+    "role": "Dr. GPT",
+    "captionText": "This is an archived still from the retained cold control, not a new demonstration.",
+    "spokenText": "This is an archived still from the retained cold control, not a new demonstration.",
+    "wav": "audio/utterance-075.wav"
+  },
+  {
+    "id": "076",
+    "scene": "10",
+    "role": "Dr. GPT",
+    "captionText": "It shows the original login interface with empty credential fields.",
+    "spokenText": "It shows the original login interface with empty credential fields.",
+    "wav": "audio/utterance-076.wav"
+  },
+  {
+    "id": "077",
+    "scene": "10",
+    "role": "Dr. GPT",
+    "captionText": "The canvas capture is twelve eighty by nine sixty; the requested browser viewport was a different size.",
+    "spokenText": "The canvas capture is twelve eighty by nine sixty; the requested browser viewport was a different size.",
+    "wav": "audio/utterance-077.wav"
+  },
+  {
+    "id": "078",
+    "scene": "10",
+    "role": "Dr. GPT",
+    "captionText": "Automatic color detection identified a visible scene, and image review classified that scene as login.",
+    "spokenText": "Automatic color detection identified a visible scene, and image review classified that scene as login.",
+    "wav": "audio/utterance-078.wav"
+  },
+  {
+    "id": "079",
+    "scene": "10",
+    "role": "Dr. GPT",
+    "captionText": "Four image-file records were reviewed, but they contain only two unique image hashes.",
+    "spokenText": "Four image-file records were reviewed, but they contain only two unique image hashes.",
+    "wav": "audio/utterance-079.wav"
+  },
+  {
+    "id": "080",
+    "scene": "10",
+    "role": "Dr. GPT",
+    "captionText": "They are not four independent scenes.",
+    "spokenText": "They are not four independent scenes.",
+    "wav": "audio/utterance-080.wav"
+  },
+  {
+    "id": "081",
+    "scene": "10",
+    "role": "Dr. GPT",
+    "captionText": "No credentials or gameplay actions were entered in these final startup controls.",
+    "spokenText": "No credentials or gameplay actions were entered in these final startup controls.",
+    "wav": "audio/utterance-081.wav"
+  },
+  {
+    "id": "082",
+    "scene": "11",
+    "role": "Dr. GPT",
+    "captionText": "After login, the cold observation records one thousand seventy-three frame advances over thirty-one point zero nine four seconds.",
+    "spokenText": "After login, the cold observation records one thousand seventy-three frame advances over thirty-one point zero nine four seconds.",
+    "wav": "audio/utterance-082.wav"
+  },
+  {
+    "id": "083",
+    "scene": "11",
+    "role": "Dr. GPT",
+    "captionText": "The warm observation records one thousand eighty over thirty-one point one zero nine seconds.",
+    "spokenText": "The warm observation records one thousand eighty over thirty-one point one zero nine seconds.",
+    "wav": "audio/utterance-083.wav"
+  },
+  {
+    "id": "084",
+    "scene": "11",
+    "role": "Dr. GPT",
+    "captionText": "These are counter advances, not verified display refreshes, input responsiveness, or complete simulation progress.",
+    "spokenText": "These are counter advances, not verified display refreshes, input responsiveness, or complete simulation progress.",
+    "wav": "audio/utterance-084.wav"
+  },
+  {
+    "id": "085",
+    "scene": "11",
+    "role": "Dr. GPT",
+    "captionText": "The original-input audit reports three hundred twenty-one matching entries before and after the runs.",
+    "spokenText": "The original-input audit reports three hundred twenty-one matching entries before and after the runs.",
+    "wav": "audio/utterance-085.wav"
+  },
+  {
+    "id": "086",
+    "scene": "11",
+    "role": "Dr. GPT",
+    "captionText": "A separate audit checks two hundred eleven served and observer identities.",
+    "spokenText": "A separate audit checks two hundred eleven served and observer identities.",
+    "wav": "audio/utterance-086.wav"
+  },
+  {
+    "id": "087",
+    "scene": "11",
+    "role": "Dr. GPT",
+    "captionText": "Both retained error lists are empty within their observer's reporting scope.",
+    "spokenText": "Both retained error lists are empty within their observer's reporting scope.",
+    "wav": "audio/utterance-087.wav"
+  },
+  {
+    "id": "088",
+    "scene": "11",
+    "role": "Dr. GPT",
+    "captionText": "Hash matches establish scoped file identity, not semantic correctness, and thirty-one seconds of progress cannot establish long-duration reliability.",
+    "spokenText": "Hash matches establish scoped file identity, not semantic correctness, and thirty-one seconds of progress cannot establish long-duration reliability.",
+    "wav": "audio/utterance-088.wav"
+  },
+  {
+    "id": "089",
+    "scene": "12",
+    "role": "Dr. GPT",
+    "captionText": "The allocator is the component that manages memory allocation and release.",
+    "spokenText": "The allocator is the component that manages memory allocation and release.",
+    "wav": "audio/utterance-089.wav"
+  },
+  {
+    "id": "090",
+    "scene": "12",
+    "role": "Dr. GPT",
+    "captionText": "The candidate replaced defensive duplicate-free list scans with an atomic ownership claim in an allocation header.",
+    "spokenText": "The candidate replaced defensive duplicate-free list scans with an atomic ownership claim in an allocation header.",
+    "wav": "audio/utterance-090.wav"
+  },
+  {
+    "id": "091",
+    "scene": "12",
+    "role": "Dr. GPT",
+    "captionText": "That addresses a reproduced scaling cost; it does not prove duplicate frees caused a game failure.",
+    "spokenText": "That addresses a reproduced scaling cost; it does not prove duplicate frees caused a game failure.",
+    "wav": "audio/utterance-091.wav"
+  },
+  {
+    "id": "092",
+    "scene": "12",
+    "role": "Dr. GPT",
+    "captionText": "The microbenchmark repeatedly freed and reallocated a five hundred twelve-byte payload.",
+    "spokenText": "The microbenchmark repeatedly freed and reallocated a five hundred twelve-byte payload.",
+    "wav": "audio/utterance-092.wav"
+  },
+  {
+    "id": "093",
+    "scene": "12",
+    "role": "Dr. GPT",
+    "captionText": "It used twenty thousand warmup pairs, then five repetitions of one hundred thousand pairs, across four fresh processes ordered control, candidate, candidate, control.",
+    "spokenText": "It used twenty thousand warmup pairs, then five repetitions of one hundred thousand pairs, across four fresh processes ordered control, candidate, candidate, control.",
+    "wav": "audio/utterance-093.wav"
+  },
+  {
+    "id": "094",
+    "scene": "12",
+    "role": "Dr. GPT",
+    "captionText": "Each reported value averages two process medians.",
+    "spokenText": "Each reported value averages two process medians.",
+    "wav": "audio/utterance-094.wav"
+  },
+  {
+    "id": "095",
+    "scene": "12",
+    "role": "Dr. GPT",
+    "captionText": "This is a constructed workload with a precisely defined comparison.",
+    "spokenText": "This is a constructed workload with a precisely defined comparison.",
+    "wav": "audio/utterance-095.wav"
+  },
+  {
+    "id": "096",
+    "scene": "13",
+    "role": "Dr. GPT",
+    "captionText": "At retained-list depths of sixty-four through five hundred twelve, the candidate is approximately five point one to five point five times faster in this microbenchmark.",
+    "spokenText": "At retained-list depths of sixty-four through five hundred twelve, the candidate is approximately five point one to five point five times faster in this microbenchmark.",
+    "wav": "audio/utterance-096.wav"
+  },
+  {
+    "id": "097",
+    "scene": "13",
+    "role": "Dr. GPT",
+    "captionText": "At depth zero it is thirteen point nine percent slower.",
+    "spokenText": "At depth zero it is thirteen point nine percent slower.",
+    "wav": "audio/utterance-097.wav"
+  },
+  {
+    "id": "098",
+    "scene": "13",
+    "role": "Dr. GPT",
+    "captionText": "The benchmark includes JavaScript calls and checks, tests one allocation size, and does not measure concurrent throughput or the game's allocation mix.",
+    "spokenText": "The benchmark includes JavaScript calls and checks, tests one allocation size, and does not measure concurrent throughput or the game's allocation mix.",
+    "wav": "audio/utterance-098.wav"
+  },
+  {
+    "id": "099",
+    "scene": "13",
+    "role": "Dr. GPT",
+    "captionText": "A separate short profile attributed only two point five eight nine percent of one active worker's sampled wall intervals to heap freeing.",
+    "spokenText": "A separate short profile attributed only two point five eight nine percent of one active worker's sampled wall intervals to heap freeing.",
+    "wav": "audio/utterance-099.wav"
+  },
+  {
+    "id": "100",
+    "scene": "13",
+    "role": "Dr. GPT",
+    "captionText": "That window does not characterize complete startup.",
+    "spokenText": "That window does not characterize complete startup.",
+    "wav": "audio/utterance-100.wav"
+  },
+  {
+    "id": "101",
+    "scene": "13",
+    "role": "Dr. GPT",
+    "captionText": "A local optimization can be real while its whole-application benefit remains unestablished.",
+    "spokenText": "A local optimization can be real while its whole-application benefit remains unestablished.",
+    "wav": "audio/utterance-101.wav"
+  },
+  {
+    "id": "102",
+    "scene": "14",
+    "role": "Dr. GPT",
+    "captionText": "The candidate's cold comparison was interrupted by a screenshot-helper stability timeout at two hundred ninety-seven point four eight four seconds.",
+    "spokenText": "The candidate's cold comparison was interrupted by a screenshot-helper stability timeout at two hundred ninety-seven point four eight four seconds.",
+    "wav": "audio/utterance-102.wav"
+  },
+  {
+    "id": "103",
+    "scene": "14",
+    "role": "Dr. GPT",
+    "captionText": "Its last sample still showed execution without a runtime error.",
+    "spokenText": "Its last sample still showed execution without a runtime error.",
+    "wav": "audio/utterance-103.wav"
+  },
+  {
+    "id": "104",
+    "scene": "14",
+    "role": "Dr. GPT",
+    "captionText": "We cannot label that an established allocator failure.",
+    "spokenText": "We cannot label that an established allocator failure.",
+    "wav": "audio/utterance-104.wav"
+  },
+  {
+    "id": "105",
+    "scene": "14",
+    "role": "Dr. GPT",
+    "captionText": "A subsequent warm-profile launch reached login at four hundred fifty-seven point eight five nine seconds, but followed interrupted cold priming.",
+    "spokenText": "A subsequent warm-profile launch reached login at four hundred fifty-seven point eight five nine seconds, but followed interrupted cold priming.",
+    "wav": "audio/utterance-105.wav"
+  },
+  {
+    "id": "106",
+    "scene": "14",
+    "role": "Dr. GPT",
+    "captionText": "It is not a matched warm comparison.",
+    "spokenText": "It is not a matched warm comparison.",
+    "wav": "audio/utterance-106.wav"
+  },
+  {
+    "id": "107",
+    "scene": "14",
+    "role": "Dr. GPT",
+    "captionText": "Later observer refinements were incompletely validated, and their proposed headed repair check did not run.",
+    "spokenText": "Later observer refinements were incompletely validated, and their proposed headed repair check did not run.",
+    "wav": "audio/utterance-107.wav"
+  },
+  {
+    "id": "108",
+    "scene": "14",
+    "role": "Dr. GPT",
+    "captionText": "The measured observer, prepared candidate, and final frozen source must remain separate experimental objects.",
+    "spokenText": "The measured observer, prepared candidate, and final frozen source must remain separate experimental objects.",
+    "wav": "audio/utterance-108.wav"
+  },
+  {
+    "id": "109",
+    "scene": "15",
+    "role": "Dr. GPT",
+    "captionText": "The evidence supports an original-login execution milestone.",
+    "spokenText": "The evidence supports an original-login execution milestone.",
+    "wav": "audio/utterance-109.wav"
+  },
+  {
+    "id": "110",
+    "scene": "15",
+    "role": "Dr. GPT",
+    "captionText": "It does not establish complete gameplay compatibility, production readiness, threefold acceleration, or durable operation.",
+    "spokenText": "It does not establish complete gameplay compatibility, production readiness, threefold acceleration, or durable operation.",
+    "wav": "audio/utterance-110.wav"
+  },
+  {
+    "id": "111",
+    "scene": "15",
+    "role": "Dr. GPT",
+    "captionText": "An earlier gameplay build reached character selection, town, combat, and an area gate.",
+    "spokenText": "An earlier gameplay build reached character selection, town, combat, and an area gate.",
+    "wav": "audio/utterance-111.wav"
+  },
+  {
+    "id": "112",
+    "scene": "15",
+    "role": "Dr. GPT",
+    "captionText": "Revival still failed, and two winning cycles remained unaccepted.",
+    "spokenText": "Revival still failed, and two winning cycles remained unaccepted.",
+    "wav": "audio/utterance-112.wav"
+  },
+  {
+    "id": "113",
+    "scene": "15",
+    "role": "Dr. GPT",
+    "captionText": "Those observations retain their own build identity.",
+    "spokenText": "Those observations retain their own build identity.",
+    "wav": "audio/utterance-113.wav"
+  },
+  {
+    "id": "114",
+    "scene": "15",
+    "role": "Dr. GPT",
+    "captionText": "One client, one final browser condition, local native dependencies, and a short observation cannot establish broad Windows application support.",
+    "spokenText": "One client, one final browser condition, local native dependencies, and a short observation cannot establish broad Windows application support.",
+    "wav": "audio/utterance-114.wav"
+  },
+  {
+    "id": "115",
+    "scene": "16",
+    "role": "Dr. GPT",
+    "captionText": "Beyond this game, the experiment raises five research questions.",
+    "spokenText": "Beyond this game, the experiment raises five research questions.",
+    "wav": "audio/utterance-115.wav"
+  },
+  {
+    "id": "116",
+    "scene": "16",
+    "role": "Dr. GPT",
+    "captionText": "Can reconstructing execution conditions extend an application's useful life?",
+    "spokenText": "Can reconstructing execution conditions extend an application's useful life?",
+    "wav": "audio/utterance-116.wav"
+  },
+  {
+    "id": "117",
+    "scene": "16",
+    "role": "Dr. GPT",
+    "captionText": "What can compatibility research learn by treating operating-system behavior as an interface?",
+    "spokenText": "What can compatibility research learn by treating operating-system behavior as an interface?",
+    "wav": "audio/utterance-117.wav"
+  },
+  {
+    "id": "118",
+    "scene": "16",
+    "role": "Dr. GPT",
+    "captionText": "When does the environment enabling a computational work become a research object itself?",
+    "spokenText": "When does the environment enabling a computational work become a research object itself?",
+    "wav": "audio/utterance-118.wav"
+  },
+  {
+    "id": "119",
+    "scene": "16",
+    "role": "Dr. GPT",
+    "captionText": "What must reproducibility preserve beyond executable files?",
+    "spokenText": "What must reproducibility preserve beyond executable files?",
+    "wav": "audio/utterance-119.wav"
+  },
+  {
+    "id": "120",
+    "scene": "16",
+    "role": "Dr. GPT",
+    "captionText": "And how can an institutional record allow researchers elsewhere to continue?",
+    "spokenText": "And how can an institutional record allow researchers elsewhere to continue?",
+    "wav": "audio/utterance-120.wav"
+  },
+  {
+    "id": "121",
+    "scene": "16",
+    "role": "Dr. GPT",
+    "captionText": "These are implications and opportunities, not universal capabilities established by this trial.",
+    "spokenText": "These are implications and opportunities, not universal capabilities established by this trial.",
+    "wav": "audio/utterance-121.wav"
+  },
+  {
+    "id": "122",
+    "scene": "16",
+    "role": "Dr. GPT",
+    "captionText": "The environment, its interventions, and the observations deserve examination together with the application.",
+    "spokenText": "The environment, its interventions, and the observations deserve examination together with the application.",
+    "wav": "audio/utterance-122.wav"
+  },
+  {
+    "id": "123",
+    "scene": "17",
+    "role": "Dr. GPT",
+    "captionText": "The original experimental cycle has closed.",
+    "spokenText": "The original experimental cycle has closed.",
+    "wav": "audio/utterance-123.wav"
+  },
+  {
+    "id": "124",
+    "scene": "17",
+    "role": "Dr. GPT",
+    "captionText": "This presentation does not reopen engineering.",
+    "spokenText": "This presentation does not reopen engineering.",
+    "wav": "audio/utterance-124.wav"
+  },
+  {
+    "id": "125",
+    "scene": "17",
+    "role": "Dr. GPT",
+    "captionText": "A future group could restore the artifacts independently, validate the final observer, repeat startup and performance studies, and test stated durations of runtime stability.",
+    "spokenText": "A future group could restore the artifacts independently, validate the final observer, repeat startup and performance studies, and test stated durations of runtime stability.",
+    "wav": "audio/utterance-125.wav"
+  },
+  {
+    "id": "126",
+    "scene": "17",
+    "role": "Dr. GPT",
+    "captionText": "A broader application corpus could probe compatibility, while archival work could reconstruct the original execution conditions.",
+    "spokenText": "A broader application corpus could probe compatibility, while archival work could reconstruct the original execution conditions.",
+    "wav": "audio/utterance-126.wav"
+  },
+  {
+    "id": "127",
+    "scene": "17",
+    "role": "Dr. GPT",
+    "captionText": "Each investigation needs its own scope and evidence.",
+    "spokenText": "Each investigation needs its own scope and evidence.",
+    "wav": "audio/utterance-127.wav"
+  },
+  {
+    "id": "128",
+    "scene": "17",
+    "role": "Dr. GPT",
+    "captionText": "HEAV3NS does not promise to complete these studies itself.",
+    "spokenText": "Heavens does not promise to complete these studies itself.",
+    "wav": "audio/utterance-128.wav"
+  },
+  {
+    "id": "129",
+    "scene": "17",
+    "role": "Dr. GPT",
+    "captionText": "The record is published so others can evaluate, cite, critique, and extend the work.",
+    "spokenText": "The record is published so others can evaluate, cite, critique, and extend the work.",
+    "wav": "audio/utterance-129.wav"
+  },
+  {
+    "id": "130",
+    "scene": "18",
+    "role": "Dr. GPT",
+    "captionText": "Independent continuation requires matching source snapshots, dependency pins, local patches, generated modules, manifests, and the observer used for each measurement.",
+    "spokenText": "Independent continuation requires matching source snapshots, dependency pins, local patches, generated modules, manifests, and the observer used for each measurement.",
+    "wav": "audio/utterance-130.wav"
+  },
+  {
+    "id": "131",
+    "scene": "18",
+    "role": "Dr. GPT",
+    "captionText": "It also requires the original client and platform inputs, native services, private configuration, and appropriate database state.",
+    "spokenText": "It also requires the original client and platform inputs, native services, private configuration, and appropriate database state.",
+    "wav": "audio/utterance-131.wav"
+  },
+  {
+    "id": "132",
+    "scene": "18",
+    "role": "Dr. GPT",
+    "captionText": "The documentation archive excludes credentials, database contents, large binaries, and much raw evidence.",
+    "spokenText": "The documentation archive excludes credentials, database contents, large binaries, and much raw evidence.",
+    "wav": "audio/utterance-132.wav"
+  },
+  {
+    "id": "133",
+    "scene": "18",
+    "role": "Dr. GPT",
+    "captionText": "The compatibility source license does not grant rights to distribute the game or platform components.",
+    "spokenText": "The compatibility source license does not grant rights to distribute the game or platform components.",
+    "wav": "audio/utterance-133.wav"
+  },
+  {
+    "id": "134",
+    "scene": "18",
+    "role": "Dr. GPT",
+    "captionText": "Researchers need lawful access and any necessary permissions, a separate restoration workspace, and authorization for a new experiment.",
+    "spokenText": "Researchers need lawful access and any necessary permissions, a separate restoration workspace, and authorization for a new experiment.",
+    "wav": "audio/utterance-134.wav"
+  },
+  {
+    "id": "135",
+    "scene": "18",
+    "role": "Dr. GPT",
+    "captionText": "Hash verification is a starting point; independent clean-machine restoration has not been demonstrated.",
+    "spokenText": "Hash verification is a starting point; independent clean-machine restoration has not been demonstrated.",
+    "wav": "audio/utterance-135.wav"
+  },
+  {
+    "id": "136",
+    "scene": "19",
+    "role": "Audience",
+    "captionText": "Is this just an emulator?",
+    "spokenText": "Is this just an emulator?",
+    "wav": "audio/utterance-136.wav"
+  },
+  {
+    "id": "137",
+    "scene": "19",
+    "role": "Dr. GPT",
+    "captionText": "It includes x86 interpretation.",
+    "spokenText": "It includes x eighty-six interpretation.",
+    "wav": "audio/utterance-137.wav"
+  },
+  {
+    "id": "138",
+    "scene": "19",
+    "role": "Dr. GPT",
+    "captionText": "But the experiment also reconstructs loading, selected Windows contracts, browser adapters, resource access, and service communication.",
+    "spokenText": "But the experiment also reconstructs loading, selected Windows contracts, browser adapters, resource access, and service communication.",
+    "wav": "audio/utterance-138.wav"
+  },
+  {
+    "id": "139",
+    "scene": "19",
+    "role": "Dr. GPT",
+    "captionText": "Calling it an emulator describes part of the arrangement; it does not establish its compatibility coverage.",
+    "spokenText": "Calling it an emulator describes part of the arrangement; it does not establish its compatibility coverage.",
+    "wav": "audio/utterance-139.wav"
+  },
+  {
+    "id": "140",
+    "scene": "20",
+    "role": "Audience",
+    "captionText": "Did you rewrite the original game?",
+    "spokenText": "Did you rewrite the original game?",
+    "wav": "audio/utterance-140.wav"
+  },
+  {
+    "id": "141",
+    "scene": "20",
+    "role": "Dr. GPT",
+    "captionText": "There was no conventional game-source rewrite as a web application.",
+    "spokenText": "There was no conventional game-source rewrite as a web application.",
+    "wav": "audio/utterance-141.wav"
+  },
+  {
+    "id": "142",
+    "scene": "20",
+    "role": "Dr. GPT",
+    "captionText": "Original compiled logic executes through the compatibility runtime.",
+    "spokenText": "Original compiled logic executes through the compatibility runtime.",
+    "wav": "audio/utterance-142.wav"
+  },
+  {
+    "id": "143",
+    "scene": "20",
+    "role": "Dr. GPT",
+    "captionText": "However, the documented send wrapper modifies mapped code, and loader fixups modify the execution image.",
+    "spokenText": "However, the documented send wrapper modifies mapped code, and loader fixups modify the execution image.",
+    "wav": "audio/utterance-143.wav"
+  },
+  {
+    "id": "144",
+    "scene": "20",
+    "role": "Dr. GPT",
+    "captionText": "Preserving audited disk files does not erase those interventions.",
+    "spokenText": "Preserving audited disk files does not erase those interventions.",
+    "wav": "audio/utterance-144.wav"
+  },
+  {
+    "id": "145",
+    "scene": "21",
+    "role": "Audience",
+    "captionText": "Why does startup take seven minutes?",
+    "spokenText": "Why does startup take seven minutes?",
+    "wav": "audio/utterance-145.wav"
+  },
+  {
+    "id": "146",
+    "scene": "21",
+    "role": "Dr. GPT",
+    "captionText": "The record does not establish a complete causal explanation.",
+    "spokenText": "The record does not establish a complete causal explanation.",
+    "wav": "audio/utterance-146.wav"
+  },
+  {
+    "id": "147",
+    "scene": "21",
+    "role": "Dr. GPT",
+    "captionText": "Original execution, compatibility work, scheduling, and loading are possible contributors.",
+    "spokenText": "Original execution, compatibility work, scheduling, and loading are possible contributors.",
+    "wav": "audio/utterance-147.wav"
+  },
+  {
+    "id": "148",
+    "scene": "21",
+    "role": "Dr. GPT",
+    "captionText": "A short one-worker profile identifies dispatch and allocator work, but cannot apportion the entire startup.",
+    "spokenText": "A short one-worker profile identifies dispatch and allocator work, but cannot apportion the entire startup.",
+    "wav": "audio/utterance-148.wav"
+  },
+  {
+    "id": "149",
+    "scene": "21",
+    "role": "Dr. GPT",
+    "captionText": "Recorded cache savings also did not establish repeatable login acceleration.",
+    "spokenText": "Recorded cache savings also did not establish repeatable login acceleration.",
+    "wav": "audio/utterance-149.wav"
+  },
+  {
+    "id": "150",
+    "scene": "21",
+    "role": "Dr. GPT",
+    "captionText": "Better matched whole-application measurements are needed.",
+    "spokenText": "Better matched whole-application measurements are needed.",
+    "wav": "audio/utterance-150.wav"
+  },
+  {
+    "id": "151",
+    "scene": "22",
+    "role": "Audience",
+    "captionText": "Does this prove Windows games can run in browsers?",
+    "spokenText": "Does this prove Windows games can run in browsers?",
+    "wav": "audio/utterance-151.wav"
+  },
+  {
+    "id": "152",
+    "scene": "22",
+    "role": "Dr. GPT",
+    "captionText": "It demonstrates this inherited client's login milestone under the retained conditions.",
+    "spokenText": "It demonstrates this inherited client's login milestone under the retained conditions.",
+    "wav": "audio/utterance-152.wav"
+  },
+  {
+    "id": "153",
+    "scene": "22",
+    "role": "Dr. GPT",
+    "captionText": "It does not establish complete support even for this game, or general support for other Windows games.",
+    "spokenText": "It does not establish complete support even for this game, or general support for other Windows games.",
+    "wav": "audio/utterance-153.wav"
+  },
+  {
+    "id": "154",
+    "scene": "22",
+    "role": "Dr. GPT",
+    "captionText": "Broader compatibility requires additional applications and explicit acceptance criteria.",
+    "spokenText": "Broader compatibility requires additional applications and explicit acceptance criteria.",
+    "wav": "audio/utterance-154.wav"
+  },
+  {
+    "id": "155",
+    "scene": "23",
+    "role": "Audience",
+    "captionText": "What is actually novel about the experiment?",
+    "spokenText": "What is actually novel about the experiment?",
+    "wav": "audio/utterance-155.wav"
+  },
+  {
+    "id": "156",
+    "scene": "23",
+    "role": "Dr. GPT",
+    "captionText": "Its contribution is this specific integration and its auditable account: inherited client execution, browser compatibility conditions, native-service boundaries, interventions, and bounded measurements.",
+    "spokenText": "Its contribution is this specific integration and its auditable account: inherited client execution, browser compatibility conditions, native-service boundaries, interventions, and bounded measurements.",
+    "wav": "audio/utterance-156.wav"
+  },
+  {
+    "id": "157",
+    "scene": "23",
+    "role": "Dr. GPT",
+    "captionText": "The paper does not establish first-ever priority or superiority over other systems.",
+    "spokenText": "The paper does not establish first-ever priority or superiority over other systems.",
+    "wav": "audio/utterance-157.wav"
+  },
+  {
+    "id": "158",
+    "scene": "23",
+    "role": "Dr. GPT",
+    "captionText": "Much of its foundation is inherited and explicitly credited.",
+    "spokenText": "Much of its foundation is inherited and explicitly credited.",
+    "wav": "audio/utterance-158.wav"
+  },
+  {
+    "id": "159",
+    "scene": "24",
+    "role": "Audience",
+    "captionText": "Can another research group reproduce your result?",
+    "spokenText": "Can another research group reproduce your result?",
+    "wav": "audio/utterance-159.wav"
+  },
+  {
+    "id": "160",
+    "scene": "24",
+    "role": "Dr. GPT",
+    "captionText": "The records provide a conditional route, not a completed independent replication.",
+    "spokenText": "The records provide a conditional route, not a completed independent replication.",
+    "wav": "audio/utterance-160.wav"
+  },
+  {
+    "id": "161",
+    "scene": "24",
+    "role": "Dr. GPT",
+    "captionText": "A group needs the matching artifacts, original and private inputs, permissions, and a validated observer.",
+    "spokenText": "A group needs the matching artifacts, original and private inputs, permissions, and a validated observer.",
+    "wav": "audio/utterance-161.wav"
+  },
+  {
+    "id": "162",
+    "scene": "24",
+    "role": "Dr. GPT",
+    "captionText": "A transferred documentation archive alone cannot restore the whole environment.",
+    "spokenText": "A transferred documentation archive alone cannot restore the whole environment.",
+    "wav": "audio/utterance-162.wav"
+  },
+  {
+    "id": "163",
+    "scene": "25",
+    "role": "Audience",
+    "captionText": "What would need to happen before this becomes a reliable compatibility runtime?",
+    "spokenText": "What would need to happen before this becomes a reliable compatibility runtime?",
+    "wav": "audio/utterance-163.wav"
+  },
+  {
+    "id": "164",
+    "scene": "25",
+    "role": "Dr. GPT",
+    "captionText": "Validate the observer and restored artifacts, resolve open loading, memory, networking, input, and rendering contracts, and demonstrate repeated startup, full gameplay gates, and stated-duration stability.",
+    "spokenText": "Validate the observer and restored artifacts, resolve open loading, memory, networking, input, and rendering contracts, and demonstrate repeated startup, full gameplay gates, and stated-duration stability.",
+    "wav": "audio/utterance-164.wav"
+  },
+  {
+    "id": "165",
+    "scene": "25",
+    "role": "Dr. GPT",
+    "captionText": "Reliability must be measured against declared conditions.",
+    "spokenText": "Reliability must be measured against declared conditions.",
+    "wav": "audio/utterance-165.wav"
+  },
+  {
+    "id": "166",
+    "scene": "25",
+    "role": "Dr. GPT",
+    "captionText": "The present evidence does not supply that acceptance.",
+    "spokenText": "The present evidence does not supply that acceptance.",
+    "wav": "audio/utterance-166.wav"
+  },
+  {
+    "id": "167",
+    "scene": "26",
+    "role": "Audience",
+    "captionText": "Why publish this if the product objective was not fully achieved?",
+    "spokenText": "Why publish this if the product objective was not fully achieved?",
+    "wav": "audio/utterance-167.wav"
+  },
+  {
+    "id": "168",
+    "scene": "26",
+    "role": "Dr. GPT",
+    "captionText": "A bounded result can still inform research.",
+    "spokenText": "A bounded result can still inform research.",
+    "wav": "audio/utterance-168.wav"
+  },
+  {
+    "id": "169",
+    "scene": "26",
+    "role": "Dr. GPT",
+    "captionText": "The execution milestone, local optimization, failed comparison, and unresolved contracts give others something concrete to examine.",
+    "spokenText": "The execution milestone, local optimization, failed comparison, and unresolved contracts give others something concrete to examine.",
+    "wav": "audio/utterance-169.wav"
+  },
+  {
+    "id": "170",
+    "scene": "26",
+    "role": "Dr. GPT",
+    "captionText": "Publication makes those limits inspectable; it does not turn incomplete acceptance into a completed product.",
+    "spokenText": "Publication makes those limits inspectable; it does not turn incomplete acceptance into a completed product.",
+    "wav": "audio/utterance-170.wav"
+  },
+  {
+    "id": "171",
+    "scene": "27",
+    "role": "Dr. GPT",
+    "captionText": "Our primary source is the BROCWIN Technical White Paper, version one point zero point one, dated October eleventh, twenty twenty-six.",
+    "spokenText": "Our primary source is the Brock win Technical White Paper, version one point zero point one, dated October eleventh, twenty twenty-six.",
+    "wav": "audio/utterance-171.wav"
+  },
+  {
+    "id": "172",
+    "scene": "27",
+    "role": "Dr. GPT",
+    "captionText": "HEAV3NS commissioned and preserves the record.",
+    "spokenText": "Heavens commissioned and preserves the record.",
+    "wav": "audio/utterance-172.wav"
+  },
+  {
+    "id": "173",
+    "scene": "27",
+    "role": "Dr. GPT",
+    "captionText": "Credit remains with the original developers, CardSorting and prior local contributors, Wine-Assembly's human and agent contributors, Microsoft platform contributors, the websockets contributors, and recorded Codex integration and review contributors.",
+    "spokenText": "Credit remains with the original developers, Card Sorting and prior local contributors, Wine Assembly's human and agent contributors, Microsoft platform contributors, the websockets contributors, and recorded Codex integration and review contributors.",
+    "wav": "audio/utterance-173.wav"
+  },
+  {
+    "id": "174",
+    "scene": "27",
+    "role": "Dr. GPT",
+    "captionText": "The source slate identifies their documented roles.",
+    "spokenText": "The source slate identifies their documented roles.",
+    "wav": "audio/utterance-174.wav"
+  },
+  {
+    "id": "175",
+    "scene": "27",
+    "role": "Dr. GPT",
+    "captionText": "This recording uses synthesized presenter and audience voices.",
+    "spokenText": "This recording uses synthesized presenter and audience voices.",
+    "wav": "audio/utterance-175.wav"
+  },
+  {
+    "id": "176",
+    "scene": "27",
+    "role": "Dr. GPT",
+    "captionText": "The questions are simulated; the archived images and measurements come from retained evidence.",
+    "spokenText": "The questions are simulated; the archived images and measurements come from retained evidence.",
+    "wav": "audio/utterance-176.wav"
+  },
+  {
+    "id": "177",
+    "scene": "28",
+    "role": "Dr. GPT",
+    "captionText": "The significance of BROCWIN is not simply whether a particular MMO can run inside a browser.",
+    "spokenText": "The significance of Brock win is not simply whether a particular M M O can run inside a browser.",
+    "wav": "audio/utterance-177.wav"
+  },
+  {
+    "id": "178",
+    "scene": "28",
+    "role": "Dr. GPT",
+    "captionText": "The research investigates the computational conditions that allow inherited software to execute outside its original environment.",
+    "spokenText": "The research investigates the computational conditions that allow inherited software to execute outside its original environment.",
+    "wav": "audio/utterance-178.wav"
+  },
+  {
+    "id": "179",
+    "scene": "28",
+    "role": "Dr. GPT",
+    "captionText": "Its results are bounded, its limitations documented, and its future open to independent inquiry.",
+    "spokenText": "Its results are bounded, its limitations documented, and its future open to independent inquiry.",
+    "wav": "audio/utterance-179.wav"
+  },
+  {
+    "id": "180",
+    "scene": "28",
+    "role": "Dr. GPT",
+    "captionText": "The originating institution has completed this experimental cycle.",
+    "spokenText": "The originating institution has completed this experimental cycle.",
+    "wav": "audio/utterance-180.wav"
+  },
+  {
+    "id": "181",
+    "scene": "28",
+    "role": "Dr. GPT",
+    "captionText": "Original contributors keep their credit; future custody need not remain with them.",
+    "spokenText": "Original contributors keep their credit; future custody need not remain with them.",
+    "wav": "audio/utterance-181.wav"
+  },
+  {
+    "id": "182",
+    "scene": "28",
+    "role": "Dr. GPT",
+    "captionText": "The research can now propagate.",
+    "spokenText": "The research can now propagate.",
+    "wav": "audio/utterance-182.wav"
+  },
+  {
+    "id": "183",
+    "scene": "28",
+    "role": "Dr. GPT",
+    "captionText": "THE WORK NO LONGER DEMANDS AN AUTHOR.",
+    "spokenText": "THE WORK NO LONGER DEMANDS AN AUTHOR.",
+    "wav": "audio/utterance-183.wav"
+  }
+]

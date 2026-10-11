@@ -1,0 +1,120 @@
+{
+  "browser": "155.0.4283.45",
+  "method": "Static local documents only; network requests blocked.",
+  "runtimeOrServiceLaunch": false,
+  "newRuntimeCapture": false,
+  "scenes": [
+    {
+      "scene": "01",
+      "layoutIssues": []
+    },
+    {
+      "scene": "02",
+      "layoutIssues": []
+    },
+    {
+      "scene": "03",
+      "layoutIssues": []
+    },
+    {
+      "scene": "04",
+      "layoutIssues": []
+    },
+    {
+      "scene": "05",
+      "layoutIssues": []
+    },
+    {
+      "scene": "06",
+      "layoutIssues": []
+    },
+    {
+      "scene": "07",
+      "layoutIssues": []
+    },
+    {
+      "scene": "08",
+      "layoutIssues": []
+    },
+    {
+      "scene": "09",
+      "layoutIssues": []
+    },
+    {
+      "scene": "10",
+      "layoutIssues": []
+    },
+    {
+      "scene": "11",
+      "layoutIssues": []
+    },
+    {
+      "scene": "12",
+      "layoutIssues": []
+    },
+    {
+      "scene": "13",
+      "layoutIssues": []
+    },
+    {
+      "scene": "14",
+      "layoutIssues": []
+    },
+    {
+      "scene": "15",
+      "layoutIssues": []
+    },
+    {
+      "scene": "16",
+      "layoutIssues": []
+    },
+    {
+      "scene": "17",
+      "layoutIssues": []
+    },
+    {
+      "scene": "18",
+      "layoutIssues": []
+    },
+    {
+      "scene": "19",
+      "layoutIssues": []
+    },
+    {
+      "scene": "20",
+      "layoutIssues": []
+    },
+    {
+      "scene": "21",
+      "layoutIssues": []
+    },
+    {
+      "scene": "22",
+      "layoutIssues": []
+    },
+    {
+      "scene": "23",
+      "layoutIssues": []
+    },
+    {
+      "scene": "24",
+      "layoutIssues": []
+    },
+    {
+      "scene": "25",
+      "layoutIssues": []
+    },
+    {
+      "scene": "26",
+      "layoutIssues": []
+    },
+    {
+      "scene": "27",
+      "layoutIssues": []
+    },
+    {
+      "scene": "28",
+      "layoutIssues": []
+    }
+  ]
+}

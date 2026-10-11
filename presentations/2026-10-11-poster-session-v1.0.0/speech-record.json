@@ -1,0 +1,11 @@
+﻿{
+    "method":  "Local Windows SAPI synthesized narration; no cloud voice service",
+    "presenterVoice":  "Microsoft David Desktop - English (United States)",
+    "audienceVoice":  "Microsoft Zira Desktop - English (United States)",
+    "utterances":  183,
+    "rate":  0,
+    "volume":  100,
+    "voicesAreSynthesized":  true,
+    "audienceIsSimulated":  true,
+    "runtimeOrServiceLaunch":  false
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "heav3ns.brocwin.poster-sources/v1",
+  "primaryVersion": "1.0.1",
+  "knowledgeBaseline": "1.4.1",
+  "records": [
+    {
+      "path": "theseus/publications/2026-10-11-v1.0.1/figures/architecture.svg",
+      "sha256": "5766a022905cb4f4ca7ac1a0182f34b5f081242bfd18d58177aa022cd0a3554f",
+      "bytes": 4392
+    },
+    {
+      "path": "theseus/reports/performance/heap-control-20261011/run-01/first-visible-scene.png",
+      "sha256": "4f12b33a2ad234a12046b8e4e96e6e315e15f8061d66b41400b01458a8ac3987",
+      "bytes": 561081
+    },
+    {
+      "path": "theseus/reports/performance/heap-control-20261011/run-02/final-canvas.png",
+      "sha256": "33b0efaee6621e9b8767607ab34b1872d27f472a43f83e9a6f3224b361d9167d",
+      "bytes": 561098
+    },
+    {
+      "path": "theseus/publications/2026-10-11-v1.0.1/03-technical-white-paper.md",
+      "sha256": "3025226ee58d4d68e4899f00c9532caa8191aa9325c76b2699d98feff51deebb",
+      "bytes": 33471
+    },
+    {
+      "path": "theseus/publications/2026-10-11-v1.0.1/03-technical-white-paper.pdf",
+      "sha256": "b55879c6f0e1ccf97c27b6f6c5e19e27143711ddfdb70b11124d8469a022f7fd",
+      "bytes": 245273
+    },
+    {
+      "path": "theseus/publications/2026-10-11-v1.0.1/evidence-index.md",
+      "sha256": "c321054d248e78a6813e62d1d8cda9fd2d82fece25b883faee8424fcb4d893da",
+      "bytes": 14506
+    },
+    {
+      "path": "theseus/publications/2026-10-11-v1.0.1/evidence-ledger.json",
+      "sha256": "db7cd7774310aed256ff08d0c4914c828bce089b21a09e2ec047bb9937d60497",
+      "bytes": 19359
+    },
+    {
+      "path": "theseus/publications/2026-10-11-v1.0.1/publication-facts.json",
+      "sha256": "e88609aa07eaa1a812581f772ea82851605cc31e9f0a595f075c5fb71a371d02",
+      "bytes": 1785
+    },
+    {
+      "path": "theseus/publications/2026-10-11-v1.0.1/01-environment-as-executable-artifact.md",
+      "sha256": "e45bab5e43e2dd451519ea13126794465c1d018f930a6376a5fa559f72f79bb5",
+      "bytes": 16655
+    },
+    {
+      "path": "theseus/wiki/closeout.md",
+      "sha256": "c2cd9433f0bc579ecac2d2e08945306b8183df77ee686fa2f66b898d161634a9",
+      "bytes": 5997
+    },
+    {
+      "path": "theseus/browser/dependencies.json",
+      "sha256": "1b61e551e094b2bd26a74a7401ee666c023d21dcc38b0779003fc08a24f47a0d",
+      "bytes": 588
+    },
+    {
+      "path": "theseus/browser/provenance.json",
+      "sha256": "04ce6d83ee4ab65cdf7766af27ffe06fb952cc2dd1e1960064bb2d342f6751e9",
+      "bytes": 80307
+    },
+    {
+      "path": "theseus/provenance.json",
+      "sha256": "142e33dba470a146b58217c0a22974c5859abf12fcc86b6cf8b256dbe75b8423",
+      "bytes": 1076
+    },
+    {
+      "path": "theseus/reports/performance/heap-control-20261011/run-01/result.json",
+      "sha256": "c210b5f5af52f9dbd031e6419796f37a075eb5365ca9a969f05ba450c4c6686e",
+      "bytes": 981962
+    },
+    {
+      "path": "theseus/reports/performance/heap-control-20261011/run-02/result.json",
+      "sha256": "9a90436426b62353a6e56119f6621144ba314c5be537f21f215b619f973bc5a3",
+      "bytes": 965214
+    },
+    {
+      "path": "theseus/reports/performance/heap-control-20261011/source-audit-review.json",
+      "sha256": "269e60f8e0996368e4e722adba85b6316475ff4e034e8656c47644060c274cd4",
+      "bytes": 53120
+    },
+    {
+      "path": "theseus/reports/performance/heap-free-20261011/microbenchmark-summary.json",
+      "sha256": "3f829965c0c39372ff7736e9d03a3f20c2163616ac927ece011d07bee537988e",
+      "bytes": 7801
+    },
+    {
+      "path": "theseus/reports/performance/heap-candidate-20261011/run-01/result.json",
+      "sha256": "546f761bf51dc49d773cf061638498c03ea6e664516fc8413991ed5f4acc655a",
+      "bytes": 164842
+    },
+    {
+      "path": "theseus/reports/performance/heap-candidate-20261011/run-02/result.json",
+      "sha256": "7ddc1e6c694f346c99b6865b5df78b3991419ed2bd897a1747bea17a087fbd0b",
+      "bytes": 983309
+    },
+    {
+      "path": "theseus/reports/frozen-closeout-20261011/independent-review.json",
+      "sha256": "7ae9d693cd27001ad7b04f9991dd682fc01360f6c8e3710fadbac68e720c715b",
+      "bytes": 2334
+    }
+  ],
+  "assets": [
+    {
+      "copy": "assets/architecture.svg",
+      "source": "theseus/publications/2026-10-11-v1.0.1/figures/architecture.svg",
+      "sha256": "5766a022905cb4f4ca7ac1a0182f34b5f081242bfd18d58177aa022cd0a3554f",
+      "unchangedCopy": true
+    },
+    {
+      "copy": "assets/cold-login.png",
+      "source": "theseus/reports/performance/heap-control-20261011/run-01/first-visible-scene.png",
+      "sha256": "4f12b33a2ad234a12046b8e4e96e6e315e15f8061d66b41400b01458a8ac3987",
+      "unchangedCopy": true
+    },
+    {
+      "copy": "assets/warm-login.png",
+      "source": "theseus/reports/performance/heap-control-20261011/run-02/final-canvas.png",
+      "sha256": "33b0efaee6621e9b8767607ab34b1872d27f472a43f83e9a6f3224b361d9167d",
+      "unchangedCopy": true
+    }
+  ]
+}

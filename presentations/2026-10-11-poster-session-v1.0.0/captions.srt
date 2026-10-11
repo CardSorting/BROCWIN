@@ -1,0 +1,1442 @@
+1
+00:00:00,422 --> 00:00:02,310
+Dr. GPT: What does it mean for a Windows
+
+2
+00:00:02,310 --> 00:00:04,057
+application to exist outside Windows?
+
+3
+00:00:04,115 --> 00:00:06,599
+An executable file contains instructions,
+but
+
+4
+00:00:06,599 --> 00:00:09,524
+instructions alone do not make an
+application behave.
+
+5
+00:00:09,582 --> 00:00:14,259
+It also expects libraries, memory,
+graphics, input, and services around it.
+
+6
+00:00:14,317 --> 00:00:17,550
+BROCWIN asks whether enough of those
+conditions can be reconstructed
+
+7
+00:00:17,550 --> 00:00:20,450
+inside a browser to execute an inherited
+Windows game client.
+
+8
+00:00:20,508 --> 00:00:23,518
+I am Dr. GPT, the commissioned AI
+researcher presenting
+
+9
+00:00:23,518 --> 00:00:26,036
+this completed experimental cycle for
+HEAV3NS.
+
+10
+00:00:26,093 --> 00:00:28,867
+Please begin with the question at the top
+of our poster:
+
+11
+00:00:28,867 --> 00:00:31,691
+what must accompany software for it to
+remain executable?
+
+12
+00:00:32,538 --> 00:00:34,786
+There are five objects to distinguish.
+
+13
+00:00:34,843 --> 00:00:38,038
+The original executable is inherited
+compiled software.
+
+14
+00:00:38,096 --> 00:00:40,609
+BROCWIN is the compatibility environment
+supplying
+
+15
+00:00:40,609 --> 00:00:42,720
+selected conditions that software expects.
+
+16
+00:00:42,777 --> 00:00:45,501
+The browser hosts the interpreter and its
+adapters.
+
+17
+00:00:45,558 --> 00:00:49,052
+Existing native servers and their database
+remain outside the browser.
+
+18
+00:00:49,110 --> 00:00:52,179
+Finally, the institutional research
+artifact includes the
+
+19
+00:00:52,179 --> 00:00:55,680
+implementation record, measurements,
+identities, and limitations.
+
+20
+00:00:55,737 --> 00:00:58,198
+HEAV3NS-COMBO names the browser
+integration;
+
+21
+00:00:58,198 --> 00:01:00,434
+BROCWIN names the compatibility project.
+
+22
+00:01:00,492 --> 00:01:03,905
+HEAV3NS is the commissioning and
+documenting institution in this record.
+
+23
+00:01:03,962 --> 00:01:07,131
+None of these names means that a complete
+Windows operating system
+
+24
+00:01:07,131 --> 00:01:10,203
+has been constructed, or that Windows
+compatibility is complete.
+
+25
+00:01:11,050 --> 00:01:13,905
+The experiment emerged through
+HEAV3NS-COMBO, integrating a
+
+26
+00:01:13,905 --> 00:01:17,099
+supplied native installation with a
+browser compatibility runtime.
+
+27
+00:01:17,156 --> 00:01:19,930
+Before this work there were client and
+server binaries,
+
+28
+00:01:19,930 --> 00:01:22,401
+game resources, scripts, and a native
+checkpoint.
+
+29
+00:01:22,459 --> 00:01:24,723
+The client was not authored by HEAV3NS.
+
+30
+00:01:24,780 --> 00:01:26,936
+The inherited installation is identified
+
+31
+00:01:26,936 --> 00:01:29,362
+with CardSorting's JoySwordOnline
+repository.
+
+32
+00:01:29,419 --> 00:01:31,651
+Wine-Assembly supplied an existing x86
+
+33
+00:01:31,651 --> 00:01:34,059
+interpreter and compatibility foundation.
+
+34
+00:01:34,116 --> 00:01:37,642
+The integration added resource serving,
+manifests, browser
+
+35
+00:01:37,642 --> 00:01:41,472
+coordination, compatibility corrections,
+and observation tools.
+
+36
+00:01:41,529 --> 00:01:45,211
+BROCWIN and HEAV3NS-COMBO became the
+project names on October ninth.
+
+37
+00:01:45,268 --> 00:01:47,886
+On October tenth, the scope explicitly
+retained
+
+38
+00:01:47,886 --> 00:01:50,559
+native servers and SQL while porting the
+client.
+
+39
+00:01:51,406 --> 00:01:54,030
+Preservation needs a precise
+qualification.
+
+40
+00:01:54,087 --> 00:01:57,677
+The original files remained unchanged
+within the documented input audit.
+
+41
+00:01:57,734 --> 00:02:01,182
+The image executing in memory was not
+simply an untouched copy.
+
+42
+00:02:01,240 --> 00:02:03,798
+Loading resolves imports and relocations.
+
+43
+00:02:03,856 --> 00:02:07,104
+A documented compatibility intervention
+also installs a guarded send
+
+44
+00:02:07,104 --> 00:02:10,543
+wrapper in mapped code padding,
+serializing existing packet construction
+
+45
+00:02:10,543 --> 00:02:13,553
+under the original socket lock and
+providing exception cleanup.
+
+46
+00:02:13,610 --> 00:02:15,771
+That intervention must be disclosed.
+
+47
+00:02:15,828 --> 00:02:17,998
+It differs from a conventional JavaScript
+
+48
+00:02:17,998 --> 00:02:20,433
+rewrite, but it still alters mapped
+execution.
+
+49
+00:02:20,490 --> 00:02:24,553
+MAJO commissioned the work; compatibility
+contributors performed the recorded
+
+50
+00:02:24,553 --> 00:02:28,298
+experimentation; my publication role is
+documentation and presentation.
+
+51
+00:02:28,356 --> 00:02:30,335
+These roles do not transfer authorship
+
+52
+00:02:30,335 --> 00:02:32,470
+of inherited software to the institution.
+
+53
+00:02:33,317 --> 00:02:36,657
+At the center of the poster is the paper's
+architecture diagram.
+
+54
+00:02:36,715 --> 00:02:40,086
+Its arrows describe relationships, not
+measured costs.
+
+55
+00:02:40,144 --> 00:02:42,798
+On the left are the original client and
+libraries.
+
+56
+00:02:42,856 --> 00:02:45,764
+The PE loader maps their sections,
+resolves imports
+
+57
+00:02:45,764 --> 00:02:48,786
+and relocations, and handles
+initialization metadata.
+
+58
+00:02:48,844 --> 00:02:51,418
+PE is the Windows executable format.
+
+59
+00:02:51,476 --> 00:02:54,613
+Wine-Assembly decodes the original x86
+instructions into a
+
+60
+00:02:54,613 --> 00:02:57,697
+dispatch representation and executes them
+in WebAssembly.
+
+61
+00:02:57,755 --> 00:03:00,879
+Reconstructed Windows interfaces supply
+selected
+
+62
+00:03:00,879 --> 00:03:03,808
+memory, threading, library, and API
+behavior.
+
+63
+00:03:03,865 --> 00:03:06,254
+An API is a contract describing how
+software
+
+64
+00:03:06,254 --> 00:03:08,263
+asks its environment to do something.
+
+65
+00:03:08,321 --> 00:03:11,910
+The objective was to execute compiled game
+logic through these contracts,
+
+66
+00:03:11,910 --> 00:03:15,106
+without conventionally rewriting that
+logic as a web application.
+
+67
+00:03:15,952 --> 00:03:18,565
+The browser adapters translate supported
+Direct3D
+
+68
+00:03:18,565 --> 00:03:21,285
+nine operations and shaders into browser
+rendering.
+
+69
+00:03:21,342 --> 00:03:23,342
+They mediate physical keyboard and mouse
+
+70
+00:03:23,342 --> 00:03:25,442
+input to reconstructed Windows interfaces.
+
+71
+00:03:25,499 --> 00:03:27,484
+The audio path connects original FMOD
+
+72
+00:03:27,484 --> 00:03:29,575
+and DirectSound behavior with WebAudio.
+
+73
+00:03:29,633 --> 00:03:33,037
+Resource manifests and browser-accessible
+range mounts expose original
+
+74
+00:03:33,037 --> 00:03:36,149
+archives and files without flattening
+their expected namespaces.
+
+75
+00:03:36,207 --> 00:03:38,107
+These interfaces are partial.
+
+76
+00:03:38,164 --> 00:03:41,230
+Recorded audio includes nonzero sample
+data and a running
+
+77
+00:03:41,230 --> 00:03:43,972
+context; complete audible quality was not
+accepted.
+
+78
+00:03:44,030 --> 00:03:46,338
+Buffered input, focus reliability, text,
+
+79
+00:03:46,338 --> 00:03:48,704
+and rendering still have documented gaps.
+
+80
+00:03:48,761 --> 00:03:51,595
+Supplying an interface name is only a
+beginning: its
+
+81
+00:03:51,595 --> 00:03:54,320
+timing, errors, and lifetime behavior also
+matter.
+
+82
+00:03:55,167 --> 00:03:57,481
+Follow the network arrow out of the
+browser.
+
+83
+00:03:57,538 --> 00:04:00,350
+Original client code constructs the game
+packets.
+
+84
+00:04:00,407 --> 00:04:03,618
+Reconstructed Winsock and a WebSocket
+connection carry their payloads
+
+85
+00:04:03,618 --> 00:04:06,503
+through a constrained local relay to
+existing native services.
+
+86
+00:04:06,560 --> 00:04:09,759
+Those services were deliberately outside
+the client-port scope.
+
+87
+00:04:09,816 --> 00:04:12,550
+This arrangement executes client code in
+the browser;
+
+88
+00:04:12,550 --> 00:04:15,283
+it does not stream pixels from a native
+game process.
+
+89
+00:04:15,341 --> 00:04:17,550
+It also differs from a JavaScript game
+remake
+
+90
+00:04:17,550 --> 00:04:19,858
+and from a full-system Windows virtual
+machine.
+
+91
+00:04:19,915 --> 00:04:22,474
+Browser-hosted does not mean independent
+of local
+
+92
+00:04:22,474 --> 00:04:25,033
+files, native services, or private backend
+state.
+
+93
+00:04:25,880 --> 00:04:27,880
+This was an evolving experiment.
+
+94
+00:04:27,937 --> 00:04:30,603
+Required contracts were investigated
+through bounded
+
+95
+00:04:30,603 --> 00:04:33,423
+instruction, platform, and original-client
+comparisons.
+
+96
+00:04:33,481 --> 00:04:38,530
+Repairs addressed loading, memory,
+graphics, input, and network behavior.
+
+97
+00:04:38,588 --> 00:04:41,943
+Resource caches then reduced recorded
+loading, transfer, and
+
+98
+00:04:41,943 --> 00:04:46,082
+backing-memory costs, but startup timings
+varied across the retained runs.
+
+99
+00:04:46,139 --> 00:04:49,729
+An allocator study later demonstrated a
+local mechanism improvement.
+
+100
+00:04:49,786 --> 00:04:52,444
+The application comparison remained
+incomplete.
+
+101
+00:04:52,502 --> 00:04:56,317
+A subsequent reservation correction
+existed only in source-tested form.
+
+102
+00:04:56,375 --> 00:04:59,440
+Historical gameplay observations belonged
+to earlier builds,
+
+103
+00:04:59,440 --> 00:05:02,351
+so their successes could not certify the
+final candidate.
+
+104
+00:05:02,409 --> 00:05:05,290
+At closeout, full acceptance remained
+blocked.
+
+105
+00:05:05,347 --> 00:05:07,904
+The research record preserves failed
+comparisons and
+
+106
+00:05:07,904 --> 00:05:10,657
+unfinished validation alongside successful
+observations.
+
+107
+00:05:11,504 --> 00:05:13,496
+Now look at the measured results.
+
+108
+00:05:13,553 --> 00:05:16,483
+The final control pair records visible
+original login at four
+
+109
+00:05:16,483 --> 00:05:19,317
+hundred forty point seven zero three
+seconds cold, and four
+
+110
+00:05:19,317 --> 00:05:22,054
+hundred thirty-eight point seven nine
+seven seconds warm.
+
+111
+00:05:22,112 --> 00:05:25,238
+That is about seven minutes twenty seconds
+in each condition.
+
+112
+00:05:25,295 --> 00:05:27,754
+Timing begins immediately before
+browser-context
+
+113
+00:05:27,754 --> 00:05:30,367
+launch, and includes readiness and the
+start click.
+
+114
+00:05:30,425 --> 00:05:33,616
+Cold means a fresh experiment-specific
+browser profile.
+
+115
+00:05:33,673 --> 00:05:35,838
+Warm means reuse of that profile.
+
+116
+00:05:35,895 --> 00:05:38,352
+Operating-system caches were not flushed;
+these
+
+117
+00:05:38,352 --> 00:05:41,017
+are not verified whole-machine cold and
+warm boots.
+
+118
+00:05:41,075 --> 00:05:44,240
+With one sequential run per condition,
+their small difference
+
+119
+00:05:44,240 --> 00:05:46,887
+is descriptive evidence, not a proven
+acceleration.
+
+120
+00:05:47,733 --> 00:05:50,044
+This is an archived still from the
+retained
+
+121
+00:05:50,044 --> 00:05:52,085
+cold control, not a new demonstration.
+
+122
+00:05:52,143 --> 00:05:55,552
+It shows the original login interface with
+empty credential fields.
+
+123
+00:05:55,610 --> 00:05:58,213
+The canvas capture is twelve eighty by
+nine sixty;
+
+124
+00:05:58,213 --> 00:06:00,920
+the requested browser viewport was a
+different size.
+
+125
+00:06:00,977 --> 00:06:03,695
+Automatic color detection identified a
+visible scene,
+
+126
+00:06:03,695 --> 00:06:06,157
+and image review classified that scene as
+login.
+
+127
+00:06:06,214 --> 00:06:08,407
+Four image-file records were reviewed, but
+
+128
+00:06:08,407 --> 00:06:10,600
+they contain only two unique image hashes.
+
+129
+00:06:10,658 --> 00:06:12,826
+They are not four independent scenes.
+
+130
+00:06:12,883 --> 00:06:14,909
+No credentials or gameplay actions were
+
+131
+00:06:14,909 --> 00:06:16,986
+entered in these final startup controls.
+
+132
+00:06:17,833 --> 00:06:21,417
+After login, the cold observation records
+one thousand seventy-three
+
+133
+00:06:21,417 --> 00:06:24,580
+frame advances over thirty-one point zero
+nine four seconds.
+
+134
+00:06:24,637 --> 00:06:27,072
+The warm observation records one thousand
+eighty
+
+135
+00:06:27,072 --> 00:06:29,303
+over thirty-one point one zero nine
+seconds.
+
+136
+00:06:29,361 --> 00:06:32,825
+These are counter advances, not verified
+display refreshes,
+
+137
+00:06:32,825 --> 00:06:35,996
+input responsiveness, or complete
+simulation progress.
+
+138
+00:06:36,054 --> 00:06:38,288
+The original-input audit reports three
+hundred
+
+139
+00:06:38,288 --> 00:06:40,912
+twenty-one matching entries before and
+after the runs.
+
+140
+00:06:40,969 --> 00:06:44,689
+A separate audit checks two hundred eleven
+served and observer identities.
+
+141
+00:06:44,746 --> 00:06:48,359
+Both retained error lists are empty within
+their observer's reporting scope.
+
+142
+00:06:48,416 --> 00:06:52,268
+Hash matches establish scoped file
+identity, not semantic correctness, and
+
+143
+00:06:52,268 --> 00:06:56,120
+thirty-one seconds of progress cannot
+establish long-duration reliability.
+
+144
+00:06:56,967 --> 00:07:00,714
+The allocator is the component that
+manages memory allocation and release.
+
+145
+00:07:00,771 --> 00:07:03,455
+The candidate replaced defensive
+duplicate-free list scans
+
+146
+00:07:03,455 --> 00:07:06,001
+with an atomic ownership claim in an
+allocation header.
+
+147
+00:07:06,058 --> 00:07:08,630
+That addresses a reproduced scaling cost;
+it does
+
+148
+00:07:08,630 --> 00:07:11,150
+not prove duplicate frees caused a game
+failure.
+
+149
+00:07:11,207 --> 00:07:13,156
+The microbenchmark repeatedly freed and
+
+150
+00:07:13,156 --> 00:07:15,505
+reallocated a five hundred twelve-byte
+payload.
+
+151
+00:07:15,563 --> 00:07:19,000
+It used twenty thousand warmup pairs, then
+five repetitions
+
+152
+00:07:19,000 --> 00:07:21,797
+of one hundred thousand pairs, across four
+fresh
+
+153
+00:07:21,797 --> 00:07:25,118
+processes ordered control, candidate,
+candidate, control.
+
+154
+00:07:25,175 --> 00:07:28,148
+Each reported value averages two process
+medians.
+
+155
+00:07:28,206 --> 00:07:31,745
+This is a constructed workload with a
+precisely defined comparison.
+
+156
+00:07:32,592 --> 00:07:35,394
+At retained-list depths of sixty-four
+through five hundred
+
+157
+00:07:35,394 --> 00:07:37,954
+twelve, the candidate is approximately
+five point one
+
+158
+00:07:37,954 --> 00:07:40,611
+to five point five times faster in this
+microbenchmark.
+
+159
+00:07:40,668 --> 00:07:43,629
+At depth zero it is thirteen point nine
+percent slower.
+
+160
+00:07:43,687 --> 00:07:47,322
+The benchmark includes JavaScript calls
+and checks, tests one allocation
+
+161
+00:07:47,322 --> 00:07:51,261
+size, and does not measure concurrent
+throughput or the game's allocation mix.
+
+162
+00:07:51,319 --> 00:07:54,325
+A separate short profile attributed only
+two point five eight nine
+
+163
+00:07:54,325 --> 00:07:57,513
+percent of one active worker's sampled
+wall intervals to heap freeing.
+
+164
+00:07:57,571 --> 00:08:00,448
+That window does not characterize complete
+startup.
+
+165
+00:08:00,505 --> 00:08:02,581
+A local optimization can be real while its
+
+166
+00:08:02,581 --> 00:08:04,953
+whole-application benefit remains
+unestablished.
+
+167
+00:08:05,800 --> 00:08:08,005
+The candidate's cold comparison was
+interrupted
+
+168
+00:08:08,005 --> 00:08:10,211
+by a screenshot-helper stability timeout
+at two
+
+169
+00:08:10,211 --> 00:08:12,604
+hundred ninety-seven point four eight four
+seconds.
+
+170
+00:08:12,661 --> 00:08:16,101
+Its last sample still showed execution
+without a runtime error.
+
+171
+00:08:16,159 --> 00:08:19,017
+We cannot label that an established
+allocator failure.
+
+172
+00:08:19,074 --> 00:08:22,706
+A subsequent warm-profile launch reached
+login at four hundred fifty-seven
+
+173
+00:08:22,706 --> 00:08:26,093
+point eight five nine seconds, but
+followed interrupted cold priming.
+
+174
+00:08:26,150 --> 00:08:28,345
+It is not a matched warm comparison.
+
+175
+00:08:28,403 --> 00:08:31,084
+Later observer refinements were
+incompletely validated,
+
+176
+00:08:31,084 --> 00:08:33,571
+and their proposed headed repair check did
+not run.
+
+177
+00:08:33,628 --> 00:08:36,220
+The measured observer, prepared candidate,
+and final
+
+178
+00:08:36,220 --> 00:08:39,011
+frozen source must remain separate
+experimental objects.
+
+179
+00:08:39,858 --> 00:08:43,171
+The evidence supports an original-login
+execution milestone.
+
+180
+00:08:43,229 --> 00:08:46,592
+It does not establish complete gameplay
+compatibility, production
+
+181
+00:08:46,592 --> 00:08:49,489
+readiness, threefold acceleration, or
+durable operation.
+
+182
+00:08:49,546 --> 00:08:51,903
+An earlier gameplay build reached
+character
+
+183
+00:08:51,903 --> 00:08:54,205
+selection, town, combat, and an area gate.
+
+184
+00:08:54,262 --> 00:08:57,963
+Revival still failed, and two winning
+cycles remained unaccepted.
+
+185
+00:08:58,021 --> 00:09:00,806
+Those observations retain their own build
+identity.
+
+186
+00:09:00,863 --> 00:09:04,794
+One client, one final browser condition,
+local native dependencies, and
+
+187
+00:09:04,794 --> 00:09:08,725
+a short observation cannot establish broad
+Windows application support.
+
+188
+00:09:09,571 --> 00:09:13,303
+Beyond this game, the experiment raises
+five research questions.
+
+189
+00:09:13,360 --> 00:09:17,524
+Can reconstructing execution conditions
+extend an application's useful life?
+
+190
+00:09:17,582 --> 00:09:20,051
+What can compatibility research learn by
+treating
+
+191
+00:09:20,051 --> 00:09:22,167
+operating-system behavior as an interface?
+
+192
+00:09:22,225 --> 00:09:24,697
+When does the environment enabling a
+computational
+
+193
+00:09:24,697 --> 00:09:26,527
+work become a research object itself?
+
+194
+00:09:26,584 --> 00:09:29,994
+What must reproducibility preserve beyond
+executable files?
+
+195
+00:09:30,051 --> 00:09:33,744
+And how can an institutional record allow
+researchers elsewhere to continue?
+
+196
+00:09:33,802 --> 00:09:36,228
+These are implications and opportunities,
+not
+
+197
+00:09:36,228 --> 00:09:38,870
+universal capabilities established by this
+trial.
+
+198
+00:09:38,928 --> 00:09:41,658
+The environment, its interventions, and
+the observations
+
+199
+00:09:41,658 --> 00:09:44,096
+deserve examination together with the
+application.
+
+200
+00:09:44,942 --> 00:09:47,540
+The original experimental cycle has
+closed.
+
+201
+00:09:47,597 --> 00:09:50,206
+This presentation does not reopen
+engineering.
+
+202
+00:09:50,263 --> 00:09:53,224
+A future group could restore the artifacts
+independently,
+
+203
+00:09:53,224 --> 00:09:56,289
+validate the final observer, repeat
+startup and performance
+
+204
+00:09:56,289 --> 00:09:59,198
+studies, and test stated durations of
+runtime stability.
+
+205
+00:09:59,255 --> 00:10:02,299
+A broader application corpus could probe
+compatibility, while
+
+206
+00:10:02,299 --> 00:10:05,592
+archival work could reconstruct the
+original execution conditions.
+
+207
+00:10:05,649 --> 00:10:08,434
+Each investigation needs its own scope and
+evidence.
+
+208
+00:10:08,491 --> 00:10:11,525
+HEAV3NS does not promise to complete these
+studies itself.
+
+209
+00:10:11,583 --> 00:10:13,894
+The record is published so others can
+
+210
+00:10:13,894 --> 00:10:16,766
+evaluate, cite, critique, and extend the
+work.
+
+211
+00:10:17,613 --> 00:10:21,110
+Independent continuation requires matching
+source snapshots,
+
+212
+00:10:21,110 --> 00:10:24,025
+dependency pins, local patches, generated
+modules,
+
+213
+00:10:24,025 --> 00:10:27,172
+manifests, and the observer used for each
+measurement.
+
+214
+00:10:27,229 --> 00:10:30,549
+It also requires the original client and
+platform inputs, native
+
+215
+00:10:30,549 --> 00:10:33,869
+services, private configuration, and
+appropriate database state.
+
+216
+00:10:33,926 --> 00:10:36,942
+The documentation archive excludes
+credentials, database
+
+217
+00:10:36,942 --> 00:10:39,527
+contents, large binaries, and much raw
+evidence.
+
+218
+00:10:39,585 --> 00:10:41,897
+The compatibility source license does not
+grant
+
+219
+00:10:41,897 --> 00:10:44,504
+rights to distribute the game or platform
+components.
+
+220
+00:10:44,561 --> 00:10:47,890
+Researchers need lawful access and any
+necessary permissions, a
+
+221
+00:10:47,890 --> 00:10:51,641
+separate restoration workspace, and
+authorization for a new experiment.
+
+222
+00:10:51,699 --> 00:10:54,262
+Hash verification is a starting point;
+independent
+
+223
+00:10:54,262 --> 00:10:56,928
+clean-machine restoration has not been
+demonstrated.
+
+224
+00:10:57,775 --> 00:10:59,502
+Audience: Is this just an emulator?
+
+225
+00:10:59,709 --> 00:11:02,260
+Dr. GPT: It includes x86 interpretation.
+
+226
+00:11:02,318 --> 00:11:05,762
+But the experiment also reconstructs
+loading, selected Windows
+
+227
+00:11:05,762 --> 00:11:09,762
+contracts, browser adapters, resource
+access, and service communication.
+
+228
+00:11:09,819 --> 00:11:12,648
+Calling it an emulator describes part of
+the arrangement;
+
+229
+00:11:12,648 --> 00:11:15,079
+it does not establish its compatibility
+coverage.
+
+230
+00:11:15,926 --> 00:11:17,872
+Audience: Did you rewrite the original
+game?
+
+231
+00:11:18,079 --> 00:11:21,481
+Dr. GPT: There was no conventional
+game-source rewrite as a web application.
+
+232
+00:11:21,538 --> 00:11:25,086
+Original compiled logic executes through
+the compatibility runtime.
+
+233
+00:11:25,143 --> 00:11:28,141
+However, the documented send wrapper
+modifies mapped
+
+234
+00:11:28,141 --> 00:11:31,081
+code, and loader fixups modify the
+execution image.
+
+235
+00:11:31,139 --> 00:11:34,533
+Preserving audited disk files does not
+erase those interventions.
+
+236
+00:11:35,380 --> 00:11:37,605
+Audience: Why does startup take seven
+minutes?
+
+237
+00:11:37,812 --> 00:11:41,057
+Dr. GPT: The record does not establish a
+complete causal explanation.
+
+238
+00:11:41,115 --> 00:11:43,589
+Original execution, compatibility work,
+
+239
+00:11:43,589 --> 00:11:46,762
+scheduling, and loading are possible
+contributors.
+
+240
+00:11:46,819 --> 00:11:49,524
+A short one-worker profile identifies
+dispatch and
+
+241
+00:11:49,524 --> 00:11:52,554
+allocator work, but cannot apportion the
+entire startup.
+
+242
+00:11:52,612 --> 00:11:56,776
+Recorded cache savings also did not
+establish repeatable login acceleration.
+
+243
+00:11:56,833 --> 00:11:59,580
+Better matched whole-application
+measurements are needed.
+
+244
+00:12:00,427 --> 00:12:03,216
+Audience: Does this prove Windows games
+can run in browsers?
+
+245
+00:12:03,423 --> 00:12:05,567
+Dr. GPT: It demonstrates this inherited
+client's
+
+246
+00:12:05,567 --> 00:12:07,621
+login milestone under the retained
+conditions.
+
+247
+00:12:07,679 --> 00:12:10,355
+It does not establish complete support
+even for this
+
+248
+00:12:10,355 --> 00:12:12,878
+game, or general support for other Windows
+games.
+
+249
+00:12:12,935 --> 00:12:15,082
+Broader compatibility requires additional
+
+250
+00:12:15,082 --> 00:12:17,490
+applications and explicit acceptance
+criteria.
+
+251
+00:12:18,337 --> 00:12:20,727
+Audience: What is actually novel about the
+experiment?
+
+252
+00:12:20,934 --> 00:12:24,381
+Dr. GPT: Its contribution is this specific
+integration and its auditable
+
+253
+00:12:24,381 --> 00:12:27,733
+account: inherited client execution,
+browser compatibility conditions,
+
+254
+00:12:27,733 --> 00:12:30,941
+native-service boundaries, interventions,
+and bounded measurements.
+
+255
+00:12:30,998 --> 00:12:33,143
+The paper does not establish first-ever
+
+256
+00:12:33,143 --> 00:12:35,507
+priority or superiority over other
+systems.
+
+257
+00:12:35,565 --> 00:12:38,756
+Much of its foundation is inherited and
+explicitly credited.
+
+258
+00:12:39,603 --> 00:12:42,189
+Audience: Can another research group
+reproduce your result?
+
+259
+00:12:42,395 --> 00:12:44,377
+Dr. GPT: The records provide a conditional
+
+260
+00:12:44,377 --> 00:12:46,594
+route, not a completed independent
+replication.
+
+261
+00:12:46,652 --> 00:12:49,263
+A group needs the matching artifacts,
+original and
+
+262
+00:12:49,263 --> 00:12:52,084
+private inputs, permissions, and a
+validated observer.
+
+263
+00:12:52,141 --> 00:12:54,234
+A transferred documentation archive alone
+
+264
+00:12:54,234 --> 00:12:56,122
+cannot restore the whole environment.
+
+265
+00:12:56,969 --> 00:12:58,700
+Audience: What would need to happen before
+
+266
+00:12:58,700 --> 00:13:00,596
+this becomes a reliable compatibility
+runtime?
+
+267
+00:13:00,803 --> 00:13:04,592
+Dr. GPT: Validate the observer and
+restored artifacts, resolve open
+
+268
+00:13:04,592 --> 00:13:08,889
+loading, memory, networking, input, and
+rendering contracts, and demonstrate
+
+269
+00:13:08,889 --> 00:13:12,791
+repeated startup, full gameplay gates, and
+stated-duration stability.
+
+270
+00:13:12,848 --> 00:13:15,917
+Reliability must be measured against
+declared conditions.
+
+271
+00:13:15,974 --> 00:13:18,767
+The present evidence does not supply that
+acceptance.
+
+272
+00:13:19,614 --> 00:13:22,855
+Audience: Why publish this if the product
+objective was not fully achieved?
+
+273
+00:13:23,062 --> 00:13:25,659
+Dr. GPT: A bounded result can still inform
+research.
+
+274
+00:13:25,716 --> 00:13:28,999
+The execution milestone, local
+optimization, failed comparison,
+
+275
+00:13:28,999 --> 00:13:32,490
+and unresolved contracts give others
+something concrete to examine.
+
+276
+00:13:32,547 --> 00:13:35,408
+Publication makes those limits
+inspectable; it does not
+
+277
+00:13:35,408 --> 00:13:38,114
+turn incomplete acceptance into a
+completed product.
+
+278
+00:13:38,960 --> 00:13:42,614
+Our primary source is the BROCWIN
+Technical White Paper, version
+
+279
+00:13:42,614 --> 00:13:46,496
+one point zero point one, dated October
+eleventh, twenty twenty-six.
+
+280
+00:13:46,554 --> 00:13:48,825
+HEAV3NS commissioned and preserves the
+record.
+
+281
+00:13:48,883 --> 00:13:52,415
+Credit remains with the original
+developers, CardSorting and prior
+
+282
+00:13:52,415 --> 00:13:55,893
+local contributors, Wine-Assembly's human
+and agent contributors,
+
+283
+00:13:55,893 --> 00:13:59,157
+Microsoft platform contributors, the
+websockets contributors,
+
+284
+00:13:59,157 --> 00:14:02,100
+and recorded Codex integration and review
+contributors.
+
+285
+00:14:02,158 --> 00:14:05,008
+The source slate identifies their
+documented roles.
+
+286
+00:14:05,065 --> 00:14:08,475
+This recording uses synthesized presenter
+and audience voices.
+
+287
+00:14:08,532 --> 00:14:10,949
+The questions are simulated; the archived
+images
+
+288
+00:14:10,949 --> 00:14:13,214
+and measurements come from retained
+evidence.
+
+289
+00:14:14,061 --> 00:14:16,610
+The significance of BROCWIN is not simply
+whether
+
+290
+00:14:16,610 --> 00:14:18,796
+a particular MMO can run inside a browser.
+
+291
+00:14:18,853 --> 00:14:21,902
+The research investigates the
+computational conditions that allow
+
+292
+00:14:21,902 --> 00:14:24,856
+inherited software to execute outside its
+original environment.
+
+293
+00:14:24,914 --> 00:14:27,868
+Its results are bounded, its limitations
+documented,
+
+294
+00:14:27,868 --> 00:14:30,312
+and its future open to independent
+inquiry.
+
+295
+00:14:30,369 --> 00:14:33,874
+The originating institution has completed
+this experimental cycle.
+
+296
+00:14:33,932 --> 00:14:36,024
+Original contributors keep their credit;
+
+297
+00:14:36,024 --> 00:14:38,169
+future custody need not remain with them.
+
+298
+00:14:38,226 --> 00:14:40,088
+The research can now propagate.
+
+299
+00:14:40,146 --> 00:14:42,260
+THE WORK NO LONGER DEMANDS AN AUTHOR.
+

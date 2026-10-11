@@ -15,3 +15,5 @@
 *.zip binary
 LICENSES/*.txt -text
 # Attributes apply to future Git staging/checkouts, not the retained frozen bytes.
+# Preserve the sealed presentation's byte hashes, including its text files.
+presentations/2026-10-11-poster-session-v1.0.0/** -text

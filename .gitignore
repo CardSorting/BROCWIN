@@ -37,6 +37,8 @@ credentials*.json
 *.rar
 *.7z
 *.zip
+# Explicitly selected presentation delivery; other archive exclusions still apply.
+!/presentations/2026-10-11-poster-session-v1.0.0/brocwin-poster-session-package-1.0.0.zip
 *.bak
 *.mdf
 *.ldf

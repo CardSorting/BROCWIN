@@ -1,0 +1,517 @@
+{
+  "schema": "heav3ns.brocwin.publication-evidence/v1",
+  "date": "2026-10-11",
+  "version": "1.0.1",
+  "groups": [
+    {
+      "id": "E01",
+      "title": "Final control raw measurements",
+      "records": [
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/run-01/result.json",
+          "sha256": "c210b5f5af52f9dbd031e6419796f37a075eb5365ca9a969f05ba450c4c6686e",
+          "bytes": 981962
+        },
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/run-02/result.json",
+          "sha256": "9a90436426b62353a6e56119f6621144ba314c5be537f21f215b619f973bc5a3",
+          "bytes": 965214
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "Final control integrity and review",
+      "records": [
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/source-audit-review.json",
+          "sha256": "269e60f8e0996368e4e722adba85b6316475ff4e034e8656c47644060c274cd4",
+          "bytes": 53120
+        },
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/identity.json",
+          "sha256": "1cf55eb7a3dd03fde3c06eb5a25bcb2c152d24c0fbc9cf4530af70e5e19c10fd",
+          "bytes": 239397
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "title": "Four retained control image files",
+      "records": [
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/run-01/first-visible-scene.png",
+          "sha256": "4f12b33a2ad234a12046b8e4e96e6e315e15f8061d66b41400b01458a8ac3987",
+          "bytes": 561081
+        },
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/run-01/final-canvas.png",
+          "sha256": "4f12b33a2ad234a12046b8e4e96e6e315e15f8061d66b41400b01458a8ac3987",
+          "bytes": 561081
+        },
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/run-02/first-visible-scene.png",
+          "sha256": "4f12b33a2ad234a12046b8e4e96e6e315e15f8061d66b41400b01458a8ac3987",
+          "bytes": 561081
+        },
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/run-02/final-canvas.png",
+          "sha256": "33b0efaee6621e9b8767607ab34b1872d27f472a43f83e9a6f3224b361d9167d",
+          "bytes": 561098
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "title": "Allocator profile, contracts, microbenchmarks and candidate limits",
+      "records": [
+        {
+          "path": "theseus/reports/performance/kernel-profile-control-20261011/source-audit-review.json",
+          "sha256": "3df2e5d9455b61897827be7015a3f764c73d696b08672e8f19e9a44a08e4b191",
+          "bytes": 689
+        },
+        {
+          "path": "theseus/reports/performance/kernel-profile-control-20261011/profile-summary.json",
+          "sha256": "2453efdc653be5a95fbc2c85953f878f27431e9a73ed0bd65b6ef232270846ad",
+          "bytes": 51906
+        },
+        {
+          "path": "theseus/reports/performance/heap-free-20261011/final-source-validation.json",
+          "sha256": "0db30f4511d7ff195bebe049349a8a7cab6f904483a2e9850f6873feef8dcbad",
+          "bytes": 10047
+        },
+        {
+          "path": "theseus/reports/performance/heap-free-20261011/compiled-validation.json",
+          "sha256": "2af7b945382969899806eb830abb18f101b55bc85c81e0dbf1fcd7845e841c4a",
+          "bytes": 45686
+        },
+        {
+          "path": "theseus/reports/performance/heap-free-20261011/microbenchmark-summary.json",
+          "sha256": "3f829965c0c39372ff7736e9d03a3f20c2163616ac927ece011d07bee537988e",
+          "bytes": 7801
+        },
+        {
+          "path": "theseus/reports/performance/heap-candidate-20261011/source-audit-review.json",
+          "sha256": "e5cf137b02aab54b4c9cf294f7f43c34e9ce9ba13b1bd15c1637aa4f0f4b0758",
+          "bytes": 116845
+        },
+        {
+          "path": "theseus/reports/performance/heap-candidate-20261011/run-01/result.json",
+          "sha256": "546f761bf51dc49d773cf061638498c03ea6e664516fc8413991ed5f4acc655a",
+          "bytes": 164842
+        },
+        {
+          "path": "theseus/reports/performance/heap-candidate-20261011/run-02/result.json",
+          "sha256": "7ddc1e6c694f346c99b6865b5df78b3991419ed2bd897a1747bea17a087fbd0b",
+          "bytes": 983309
+        },
+        {
+          "path": "theseus/wiki/changes/0014-heap-free-ownership.md",
+          "sha256": "0818be22f31e557833f6ab0aa03b75f1531ddd0696421248586c92ee90182e8a",
+          "bytes": 14062
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "title": "Corrected closeout and observer limits",
+      "records": [
+        {
+          "path": "theseus/wiki/closeout.md",
+          "sha256": "c2cd9433f0bc579ecac2d2e08945306b8183df77ee686fa2f66b898d161634a9",
+          "bytes": 5997
+        },
+        {
+          "path": "theseus/reports/frozen-closeout-20261011/independent-review.json",
+          "sha256": "7ae9d693cd27001ad7b04f9991dd682fc01360f6c8e3710fadbac68e720c715b",
+          "bytes": 2334
+        },
+        {
+          "path": "theseus/reports/frozen-closeout-20261011/validation-1.4.1.json",
+          "sha256": "580fc0897a75a521ea319293a6881be32f14150ba552abccbab0164574d8a7d1",
+          "bytes": 1863
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "title": "Frozen source inventory and retained differences",
+      "records": [
+        {
+          "path": "theseus/reports/frozen-closeout-20261011/frozen-state.json",
+          "sha256": "df194fcf69aeca921fedaef4a2843ecf915084ca2d283fad97f42696fb6cd4ca",
+          "bytes": 303249
+        },
+        {
+          "path": "theseus/wiki/frozen-sources/benchmark_startup.py",
+          "sha256": "ad992490edb8f1607c95d0787b99ab98e83863e75f1324c2bc5de6876d826698",
+          "bytes": 38607
+        },
+        {
+          "path": "theseus/wiki/frozen-sources/test_benchmark_observation.py",
+          "sha256": "a6b8c82674435f8fad04ec5db3420ad1680ddf429c251407212a5ea41fbf7a23",
+          "bytes": 15208
+        },
+        {
+          "path": "theseus/wiki/frozen-sources/10-helpers.wat",
+          "sha256": "086cb82a8acb172fce358d8c83562ce64a8c5f9d267c87d7f8ae16ac5bb412e2",
+          "bytes": 504978
+        },
+        {
+          "path": "theseus/wiki/frozen-sources/test-heap-reservation-rollback.js",
+          "sha256": "b8f9f12d03c0cf2ba8fd4109f9ae1655992070db9a3934ab930fa963f0534a20",
+          "bytes": 7666
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "title": "Source-only reservation rollback",
+      "records": [
+        {
+          "path": "theseus/reports/performance/heap-reservation-20261011/control.json",
+          "sha256": "4737f3130670d7671e0ce47e1ee25ebb811997c67c25f9ac91d93116495b19cf",
+          "bytes": 15564
+        },
+        {
+          "path": "theseus/reports/performance/heap-reservation-20261011/candidate-source.json",
+          "sha256": "423c265c62e01fcd28150e402e081b8da5d2c24663d963ca6e6815fb22b89ac0",
+          "bytes": 12280
+        },
+        {
+          "path": "theseus/reports/performance/heap-reservation-20261011/source-suites.json",
+          "sha256": "c2de56b9690d7ad543061c6aec5831b1b82a115bce3f45bbb5086417365f9906",
+          "bytes": 6008
+        },
+        {
+          "path": "theseus/wiki/changes/0015-heap-reservation-rollback.md",
+          "sha256": "5ec2e5cb0c891923eeed14b3ed85987a60185e354200df16728b92d23e262c7d",
+          "bytes": 2810
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "title": "Historical final gameplay route and revival failure",
+      "records": [
+        {
+          "path": "theseus/reports/browser/20261011T145806Z/review.json",
+          "sha256": "ebcbe9e6bf017e210ecd65b393efe16fe5112ba0b56e63630f13bfade6f678e3",
+          "bytes": 11110
+        },
+        {
+          "path": "theseus/reports/browser/20261011T145806Z/revival-failure.json",
+          "sha256": "1967cc9d99065410c453671b812d7bd97887cc13df298d15b2ddb89230c3b4c5",
+          "bytes": 2144
+        },
+        {
+          "path": "theseus/wiki/acceptance-session.md",
+          "sha256": "713f7724dd644223ef33af3b56c4a8e6c0eff0a6c38a2d3927d1f177b19b3201",
+          "bytes": 67286
+        }
+      ]
+    },
+    {
+      "id": "E09",
+      "title": "Acceptance and open contracts",
+      "records": [
+        {
+          "path": "theseus/wiki/compatibility.md",
+          "sha256": "cf3a3a1c6d5403fb07798a6204f090ff4e1bd39bfaf9cfe33c8b3c05565e7674",
+          "bytes": 8002
+        },
+        {
+          "path": "theseus/wiki/issues.md",
+          "sha256": "b884f3334d0faf0d230c602d1cae2952960ca79c50b274c2288ba958f9b61fb7",
+          "bytes": 10107
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "title": "Execution/loading implementation and account",
+      "records": [
+        {
+          "path": "theseus/wiki/execution.md",
+          "sha256": "7ee0e29fb53d9d644ea8f5900fdbf7459aceeefb4c8f72e97dfc58d392ed2bd9",
+          "bytes": 5485
+        },
+        {
+          "path": "theseus/wiki/loading.md",
+          "sha256": "8142cf07e9823a860b3d8d9252eb12cc973c580de94b95b99c2ff632fd51e813",
+          "bytes": 3154
+        },
+        {
+          "path": "theseus/tools/wine-assembly/src/main.watx",
+          "sha256": "dd2e96a2878bde50cdf7ce9451a90930505f84b194d619460580f9144670a823",
+          "bytes": 5892
+        },
+        {
+          "path": "theseus/tools/wine-assembly/src/07-decoder.wat",
+          "sha256": "fc0d62f4bb47548f5e2da8a3802f009d0d7bd6b32e55187fd045e484321d507e",
+          "bytes": 319204
+        },
+        {
+          "path": "theseus/tools/wine-assembly/src/04-cache.wat",
+          "sha256": "a757b1be4c830a961707f11c5a771e4fed6d577e894d6b3ead8ac2d07e96b4de",
+          "bytes": 147850
+        },
+        {
+          "path": "theseus/tools/wine-assembly/lib/pe.js",
+          "sha256": "8eaf88581143bd507555210f25a8ac2bd73bb62c34910bef8eaead835d75e597",
+          "bytes": 4598
+        },
+        {
+          "path": "theseus/tools/wine-assembly/lib/dll-loader.js",
+          "sha256": "1e8cb50f6e824a5aa78ae03fffb5d25198607eff1201374c58a2f099f0bc1530",
+          "bytes": 52024
+        },
+        {
+          "path": "theseus/tools/wine-assembly/host.js",
+          "sha256": "d2cb9119e1ce1dbd0cbef2359fff0faaa63a5205442ebed4e579b7c5553be0c8",
+          "bytes": 342910
+        },
+        {
+          "path": "theseus/browser/main.js",
+          "sha256": "1193d22c212fd95d263ec4dadfd36f380592b372eeb06fec83ab4c73ae68cf59",
+          "bytes": 14420
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "title": "Graphics and input/audio account",
+      "records": [
+        {
+          "path": "theseus/wiki/graphics.md",
+          "sha256": "871e078b510bb415a11e49efea0337ea9a8d8a8154bb451df8f1de9831edef91",
+          "bytes": 7258
+        },
+        {
+          "path": "theseus/wiki/audio-input.md",
+          "sha256": "442ab882a8a300be67841279a9fc661692d6139f53e588e9b3137e0ec75ced87",
+          "bytes": 7477
+        }
+      ]
+    },
+    {
+      "id": "E12",
+      "title": "Local native network boundary",
+      "records": [
+        {
+          "path": "theseus/wiki/network.md",
+          "sha256": "a3d9406e4464cc36568e98dc2cbd6c2068f9460222f40dfb32c2efd3b12411fc",
+          "bytes": 8579
+        },
+        {
+          "path": "theseus/browser/local_server_wire.js",
+          "sha256": "cc65dc948ca1d77b6c9e38ed6e15c5fcc3beb660b08d83e0543b3f38c7924b69",
+          "bytes": 8497
+        },
+        {
+          "path": "theseus/browser/network.py",
+          "sha256": "69aaba422304f8f5abfd1309f33ff7d590f08f291ed1c24cb76cb6522eccb905",
+          "bytes": 18635
+        },
+        {
+          "path": "theseus/compose.yml",
+          "sha256": "362d6df81fcd9a778dbcf9737596d734b0a7e66e64f101affdaf382b56b196c4",
+          "bytes": 474
+        }
+      ]
+    },
+    {
+      "id": "E13",
+      "title": "Resource and persistence account",
+      "records": [
+        {
+          "path": "theseus/wiki/storage.md",
+          "sha256": "eec8a870f7afffb06ceda60600072c98062cba57ecf8f1b3318f9a27f7f8c15f",
+          "bytes": 3902
+        },
+        {
+          "path": "theseus/browser/serve.py",
+          "sha256": "7aa2691a909723dd2be6d7d0de6069a8f7dbb69ade7be25ec94c71043ecab408",
+          "bytes": 7095
+        }
+      ]
+    },
+    {
+      "id": "E14",
+      "title": "Memory contracts",
+      "records": [
+        {
+          "path": "theseus/wiki/threads-memory.md",
+          "sha256": "facde7fd02ff6a8859bf9652ea49e4f31229b7b489290f97c25d55f624eb4b26",
+          "bytes": 12004
+        },
+        {
+          "path": "theseus/tools/wine-assembly/src/10-helpers.wat",
+          "sha256": "086cb82a8acb172fce358d8c83562ce64a8c5f9d267c87d7f8ae16ac5bb412e2",
+          "bytes": 504978
+        },
+        {
+          "path": "theseus/tools/wine-assembly/src/09a-handlers2-runtime.wat",
+          "sha256": "7df1aedff8175d8ad1a7bda9b08b8dfead70998e62b89954427aa28cbf971430",
+          "bytes": 93442
+        }
+      ]
+    },
+    {
+      "id": "E15",
+      "title": "Earlier cache measurements and variation",
+      "records": [
+        {
+          "path": "theseus/wiki/performance.md",
+          "sha256": "96baf9432b7222ec916048c2b6ab794651f1d9af348175112887f1f3743aad3a",
+          "bytes": 12183
+        },
+        {
+          "path": "theseus/wiki/changes/0013-runtime-startup-cache.md",
+          "sha256": "41f7100d9427a188e9116c826f35af381475ca666ca3d273ba39e83c091e8f9a",
+          "bytes": 7511
+        },
+        {
+          "path": "theseus/reports/performance/validation-20261011/summary.json",
+          "sha256": "987917b9f0eb7068aa0082fe825e8adea82436f61d3adedf9d16fcc2e8a7a3db",
+          "bytes": 56078
+        },
+        {
+          "path": "theseus/reports/performance/baseline-visible-20261011/run-01/result.json",
+          "sha256": "88d1c05adf5ea075d3d2cb1647a1b0c0562022f8d9aa915ff4f9fb6c3a19cc92",
+          "bytes": 604940
+        },
+        {
+          "path": "theseus/reports/performance/baseline-visible-20261011/run-02/result.json",
+          "sha256": "e34d5bccacdeffbb08eafab833574d38ac022fbb2fe9ad5ba3da6883c0f16878",
+          "bytes": 686424
+        },
+        {
+          "path": "theseus/reports/performance/candidate-20261011/run-01/result.json",
+          "sha256": "ba1e08f759ca76c940da510063ff4e5171959b8b539163ddb9e34f3f0d070211",
+          "bytes": 872222
+        },
+        {
+          "path": "theseus/reports/performance/candidate-20261011/run-02/result.json",
+          "sha256": "a4b7076704367e20d89075af93850ac14f7ee6fb517e66224b719968f6934ce0",
+          "bytes": 868047
+        },
+        {
+          "path": "theseus/reports/performance/control-repeat-20261011/run-01/result.json",
+          "sha256": "ae98c470ca8a90794c821acf4e258548dbb671aeb92e4f74aa30d5ab2beb92c0",
+          "bytes": 904600
+        },
+        {
+          "path": "theseus/reports/performance/control-repeat-20261011/run-02/result.json",
+          "sha256": "3044d41223fcceedf7d9f79f41c2da195f3bfe7f1d3114f173ac179c29b1e96c",
+          "bytes": 915921
+        }
+      ]
+    },
+    {
+      "id": "E16",
+      "title": "Dependency/provenance and supplied installation",
+      "records": [
+        {
+          "path": "theseus/provenance.json",
+          "sha256": "142e33dba470a146b58217c0a22974c5859abf12fcc86b6cf8b256dbe75b8423",
+          "bytes": 1076
+        },
+        {
+          "path": "theseus/browser/provenance.json",
+          "sha256": "04ce6d83ee4ab65cdf7766af27ffe06fb952cc2dd1e1960064bb2d342f6751e9",
+          "bytes": 80307
+        },
+        {
+          "path": "theseus/browser/dependencies.json",
+          "sha256": "1b61e551e094b2bd26a74a7401ee666c023d21dcc38b0779003fc08a24f47a0d",
+          "bytes": 588
+        },
+        {
+          "path": "theseus/wiki/provenance.md",
+          "sha256": "6137b73e8e61708dc74708f2c1dd59fb9e27514c7cf018037f93b672914eb127",
+          "bytes": 3979
+        }
+      ]
+    },
+    {
+      "id": "E17",
+      "title": "Mapped guest send intervention",
+      "records": [
+        {
+          "path": "theseus/wiki/changes/0012-session-send-serialization.md",
+          "sha256": "5e9956ea384994898b48ae27d2cfecff8933a60f231fd65bb2587b54dae7abae",
+          "bytes": 6265
+        },
+        {
+          "path": "theseus/reports/serial-ownership-20261011T142300Z/candidate-integration-validation.json",
+          "sha256": "c8910821c231f93e487d82dfbf194f29b053eab76ad55c8cbb47d9843161391e",
+          "bytes": 2168
+        }
+      ]
+    },
+    {
+      "id": "E18",
+      "title": "Recovery and prepared identity/custody",
+      "records": [
+        {
+          "path": "theseus/wiki/build-recovery.md",
+          "sha256": "6af115858fdc97ebfffa687be75242171a612969c3f6476e2b729696bdabb50d",
+          "bytes": 6866
+        },
+        {
+          "path": "theseus/wiki/generated/identity.json",
+          "sha256": "6d5129fb6d22c47c856fcce06863bf9177b607ecd503d14c88631db910426a54",
+          "bytes": 30952
+        },
+        {
+          "path": "theseus/wiki/releases/1.4.1.json",
+          "sha256": "3d91bdd9d21791d7306d8612a9972aae2e282123c2bc1d65a5e0f0828e680591",
+          "bytes": 32531
+        },
+        {
+          "path": "theseus/checkpoints/brocwin-knowledge-1.4.1.zip",
+          "sha256": "b9d33128bb33fac164d92e2afe3fa6020cda697156d2e15310c73dc53a74efdd",
+          "bytes": 1752545
+        },
+        {
+          "path": "theseus/browser/generated/manifest.json",
+          "sha256": "2a827b50d70068e9ab741e29764b628d7b0b9ec35fca0e41bc4dd36ce39e07be",
+          "bytes": 285971
+        },
+        {
+          "path": "theseus/browser/patches/wine-assembly.patch",
+          "sha256": "8b763bd478e619d1c95f37a429ecc840e04952b010d00d52007accc092638e2b",
+          "bytes": 847816
+        }
+      ]
+    },
+    {
+      "id": "E19",
+      "title": "Actual retained observer implementation and sampling",
+      "records": [
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/observer/benchmark_startup.py",
+          "sha256": "91dd12a6f38aa663ac67d24b18ea94f6710fbbbff697eae3fd02239cb1f367e8",
+          "bytes": 30375
+        },
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/observer/startup_telemetry.js",
+          "sha256": "74d1294bd561a707d8b4ee716a954f016def1a09cd54263198574f3a5c2871b3",
+          "bytes": 3437
+        },
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/run-01/samples.jsonl",
+          "sha256": "244cf68d2279ac92c064737c125a93ba444df9d26c4337e886b88b44c7403696",
+          "bytes": 189049
+        },
+        {
+          "path": "theseus/reports/performance/heap-control-20261011/run-02/samples.jsonl",
+          "sha256": "ed371c9a0ab17ddcaccf514d7677dd4087cf780d5601ba30b82dab533a308a22",
+          "bytes": 184756
+        }
+      ]
+    }
+  ],
+  "scope": "Hashes of cited local records; original large/private artifacts are not embedded in the publication archive."
+}

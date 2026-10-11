@@ -1,0 +1,559 @@
+{
+  "createdUtc": "2026-10-11T22:07:24.122038+00:00",
+  "method": "Narrated static poster session and archived stills; synthesized voices and simulated Q&A",
+  "runtimeOrServiceLaunch": false,
+  "newExperimentalFootage": false,
+  "pacing": {
+    "rawDurationSeconds": 1154.7403174603176,
+    "targetSeconds": 885,
+    "atempoFactor": 1.3047913191642007
+  },
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "warning",
+    "-nostats",
+    "-y",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "visuals.ffconcat",
+    "-i",
+    "narration.wav",
+    "-f",
+    "ffmetadata",
+    "-i",
+    "chapters.ffmetadata",
+    "-map",
+    "0:v:0",
+    "-map",
+    "1:a:0",
+    "-map_metadata",
+    "2",
+    "-map_chapters",
+    "2",
+    "-vf",
+    "fps=24,subtitles=captions.srt:force_style='FontName=Arial,FontSize=11,Alignment=2,MarginV=10,Outline=0,Shadow=0,PrimaryColour=&H00FFFFFF,BackColour=&H00382C12,BorderStyle=3'",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-tune",
+    "stillimage",
+    "-crf",
+    "23",
+    "-threads",
+    "2",
+    "-pix_fmt",
+    "yuv420p",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "160k",
+    "-t",
+    "885",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=BROCWIN Ontological Introduction and Research Poster Session",
+    "-metadata",
+    "comment=Synthesized presenter and simulated Q&A. Retained archival stills; no new game footage. White paper 1.0.1.",
+    "-progress",
+    "encode-progress.txt",
+    "brocwin-poster-session.mp4"
+  ],
+  "container": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 10874880,
+        "duration": "885.000000",
+        "bit_rate": "84197",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "21240",
+        "extradata_size": 45,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.102 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 42480000,
+        "duration": "885.000000",
+        "bit_rate": "149894",
+        "nb_frames": "41486",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      },
+      {
+        "index": 2,
+        "codec_name": "bin_data",
+        "codec_long_name": "binary data",
+        "codec_type": "data",
+        "codec_tag_string": "text",
+        "codec_tag": "0x74786574",
+        "id": "0x3",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/1000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 885000,
+        "duration": "885.000000",
+        "bit_rate": "13",
+        "nb_frames": "28",
+        "extradata_size": 63,
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "SubtitleHandler"
+        }
+      }
+    ],
+    "chapters": [
+      {
+        "id": 0,
+        "time_base": "1/1000",
+        "start": 0,
+        "start_time": "0.000000",
+        "end": 32400,
+        "end_time": "32.400000",
+        "tags": {
+          "title": "What does it mean for a Windows application to exist outside Windows?"
+        }
+      },
+      {
+        "id": 1,
+        "time_base": "1/1000",
+        "start": 32400,
+        "start_time": "32.400000",
+        "end": 70912,
+        "end_time": "70.912000",
+        "tags": {
+          "title": "Five distinct objects"
+        }
+      },
+      {
+        "id": 2,
+        "time_base": "1/1000",
+        "start": 70912,
+        "start_time": "70.912000",
+        "end": 111268,
+        "end_time": "111.268000",
+        "tags": {
+          "title": "What existed before the experiment"
+        }
+      },
+      {
+        "id": 3,
+        "time_base": "1/1000",
+        "start": 111268,
+        "start_time": "111.268000",
+        "end": 153179,
+        "end_time": "153.179000",
+        "tags": {
+          "title": "Preserved files and modified mapped code"
+        }
+      },
+      {
+        "id": 4,
+        "time_base": "1/1000",
+        "start": 153179,
+        "start_time": "153.179000",
+        "end": 195814,
+        "end_time": "195.814000",
+        "tags": {
+          "title": "Read the architecture from left to right"
+        }
+      },
+      {
+        "id": 5,
+        "time_base": "1/1000",
+        "start": 195814,
+        "start_time": "195.814000",
+        "end": 235029,
+        "end_time": "235.029000",
+        "tags": {
+          "title": "Rendering and interaction cross the boundary"
+        }
+      },
+      {
+        "id": 6,
+        "time_base": "1/1000",
+        "start": 235029,
+        "start_time": "235.029000",
+        "end": 265742,
+        "end_time": "265.742000",
+        "tags": {
+          "title": "The browser client keeps native services"
+        }
+      },
+      {
+        "id": 7,
+        "time_base": "1/1000",
+        "start": 265742,
+        "start_time": "265.742000",
+        "end": 311366,
+        "end_time": "311.366000",
+        "tags": {
+          "title": "The research strategy evolved"
+        }
+      },
+      {
+        "id": 8,
+        "time_base": "1/1000",
+        "start": 311366,
+        "start_time": "311.366000",
+        "end": 347596,
+        "end_time": "347.596000",
+        "tags": {
+          "title": "The final control pair"
+        }
+      },
+      {
+        "id": 9,
+        "time_base": "1/1000",
+        "start": 347596,
+        "start_time": "347.596000",
+        "end": 377695,
+        "end_time": "377.695000",
+        "tags": {
+          "title": "What the retained image shows"
+        }
+      },
+      {
+        "id": 10,
+        "time_base": "1/1000",
+        "start": 377695,
+        "start_time": "377.695000",
+        "end": 416829,
+        "end_time": "416.829000",
+        "tags": {
+          "title": "Progress and identity have bounded meanings"
+        }
+      },
+      {
+        "id": 11,
+        "time_base": "1/1000",
+        "start": 416829,
+        "start_time": "416.829000",
+        "end": 452454,
+        "end_time": "452.454000",
+        "tags": {
+          "title": "A local allocator optimization"
+        }
+      },
+      {
+        "id": 12,
+        "time_base": "1/1000",
+        "start": 452454,
+        "start_time": "452.454000",
+        "end": 485662,
+        "end_time": "485.662000",
+        "tags": {
+          "title": "Microbenchmark improvement is not application speedup"
+        }
+      },
+      {
+        "id": 13,
+        "time_base": "1/1000",
+        "start": 485662,
+        "start_time": "485.662000",
+        "end": 519720,
+        "end_time": "519.720000",
+        "tags": {
+          "title": "The candidate comparison remained incomplete"
+        }
+      },
+      {
+        "id": 14,
+        "time_base": "1/1000",
+        "start": 519720,
+        "start_time": "519.720000",
+        "end": 549434,
+        "end_time": "549.434000",
+        "tags": {
+          "title": "What this evidence does not establish"
+        }
+      },
+      {
+        "id": 15,
+        "time_base": "1/1000",
+        "start": 549434,
+        "start_time": "549.434000",
+        "end": 584805,
+        "end_time": "584.805000",
+        "tags": {
+          "title": "Why this matters beyond one game"
+        }
+      },
+      {
+        "id": 16,
+        "time_base": "1/1000",
+        "start": 584805,
+        "start_time": "584.805000",
+        "end": 617475,
+        "end_time": "617.475000",
+        "tags": {
+          "title": "The cycle has closed and the questions remain"
+        }
+      },
+      {
+        "id": 17,
+        "time_base": "1/1000",
+        "start": 617475,
+        "start_time": "617.475000",
+        "end": 657637,
+        "end_time": "657.637000",
+        "tags": {
+          "title": "What an independent group would need"
+        }
+      },
+      {
+        "id": 18,
+        "time_base": "1/1000",
+        "start": 657637,
+        "start_time": "657.637000",
+        "end": 675788,
+        "end_time": "675.788000",
+        "tags": {
+          "title": "Is this just an emulator?"
+        }
+      },
+      {
+        "id": 19,
+        "time_base": "1/1000",
+        "start": 675788,
+        "start_time": "675.788000",
+        "end": 695242,
+        "end_time": "695.242000",
+        "tags": {
+          "title": "Did you rewrite the original game?"
+        }
+      },
+      {
+        "id": 20,
+        "time_base": "1/1000",
+        "start": 695242,
+        "start_time": "695.242000",
+        "end": 720289,
+        "end_time": "720.289000",
+        "tags": {
+          "title": "Why does startup take seven minutes?"
+        }
+      },
+      {
+        "id": 21,
+        "time_base": "1/1000",
+        "start": 720289,
+        "start_time": "720.289000",
+        "end": 738199,
+        "end_time": "738.199000",
+        "tags": {
+          "title": "Does this prove Windows games can run in browsers?"
+        }
+      },
+      {
+        "id": 22,
+        "time_base": "1/1000",
+        "start": 738199,
+        "start_time": "738.199000",
+        "end": 759465,
+        "end_time": "759.465000",
+        "tags": {
+          "title": "What is actually novel about the experiment?"
+        }
+      },
+      {
+        "id": 23,
+        "time_base": "1/1000",
+        "start": 759465,
+        "start_time": "759.465000",
+        "end": 776831,
+        "end_time": "776.831000",
+        "tags": {
+          "title": "Can another research group reproduce your result?"
+        }
+      },
+      {
+        "id": 24,
+        "time_base": "1/1000",
+        "start": 776831,
+        "start_time": "776.831000",
+        "end": 799476,
+        "end_time": "799.476000",
+        "tags": {
+          "title": "What would make this a reliable compatibility runtime?"
+        }
+      },
+      {
+        "id": 25,
+        "time_base": "1/1000",
+        "start": 799476,
+        "start_time": "799.476000",
+        "end": 818823,
+        "end_time": "818.823000",
+        "tags": {
+          "title": "Why publish an incomplete product objective?"
+        }
+      },
+      {
+        "id": 26,
+        "time_base": "1/1000",
+        "start": 818823,
+        "start_time": "818.823000",
+        "end": 853923,
+        "end_time": "853.923000",
+        "tags": {
+          "title": "Sources and research attribution"
+        }
+      },
+      {
+        "id": 27,
+        "time_base": "1/1000",
+        "start": 853923,
+        "start_time": "853.923000",
+        "end": 885000,
+        "end_time": "885.000000",
+        "tags": {
+          "title": "The research can now propagate"
+        }
+      }
+    ],
+    "format": {
+      "filename": "brocwin-poster-session.mp4",
+      "nb_streams": 3,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "885.000000",
+      "size": "26516587",
+      "bit_rate": "239697",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "title": "BROCWIN Ontological Introduction and Research Poster Session",
+        "encoder": "Lavf62.12.102",
+        "comment": "Synthesized presenter and simulated Q&A. Retained archival stills; no new game footage. White paper 1.0.1."
+      }
+    }
+  },
+  "openCaptions": true
+}

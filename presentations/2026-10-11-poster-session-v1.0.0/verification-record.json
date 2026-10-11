@@ -1,0 +1,60 @@
+{
+  "schema": "heav3ns.brocwin.poster-verification/v1",
+  "verifiedUtc": "2026-10-11T22:07:51.247828+00:00",
+  "status": "passed",
+  "requiredDeliverables": 19,
+  "retainedSourceHashesMatched": 20,
+  "unchangedCopiedAssets": 3,
+  "videoDurationSeconds": 885.0,
+  "videoDimensions": [
+    1920,
+    1080
+  ],
+  "videoFramesPerSecond": "24/1",
+  "videoBytes": 26516587,
+  "captionCues": 299,
+  "captionBoundaryScope": "Measured utterance boundaries; proportional subdivisions within an utterance",
+  "posterInches": [
+    48,
+    36
+  ],
+  "posterPixels": [
+    5760,
+    4320
+  ],
+  "posterPages": 1,
+  "sceneLayoutChecks": "passed",
+  "runtimeOrServiceActions": 0,
+  "existingPublicationAndFrozenKnowledgeChecks": [
+    {
+      "command": [
+        "python",
+        "theseus/publications/2026-10-11-v1.0.1/verify_publications.py"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\": \"passed\", \"version\": \"1.0.1\", \"publicationFiles\": 21, \"citedSourceFiles\": 79, \"archiveSha256\": \"5f68488ce2289864d3848076e9b47125f0749d7df23837a3b712e001f9a21f26\", \"engineeringActions\": 0}",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "theseus/knowledge.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\": \"passed\", \"generatedFiles\": 78, \"updated\": 0, \"localLinks\": 1097}",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "theseus/knowledge.py",
+        "--verify-release",
+        "1.4.1"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\": \"passed\", \"version\": \"1.4.1\", \"verifiedArtifacts\": 268, \"archive\": {\"path\": \"theseus/checkpoints/brocwin-knowledge-1.4.1.zip\", \"sha256\": \"b9d33128bb33fac164d92e2afe3fa6020cda697156d2e15310c73dc53a74efdd\"}}",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "reviewedUtc": "2026-10-11T22:08:29.679068+00:00",
+  "scope": "Visual inspection of the encoded presentation, not game-runtime observations",
+  "frames": [
+    {
+      "file": "verification-frames/opening.png",
+      "timeSeconds": 2
+    },
+    {
+      "file": "verification-frames/allocator.png",
+      "timeSeconds": 460.45424205082827
+    },
+    {
+      "file": "verification-frames/closing.png",
+      "timeSeconds": 881
+    }
+  ],
+  "findings": [
+    "Caption text fits within lower safe area",
+    "Poster and source footers remain visible",
+    "Allocator plot preserves zero baseline, 1x reference and depth-zero cost",
+    "Closing statement matches commissioned wording"
+  ],
+  "reviewStatus": "passed",
+  "runtimeCapture": false
+}

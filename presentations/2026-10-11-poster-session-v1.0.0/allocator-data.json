@@ -1,0 +1,142 @@
+{
+  "source": "E04 microbenchmark-summary.json",
+  "method": {
+    "processOrder": [
+      "control-1",
+      "candidate-1",
+      "candidate-2",
+      "control-2"
+    ],
+    "pattern": "ABBA",
+    "processesPerCondition": 2,
+    "aggregation": "For each retained list depth, arithmetic mean of the two per-process medians; each median is from five timed repetitions. Ratios use these means, not averages of ratios.",
+    "ratioDefinitions": {
+      "candidateOverControlElapsedRatio": "candidate mean divided by control mean; below one is faster",
+      "controlOverCandidateSpeedRatio": "control mean divided by candidate mean; above one is faster"
+    },
+    "runContext": "Coordinator identified these as quiet runs completed before the headed browser comparison. External OS activity was not controlled or measured."
+  },
+  "environment": {
+    "node": "v24.14.1",
+    "v8": "13.6.233.17-node.44",
+    "platform": "win32",
+    "architecture": "x64",
+    "cpu": "Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz",
+    "logicalCpus": 4
+  },
+  "workload": {
+    "payloadBytes": 512,
+    "iterations": 100000,
+    "warmup": 20000,
+    "repeats": 5,
+    "wasmMemoryBytes": 536870912,
+    "operation": "Free and reallocate the same 512-byte payload, checking exact pointer reuse on every pair.",
+    "retainedFreeListDepths": [
+      0,
+      8,
+      32,
+      64,
+      128,
+      512
+    ]
+  },
+  "rows": [
+    {
+      "retainedFreeListDepth": 0,
+      "controlProcessMediansMs": [
+        9.489899999999992,
+        11.4268
+      ],
+      "candidateProcessMediansMs": [
+        10.840499999999992,
+        12.986800000000002
+      ],
+      "controlMeanOfProcessMediansMs": 10.458349999999996,
+      "candidateMeanOfProcessMediansMs": 11.913649999999997,
+      "candidateOverControlElapsedRatio": 1.1391519694789332,
+      "controlOverCandidateSpeedRatio": 0.8778460001762682,
+      "candidateElapsedChangePercent": 13.915196947893316
+    },
+    {
+      "retainedFreeListDepth": 8,
+      "controlProcessMediansMs": [
+        19.661,
+        18.933099999999996
+      ],
+      "candidateProcessMediansMs": [
+        12.12100000000001,
+        12.8091
+      ],
+      "controlMeanOfProcessMediansMs": 19.29705,
+      "candidateMeanOfProcessMediansMs": 12.465050000000005,
+      "candidateOverControlElapsedRatio": 0.6459562471984063,
+      "controlOverCandidateSpeedRatio": 1.548092466536435,
+      "candidateElapsedChangePercent": -35.40437528015937
+    },
+    {
+      "retainedFreeListDepth": 32,
+      "controlProcessMediansMs": [
+        44.7826,
+        40.156000000000006
+      ],
+      "candidateProcessMediansMs": [
+        12.419699999999978,
+        15.192600000000027
+      ],
+      "controlMeanOfProcessMediansMs": 42.469300000000004,
+      "candidateMeanOfProcessMediansMs": 13.806150000000002,
+      "candidateOverControlElapsedRatio": 0.3250854146406934,
+      "controlOverCandidateSpeedRatio": 3.076114630074278,
+      "candidateElapsedChangePercent": -67.49145853593066
+    },
+    {
+      "retainedFreeListDepth": 64,
+      "controlProcessMediansMs": [
+        67.7722,
+        66.33590000000004
+      ],
+      "candidateProcessMediansMs": [
+        13.925000000000011,
+        12.336400000000026
+      ],
+      "controlMeanOfProcessMediansMs": 67.05405000000002,
+      "candidateMeanOfProcessMediansMs": 13.130700000000019,
+      "candidateOverControlElapsedRatio": 0.19582262368939707,
+      "controlOverCandidateSpeedRatio": 5.1066622495373375,
+      "candidateElapsedChangePercent": -80.41773763106029
+    },
+    {
+      "retainedFreeListDepth": 128,
+      "controlProcessMediansMs": [
+        69.71169999999984,
+        69.27270000000021
+      ],
+      "candidateProcessMediansMs": [
+        12.534800000000018,
+        12.70010000000002
+      ],
+      "controlMeanOfProcessMediansMs": 69.49220000000003,
+      "candidateMeanOfProcessMediansMs": 12.61745000000002,
+      "candidateOverControlElapsedRatio": 0.18156642040401677,
+      "controlOverCandidateSpeedRatio": 5.507626342882272,
+      "candidateElapsedChangePercent": -81.84335795959832
+    },
+    {
+      "retainedFreeListDepth": 512,
+      "controlProcessMediansMs": [
+        68.43589999999995,
+        68.54029999999989
+      ],
+      "candidateProcessMediansMs": [
+        12.439599999999984,
+        14.087499999999977
+      ],
+      "controlMeanOfProcessMediansMs": 68.48809999999992,
+      "candidateMeanOfProcessMediansMs": 13.26354999999998,
+      "candidateOverControlElapsedRatio": 0.19366211064403885,
+      "controlOverCandidateSpeedRatio": 5.163632662447084,
+      "candidateElapsedChangePercent": -80.63378893559612
+    }
+  ],
+  "scope": "Constructed compatibility allocator free/reallocate pairs; not original-client startup, frame performance, allocation mix or duration acceptance."
+}

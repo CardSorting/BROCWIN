@@ -1,0 +1,142 @@
+;FFMETADATA1
+title=BROCWIN Research Poster Session
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=32400
+title=What does it mean for a Windows application to exist outside Windows?
+[CHAPTER]
+TIMEBASE=1/1000
+START=32400
+END=70912
+title=Five distinct objects
+[CHAPTER]
+TIMEBASE=1/1000
+START=70912
+END=111268
+title=What existed before the experiment
+[CHAPTER]
+TIMEBASE=1/1000
+START=111268
+END=153179
+title=Preserved files and modified mapped code
+[CHAPTER]
+TIMEBASE=1/1000
+START=153179
+END=195814
+title=Read the architecture from left to right
+[CHAPTER]
+TIMEBASE=1/1000
+START=195814
+END=235029
+title=Rendering and interaction cross the boundary
+[CHAPTER]
+TIMEBASE=1/1000
+START=235029
+END=265742
+title=The browser client keeps native services
+[CHAPTER]
+TIMEBASE=1/1000
+START=265742
+END=311366
+title=The research strategy evolved
+[CHAPTER]
+TIMEBASE=1/1000
+START=311366
+END=347596
+title=The final control pair
+[CHAPTER]
+TIMEBASE=1/1000
+START=347596
+END=377695
+title=What the retained image shows
+[CHAPTER]
+TIMEBASE=1/1000
+START=377695
+END=416829
+title=Progress and identity have bounded meanings
+[CHAPTER]
+TIMEBASE=1/1000
+START=416829
+END=452454
+title=A local allocator optimization
+[CHAPTER]
+TIMEBASE=1/1000
+START=452454
+END=485662
+title=Microbenchmark improvement is not application speedup
+[CHAPTER]
+TIMEBASE=1/1000
+START=485662
+END=519720
+title=The candidate comparison remained incomplete
+[CHAPTER]
+TIMEBASE=1/1000
+START=519720
+END=549434
+title=What this evidence does not establish
+[CHAPTER]
+TIMEBASE=1/1000
+START=549434
+END=584805
+title=Why this matters beyond one game
+[CHAPTER]
+TIMEBASE=1/1000
+START=584805
+END=617475
+title=The cycle has closed and the questions remain
+[CHAPTER]
+TIMEBASE=1/1000
+START=617475
+END=657637
+title=What an independent group would need
+[CHAPTER]
+TIMEBASE=1/1000
+START=657637
+END=675788
+title=Is this just an emulator?
+[CHAPTER]
+TIMEBASE=1/1000
+START=675788
+END=695242
+title=Did you rewrite the original game?
+[CHAPTER]
+TIMEBASE=1/1000
+START=695242
+END=720289
+title=Why does startup take seven minutes?
+[CHAPTER]
+TIMEBASE=1/1000
+START=720289
+END=738199
+title=Does this prove Windows games can run in browsers?
+[CHAPTER]
+TIMEBASE=1/1000
+START=738199
+END=759465
+title=What is actually novel about the experiment?
+[CHAPTER]
+TIMEBASE=1/1000
+START=759465
+END=776831
+title=Can another research group reproduce your result?
+[CHAPTER]
+TIMEBASE=1/1000
+START=776831
+END=799476
+title=What would make this a reliable compatibility runtime?
+[CHAPTER]
+TIMEBASE=1/1000
+START=799476
+END=818823
+title=Why publish an incomplete product objective?
+[CHAPTER]
+TIMEBASE=1/1000
+START=818823
+END=853923
+title=Sources and research attribution
+[CHAPTER]
+TIMEBASE=1/1000
+START=853923
+END=885000
+title=The research can now propagate

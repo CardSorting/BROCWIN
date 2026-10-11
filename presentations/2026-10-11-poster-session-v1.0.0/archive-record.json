@@ -1,0 +1,11 @@
+{
+  "schema": "heav3ns.brocwin.poster-archive/v1",
+  "archive": "brocwin-poster-session-package-1.0.0.zip",
+  "bytes": 96873497,
+  "sha256": "94f730473137123d2dca8185cb3c15ef732bdea10e7aae4ce46151a5303dcb63",
+  "archivedFiles": 111,
+  "zipAndPayloadHashes": "passed",
+  "manifestSha256": "628099aea4f08289b6ff03e3a1cfe52d6c3f2a06bc73435285cb76f650864fed",
+  "externalReceipt": true,
+  "unsigned": true
+}

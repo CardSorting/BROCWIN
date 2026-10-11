@@ -1,0 +1,2699 @@
+{
+  "method": "Measured utterance boundaries; character-proportional subdivisions within an utterance",
+  "maxLines": 2,
+  "maxCharactersPerLine": 42,
+  "durationSeconds": 885,
+  "cues": [
+    {
+      "index": 1,
+      "utterance": "001",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 0.4215407227642232,
+      "end": 2.3101718633432844,
+      "text": "Dr. GPT: What does it mean for a Windows"
+    },
+    {
+      "index": 2,
+      "utterance": "001",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 2.3101718633432844,
+      "end": 4.057155668378916,
+      "text": "application to exist outside Windows?"
+    },
+    {
+      "index": 3,
+      "utterance": "002",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 4.114644813782282,
+      "end": 6.59856979154364,
+      "text": "An executable file contains instructions,\nbut"
+    },
+    {
+      "index": 4,
+      "utterance": "002",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 6.59856979154364,
+      "end": 9.524081432018129,
+      "text": "instructions alone do not make an\napplication behave."
+    },
+    {
+      "index": 5,
+      "utterance": "003",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 9.581570577421495,
+      "end": 14.259289245819579,
+      "text": "It also expects libraries, memory,\ngraphics, input, and services around it."
+    },
+    {
+      "index": 6,
+      "utterance": "004",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 14.316778391222941,
+      "end": 17.54990869521405,
+      "text": "BROCWIN asks whether enough of those\nconditions can be reconstructed"
+    },
+    {
+      "index": 7,
+      "utterance": "004",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 17.54990869521405,
+      "end": 20.4502167620296,
+      "text": "inside a browser to execute an inherited\nWindows game client."
+    },
+    {
+      "index": 8,
+      "utterance": "005",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 20.507705907432964,
+      "end": 23.518113749821033,
+      "text": "I am Dr. GPT, the commissioned AI\nresearcher presenting"
+    },
+    {
+      "index": 9,
+      "utterance": "005",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 23.518113749821033,
+      "end": 26.03590939981833,
+      "text": "this completed experimental cycle for\nHEAV3NS."
+    },
+    {
+      "index": 10,
+      "utterance": "006",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 26.093398545221696,
+      "end": 28.867265344218097,
+      "text": "Please begin with the question at the top\nof our poster:"
+    },
+    {
+      "index": 11,
+      "utterance": "006",
+      "scene": "01",
+      "role": "Dr. GPT",
+      "start": 28.867265344218097,
+      "end": 31.690665478910866,
+      "text": "what must accompany software for it to\nremain executable?"
+    },
+    {
+      "index": 12,
+      "utterance": "007",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 32.537535507782096,
+      "end": 34.78600758525716,
+      "text": "There are five objects to distinguish."
+    },
+    {
+      "index": 13,
+      "utterance": "008",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 34.843496730660526,
+      "end": 38.038489006215684,
+      "text": "The original executable is inherited\ncompiled software."
+    },
+    {
+      "index": 14,
+      "utterance": "009",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 38.09597815161905,
+      "end": 40.60891813013287,
+      "text": "BROCWIN is the compatibility environment\nsupplying"
+    },
+    {
+      "index": 15,
+      "utterance": "009",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 40.60891813013287,
+      "end": 42.719787712084475,
+      "text": "selected conditions that software expects."
+    },
+    {
+      "index": 16,
+      "utterance": "010",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 42.77727685748784,
+      "end": 45.500851189206315,
+      "text": "The browser hosts the interpreter and its\nadapters."
+    },
+    {
+      "index": 17,
+      "utterance": "011",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 45.55834033460968,
+      "end": 49.05217884485537,
+      "text": "Existing native servers and their database\nremain outside the browser."
+    },
+    {
+      "index": 18,
+      "utterance": "012",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 49.10966799025874,
+      "end": 52.17935297146583,
+      "text": "Finally, the institutional research\nartifact includes the"
+    },
+    {
+      "index": 19,
+      "utterance": "012",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 52.17935297146583,
+      "end": 55.679870932491454,
+      "text": "implementation record, measurements,\nidentities, and limitations."
+    },
+    {
+      "index": 20,
+      "utterance": "013",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 55.73736007789483,
+      "end": 58.197607178215115,
+      "text": "HEAV3NS-COMBO names the browser\nintegration;"
+    },
+    {
+      "index": 21,
+      "utterance": "013",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 58.197607178215115,
+      "end": 60.43419545123356,
+      "text": "BROCWIN names the compatibility project."
+    },
+    {
+      "index": 22,
+      "utterance": "014",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 60.49168459663692,
+      "end": 63.90478109674234,
+      "text": "HEAV3NS is the commissioning and\ndocumenting institution in this record."
+    },
+    {
+      "index": 23,
+      "utterance": "015",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 63.9622702421457,
+      "end": 67.1306964472629,
+      "text": "None of these names means that a complete\nWindows operating system"
+    },
+    {
+      "index": 24,
+      "utterance": "015",
+      "scene": "02",
+      "role": "Dr. GPT",
+      "start": 67.1306964472629,
+      "end": 70.20310973707352,
+      "text": "has been constructed, or that Windows\ncompatibility is complete."
+    },
+    {
+      "index": 25,
+      "utterance": "016",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 71.04997976594477,
+      "end": 73.90511345366731,
+      "text": "The experiment emerged through\nHEAV3NS-COMBO, integrating a"
+    },
+    {
+      "index": 26,
+      "utterance": "016",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 73.90511345366731,
+      "end": 77.09899181620439,
+      "text": "supplied native installation with a\nbrowser compatibility runtime."
+    },
+    {
+      "index": 27,
+      "utterance": "017",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 77.15648096160776,
+      "end": 79.93016779692104,
+      "text": "Before this work there were client and\nserver binaries,"
+    },
+    {
+      "index": 28,
+      "utterance": "017",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 79.93016779692104,
+      "end": 82.4012706138365,
+      "text": "game resources, scripts, and a native\ncheckpoint."
+    },
+    {
+      "index": 29,
+      "utterance": "018",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 82.45875975923987,
+      "end": 84.7226989888942,
+      "text": "The client was not authored by HEAV3NS."
+    },
+    {
+      "index": 30,
+      "utterance": "019",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 84.78018813429756,
+      "end": 86.93633981659717,
+      "text": "The inherited installation is identified"
+    },
+    {
+      "index": 31,
+      "utterance": "019",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 86.93633981659717,
+      "end": 89.36201045918422,
+      "text": "with CardSorting's JoySwordOnline\nrepository."
+    },
+    {
+      "index": 32,
+      "utterance": "020",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 89.4194996045876,
+      "end": 91.65100027178921,
+      "text": "Wine-Assembly supplied an existing x86"
+    },
+    {
+      "index": 33,
+      "utterance": "020",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 91.65100027178921,
+      "end": 94.05867204429623,
+      "text": "interpreter and compatibility foundation."
+    },
+    {
+      "index": 34,
+      "utterance": "021",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 94.1161611896996,
+      "end": 97.64204624895491,
+      "text": "The integration added resource serving,\nmanifests, browser"
+    },
+    {
+      "index": 35,
+      "utterance": "021",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 97.64204624895491,
+      "end": 101.4718869167667,
+      "text": "coordination, compatibility corrections,\nand observation tools."
+    },
+    {
+      "index": 36,
+      "utterance": "022",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 101.52937606217006,
+      "end": 105.21087109964235,
+      "text": "BROCWIN and HEAV3NS-COMBO became the\nproject names on October ninth."
+    },
+    {
+      "index": 37,
+      "utterance": "023",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 105.26836024504571,
+      "end": 107.88586668274455,
+      "text": "On October tenth, the scope explicitly\nretained"
+    },
+    {
+      "index": 38,
+      "utterance": "023",
+      "scene": "03",
+      "role": "Dr. GPT",
+      "start": 107.88586668274455,
+      "end": 110.5590647467774,
+      "text": "native servers and SQL while porting the\nclient."
+    },
+    {
+      "index": 39,
+      "utterance": "024",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 111.40593477564862,
+      "end": 114.02999796873962,
+      "text": "Preservation needs a precise\nqualification."
+    },
+    {
+      "index": 40,
+      "utterance": "025",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 114.087487114143,
+      "end": 117.67690914909198,
+      "text": "The original files remained unchanged\nwithin the documented input audit."
+    },
+    {
+      "index": 41,
+      "utterance": "026",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 117.73439829449536,
+      "end": 121.18204389407533,
+      "text": "The image executing in memory was not\nsimply an untouched copy."
+    },
+    {
+      "index": 42,
+      "utterance": "027",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 121.23953303947872,
+      "end": 123.79849516283544,
+      "text": "Loading resolves imports and relocations."
+    },
+    {
+      "index": 43,
+      "utterance": "028",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 123.8559843082388,
+      "end": 127.10410099079743,
+      "text": "A documented compatibility intervention\nalso installs a guarded send"
+    },
+    {
+      "index": 44,
+      "utterance": "028",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 127.10410099079743,
+      "end": 130.5432833605654,
+      "text": "wrapper in mapped code padding,\nserializing existing packet construction"
+    },
+    {
+      "index": 45,
+      "utterance": "028",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 130.5432833605654,
+      "end": 133.55256793411237,
+      "text": "under the original socket lock and\nproviding exception cleanup."
+    },
+    {
+      "index": 46,
+      "utterance": "029",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 133.61005707951574,
+      "end": 135.77059231426375,
+      "text": "That intervention must be disclosed."
+    },
+    {
+      "index": 47,
+      "utterance": "030",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 135.82808145966712,
+      "end": 137.99819102741208,
+      "text": "It differs from a conventional JavaScript"
+    },
+    {
+      "index": 48,
+      "utterance": "030",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 137.99819102741208,
+      "end": 140.43294810341862,
+      "text": "rewrite, but it still alters mapped\nexecution."
+    },
+    {
+      "index": 49,
+      "utterance": "031",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 140.490437248822,
+      "end": 144.55252263161626,
+      "text": "MAJO commissioned the work; compatibility\ncontributors performed the recorded"
+    },
+    {
+      "index": 50,
+      "utterance": "031",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 144.55252263161626,
+      "end": 148.29808188068628,
+      "text": "experimentation; my publication role is\ndocumentation and presentation."
+    },
+    {
+      "index": 51,
+      "utterance": "032",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 148.35557102608968,
+      "end": 150.33465023355885,
+      "text": "These roles do not transfer authorship"
+    },
+    {
+      "index": 52,
+      "utterance": "032",
+      "scene": "04",
+      "role": "Dr. GPT",
+      "start": 150.33465023355885,
+      "end": 152.4699725363545,
+      "text": "of inherited software to the institution."
+    },
+    {
+      "index": 53,
+      "utterance": "033",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 153.31684256522573,
+      "end": 156.65736510184735,
+      "text": "At the center of the poster is the paper's\narchitecture diagram."
+    },
+    {
+      "index": 54,
+      "utterance": "034",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 156.7148542472507,
+      "end": 160.08617205764943,
+      "text": "Its arrows describe relationships, not\nmeasured costs."
+    },
+    {
+      "index": 55,
+      "utterance": "035",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 160.1436612030528,
+      "end": 162.79838063933957,
+      "text": "On the left are the original client and\nlibraries."
+    },
+    {
+      "index": 56,
+      "utterance": "036",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 162.85586978474294,
+      "end": 165.764090096868,
+      "text": "The PE loader maps their sections,\nresolves imports"
+    },
+    {
+      "index": 57,
+      "utterance": "036",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 165.764090096868,
+      "end": 168.78635826437048,
+      "text": "and relocations, and handles\ninitialization metadata."
+    },
+    {
+      "index": 58,
+      "utterance": "037",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 168.84384740977384,
+      "end": 171.41813765472844,
+      "text": "PE is the Windows executable format."
+    },
+    {
+      "index": 59,
+      "utterance": "038",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 171.4756268001318,
+      "end": 174.61338139429168,
+      "text": "Wine-Assembly decodes the original x86\ninstructions into a"
+    },
+    {
+      "index": 60,
+      "utterance": "038",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 174.61338139429168,
+      "end": 177.69703677131085,
+      "text": "dispatch representation and executes them\nin WebAssembly."
+    },
+    {
+      "index": 61,
+      "utterance": "039",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 177.75452591671421,
+      "end": 180.8788211416343,
+      "text": "Reconstructed Windows interfaces supply\nselected"
+    },
+    {
+      "index": 62,
+      "utterance": "039",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 180.8788211416343,
+      "end": 183.80784791499684,
+      "text": "memory, threading, library, and API\nbehavior."
+    },
+    {
+      "index": 63,
+      "utterance": "040",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 183.8653370604002,
+      "end": 186.25427379396248,
+      "text": "An API is a contract describing how\nsoftware"
+    },
+    {
+      "index": 64,
+      "utterance": "040",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 186.25427379396248,
+      "end": 188.26315241082168,
+      "text": "asks its environment to do something."
+    },
+    {
+      "index": 65,
+      "utterance": "041",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 188.32064155622504,
+      "end": 191.90973742341515,
+      "text": "The objective was to execute compiled game\nlogic through these contracts,"
+    },
+    {
+      "index": 66,
+      "utterance": "041",
+      "scene": "05",
+      "role": "Dr. GPT",
+      "start": 191.90973742341515,
+      "end": 195.1055077161187,
+      "text": "without conventionally rewriting that\nlogic as a web application."
+    },
+    {
+      "index": 67,
+      "utterance": "042",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 195.95237774498992,
+      "end": 198.56532857128715,
+      "text": "The browser adapters translate supported\nDirect3D"
+    },
+    {
+      "index": 68,
+      "utterance": "042",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 198.56532857128715,
+      "end": 201.28493045171896,
+      "text": "nine operations and shaders into browser\nrendering."
+    },
+    {
+      "index": 69,
+      "utterance": "043",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 201.34241959712233,
+      "end": 203.34201845644088,
+      "text": "They mediate physical keyboard and mouse"
+    },
+    {
+      "index": 70,
+      "utterance": "043",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 203.34201845644088,
+      "end": 205.44159725872538,
+      "text": "input to reconstructed Windows interfaces."
+    },
+    {
+      "index": 71,
+      "utterance": "044",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 205.49908640412872,
+      "end": 207.48353666352597,
+      "text": "The audio path connects original FMOD"
+    },
+    {
+      "index": 72,
+      "utterance": "044",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 207.48353666352597,
+      "end": 209.57525450451226,
+      "text": "and DirectSound behavior with WebAudio."
+    },
+    {
+      "index": 73,
+      "utterance": "045",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 209.63274364991562,
+      "end": 213.03695931224956,
+      "text": "Resource manifests and browser-accessible\nrange mounts expose original"
+    },
+    {
+      "index": 74,
+      "utterance": "045",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 213.03695931224956,
+      "end": 216.14938506066915,
+      "text": "archives and files without flattening\ntheir expected namespaces."
+    },
+    {
+      "index": 75,
+      "utterance": "046",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 216.2068742060725,
+      "end": 218.1069008889474,
+      "text": "These interfaces are partial."
+    },
+    {
+      "index": 76,
+      "utterance": "047",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 218.16439003435073,
+      "end": 221.2297247068811,
+      "text": "Recorded audio includes nonzero sample\ndata and a running"
+    },
+    {
+      "index": 77,
+      "utterance": "047",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 221.2297247068811,
+      "end": 223.97239257177668,
+      "text": "context; complete audible quality was not\naccepted."
+    },
+    {
+      "index": 78,
+      "utterance": "048",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 224.02988171718005,
+      "end": 226.33796101089095,
+      "text": "Buffered input, focus reliability, text,"
+    },
+    {
+      "index": 79,
+      "utterance": "048",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 226.33796101089095,
+      "end": 228.70374228694465,
+      "text": "and rendering still have documented gaps."
+    },
+    {
+      "index": 80,
+      "utterance": "049",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 228.761231432348,
+      "end": 231.5951422054133,
+      "text": "Supplying an interface name is only a\nbeginning: its"
+    },
+    {
+      "index": 81,
+      "utterance": "049",
+      "scene": "06",
+      "role": "Dr. GPT",
+      "start": 231.5951422054133,
+      "end": 234.3200564102838,
+      "text": "timing, errors, and lifetime behavior also\nmatter."
+    },
+    {
+      "index": 82,
+      "utterance": "050",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 235.16692643915502,
+      "end": 237.48074288988175,
+      "text": "Follow the network arrow out of the\nbrowser."
+    },
+    {
+      "index": 83,
+      "utterance": "051",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 237.53823203528515,
+      "end": 240.34998651324807,
+      "text": "Original client code constructs the game\npackets."
+    },
+    {
+      "index": 84,
+      "utterance": "052",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 240.40747565865146,
+      "end": 243.61801866393003,
+      "text": "Reconstructed Winsock and a WebSocket\nconnection carry their payloads"
+    },
+    {
+      "index": 85,
+      "utterance": "052",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 243.61801866393003,
+      "end": 246.50285440780354,
+      "text": "through a constrained local relay to\nexisting native services."
+    },
+    {
+      "index": 86,
+      "utterance": "053",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 246.56034355320688,
+      "end": 249.75898538152344,
+      "text": "Those services were deliberately outside\nthe client-port scope."
+    },
+    {
+      "index": 87,
+      "utterance": "054",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 249.8164745269268,
+      "end": 252.54990265110106,
+      "text": "This arrangement executes client code in\nthe browser;"
+    },
+    {
+      "index": 88,
+      "utterance": "054",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 252.54990265110106,
+      "end": 255.28333077527532,
+      "text": "it does not stream pixels from a native\ngame process."
+    },
+    {
+      "index": 89,
+      "utterance": "055",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 255.3408199206787,
+      "end": 257.55008575200327,
+      "text": "It also differs from a JavaScript game\nremake"
+    },
+    {
+      "index": 90,
+      "utterance": "055",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 257.55008575200327,
+      "end": 259.8575411758311,
+      "text": "and from a full-system Windows virtual\nmachine."
+    },
+    {
+      "index": 91,
+      "utterance": "056",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 259.91503032123444,
+      "end": 262.47421836928595,
+      "text": "Browser-hosted does not mean independent\nof local"
+    },
+    {
+      "index": 92,
+      "utterance": "056",
+      "scene": "07",
+      "role": "Dr. GPT",
+      "start": 262.47421836928595,
+      "end": 265.0334064173374,
+      "text": "files, native services, or private backend\nstate."
+    },
+    {
+      "index": 93,
+      "utterance": "057",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 265.88027644620865,
+      "end": 267.8798490253563,
+      "text": "This was an evolving experiment."
+    },
+    {
+      "index": 94,
+      "utterance": "058",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 267.9373381707597,
+      "end": 270.6033847013758,
+      "text": "Required contracts were investigated\nthrough bounded"
+    },
+    {
+      "index": 95,
+      "utterance": "058",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 270.6033847013758,
+      "end": 273.4232416087582,
+      "text": "instruction, platform, and original-client\ncomparisons."
+    },
+    {
+      "index": 96,
+      "utterance": "059",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 273.4807307541615,
+      "end": 278.53025195483275,
+      "text": "Repairs addressed loading, memory,\ngraphics, input, and network behavior."
+    },
+    {
+      "index": 97,
+      "utterance": "060",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 278.58774110023614,
+      "end": 281.94316636637825,
+      "text": "Resource caches then reduced recorded\nloading, transfer, and"
+    },
+    {
+      "index": 98,
+      "utterance": "060",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 281.94316636637825,
+      "end": 286.08152419462016,
+      "text": "backing-memory costs, but startup timings\nvaried across the retained runs."
+    },
+    {
+      "index": 99,
+      "utterance": "061",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 286.13901334002355,
+      "end": 289.7285396479086,
+      "text": "An allocator study later demonstrated a\nlocal mechanism improvement."
+    },
+    {
+      "index": 100,
+      "utterance": "062",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 289.7860287933119,
+      "end": 292.44446729765076,
+      "text": "The application comparison remained\nincomplete."
+    },
+    {
+      "index": 101,
+      "utterance": "063",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 292.50195644305415,
+      "end": 296.31747696098313,
+      "text": "A subsequent reservation correction\nexisted only in source-tested form."
+    },
+    {
+      "index": 102,
+      "utterance": "064",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 296.37496610638647,
+      "end": 299.43978832645337,
+      "text": "Historical gameplay observations belonged\nto earlier builds,"
+    },
+    {
+      "index": 103,
+      "utterance": "064",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 299.43978832645337,
+      "end": 302.351369435517,
+      "text": "so their successes could not certify the\nfinal candidate."
+    },
+    {
+      "index": 104,
+      "utterance": "065",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 302.4088585809203,
+      "end": 305.28981553076846,
+      "text": "At closeout, full acceptance remained\nblocked."
+    },
+    {
+      "index": 105,
+      "utterance": "066",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 305.3473046761718,
+      "end": 307.9038350516745,
+      "text": "The research record preserves failed\ncomparisons and"
+    },
+    {
+      "index": 106,
+      "utterance": "066",
+      "scene": "08",
+      "role": "Dr. GPT",
+      "start": 307.9038350516745,
+      "end": 310.6570216099081,
+      "text": "unfinished validation alongside successful\nobservations."
+    },
+    {
+      "index": 107,
+      "utterance": "067",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 311.50389163877935,
+      "end": 313.4958175359508,
+      "text": "Now look at the measured results."
+    },
+    {
+      "index": 108,
+      "utterance": "068",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 313.5533066813541,
+      "end": 316.483050404791,
+      "text": "The final control pair records visible\noriginal login at four"
+    },
+    {
+      "index": 109,
+      "utterance": "068",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 316.483050404791,
+      "end": 319.3167369569677,
+      "text": "hundred forty point seven zero three\nseconds cold, and four"
+    },
+    {
+      "index": 110,
+      "utterance": "068",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 319.3167369569677,
+      "end": 322.0543663378842,
+      "text": "hundred thirty-eight point seven nine\nseven seconds warm."
+    },
+    {
+      "index": 111,
+      "utterance": "069",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 322.11185548328757,
+      "end": 325.23774955989353,
+      "text": "That is about seven minutes twenty seconds\nin each condition."
+    },
+    {
+      "index": 112,
+      "utterance": "070",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 325.2952387052969,
+      "end": 327.75446218543846,
+      "text": "Timing begins immediately before\nbrowser-context"
+    },
+    {
+      "index": 113,
+      "utterance": "070",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 327.75446218543846,
+      "end": 330.3673871330888,
+      "text": "launch, and includes readiness and the\nstart click."
+    },
+    {
+      "index": 114,
+      "utterance": "071",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 330.4248762784922,
+      "end": 333.61597569776853,
+      "text": "Cold means a fresh experiment-specific\nbrowser profile."
+    },
+    {
+      "index": 115,
+      "utterance": "072",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 333.6734648431719,
+      "end": 335.83782341890804,
+      "text": "Warm means reuse of that profile."
+    },
+    {
+      "index": 116,
+      "utterance": "073",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 335.89531256431144,
+      "end": 338.3518442615014,
+      "text": "Operating-system caches were not flushed;\nthese"
+    },
+    {
+      "index": 117,
+      "utterance": "073",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 338.3518442615014,
+      "end": 341.0174424861118,
+      "text": "are not verified whole-machine cold and\nwarm boots."
+    },
+    {
+      "index": 118,
+      "utterance": "074",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 341.0749316315152,
+      "end": 344.2402064306351,
+      "text": "With one sequential run per condition,\ntheir small difference"
+    },
+    {
+      "index": 119,
+      "utterance": "074",
+      "scene": "09",
+      "role": "Dr. GPT",
+      "start": 344.2402064306351,
+      "end": 346.88658372170255,
+      "text": "is descriptive evidence, not a proven\nacceleration."
+    },
+    {
+      "index": 120,
+      "utterance": "075",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 347.73345375057374,
+      "end": 350.04374036931756,
+      "text": "This is an archived still from the\nretained"
+    },
+    {
+      "index": 121,
+      "utterance": "075",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 350.04374036931756,
+      "end": 352.08538900913766,
+      "text": "cold control, not a new demonstration."
+    },
+    {
+      "index": 122,
+      "utterance": "076",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 352.142878154541,
+      "end": 355.5524293748211,
+      "text": "It shows the original login interface with\nempty credential fields."
+    },
+    {
+      "index": 123,
+      "utterance": "077",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 355.6099185202244,
+      "end": 358.2127209387226,
+      "text": "The canvas capture is twelve eighty by\nnine sixty;"
+    },
+    {
+      "index": 124,
+      "utterance": "077",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 358.2127209387226,
+      "end": 360.9196354539607,
+      "text": "the requested browser viewport was a\ndifferent size."
+    },
+    {
+      "index": 125,
+      "utterance": "078",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 360.97712459936406,
+      "end": 363.6950513299164,
+      "text": "Automatic color detection identified a\nvisible scene,"
+    },
+    {
+      "index": 126,
+      "utterance": "078",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 363.6950513299164,
+      "end": 366.15656987834114,
+      "text": "and image review classified that scene as\nlogin."
+    },
+    {
+      "index": 127,
+      "utterance": "079",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 366.21405902374454,
+      "end": 368.4072316874731,
+      "text": "Four image-file records were reviewed, but"
+    },
+    {
+      "index": 128,
+      "utterance": "079",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 368.4072316874731,
+      "end": 370.6004043512016,
+      "text": "they contain only two unique image hashes."
+    },
+    {
+      "index": 129,
+      "utterance": "080",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 370.65789349660497,
+      "end": 372.8259711403932,
+      "text": "They are not four independent scenes."
+    },
+    {
+      "index": 130,
+      "utterance": "081",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 372.88346028579656,
+      "end": 374.9089752674787,
+      "text": "No credentials or gameplay actions were"
+    },
+    {
+      "index": 131,
+      "utterance": "081",
+      "scene": "10",
+      "role": "Dr. GPT",
+      "start": 374.9089752674787,
+      "end": 376.9864265307424,
+      "text": "entered in these final startup controls."
+    },
+    {
+      "index": 132,
+      "utterance": "082",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 377.8332965596136,
+      "end": 381.41735288306216,
+      "text": "After login, the cold observation records\none thousand seventy-three"
+    },
+    {
+      "index": 133,
+      "utterance": "082",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 381.41735288306216,
+      "end": 384.5797555213992,
+      "text": "frame advances over thirty-one point zero\nnine four seconds."
+    },
+    {
+      "index": 134,
+      "utterance": "083",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 384.6372446668026,
+      "end": 387.0717003709217,
+      "text": "The warm observation records one thousand\neighty"
+    },
+    {
+      "index": 135,
+      "utterance": "083",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 387.0717003709217,
+      "end": 389.3032847663642,
+      "text": "over thirty-one point one zero nine\nseconds."
+    },
+    {
+      "index": 136,
+      "utterance": "084",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 389.3607739117675,
+      "end": 392.82536986145476,
+      "text": "These are counter advances, not verified\ndisplay refreshes,"
+    },
+    {
+      "index": 137,
+      "utterance": "084",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 392.82536986145476,
+      "end": 395.99635598489726,
+      "text": "input responsiveness, or complete\nsimulation progress."
+    },
+    {
+      "index": 138,
+      "utterance": "085",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 396.0538451303007,
+      "end": 398.28836826954523,
+      "text": "The original-input audit reports three\nhundred"
+    },
+    {
+      "index": 139,
+      "utterance": "085",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 398.28836826954523,
+      "end": 400.91150412865835,
+      "text": "twenty-one matching entries before and\nafter the runs."
+    },
+    {
+      "index": 140,
+      "utterance": "086",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 400.9689932740618,
+      "end": 404.6887564790607,
+      "text": "A separate audit checks two hundred eleven\nserved and observer identities."
+    },
+    {
+      "index": 141,
+      "utterance": "087",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 404.74624562446405,
+      "end": 408.3588162512139,
+      "text": "Both retained error lists are empty within\ntheir observer's reporting scope."
+    },
+    {
+      "index": 142,
+      "utterance": "088",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 408.41630539661725,
+      "end": 412.26837357862826,
+      "text": "Hash matches establish scoped file\nidentity, not semantic correctness, and"
+    },
+    {
+      "index": 143,
+      "utterance": "088",
+      "scene": "11",
+      "role": "Dr. GPT",
+      "start": 412.26837357862826,
+      "end": 416.12044176063927,
+      "text": "thirty-one seconds of progress cannot\nestablish long-duration reliability."
+    },
+    {
+      "index": 144,
+      "utterance": "089",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 416.9673117895105,
+      "end": 420.71383838142634,
+      "text": "The allocator is the component that\nmanages memory allocation and release."
+    },
+    {
+      "index": 145,
+      "utterance": "090",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 420.77132752682974,
+      "end": 423.45536888183864,
+      "text": "The candidate replaced defensive\nduplicate-free list scans"
+    },
+    {
+      "index": 146,
+      "utterance": "090",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 423.45536888183864,
+      "end": 426.0005805115885,
+      "text": "with an atomic ownership claim in an\nallocation header."
+    },
+    {
+      "index": 147,
+      "utterance": "091",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 426.05806965699185,
+      "end": 428.63005120597774,
+      "text": "That addresses a reproduced scaling cost;\nit does"
+    },
+    {
+      "index": 148,
+      "utterance": "091",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 428.63005120597774,
+      "end": 431.14954333559655,
+      "text": "not prove duplicate frees caused a game\nfailure."
+    },
+    {
+      "index": 149,
+      "utterance": "092",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 431.2070324809999,
+      "end": 433.15623193639095,
+      "text": "The microbenchmark repeatedly freed and"
+    },
+    {
+      "index": 150,
+      "utterance": "092",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 433.15623193639095,
+      "end": 435.50526717750324,
+      "text": "reallocated a five hundred twelve-byte\npayload."
+    },
+    {
+      "index": 151,
+      "utterance": "093",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 435.5627563229066,
+      "end": 439.0002189920843,
+      "text": "It used twenty thousand warmup pairs, then\nfive repetitions"
+    },
+    {
+      "index": 152,
+      "utterance": "093",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 439.0002189920843,
+      "end": 441.79679879073734,
+      "text": "of one hundred thousand pairs, across four\nfresh"
+    },
+    {
+      "index": 153,
+      "utterance": "093",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 441.79679879073734,
+      "end": 445.1177373016379,
+      "text": "processes ordered control, candidate,\ncandidate, control."
+    },
+    {
+      "index": 154,
+      "utterance": "094",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 445.1752264470412,
+      "end": 448.1480478535406,
+      "text": "Each reported value averages two process\nmedians."
+    },
+    {
+      "index": 155,
+      "utterance": "095",
+      "scene": "12",
+      "role": "Dr. GPT",
+      "start": 448.20553699894396,
+      "end": 451.74532511633794,
+      "text": "This is a constructed workload with a\nprecisely defined comparison."
+    },
+    {
+      "index": 156,
+      "utterance": "096",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 452.5921951452092,
+      "end": 455.39378573389246,
+      "text": "At retained-list depths of sixty-four\nthrough five hundred"
+    },
+    {
+      "index": 157,
+      "utterance": "096",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 455.39378573389246,
+      "end": 457.95385989251685,
+      "text": "twelve, the candidate is approximately\nfive point one"
+    },
+    {
+      "index": 158,
+      "utterance": "096",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 457.95385989251685,
+      "end": 460.6105406231648,
+      "text": "to five point five times faster in this\nmicrobenchmark."
+    },
+    {
+      "index": 159,
+      "utterance": "097",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 460.66802976856826,
+      "end": 463.6294159097485,
+      "text": "At depth zero it is thirteen point nine\npercent slower."
+    },
+    {
+      "index": 160,
+      "utterance": "098",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 463.68690505515184,
+      "end": 467.32247690128634,
+      "text": "The benchmark includes JavaScript calls\nand checks, tests one allocation"
+    },
+    {
+      "index": 161,
+      "utterance": "098",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 467.32247690128634,
+      "end": 471.261013067932,
+      "text": "size, and does not measure concurrent\nthroughput or the game's allocation mix."
+    },
+    {
+      "index": 162,
+      "utterance": "099",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 471.31850221333536,
+      "end": 474.3247614969419,
+      "text": "A separate short profile attributed only\ntwo point five eight nine"
+    },
+    {
+      "index": 163,
+      "utterance": "099",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 474.3247614969419,
+      "end": 477.5132183128882,
+      "text": "percent of one active worker's sampled\nwall intervals to heap freeing."
+    },
+    {
+      "index": 164,
+      "utterance": "100",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 477.5707074582915,
+      "end": 480.4476672789248,
+      "text": "That window does not characterize complete\nstartup."
+    },
+    {
+      "index": 165,
+      "utterance": "101",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 480.50515642432816,
+      "end": 482.5807462910254,
+      "text": "A local optimization can be real while its"
+    },
+    {
+      "index": 166,
+      "utterance": "101",
+      "scene": "13",
+      "role": "Dr. GPT",
+      "start": 482.5807462910254,
+      "end": 484.95284899582214,
+      "text": "whole-application benefit remains\nunestablished."
+    },
+    {
+      "index": 167,
+      "utterance": "102",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 485.79971902469333,
+      "end": 488.0051479532948,
+      "text": "The candidate's cold comparison was\ninterrupted"
+    },
+    {
+      "index": 168,
+      "utterance": "102",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 488.0051479532948,
+      "end": 490.21057688189626,
+      "text": "by a screenshot-helper stability timeout\nat two"
+    },
+    {
+      "index": 169,
+      "utterance": "102",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 490.21057688189626,
+      "end": 492.6037018895276,
+      "text": "hundred ninety-seven point four eight four\nseconds."
+    },
+    {
+      "index": 170,
+      "utterance": "103",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 492.66119103493105,
+      "end": 496.1013984984068,
+      "text": "Its last sample still showed execution\nwithout a runtime error."
+    },
+    {
+      "index": 171,
+      "utterance": "104",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 496.1588876438102,
+      "end": 499.01662648656674,
+      "text": "We cannot label that an established\nallocator failure."
+    },
+    {
+      "index": 172,
+      "utterance": "105",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 499.07411563197013,
+      "end": 502.7061063031109,
+      "text": "A subsequent warm-profile launch reached\nlogin at four hundred fifty-seven"
+    },
+    {
+      "index": 173,
+      "utterance": "105",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 502.7061063031109,
+      "end": 506.0926921991746,
+      "text": "point eight five nine seconds, but\nfollowed interrupted cold priming."
+    },
+    {
+      "index": 174,
+      "utterance": "106",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 506.1501813445781,
+      "end": 508.3451961635099,
+      "text": "It is not a matched warm comparison."
+    },
+    {
+      "index": 175,
+      "utterance": "107",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 508.40268530891336,
+      "end": 511.08423600789615,
+      "text": "Later observer refinements were\nincompletely validated,"
+    },
+    {
+      "index": 176,
+      "utterance": "107",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 511.08423600789615,
+      "end": 513.570764837862,
+      "text": "and their proposed headed repair check did\nnot run."
+    },
+    {
+      "index": 177,
+      "utterance": "108",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 513.6282539832654,
+      "end": 516.2197943188735,
+      "text": "The measured observer, prepared candidate,\nand final"
+    },
+    {
+      "index": 178,
+      "utterance": "108",
+      "scene": "14",
+      "role": "Dr. GPT",
+      "start": 516.2197943188735,
+      "end": 519.0106839110668,
+      "text": "frozen source must remain separate\nexperimental objects."
+    },
+    {
+      "index": 179,
+      "utterance": "109",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 519.857553939938,
+      "end": 523.1712088167067,
+      "text": "The evidence supports an original-login\nexecution milestone."
+    },
+    {
+      "index": 180,
+      "utterance": "110",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 523.2286979621101,
+      "end": 526.5915216933939,
+      "text": "It does not establish complete gameplay\ncompatibility, production"
+    },
+    {
+      "index": 181,
+      "utterance": "110",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 526.5915216933939,
+      "end": 529.4887236772693,
+      "text": "readiness, threefold acceleration, or\ndurable operation."
+    },
+    {
+      "index": 182,
+      "utterance": "111",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 529.5462128226726,
+      "end": 531.9029349286423,
+      "text": "An earlier gameplay build reached\ncharacter"
+    },
+    {
+      "index": 183,
+      "utterance": "111",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 531.9029349286423,
+      "end": 534.2048495437754,
+      "text": "selection, town, combat, and an area gate."
+    },
+    {
+      "index": 184,
+      "utterance": "112",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 534.2623386891788,
+      "end": 537.9631937351091,
+      "text": "Revival still failed, and two winning\ncycles remained unaccepted."
+    },
+    {
+      "index": 185,
+      "utterance": "113",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 538.0206828805125,
+      "end": 540.8056044562678,
+      "text": "Those observations retain their own build\nidentity."
+    },
+    {
+      "index": 186,
+      "utterance": "114",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 540.8630936016713,
+      "end": 544.793853092747,
+      "text": "One client, one final browser condition,\nlocal native dependencies, and"
+    },
+    {
+      "index": 187,
+      "utterance": "114",
+      "scene": "15",
+      "role": "Dr. GPT",
+      "start": 544.793853092747,
+      "end": 548.7246125838228,
+      "text": "a short observation cannot establish broad\nWindows application support."
+    },
+    {
+      "index": 188,
+      "utterance": "115",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 549.571482612694,
+      "end": 553.302889628884,
+      "text": "Beyond this game, the experiment raises\nfive research questions."
+    },
+    {
+      "index": 189,
+      "utterance": "116",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 553.3603787742875,
+      "end": 557.524379444462,
+      "text": "Can reconstructing execution conditions\nextend an application's useful life?"
+    },
+    {
+      "index": 190,
+      "utterance": "117",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 557.5818685898654,
+      "end": 560.0509688316758,
+      "text": "What can compatibility research learn by\ntreating"
+    },
+    {
+      "index": 191,
+      "utterance": "117",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 560.0509688316758,
+      "end": 562.1673404675134,
+      "text": "operating-system behavior as an interface?"
+    },
+    {
+      "index": 192,
+      "utterance": "118",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 562.2248296129169,
+      "end": 564.6972967365587,
+      "text": "When does the environment enabling a\ncomputational"
+    },
+    {
+      "index": 193,
+      "utterance": "118",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 564.6972967365587,
+      "end": 566.5269224080536,
+      "text": "work become a research object itself?"
+    },
+    {
+      "index": 194,
+      "utterance": "119",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 566.584411553457,
+      "end": 569.993962773737,
+      "text": "What must reproducibility preserve beyond\nexecutable files?"
+    },
+    {
+      "index": 195,
+      "utterance": "120",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 570.0514519191404,
+      "end": 573.7442779489957,
+      "text": "And how can an institutional record allow\nresearchers elsewhere to continue?"
+    },
+    {
+      "index": 196,
+      "utterance": "121",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 573.801767094399,
+      "end": 576.2281262124229,
+      "text": "These are implications and opportunities,\nnot"
+    },
+    {
+      "index": 197,
+      "utterance": "121",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 576.2281262124229,
+      "end": 578.8701616964935,
+      "text": "universal capabilities established by this\ntrial."
+    },
+    {
+      "index": 198,
+      "utterance": "122",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 578.9276508418968,
+      "end": 581.6579019205451,
+      "text": "The environment, its interventions, and\nthe observations"
+    },
+    {
+      "index": 199,
+      "utterance": "122",
+      "scene": "16",
+      "role": "Dr. GPT",
+      "start": 581.6579019205451,
+      "end": 584.0956260979095,
+      "text": "deserve examination together with the\napplication."
+    },
+    {
+      "index": 200,
+      "utterance": "123",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 584.9424961267807,
+      "end": 587.5397264176642,
+      "text": "The original experimental cycle has\nclosed."
+    },
+    {
+      "index": 201,
+      "utterance": "124",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 587.5972155630675,
+      "end": 590.2059506345606,
+      "text": "This presentation does not reopen\nengineering."
+    },
+    {
+      "index": 202,
+      "utterance": "125",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 590.263439779964,
+      "end": 593.2241606759786,
+      "text": "A future group could restore the artifacts\nindependently,"
+    },
+    {
+      "index": 203,
+      "utterance": "125",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 593.2241606759786,
+      "end": 596.2887665157132,
+      "text": "validate the final observer, repeat\nstartup and performance"
+    },
+    {
+      "index": 204,
+      "utterance": "125",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 596.2887665157132,
+      "end": 599.197544939868,
+      "text": "studies, and test stated durations of\nruntime stability."
+    },
+    {
+      "index": 205,
+      "utterance": "126",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 599.2550340852714,
+      "end": 602.2985462477142,
+      "text": "A broader application corpus could probe\ncompatibility, while"
+    },
+    {
+      "index": 206,
+      "utterance": "126",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 602.2985462477142,
+      "end": 605.5915266201932,
+      "text": "archival work could reconstruct the\noriginal execution conditions."
+    },
+    {
+      "index": 207,
+      "utterance": "127",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 605.6490157655966,
+      "end": 608.4339025837065,
+      "text": "Each investigation needs its own scope and\nevidence."
+    },
+    {
+      "index": 208,
+      "utterance": "128",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 608.4913917291099,
+      "end": 611.5253865914194,
+      "text": "HEAV3NS does not promise to complete these\nstudies itself."
+    },
+    {
+      "index": 209,
+      "utterance": "129",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 611.5828757368226,
+      "end": 613.8935824252079,
+      "text": "The record is published so others can"
+    },
+    {
+      "index": 210,
+      "utterance": "129",
+      "scene": "17",
+      "role": "Dr. GPT",
+      "start": 613.8935824252079,
+      "end": 616.76635290266,
+      "text": "evaluate, cite, critique, and extend the\nwork."
+    },
+    {
+      "index": 211,
+      "utterance": "130",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 617.6132229315313,
+      "end": 621.1103337469242,
+      "text": "Independent continuation requires matching\nsource snapshots,"
+    },
+    {
+      "index": 212,
+      "utterance": "130",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 621.1103337469242,
+      "end": 624.0245927597516,
+      "text": "dependency pins, local patches, generated\nmodules,"
+    },
+    {
+      "index": 213,
+      "utterance": "130",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 624.0245927597516,
+      "end": 627.1719924936053,
+      "text": "manifests, and the observer used for each\nmeasurement."
+    },
+    {
+      "index": 214,
+      "utterance": "131",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 627.2294816390087,
+      "end": 630.5491322095995,
+      "text": "It also requires the original client and\nplatform inputs, native"
+    },
+    {
+      "index": 215,
+      "utterance": "131",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 630.5491322095995,
+      "end": 633.8687827801905,
+      "text": "services, private configuration, and\nappropriate database state."
+    },
+    {
+      "index": 216,
+      "utterance": "132",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 633.9262719255939,
+      "end": 636.9422248963034,
+      "text": "The documentation archive excludes\ncredentials, database"
+    },
+    {
+      "index": 217,
+      "utterance": "132",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 636.9422248963034,
+      "end": 639.5273274426258,
+      "text": "contents, large binaries, and much raw\nevidence."
+    },
+    {
+      "index": 218,
+      "utterance": "133",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 639.5848165880292,
+      "end": 641.8966841775814,
+      "text": "The compatibility source license does not\ngrant"
+    },
+    {
+      "index": 219,
+      "utterance": "133",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 641.8966841775814,
+      "end": 644.5036837998424,
+      "text": "rights to distribute the game or platform\ncomponents."
+    },
+    {
+      "index": 220,
+      "utterance": "134",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 644.5611729452457,
+      "end": 647.8897938415756,
+      "text": "Researchers need lawful access and any\nnecessary permissions, a"
+    },
+    {
+      "index": 221,
+      "utterance": "134",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 647.8897938415756,
+      "end": 651.6410967564872,
+      "text": "separate restoration workspace, and\nauthorization for a new experiment."
+    },
+    {
+      "index": 222,
+      "utterance": "135",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 651.6985859018905,
+      "end": 654.2619792842677,
+      "text": "Hash verification is a starting point;\nindependent"
+    },
+    {
+      "index": 223,
+      "utterance": "135",
+      "scene": "18",
+      "role": "Dr. GPT",
+      "start": 654.2619792842677,
+      "end": 656.92790840194,
+      "text": "clean-machine restoration has not been\ndemonstrated."
+    },
+    {
+      "index": 224,
+      "utterance": "136",
+      "scene": "19",
+      "role": "Audience",
+      "start": 657.7747784308112,
+      "end": 659.5022681621854,
+      "text": "Audience: Is this just an emulator?"
+    },
+    {
+      "index": 225,
+      "utterance": "137",
+      "scene": "19",
+      "role": "Dr. GPT",
+      "start": 659.7092151825792,
+      "end": 662.2604263510237,
+      "text": "Dr. GPT: It includes x86 interpretation."
+    },
+    {
+      "index": 226,
+      "utterance": "138",
+      "scene": "19",
+      "role": "Dr. GPT",
+      "start": 662.3179154964271,
+      "end": 665.7620785874516,
+      "text": "But the experiment also reconstructs\nloading, selected Windows"
+    },
+    {
+      "index": 227,
+      "utterance": "138",
+      "scene": "19",
+      "role": "Dr. GPT",
+      "start": 665.7620785874516,
+      "end": 669.7617518544479,
+      "text": "contracts, browser adapters, resource\naccess, and service communication."
+    },
+    {
+      "index": 228,
+      "utterance": "139",
+      "scene": "19",
+      "role": "Dr. GPT",
+      "start": 669.8192409998513,
+      "end": 672.6476827545061,
+      "text": "Calling it an emulator describes part of\nthe arrangement;"
+    },
+    {
+      "index": 229,
+      "utterance": "139",
+      "scene": "19",
+      "role": "Dr. GPT",
+      "start": 672.6476827545061,
+      "end": 675.0791502278058,
+      "text": "it does not establish its compatibility\ncoverage."
+    },
+    {
+      "index": 230,
+      "utterance": "140",
+      "scene": "20",
+      "role": "Audience",
+      "start": 675.926020256677,
+      "end": 677.8719617890549,
+      "text": "Audience: Did you rewrite the original\ngame?"
+    },
+    {
+      "index": 231,
+      "utterance": "141",
+      "scene": "20",
+      "role": "Dr. GPT",
+      "start": 678.0789088094489,
+      "end": 681.4808133477527,
+      "text": "Dr. GPT: There was no conventional\ngame-source rewrite as a web application."
+    },
+    {
+      "index": 232,
+      "utterance": "142",
+      "scene": "20",
+      "role": "Dr. GPT",
+      "start": 681.538302493156,
+      "end": 685.0856330195902,
+      "text": "Original compiled logic executes through\nthe compatibility runtime."
+    },
+    {
+      "index": 233,
+      "utterance": "143",
+      "scene": "20",
+      "role": "Dr. GPT",
+      "start": 685.1431221649935,
+      "end": 688.14098054954,
+      "text": "However, the documented send wrapper\nmodifies mapped"
+    },
+    {
+      "index": 234,
+      "utterance": "143",
+      "scene": "20",
+      "role": "Dr. GPT",
+      "start": 688.14098054954,
+      "end": 691.0811878113067,
+      "text": "code, and loader fixups modify the\nexecution image."
+    },
+    {
+      "index": 235,
+      "utterance": "144",
+      "scene": "20",
+      "role": "Dr. GPT",
+      "start": 691.13867695671,
+      "end": 694.5329000553922,
+      "text": "Preserving audited disk files does not\nerase those interventions."
+    },
+    {
+      "index": 236,
+      "utterance": "145",
+      "scene": "21",
+      "role": "Audience",
+      "start": 695.3797700842634,
+      "end": 697.6054063887458,
+      "text": "Audience: Why does startup take seven\nminutes?"
+    },
+    {
+      "index": 237,
+      "utterance": "146",
+      "scene": "21",
+      "role": "Dr. GPT",
+      "start": 697.8123534091397,
+      "end": 701.0571533904767,
+      "text": "Dr. GPT: The record does not establish a\ncomplete causal explanation."
+    },
+    {
+      "index": 238,
+      "utterance": "147",
+      "scene": "21",
+      "role": "Dr. GPT",
+      "start": 701.1146425358801,
+      "end": 703.5891881020733,
+      "text": "Original execution, compatibility work,"
+    },
+    {
+      "index": 239,
+      "utterance": "147",
+      "scene": "21",
+      "role": "Dr. GPT",
+      "start": 703.5891881020733,
+      "end": 706.7616824177056,
+      "text": "scheduling, and loading are possible\ncontributors."
+    },
+    {
+      "index": 240,
+      "utterance": "148",
+      "scene": "21",
+      "role": "Dr. GPT",
+      "start": 706.819171563109,
+      "end": 709.5243164731381,
+      "text": "A short one-worker profile identifies\ndispatch and"
+    },
+    {
+      "index": 241,
+      "utterance": "148",
+      "scene": "21",
+      "role": "Dr. GPT",
+      "start": 709.5243164731381,
+      "end": 712.5540787723709,
+      "text": "allocator work, but cannot apportion the\nentire startup."
+    },
+    {
+      "index": 242,
+      "utterance": "149",
+      "scene": "21",
+      "role": "Dr. GPT",
+      "start": 712.6115679177743,
+      "end": 716.775881406757,
+      "text": "Recorded cache savings also did not\nestablish repeatable login acceleration."
+    },
+    {
+      "index": 243,
+      "utterance": "150",
+      "scene": "21",
+      "role": "Dr. GPT",
+      "start": 716.8333705521602,
+      "end": 719.5799544450982,
+      "text": "Better matched whole-application\nmeasurements are needed."
+    },
+    {
+      "index": 244,
+      "utterance": "151",
+      "scene": "22",
+      "role": "Audience",
+      "start": 720.4268244739694,
+      "end": 723.215673663649,
+      "text": "Audience: Does this prove Windows games\ncan run in browsers?"
+    },
+    {
+      "index": 245,
+      "utterance": "152",
+      "scene": "22",
+      "role": "Dr. GPT",
+      "start": 723.422620684043,
+      "end": 725.5665964891186,
+      "text": "Dr. GPT: It demonstrates this inherited\nclient's"
+    },
+    {
+      "index": 246,
+      "utterance": "152",
+      "scene": "22",
+      "role": "Dr. GPT",
+      "start": 725.5665964891186,
+      "end": 727.6212399689828,
+      "text": "login milestone under the retained\nconditions."
+    },
+    {
+      "index": 247,
+      "utterance": "153",
+      "scene": "22",
+      "role": "Dr. GPT",
+      "start": 727.6787291143861,
+      "end": 730.3553775276707,
+      "text": "It does not establish complete support\neven for this"
+    },
+    {
+      "index": 248,
+      "utterance": "153",
+      "scene": "22",
+      "role": "Dr. GPT",
+      "start": 730.3553775276707,
+      "end": 732.877603917112,
+      "text": "game, or general support for other Windows\ngames."
+    },
+    {
+      "index": 249,
+      "utterance": "154",
+      "scene": "22",
+      "role": "Dr. GPT",
+      "start": 732.9350930625153,
+      "end": 735.0816808931634,
+      "text": "Broader compatibility requires additional"
+    },
+    {
+      "index": 250,
+      "utterance": "154",
+      "scene": "22",
+      "role": "Dr. GPT",
+      "start": 735.0816808931634,
+      "end": 737.490047727549,
+      "text": "applications and explicit acceptance\ncriteria."
+    },
+    {
+      "index": 251,
+      "utterance": "155",
+      "scene": "23",
+      "role": "Audience",
+      "start": 738.3369177564202,
+      "end": 740.7271662692642,
+      "text": "Audience: What is actually novel about the\nexperiment?"
+    },
+    {
+      "index": 252,
+      "utterance": "156",
+      "scene": "23",
+      "role": "Dr. GPT",
+      "start": 740.9341132896583,
+      "end": 744.3814424117306,
+      "text": "Dr. GPT: Its contribution is this specific\nintegration and its auditable"
+    },
+    {
+      "index": 253,
+      "utterance": "156",
+      "scene": "23",
+      "role": "Dr. GPT",
+      "start": 744.3814424117306,
+      "end": 747.7330123915232,
+      "text": "account: inherited client execution,\nbrowser compatibility conditions,"
+    },
+    {
+      "index": 254,
+      "utterance": "156",
+      "scene": "23",
+      "role": "Dr. GPT",
+      "start": 747.7330123915232,
+      "end": 750.940943657896,
+      "text": "native-service boundaries, interventions,\nand bounded measurements."
+    },
+    {
+      "index": 255,
+      "utterance": "157",
+      "scene": "23",
+      "role": "Dr. GPT",
+      "start": 750.9984328032995,
+      "end": 753.1429761301982,
+      "text": "The paper does not establish first-ever"
+    },
+    {
+      "index": 256,
+      "utterance": "157",
+      "scene": "23",
+      "role": "Dr. GPT",
+      "start": 753.1429761301982,
+      "end": 755.5074726188302,
+      "text": "priority or superiority over other\nsystems."
+    },
+    {
+      "index": 257,
+      "utterance": "158",
+      "scene": "23",
+      "role": "Dr. GPT",
+      "start": 755.5649617642337,
+      "end": 758.7559916682193,
+      "text": "Much of its foundation is inherited and\nexplicitly credited."
+    },
+    {
+      "index": 258,
+      "utterance": "159",
+      "scene": "24",
+      "role": "Audience",
+      "start": 759.6028616970905,
+      "end": 762.1885524497188,
+      "text": "Audience: Can another research group\nreproduce your result?"
+    },
+    {
+      "index": 259,
+      "utterance": "160",
+      "scene": "24",
+      "role": "Dr. GPT",
+      "start": 762.3954994701128,
+      "end": 764.3769031735923,
+      "text": "Dr. GPT: The records provide a conditional"
+    },
+    {
+      "index": 260,
+      "utterance": "160",
+      "scene": "24",
+      "role": "Dr. GPT",
+      "start": 764.3769031735923,
+      "end": 766.5941882703432,
+      "text": "route, not a completed independent\nreplication."
+    },
+    {
+      "index": 261,
+      "utterance": "161",
+      "scene": "24",
+      "role": "Dr. GPT",
+      "start": 766.6516774157466,
+      "end": 769.2633635450129,
+      "text": "A group needs the matching artifacts,\noriginal and"
+    },
+    {
+      "index": 262,
+      "utterance": "161",
+      "scene": "24",
+      "role": "Dr. GPT",
+      "start": 769.2633635450129,
+      "end": 772.0839845646206,
+      "text": "private inputs, permissions, and a\nvalidated observer."
+    },
+    {
+      "index": 263,
+      "utterance": "162",
+      "scene": "24",
+      "role": "Dr. GPT",
+      "start": 772.1414737100239,
+      "end": 774.2336130285031,
+      "text": "A transferred documentation archive alone"
+    },
+    {
+      "index": 264,
+      "utterance": "162",
+      "scene": "24",
+      "role": "Dr. GPT",
+      "start": 774.2336130285031,
+      "end": 776.12164119396,
+      "text": "cannot restore the whole environment."
+    },
+    {
+      "index": 265,
+      "utterance": "163",
+      "scene": "25",
+      "role": "Audience",
+      "start": 776.9685112228312,
+      "end": 778.6999088194673,
+      "text": "Audience: What would need to happen before"
+    },
+    {
+      "index": 266,
+      "utterance": "163",
+      "scene": "25",
+      "role": "Audience",
+      "start": 778.6999088194673,
+      "end": 780.5962014253068,
+      "text": "this becomes a reliable compatibility\nruntime?"
+    },
+    {
+      "index": 267,
+      "utterance": "164",
+      "scene": "25",
+      "role": "Dr. GPT",
+      "start": 780.8031484457009,
+      "end": 784.5917590043783,
+      "text": "Dr. GPT: Validate the observer and\nrestored artifacts, resolve open"
+    },
+    {
+      "index": 268,
+      "utterance": "164",
+      "scene": "25",
+      "role": "Dr. GPT",
+      "start": 784.5917590043783,
+      "end": 788.889287399296,
+      "text": "loading, memory, networking, input, and\nrendering contracts, and demonstrate"
+    },
+    {
+      "index": 269,
+      "utterance": "164",
+      "scene": "25",
+      "role": "Dr. GPT",
+      "start": 788.889287399296,
+      "end": 792.7909908104713,
+      "text": "repeated startup, full gameplay gates, and\nstated-duration stability."
+    },
+    {
+      "index": 270,
+      "utterance": "165",
+      "scene": "25",
+      "role": "Dr. GPT",
+      "start": 792.8484799558745,
+      "end": 795.9168848870772,
+      "text": "Reliability must be measured against\ndeclared conditions."
+    },
+    {
+      "index": 271,
+      "utterance": "166",
+      "scene": "25",
+      "role": "Dr. GPT",
+      "start": 795.9743740324806,
+      "end": 798.7669770478575,
+      "text": "The present evidence does not supply that\nacceptance."
+    },
+    {
+      "index": 272,
+      "utterance": "167",
+      "scene": "26",
+      "role": "Audience",
+      "start": 799.6138470767287,
+      "end": 802.8547542017869,
+      "text": "Audience: Why publish this if the product\nobjective was not fully achieved?"
+    },
+    {
+      "index": 273,
+      "utterance": "168",
+      "scene": "26",
+      "role": "Dr. GPT",
+      "start": 803.0617012221809,
+      "end": 805.6589662707096,
+      "text": "Dr. GPT: A bounded result can still inform\nresearch."
+    },
+    {
+      "index": 274,
+      "utterance": "169",
+      "scene": "26",
+      "role": "Dr. GPT",
+      "start": 805.7164554161129,
+      "end": 808.9988631697149,
+      "text": "The execution milestone, local\noptimization, failed comparison,"
+    },
+    {
+      "index": 275,
+      "utterance": "169",
+      "scene": "26",
+      "role": "Dr. GPT",
+      "start": 808.9988631697149,
+      "end": 812.4896777648154,
+      "text": "and unresolved contracts give others\nsomething concrete to examine."
+    },
+    {
+      "index": 276,
+      "utterance": "170",
+      "scene": "26",
+      "role": "Dr. GPT",
+      "start": 812.5471669102188,
+      "end": 815.4084195235334,
+      "text": "Publication makes those limits\ninspectable; it does not"
+    },
+    {
+      "index": 277,
+      "utterance": "170",
+      "scene": "26",
+      "role": "Dr. GPT",
+      "start": 815.4084195235334,
+      "end": 818.1136038124854,
+      "text": "turn incomplete acceptance into a\ncompleted product."
+    },
+    {
+      "index": 278,
+      "utterance": "171",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 818.9604738413567,
+      "end": 822.6142817811555,
+      "text": "Our primary source is the BROCWIN\nTechnical White Paper, version"
+    },
+    {
+      "index": 279,
+      "utterance": "171",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 822.6142817811555,
+      "end": 826.4964527171916,
+      "text": "one point zero point one, dated October\neleventh, twenty twenty-six."
+    },
+    {
+      "index": 280,
+      "utterance": "172",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 826.553941862595,
+      "end": 828.8254582589349,
+      "text": "HEAV3NS commissioned and preserves the\nrecord."
+    },
+    {
+      "index": 281,
+      "utterance": "173",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 828.8829474043383,
+      "end": 832.4147021433616,
+      "text": "Credit remains with the original\ndevelopers, CardSorting and prior"
+    },
+    {
+      "index": 282,
+      "utterance": "173",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 832.4147021433616,
+      "end": 835.8929454469452,
+      "text": "local contributors, Wine-Assembly's human\nand agent contributors,"
+    },
+    {
+      "index": 283,
+      "utterance": "173",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 835.8929454469452,
+      "end": 839.1571430087698,
+      "text": "Microsoft platform contributors, the\nwebsockets contributors,"
+    },
+    {
+      "index": 284,
+      "utterance": "173",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 839.1571430087698,
+      "end": 842.1002719579559,
+      "text": "and recorded Codex integration and review\ncontributors."
+    },
+    {
+      "index": 285,
+      "utterance": "174",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 842.1577611033591,
+      "end": 845.0079575370754,
+      "text": "The source slate identifies their\ndocumented roles."
+    },
+    {
+      "index": 286,
+      "utterance": "175",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 845.0654466824789,
+      "end": 848.4749631451136,
+      "text": "This recording uses synthesized presenter\nand audience voices."
+    },
+    {
+      "index": 287,
+      "utterance": "176",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 848.5324522905169,
+      "end": 850.9486064612879,
+      "text": "The questions are simulated; the archived\nimages"
+    },
+    {
+      "index": 288,
+      "utterance": "176",
+      "scene": "27",
+      "role": "Dr. GPT",
+      "start": 850.9486064612879,
+      "end": 853.2137509963858,
+      "text": "and measurements come from retained\nevidence."
+    },
+    {
+      "index": 289,
+      "utterance": "177",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 854.060621025257,
+      "end": 856.6102360156805,
+      "text": "The significance of BROCWIN is not simply\nwhether"
+    },
+    {
+      "index": 290,
+      "utterance": "177",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 856.6102360156805,
+      "end": 858.7956202931863,
+      "text": "a particular MMO can run inside a browser."
+    },
+    {
+      "index": 291,
+      "utterance": "178",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 858.8531094385897,
+      "end": 861.9015042847486,
+      "text": "The research investigates the\ncomputational conditions that allow"
+    },
+    {
+      "index": 292,
+      "utterance": "178",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 861.9015042847486,
+      "end": 864.8561023664104,
+      "text": "inherited software to execute outside its\noriginal environment."
+    },
+    {
+      "index": 293,
+      "utterance": "179",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 864.9135915118137,
+      "end": 867.8683250396747,
+      "text": "Its results are bounded, its limitations\ndocumented,"
+    },
+    {
+      "index": 294,
+      "utterance": "179",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 867.8683250396747,
+      "end": 870.3116623800212,
+      "text": "and its future open to independent\ninquiry."
+    },
+    {
+      "index": 295,
+      "utterance": "180",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 870.3691515254246,
+      "end": 873.874390543344,
+      "text": "The originating institution has completed\nthis experimental cycle."
+    },
+    {
+      "index": 296,
+      "utterance": "181",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 873.9318796887474,
+      "end": 876.024238445808,
+      "text": "Original contributors keep their credit;"
+    },
+    {
+      "index": 297,
+      "utterance": "181",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 876.024238445808,
+      "end": 878.1689061717952,
+      "text": "future custody need not remain with them."
+    },
+    {
+      "index": 298,
+      "utterance": "182",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 878.2263953171985,
+      "end": 880.0880843172562,
+      "text": "The research can now propagate."
+    },
+    {
+      "index": 299,
+      "utterance": "183",
+      "scene": "28",
+      "role": "Dr. GPT",
+      "start": 880.1455734626594,
+      "end": 882.2600895749686,
+      "text": "THE WORK NO LONGER DEMANDS AN AUTHOR."
+    }
+  ]
+}

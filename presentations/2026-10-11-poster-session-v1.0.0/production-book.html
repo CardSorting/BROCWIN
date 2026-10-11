@@ -1,0 +1,821 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BROCWIN production book</title><style>body{font:17px/1.55 Arial,sans-serif;color:#122c38;background:#f5f3ed;margin:0}header{background:#122c38;color:white;padding:35px max(30px,calc((100vw - 1100px)/2));}main{max-width:1100px;margin:auto;padding:25px}nav a{display:inline-block;color:#93ded8;margin:0 22px 12px 0}a{color:#087f80}video{width:100%;background:#122c38}.poster{width:100%;background:white}.doc{background:white;padding:38px;margin:35px 0;overflow-wrap:anywhere}h1{font-size:30px}h2{font-size:22px;border-top:1px solid #dde5e4;padding-top:22px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #d2dddc;text-align:left;vertical-align:top;padding:9px}th{background:#e1efec}@page{size:A4;margin:17mm}@media print{body{background:white;font-size:11px;line-height:1.4}header,.watch{display:none}main{padding:0;max-width:none}.doc{padding:0;margin:0;page-break-before:always}h1{font-size:20px}h2{font-size:15px}table{font-size:9px}.poster{display:none}}</style></head><body><header><h1>BROCWIN Poster Session Production Book</h1><p>Completed experimental cycle · White paper 1.0.1 · Presented by Dr. GPT</p><nav><a href="#presenter-script">Script</a><a href="#storyboard">Storyboard</a><a href="#glossary">Glossary</a><a href="#audience-qa">Q&A</a><a href="#transcript">Transcript</a><a href="#source-and-attribution-slate">Sources</a></nav></header><main><div class="watch"><video controls preload="metadata" aria-label="BROCWIN narrated poster session"><source src="brocwin-poster-session.mp4" type="video/mp4"></video><p>The video has open captions. <a href="captions.srt">SRT captions</a> · <a href="captions.vtt">WebVTT captions</a> · <a href="research-poster.pdf">48 × 36 inch poster PDF</a></p></div><img class="poster" src="research-poster.svg" alt="BROCWIN research poster including architecture, login controls and evidence limits"><section class="doc" id="presenter-script"><h1>BROCWIN Presenter Script</h1>
+<p>Dr. GPT presents a completed research cycle beside the conference poster. The formal presentation is followed by a simulated audience Q&amp;A, source slate and closing statement. Spoken text is reproduced in the transcript; direction and citations here are production annotations.</p>
+<p>Delivery: calm, explanatory and candid. Read technical terms at conversational pace. Point to poster panels and identify archived evidence as still images. The narration starts with the commissioned ontological question.</p>
+<h2>01 What does it mean for a Windows application to exist outside Windows?</h2>
+<p><strong>Time:</strong> 00:00–00:32<br />
+<strong>Visual:</strong> Opening question beside the complete conference poster thumbnail. No presenter likeness or runtime footage.<br />
+<strong>Source:</strong> White paper §§1–2; E10–E16</p>
+<p><strong>Dr. GPT:</strong> What does it mean for a Windows application to exist outside Windows? An executable file contains instructions, but instructions alone do not make an application behave. It also expects libraries, memory, graphics, input, and services around it. BROCWIN asks whether enough of those conditions can be reconstructed inside a browser to execute an inherited Windows game client. I am Dr. GPT, the commissioned AI researcher presenting this completed experimental cycle for HEAV3NS. Please begin with the question at the top of our poster: what must accompany software for it to remain executable?</p>
+<h2>02 Five distinct objects</h2>
+<p><strong>Time:</strong> 00:32–01:11<br />
+<strong>Visual:</strong> Five labeled cards separate the original executable, compatibility environment, browser host, native services, and institutional research artifact.<br />
+<strong>Source:</strong> White paper §§2, 4–5, 8</p>
+<p><strong>Dr. GPT:</strong> There are five objects to distinguish. The original executable is inherited compiled software. BROCWIN is the compatibility environment supplying selected conditions that software expects. The browser hosts the interpreter and its adapters. Existing native servers and their database remain outside the browser. Finally, the institutional research artifact includes the implementation record, measurements, identities, and limitations. HEAV3NS-COMBO names the browser integration; BROCWIN names the compatibility project. HEAV3NS is the commissioning and documenting institution in this record. None of these names means that a complete Windows operating system has been constructed, or that Windows compatibility is complete.</p>
+<h2>03 What existed before the experiment</h2>
+<p><strong>Time:</strong> 01:11–01:51<br />
+<strong>Visual:</strong> Four inheritance points identify the client resources, existing services, pinned dependency and browser integration. Narration supplies the naming dates.<br />
+<strong>Source:</strong> White paper §§2, 4–5; E16</p>
+<p><strong>Dr. GPT:</strong> The experiment emerged through HEAV3NS-COMBO, integrating a supplied native installation with a browser compatibility runtime. Before this work there were client and server binaries, game resources, scripts, and a native checkpoint. The client was not authored by HEAV3NS. The inherited installation is identified with CardSorting's JoySwordOnline repository. Wine-Assembly supplied an existing x86 interpreter and compatibility foundation. The integration added resource serving, manifests, browser coordination, compatibility corrections, and observation tools. BROCWIN and HEAV3NS-COMBO became the project names on October ninth. On October tenth, the scope explicitly retained native servers and SQL while porting the client.</p>
+<h2>04 Preserved files and modified mapped code</h2>
+<p><strong>Time:</strong> 01:51–02:33<br />
+<strong>Visual:</strong> Two separate boxes: audited supplied files on disk; loaded guest image with imports, relocations and documented send wrapper.<br />
+<strong>Source:</strong> White paper §5; E17</p>
+<p><strong>Dr. GPT:</strong> Preservation needs a precise qualification. The original files remained unchanged within the documented input audit. The image executing in memory was not simply an untouched copy. Loading resolves imports and relocations. A documented compatibility intervention also installs a guarded send wrapper in mapped code padding, serializing existing packet construction under the original socket lock and providing exception cleanup. That intervention must be disclosed. It differs from a conventional JavaScript rewrite, but it still alters mapped execution. MAJO commissioned the work; compatibility contributors performed the recorded experimentation; my publication role is documentation and presentation. These roles do not transfer authorship of inherited software to the institution.</p>
+<h2>05 Read the architecture from left to right</h2>
+<p><strong>Time:</strong> 02:33–03:16<br />
+<strong>Visual:</strong> Use the white paper's original architecture.svg unchanged, large enough to read. Highlight relationships through narration rather than invented execution animation.<br />
+<strong>Source:</strong> White paper Figure 1 and §§4.1–4.2; E10, E14</p>
+<p><strong>Dr. GPT:</strong> At the center of the poster is the paper's architecture diagram. Its arrows describe relationships, not measured costs. On the left are the original client and libraries. The PE loader maps their sections, resolves imports and relocations, and handles initialization metadata. PE is the Windows executable format. Wine-Assembly decodes the original x86 instructions into a dispatch representation and executes them in WebAssembly. Reconstructed Windows interfaces supply selected memory, threading, library, and API behavior. An API is a contract describing how software asks its environment to do something. The objective was to execute compiled game logic through these contracts, without conventionally rewriting that logic as a web application.</p>
+<h2>06 Rendering and interaction cross the boundary</h2>
+<p><strong>Time:</strong> 03:16–03:55<br />
+<strong>Visual:</strong> Four labeled points explain graphics, physical input, audio and original resources, with coverage qualified by narration.<br />
+<strong>Source:</strong> White paper §4.3; E11, E13</p>
+<p><strong>Dr. GPT:</strong> The browser adapters translate supported Direct3D nine operations and shaders into browser rendering. They mediate physical keyboard and mouse input to reconstructed Windows interfaces. The audio path connects original FMOD and DirectSound behavior with WebAudio. Resource manifests and browser-accessible range mounts expose original archives and files without flattening their expected namespaces. These interfaces are partial. Recorded audio includes nonzero sample data and a running context; complete audible quality was not accepted. Buffered input, focus reliability, text, and rendering still have documented gaps. Supplying an interface name is only a beginning: its timing, errors, and lifetime behavior also matter.</p>
+<h2>07 The browser client keeps native services</h2>
+<p><strong>Time:</strong> 03:55–04:26<br />
+<strong>Visual:</strong> Show the exact architecture figure beside four points identifying the native-service boundary and browser-client scope.<br />
+<strong>Source:</strong> White paper §§3, 4.4; E12</p>
+<p><strong>Dr. GPT:</strong> Follow the network arrow out of the browser. Original client code constructs the game packets. Reconstructed Winsock and a WebSocket connection carry their payloads through a constrained local relay to existing native services. Those services were deliberately outside the client-port scope. This arrangement executes client code in the browser; it does not stream pixels from a native game process. It also differs from a JavaScript game remake and from a full-system Windows virtual machine. Browser-hosted does not mean independent of local files, native services, or private backend state.</p>
+<h2>08 The research strategy evolved</h2>
+<p><strong>Time:</strong> 04:26–05:11<br />
+<strong>Visual:</strong> Four points cover contract diagnosis, resource-cost savings, variable startup timing and the local allocator result.<br />
+<strong>Source:</strong> White paper §§4, 7.3–7.4, 9–10; E04–E09, E15</p>
+<p><strong>Dr. GPT:</strong> This was an evolving experiment. Required contracts were investigated through bounded instruction, platform, and original-client comparisons. Repairs addressed loading, memory, graphics, input, and network behavior. Resource caches then reduced recorded loading, transfer, and backing-memory costs, but startup timings varied across the retained runs. An allocator study later demonstrated a local mechanism improvement. The application comparison remained incomplete. A subsequent reservation correction existed only in source-tested form. Historical gameplay observations belonged to earlier builds, so their successes could not certify the final candidate. At closeout, full acceptance remained blocked. The research record preserves failed comparisons and unfinished validation alongside successful observations.</p>
+<h2>09 The final control pair</h2>
+<p><strong>Time:</strong> 05:11–05:48<br />
+<strong>Visual:</strong> Two large metric cards show cold 440.703 s and warm 438.797 s, with profile and launch-origin qualifications.<br />
+<strong>Source:</strong> White paper §§6.1, 7.1; E01–E02, E19</p>
+<p><strong>Dr. GPT:</strong> Now look at the measured results. The final control pair records visible original login at four hundred forty point seven zero three seconds cold, and four hundred thirty-eight point seven nine seven seconds warm. That is about seven minutes twenty seconds in each condition. Timing begins immediately before browser-context launch, and includes readiness and the start click. Cold means a fresh experiment-specific browser profile. Warm means reuse of that profile. Operating-system caches were not flushed; these are not verified whole-machine cold and warm boots. With one sequential run per condition, their small difference is descriptive evidence, not a proven acceleration.</p>
+<h2>10 What the retained image shows</h2>
+<p><strong>Time:</strong> 05:48–06:18<br />
+<strong>Visual:</strong> Show the exact retained cold first-visible-scene.png, uncropped and labeled archival still. The unchanged warm counterpart is included in assets; neither is animated as game footage.<br />
+<strong>Source:</strong> White paper §§6.1–6.2, 7.1; E03</p>
+<p><strong>Dr. GPT:</strong> This is an archived still from the retained cold control, not a new demonstration. It shows the original login interface with empty credential fields. The canvas capture is twelve eighty by nine sixty; the requested browser viewport was a different size. Automatic color detection identified a visible scene, and image review classified that scene as login. Four image-file records were reviewed, but they contain only two unique image hashes. They are not four independent scenes. No credentials or gameplay actions were entered in these final startup controls.</p>
+<h2>11 Progress and identity have bounded meanings</h2>
+<p><strong>Time:</strong> 06:18–06:57<br />
+<strong>Visual:</strong> Display frame advances, observation durations, 321 input entries, 211 served/observer checks, and error-scope note.<br />
+<strong>Source:</strong> White paper §§6.2–6.3, 7.1, 8, 10; E01–E02, E19</p>
+<p><strong>Dr. GPT:</strong> After login, the cold observation records one thousand seventy-three frame advances over thirty-one point zero nine four seconds. The warm observation records one thousand eighty over thirty-one point one zero nine seconds. These are counter advances, not verified display refreshes, input responsiveness, or complete simulation progress. The original-input audit reports three hundred twenty-one matching entries before and after the runs. A separate audit checks two hundred eleven served and observer identities. Both retained error lists are empty within their observer's reporting scope. Hash matches establish scoped file identity, not semantic correctness, and thirty-one seconds of progress cannot establish long-duration reliability.</p>
+<h2>12 A local allocator optimization</h2>
+<p><strong>Time:</strong> 06:57–07:32<br />
+<strong>Visual:</strong> Four points define the allocator, the ownership intervention and the 512-byte ABBA benchmark protocol. No execution trace is implied.<br />
+<strong>Source:</strong> White paper §§4.2, 9; E04</p>
+<p><strong>Dr. GPT:</strong> The allocator is the component that manages memory allocation and release. The candidate replaced defensive duplicate-free list scans with an atomic ownership claim in an allocation header. That addresses a reproduced scaling cost; it does not prove duplicate frees caused a game failure. The microbenchmark repeatedly freed and reallocated a five hundred twelve-byte payload. It used twenty thousand warmup pairs, then five repetitions of one hundred thousand pairs, across four fresh processes ordered control, candidate, candidate, control. Each reported value averages two process medians. This is a constructed workload with a precisely defined comparison.</p>
+<h2>13 Microbenchmark improvement is not application speedup</h2>
+<p><strong>Time:</strong> 07:32–08:06<br />
+<strong>Visual:</strong> Zero-based ratio plot for depths 0, 8, 32, 64, 128 and 512, with a 1× baseline. Mark 0.878× at depth zero and 5.107–5.508× at deeper sizes.<br />
+<strong>Source:</strong> White paper §9; E04</p>
+<p><strong>Dr. GPT:</strong> At retained-list depths of sixty-four through five hundred twelve, the candidate is approximately five point one to five point five times faster in this microbenchmark. At depth zero it is thirteen point nine percent slower. The benchmark includes JavaScript calls and checks, tests one allocation size, and does not measure concurrent throughput or the game's allocation mix. A separate short profile attributed only two point five eight nine percent of one active worker's sampled wall intervals to heap freeing. That window does not characterize complete startup. A local optimization can be real while its whole-application benefit remains unestablished.</p>
+<h2>14 The candidate comparison remained incomplete</h2>
+<p><strong>Time:</strong> 08:06–08:40<br />
+<strong>Visual:</strong> Condition table: candidate cold screenshot-helper timeout 297.484 s with no login timestamp; subsequent warm-profile login 457.859 s with interrupted priming. Keep this separate from the final controls.<br />
+<strong>Source:</strong> White paper §§7.2, 8, 10; E04–E06</p>
+<p><strong>Dr. GPT:</strong> The candidate's cold comparison was interrupted by a screenshot-helper stability timeout at two hundred ninety-seven point four eight four seconds. Its last sample still showed execution without a runtime error. We cannot label that an established allocator failure. A subsequent warm-profile launch reached login at four hundred fifty-seven point eight five nine seconds, but followed interrupted cold priming. It is not a matched warm comparison. Later observer refinements were incompletely validated, and their proposed headed repair check did not run. The measured observer, prepared candidate, and final frozen source must remain separate experimental objects.</p>
+<h2>15 What this evidence does not establish</h2>
+<p><strong>Time:</strong> 08:40–09:09<br />
+<strong>Visual:</strong> Four points distinguish the supported login milestone, unestablished acceptance, earlier gameplay observations and revival failure.<br />
+<strong>Source:</strong> White paper §§7.4, 10, 12; E08–E09</p>
+<p><strong>Dr. GPT:</strong> The evidence supports an original-login execution milestone. It does not establish complete gameplay compatibility, production readiness, threefold acceleration, or durable operation. An earlier gameplay build reached character selection, town, combat, and an area gate. Revival still failed, and two winning cycles remained unaccepted. Those observations retain their own build identity. One client, one final browser condition, local native dependencies, and a short observation cannot establish broad Windows application support.</p>
+<h2>16 Why this matters beyond one game</h2>
+<p><strong>Time:</strong> 09:09–09:45<br />
+<strong>Visual:</strong> Five research questions: preservation, compatibility, computational media, reproducibility, institutional propagation. Label this panel implications, not demonstrated universal capabilities.<br />
+<strong>Source:</strong> White paper §§2–3, 8, 11–12; Publication I: interpretive context; Commission: downstream framing</p>
+<p><strong>Dr. GPT:</strong> Beyond this game, the experiment raises five research questions. Can reconstructing execution conditions extend an application's useful life? What can compatibility research learn by treating operating-system behavior as an interface? When does the environment enabling a computational work become a research object itself? What must reproducibility preserve beyond executable files? And how can an institutional record allow researchers elsewhere to continue? These are implications and opportunities, not universal capabilities established by this trial. The environment, its interventions, and the observations deserve examination together with the application.</p>
+<h2>17 The cycle has closed and the questions remain</h2>
+<p><strong>Time:</strong> 09:45–10:17<br />
+<strong>Visual:</strong> Five points identify the closed-cycle presentation scope and potential independent restoration, observation, startup, duration and corpus research.<br />
+<strong>Source:</strong> White paper §§8, 11 and Appendix B; E05–E06, E18; Commission: continuation scope</p>
+<p><strong>Dr. GPT:</strong> The original experimental cycle has closed. This presentation does not reopen engineering. A future group could restore the artifacts independently, validate the final observer, repeat startup and performance studies, and test stated durations of runtime stability. A broader application corpus could probe compatibility, while archival work could reconstruct the original execution conditions. Each investigation needs its own scope and evidence. HEAV3NS does not promise to complete these studies itself. The record is published so others can evaluate, cite, critique, and extend the work.</p>
+<h2>18 What an independent group would need</h2>
+<p><strong>Time:</strong> 10:17–10:58<br />
+<strong>Visual:</strong> Checklist of custody objects and permissions. Link to build-recovery.md without launching or preparing anything.<br />
+<strong>Source:</strong> White paper §8 and Appendices A–B; E16, E18–E19</p>
+<p><strong>Dr. GPT:</strong> Independent continuation requires matching source snapshots, dependency pins, local patches, generated modules, manifests, and the observer used for each measurement. It also requires the original client and platform inputs, native services, private configuration, and appropriate database state. The documentation archive excludes credentials, database contents, large binaries, and much raw evidence. The compatibility source license does not grant rights to distribute the game or platform components. Researchers need lawful access and any necessary permissions, a separate restoration workspace, and authorization for a new experiment. Hash verification is a starting point; independent clean-machine restoration has not been demonstrated.</p>
+<h2>19 Is this just an emulator?</h2>
+<p><strong>Time:</strong> 10:58–11:16<br />
+<strong>Visual:</strong> Q&amp;A title card with the question; display interpreter plus reconstructed contracts as the answer key.<br />
+<strong>Source:</strong> White paper §§3–5</p>
+<p><strong>Audience:</strong> Is this just an emulator?</p>
+<p><strong>Dr. GPT:</strong> It includes x86 interpretation. But the experiment also reconstructs loading, selected Windows contracts, browser adapters, resource access, and service communication. Calling it an emulator describes part of the arrangement; it does not establish its compatibility coverage.</p>
+<h2>20 Did you rewrite the original game?</h2>
+<p><strong>Time:</strong> 11:16–11:35<br />
+<strong>Visual:</strong> Question card with a visible mapped-code intervention disclosure.<br />
+<strong>Source:</strong> White paper §§1, 4–5; E17</p>
+<p><strong>Audience:</strong> Did you rewrite the original game?</p>
+<p><strong>Dr. GPT:</strong> There was no conventional game-source rewrite as a web application. Original compiled logic executes through the compatibility runtime. However, the documented send wrapper modifies mapped code, and loader fixups modify the execution image. Preserving audited disk files does not erase those interventions.</p>
+<h2>21 Why does startup take seven minutes?</h2>
+<p><strong>Time:</strong> 11:35–12:00<br />
+<strong>Visual:</strong> Question card with launch-to-login timing and a clear incomplete-cause statement.<br />
+<strong>Source:</strong> White paper §§6.1, 7.3, 9–10</p>
+<p><strong>Audience:</strong> Why does startup take seven minutes?</p>
+<p><strong>Dr. GPT:</strong> The record does not establish a complete causal explanation. Original execution, compatibility work, scheduling, and loading are possible contributors. A short one-worker profile identifies dispatch and allocator work, but cannot apportion the entire startup. Recorded cache savings also did not establish repeatable login acceleration. Better matched whole-application measurements are needed.</p>
+<h2>22 Does this prove Windows games can run in browsers?</h2>
+<p><strong>Time:</strong> 12:00–12:18<br />
+<strong>Visual:</strong> Question card with the claim bounded to this inherited client and retained condition.<br />
+<strong>Source:</strong> White paper §§10, 12</p>
+<p><strong>Audience:</strong> Does this prove Windows games can run in browsers?</p>
+<p><strong>Dr. GPT:</strong> It demonstrates this inherited client's login milestone under the retained conditions. It does not establish complete support even for this game, or general support for other Windows games. Broader compatibility requires additional applications and explicit acceptance criteria.</p>
+<h2>23 What is actually novel about the experiment?</h2>
+<p><strong>Time:</strong> 12:18–12:39<br />
+<strong>Visual:</strong> Question card naming the integration and auditable case study, with no priority claim.<br />
+<strong>Source:</strong> White paper §§2–5, 8, 12</p>
+<p><strong>Audience:</strong> What is actually novel about the experiment?</p>
+<p><strong>Dr. GPT:</strong> Its contribution is this specific integration and its auditable account: inherited client execution, browser compatibility conditions, native-service boundaries, interventions, and bounded measurements. The paper does not establish first-ever priority or superiority over other systems. Much of its foundation is inherited and explicitly credited.</p>
+<h2>24 Can another research group reproduce your result?</h2>
+<p><strong>Time:</strong> 12:39–12:57<br />
+<strong>Visual:</strong> Question card distinguishing traceable records from demonstrated independent reproduction.<br />
+<strong>Source:</strong> White paper §8 and Appendix B</p>
+<p><strong>Audience:</strong> Can another research group reproduce your result?</p>
+<p><strong>Dr. GPT:</strong> The records provide a conditional route, not a completed independent replication. A group needs the matching artifacts, original and private inputs, permissions, and a validated observer. A transferred documentation archive alone cannot restore the whole environment.</p>
+<h2>25 What would make this a reliable compatibility runtime?</h2>
+<p><strong>Time:</strong> 12:57–13:19<br />
+<strong>Visual:</strong> Display the commission's full audience question and a short list of evidence gates.<br />
+<strong>Source:</strong> White paper §§10–11; E09</p>
+<p><strong>Audience:</strong> What would need to happen before this becomes a reliable compatibility runtime?</p>
+<p><strong>Dr. GPT:</strong> Validate the observer and restored artifacts, resolve open loading, memory, networking, input, and rendering contracts, and demonstrate repeated startup, full gameplay gates, and stated-duration stability. Reliability must be measured against declared conditions. The present evidence does not supply that acceptance.</p>
+<h2>26 Why publish an incomplete product objective?</h2>
+<p><strong>Time:</strong> 13:19–13:39<br />
+<strong>Visual:</strong> Display the full audience question and the value of bounded evidence and preserved failures.<br />
+<strong>Source:</strong> White paper §§2, 10, 12; Commission: institutional propagation</p>
+<p><strong>Audience:</strong> Why publish this if the product objective was not fully achieved?</p>
+<p><strong>Dr. GPT:</strong> A bounded result can still inform research. The execution milestone, local optimization, failed comparison, and unresolved contracts give others something concrete to examine. Publication makes those limits inspectable; it does not turn incomplete acceptance into a completed product.</p>
+<h2>27 Sources and research attribution</h2>
+<p><strong>Time:</strong> 13:39–14:14<br />
+<strong>Visual:</strong> Attribution slate naming white paper 1.0.1, HEAV3NS, MAJO, Dr. GPT, original developers, CardSorting, Wine-Assembly contributors, Microsoft, websockets contributors and recorded Codex roles. Mark narration and audience questions as synthesized and simulated.<br />
+<strong>Source:</strong> White paper §§5, 13; Evidence index: Interpretation and provenance; E05, E16</p>
+<p><strong>Dr. GPT:</strong> Our primary source is the BROCWIN Technical White Paper, version one point zero point one, dated October eleventh, twenty twenty-six. HEAV3NS commissioned and preserves the record. Credit remains with the original developers, CardSorting and prior local contributors, Wine-Assembly's human and agent contributors, Microsoft platform contributors, the websockets contributors, and recorded Codex integration and review contributors. The source slate identifies their documented roles. This recording uses synthesized presenter and audience voices. The questions are simulated; the archived images and measurements come from retained evidence.</p>
+<h2>28 The research can now propagate</h2>
+<p><strong>Time:</strong> 14:14–14:45<br />
+<strong>Visual:</strong> Hold the full poster beside the closing statement and institutional-cycle summary. No promotional call to action.<br />
+<strong>Source:</strong> White paper §12; Commission: closing statement</p>
+<p><strong>Dr. GPT:</strong> The significance of BROCWIN is not simply whether a particular MMO can run inside a browser. The research investigates the computational conditions that allow inherited software to execute outside its original environment. Its results are bounded, its limitations documented, and its future open to independent inquiry. The originating institution has completed this experimental cycle. Original contributors keep their credit; future custody need not remain with them. The research can now propagate. THE WORK NO LONGER DEMANDS AN AUTHOR.</p></section><section class="doc" id="storyboard"><h1>BROCWIN Timed Storyboard</h1>
+<p>Target range: 12–15 minutes, interpreting the commission’s “1215 minutes” as a missing range separator. The rendered edition targets 14:45, including Q&amp;A and attribution. Timecodes below follow the synthesized narration waveform; the sequence contains archival stills and static explanatory visuals, with no new runtime footage.</p>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Timecode</th>
+<th>Visual and action</th>
+<th>Spoken segment</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 What does it mean for a Windows application to exist outside Windows?</td>
+<td>00:00–00:32</td>
+<td>Opening question beside the complete conference poster thumbnail. No presenter likeness or runtime footage.</td>
+<td>What does it mean for a Windows application to exist outside Windows? An executable file contains instructions, but instructions alone do not make an application behave… Full exact narration in presenter script.</td>
+<td>White paper §§1–2; E10–E16</td>
+</tr>
+<tr>
+<td>02 Five distinct objects</td>
+<td>00:32–01:11</td>
+<td>Five labeled cards separate the original executable, compatibility environment, browser host, native services, and institutional research artifact.</td>
+<td>There are five objects to distinguish… Full exact narration in presenter script.</td>
+<td>White paper §§2, 4–5, 8</td>
+</tr>
+<tr>
+<td>03 What existed before the experiment</td>
+<td>01:11–01:51</td>
+<td>Four inheritance points identify the client resources, existing services, pinned dependency and browser integration. Narration supplies the naming dates.</td>
+<td>The experiment emerged through HEAV3NS-COMBO, integrating a supplied native installation with a browser compatibility runtime… Full exact narration in presenter script.</td>
+<td>White paper §§2, 4–5; E16</td>
+</tr>
+<tr>
+<td>04 Preserved files and modified mapped code</td>
+<td>01:51–02:33</td>
+<td>Two separate boxes: audited supplied files on disk; loaded guest image with imports, relocations and documented send wrapper.</td>
+<td>Preservation needs a precise qualification… Full exact narration in presenter script.</td>
+<td>White paper §5; E17</td>
+</tr>
+<tr>
+<td>05 Read the architecture from left to right</td>
+<td>02:33–03:16</td>
+<td>Use the white paper's original architecture.svg unchanged, large enough to read. Highlight relationships through narration rather than invented execution animation.</td>
+<td>At the center of the poster is the paper's architecture diagram… Full exact narration in presenter script.</td>
+<td>White paper Figure 1 and §§4.1–4.2; E10, E14</td>
+</tr>
+<tr>
+<td>06 Rendering and interaction cross the boundary</td>
+<td>03:16–03:55</td>
+<td>Four labeled points explain graphics, physical input, audio and original resources, with coverage qualified by narration.</td>
+<td>The browser adapters translate supported Direct3D nine operations and shaders into browser rendering… Full exact narration in presenter script.</td>
+<td>White paper §4.3; E11, E13</td>
+</tr>
+<tr>
+<td>07 The browser client keeps native services</td>
+<td>03:55–04:26</td>
+<td>Show the exact architecture figure beside four points identifying the native-service boundary and browser-client scope.</td>
+<td>Follow the network arrow out of the browser… Full exact narration in presenter script.</td>
+<td>White paper §§3, 4.4; E12</td>
+</tr>
+<tr>
+<td>08 The research strategy evolved</td>
+<td>04:26–05:11</td>
+<td>Four points cover contract diagnosis, resource-cost savings, variable startup timing and the local allocator result.</td>
+<td>This was an evolving experiment… Full exact narration in presenter script.</td>
+<td>White paper §§4, 7.3–7.4, 9–10; E04–E09, E15</td>
+</tr>
+<tr>
+<td>09 The final control pair</td>
+<td>05:11–05:48</td>
+<td>Two large metric cards show cold 440.703 s and warm 438.797 s, with profile and launch-origin qualifications.</td>
+<td>Now look at the measured results… Full exact narration in presenter script.</td>
+<td>White paper §§6.1, 7.1; E01–E02, E19</td>
+</tr>
+<tr>
+<td>10 What the retained image shows</td>
+<td>05:48–06:18</td>
+<td>Show the exact retained cold first-visible-scene.png, uncropped and labeled archival still. The unchanged warm counterpart is included in assets; neither is animated as game footage.</td>
+<td>This is an archived still from the retained cold control, not a new demonstration… Full exact narration in presenter script.</td>
+<td>White paper §§6.1–6.2, 7.1; E03</td>
+</tr>
+<tr>
+<td>11 Progress and identity have bounded meanings</td>
+<td>06:18–06:57</td>
+<td>Display frame advances, observation durations, 321 input entries, 211 served/observer checks, and error-scope note.</td>
+<td>After login, the cold observation records one thousand seventy-three frame advances over thirty-one point zero nine four seconds… Full exact narration in presenter script.</td>
+<td>White paper §§6.2–6.3, 7.1, 8, 10; E01–E02, E19</td>
+</tr>
+<tr>
+<td>12 A local allocator optimization</td>
+<td>06:57–07:32</td>
+<td>Four points define the allocator, the ownership intervention and the 512-byte ABBA benchmark protocol. No execution trace is implied.</td>
+<td>The allocator is the component that manages memory allocation and release… Full exact narration in presenter script.</td>
+<td>White paper §§4.2, 9; E04</td>
+</tr>
+<tr>
+<td>13 Microbenchmark improvement is not application speedup</td>
+<td>07:32–08:06</td>
+<td>Zero-based ratio plot for depths 0, 8, 32, 64, 128 and 512, with a 1× baseline. Mark 0.878× at depth zero and 5.107–5.508× at deeper sizes.</td>
+<td>At retained-list depths of sixty-four through five hundred twelve, the candidate is approximately five point one to five point five times faster in this microbenchmark… Full exact narration in presenter script.</td>
+<td>White paper §9; E04</td>
+</tr>
+<tr>
+<td>14 The candidate comparison remained incomplete</td>
+<td>08:06–08:40</td>
+<td>Condition table: candidate cold screenshot-helper timeout 297.484 s with no login timestamp; subsequent warm-profile login 457.859 s with interrupted priming. Keep this separate from the final controls.</td>
+<td>The candidate's cold comparison was interrupted by a screenshot-helper stability timeout at two hundred ninety-seven point four eight four seconds… Full exact narration in presenter script.</td>
+<td>White paper §§7.2, 8, 10; E04–E06</td>
+</tr>
+<tr>
+<td>15 What this evidence does not establish</td>
+<td>08:40–09:09</td>
+<td>Four points distinguish the supported login milestone, unestablished acceptance, earlier gameplay observations and revival failure.</td>
+<td>The evidence supports an original-login execution milestone… Full exact narration in presenter script.</td>
+<td>White paper §§7.4, 10, 12; E08–E09</td>
+</tr>
+<tr>
+<td>16 Why this matters beyond one game</td>
+<td>09:09–09:45</td>
+<td>Five research questions: preservation, compatibility, computational media, reproducibility, institutional propagation. Label this panel implications, not demonstrated universal capabilities.</td>
+<td>Beyond this game, the experiment raises five research questions… Full exact narration in presenter script.</td>
+<td>White paper §§2–3, 8, 11–12; Publication I: interpretive context; Commission: downstream framing</td>
+</tr>
+<tr>
+<td>17 The cycle has closed and the questions remain</td>
+<td>09:45–10:17</td>
+<td>Five points identify the closed-cycle presentation scope and potential independent restoration, observation, startup, duration and corpus research.</td>
+<td>The original experimental cycle has closed… Full exact narration in presenter script.</td>
+<td>White paper §§8, 11 and Appendix B; E05–E06, E18; Commission: continuation scope</td>
+</tr>
+<tr>
+<td>18 What an independent group would need</td>
+<td>10:17–10:58</td>
+<td>Checklist of custody objects and permissions. Link to build-recovery.md without launching or preparing anything.</td>
+<td>Independent continuation requires matching source snapshots, dependency pins, local patches, generated modules, manifests, and the observer used for each measurement… Full exact narration in presenter script.</td>
+<td>White paper §8 and Appendices A–B; E16, E18–E19</td>
+</tr>
+<tr>
+<td>19 Is this just an emulator?</td>
+<td>10:58–11:16</td>
+<td>Q&amp;A title card with the question; display interpreter plus reconstructed contracts as the answer key.</td>
+<td>Is this just an emulator?… Full exact narration in presenter script.</td>
+<td>White paper §§3–5</td>
+</tr>
+<tr>
+<td>20 Did you rewrite the original game?</td>
+<td>11:16–11:35</td>
+<td>Question card with a visible mapped-code intervention disclosure.</td>
+<td>Did you rewrite the original game?… Full exact narration in presenter script.</td>
+<td>White paper §§1, 4–5; E17</td>
+</tr>
+<tr>
+<td>21 Why does startup take seven minutes?</td>
+<td>11:35–12:00</td>
+<td>Question card with launch-to-login timing and a clear incomplete-cause statement.</td>
+<td>Why does startup take seven minutes?… Full exact narration in presenter script.</td>
+<td>White paper §§6.1, 7.3, 9–10</td>
+</tr>
+<tr>
+<td>22 Does this prove Windows games can run in browsers?</td>
+<td>12:00–12:18</td>
+<td>Question card with the claim bounded to this inherited client and retained condition.</td>
+<td>Does this prove Windows games can run in browsers?… Full exact narration in presenter script.</td>
+<td>White paper §§10, 12</td>
+</tr>
+<tr>
+<td>23 What is actually novel about the experiment?</td>
+<td>12:18–12:39</td>
+<td>Question card naming the integration and auditable case study, with no priority claim.</td>
+<td>What is actually novel about the experiment?… Full exact narration in presenter script.</td>
+<td>White paper §§2–5, 8, 12</td>
+</tr>
+<tr>
+<td>24 Can another research group reproduce your result?</td>
+<td>12:39–12:57</td>
+<td>Question card distinguishing traceable records from demonstrated independent reproduction.</td>
+<td>Can another research group reproduce your result?… Full exact narration in presenter script.</td>
+<td>White paper §8 and Appendix B</td>
+</tr>
+<tr>
+<td>25 What would make this a reliable compatibility runtime?</td>
+<td>12:57–13:19</td>
+<td>Display the commission's full audience question and a short list of evidence gates.</td>
+<td>What would need to happen before this becomes a reliable compatibility runtime?… Full exact narration in presenter script.</td>
+<td>White paper §§10–11; E09</td>
+</tr>
+<tr>
+<td>26 Why publish an incomplete product objective?</td>
+<td>13:19–13:39</td>
+<td>Display the full audience question and the value of bounded evidence and preserved failures.</td>
+<td>Why publish this if the product objective was not fully achieved?… Full exact narration in presenter script.</td>
+<td>White paper §§2, 10, 12; Commission: institutional propagation</td>
+</tr>
+<tr>
+<td>27 Sources and research attribution</td>
+<td>13:39–14:14</td>
+<td>Attribution slate naming white paper 1.0.1, HEAV3NS, MAJO, Dr. GPT, original developers, CardSorting, Wine-Assembly contributors, Microsoft, websockets contributors and recorded Codex roles. Mark narration and audience questions as synthesized and simulated.</td>
+<td>Our primary source is the BROCWIN Technical White Paper, version one point zero point one, dated October eleventh, twenty twenty-six… Full exact narration in presenter script.</td>
+<td>White paper §§5, 13; Evidence index: Interpretation and provenance; E05, E16</td>
+</tr>
+<tr>
+<td>28 The research can now propagate</td>
+<td>14:14–14:45</td>
+<td>Hold the full poster beside the closing statement and institutional-cycle summary. No promotional call to action.</td>
+<td>The significance of BROCWIN is not simply whether a particular MMO can run inside a browser… Full exact narration in presenter script.</td>
+<td>White paper §12; Commission: closing statement</td>
+</tr>
+</tbody>
+</table>
+<p>Captions use the actual utterance audio boundaries, divided into short readable groups within each utterance. Internal cue boundaries are proportional estimates by character count; utterance boundaries and scene timecodes are measured from the synthesized WAV files. The rendered video burns the captions into the lower safe area.</p>
+<p>At opening and closing, hold the full poster before the next cut. At evidence slides, preserve the original image aspect ratio and exact recorded units. At the Q&amp;A, change only the voice and question card; do not imply a live audience was recorded.</p></section><section class="doc" id="glossary"><h1>BROCWIN Technical Glossary</h1>
+<p>Plain-language definitions for the poster session. These explain the documented architecture; they do not expand its compatibility claims.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ontology</td>
+<td>An account of what something is and how it relates to other things; here, the distinction between application, environment, host, services and research record.</td>
+</tr>
+<tr>
+<td>Executable</td>
+<td>A compiled file containing machine instructions and metadata used to load a program.</td>
+</tr>
+<tr>
+<td>Execution environment</td>
+<td>The instruction engine, interfaces, libraries, resources and services needed for an application to behave.</td>
+</tr>
+<tr>
+<td>x86</td>
+<td>The processor instruction family used by the inherited client.</td>
+</tr>
+<tr>
+<td>WebAssembly or Wasm</td>
+<td>The browser-hosted instruction format executing this runtime's x86 interpreter; it does not automatically provide Windows APIs.</td>
+</tr>
+<tr>
+<td>Interpreter</td>
+<td>An engine that reads and executes another instruction set; here, original x86 guest instructions.</td>
+</tr>
+<tr>
+<td>Guest and host</td>
+<td>The guest is the inherited application and its expected world; the host is the browser environment executing the compatibility machinery.</td>
+</tr>
+<tr>
+<td>Compatibility runtime</td>
+<td>Software that reconstructs selected behaviors required by an application outside its original environment.</td>
+</tr>
+<tr>
+<td>Windows API contract</td>
+<td>The expected behavior of a Windows interface, including arguments, results, errors, timing and resource lifetime.</td>
+</tr>
+<tr>
+<td>PE loader</td>
+<td>Code that maps Windows Portable Executable images into guest memory and handles imports, relocations and initialization metadata.</td>
+</tr>
+<tr>
+<td>DLL</td>
+<td>A dynamic-link library providing code or data to an application; some libraries remain original guest code and some interfaces are reconstructed.</td>
+</tr>
+<tr>
+<td>Imports and relocations</td>
+<td>Loader operations that connect required functions and adjust address-dependent values when an image is mapped.</td>
+</tr>
+<tr>
+<td>Mapped execution image</td>
+<td>The in-memory application after loading and any documented interventions; distinct from the supplied file on disk.</td>
+</tr>
+<tr>
+<td>TLS</td>
+<td>Thread-local storage: data maintained separately for different execution threads.</td>
+</tr>
+<tr>
+<td>WebGL and D3D9</td>
+<td>Browser and Windows graphics interfaces respectively; supported operations are translated across their boundary.</td>
+</tr>
+<tr>
+<td>DirectInput and Win32 input</td>
+<td>Windows input interfaces reconstructed from browser physical input in the documented runtime.</td>
+</tr>
+<tr>
+<td>WebAudio</td>
+<td>Browser audio facilities reached through the documented FMOD and DirectSound compatibility path.</td>
+</tr>
+<tr>
+<td>KOM archive</td>
+<td>A game resource container exposed through the retained mount arrangement; possession does not establish redistribution rights.</td>
+</tr>
+<tr>
+<td>Manifest and range mount</td>
+<td>An inventory and a resource mapping that let original code access expected files or portions of archives.</td>
+</tr>
+<tr>
+<td>Winsock and WebSocket relay</td>
+<td>The guest networking interface and browser transport arrangement carrying original packet payloads to native services.</td>
+</tr>
+<tr>
+<td>Native service</td>
+<td>An existing server or database executing outside the browser client.</td>
+</tr>
+<tr>
+<td>Allocator and free list</td>
+<td>A memory manager and its retained list of released allocations; the microbenchmark varies that list's depth.</td>
+</tr>
+<tr>
+<td>Atomic ownership claim</td>
+<td>An indivisible update used to determine who may publish a free operation before accounting for it.</td>
+</tr>
+<tr>
+<td>Microbenchmark</td>
+<td>A narrowly constructed performance test; it cannot by itself establish whole-application speedup.</td>
+</tr>
+<tr>
+<td>Control and candidate</td>
+<td>The retained reference condition and the proposed changed condition; their build and observer identities must stay separate.</td>
+</tr>
+<tr>
+<td>Cold and warm profile</td>
+<td>A fresh experiment-specific browser profile and its reuse; not verified cold and warm machine boots.</td>
+</tr>
+<tr>
+<td>Frame advance</td>
+<td>A recorded progress-counter change, not a verified monitor refresh or complete simulation update.</td>
+</tr>
+<tr>
+<td>SHA-256 audit</td>
+<td>A comparison of recorded file hashes within an enumerated scope; it does not prove correctness, rights or authorship.</td>
+</tr>
+<tr>
+<td>Observer</td>
+<td>Instrumentation that measures and records an experiment; it has its own version, failures and validation requirements.</td>
+</tr>
+<tr>
+<td>Reproducibility</td>
+<td>The ability of another group to restore stated conditions and examine or repeat a result using matching inputs and instruments.</td>
+</tr>
+<tr>
+<td>Custody</td>
+<td>Responsibility for keeping artifacts, permissions, provenance and records available; it can pass to new researchers without erasing attribution.</td>
+</tr>
+<tr>
+<td>MMO</td>
+<td>A massively multiplayer online game whose client depends on external services.</td>
+</tr>
+</tbody>
+</table></section><section class="doc" id="audience-qa"><h1>BROCWIN Audience Q&amp;A</h1>
+<p>This simulated sequence follows the formal presentation. Questions use an audience voice; answers use Dr. GPT’s presenter voice. Answers retain the white paper’s evidence limits.</p>
+<h2>Is this just an emulator?</h2>
+<p><strong>Time:</strong> 10:58–11:16</p>
+<p><strong>Audience:</strong> Is this just an emulator?</p>
+<p><strong>Dr. GPT:</strong> It includes x86 interpretation. But the experiment also reconstructs loading, selected Windows contracts, browser adapters, resource access, and service communication. Calling it an emulator describes part of the arrangement; it does not establish its compatibility coverage.</p>
+<p>Source: White paper §§3–5.</p>
+<h2>Did you rewrite the original game?</h2>
+<p><strong>Time:</strong> 11:16–11:35</p>
+<p><strong>Audience:</strong> Did you rewrite the original game?</p>
+<p><strong>Dr. GPT:</strong> There was no conventional game-source rewrite as a web application. Original compiled logic executes through the compatibility runtime. However, the documented send wrapper modifies mapped code, and loader fixups modify the execution image. Preserving audited disk files does not erase those interventions.</p>
+<p>Source: White paper §§1, 4–5; E17.</p>
+<h2>Why does startup take seven minutes?</h2>
+<p><strong>Time:</strong> 11:35–12:00</p>
+<p><strong>Audience:</strong> Why does startup take seven minutes?</p>
+<p><strong>Dr. GPT:</strong> The record does not establish a complete causal explanation. Original execution, compatibility work, scheduling, and loading are possible contributors. A short one-worker profile identifies dispatch and allocator work, but cannot apportion the entire startup. Recorded cache savings also did not establish repeatable login acceleration. Better matched whole-application measurements are needed.</p>
+<p>Source: White paper §§6.1, 7.3, 9–10.</p>
+<h2>Does this prove Windows games can run in browsers?</h2>
+<p><strong>Time:</strong> 12:00–12:18</p>
+<p><strong>Audience:</strong> Does this prove Windows games can run in browsers?</p>
+<p><strong>Dr. GPT:</strong> It demonstrates this inherited client's login milestone under the retained conditions. It does not establish complete support even for this game, or general support for other Windows games. Broader compatibility requires additional applications and explicit acceptance criteria.</p>
+<p>Source: White paper §§10, 12.</p>
+<h2>What is actually novel about the experiment?</h2>
+<p><strong>Time:</strong> 12:18–12:39</p>
+<p><strong>Audience:</strong> What is actually novel about the experiment?</p>
+<p><strong>Dr. GPT:</strong> Its contribution is this specific integration and its auditable account: inherited client execution, browser compatibility conditions, native-service boundaries, interventions, and bounded measurements. The paper does not establish first-ever priority or superiority over other systems. Much of its foundation is inherited and explicitly credited.</p>
+<p>Source: White paper §§2–5, 8, 12.</p>
+<h2>Can another research group reproduce your result?</h2>
+<p><strong>Time:</strong> 12:39–12:57</p>
+<p><strong>Audience:</strong> Can another research group reproduce your result?</p>
+<p><strong>Dr. GPT:</strong> The records provide a conditional route, not a completed independent replication. A group needs the matching artifacts, original and private inputs, permissions, and a validated observer. A transferred documentation archive alone cannot restore the whole environment.</p>
+<p>Source: White paper §8 and Appendix B.</p>
+<h2>What would need to happen before this becomes a reliable compatibility runtime?</h2>
+<p><strong>Time:</strong> 12:57–13:19</p>
+<p><strong>Audience:</strong> What would need to happen before this becomes a reliable compatibility runtime?</p>
+<p><strong>Dr. GPT:</strong> Validate the observer and restored artifacts, resolve open loading, memory, networking, input, and rendering contracts, and demonstrate repeated startup, full gameplay gates, and stated-duration stability. Reliability must be measured against declared conditions. The present evidence does not supply that acceptance.</p>
+<p>Source: White paper §§10–11; E09.</p>
+<h2>Why publish this if the product objective was not fully achieved?</h2>
+<p><strong>Time:</strong> 13:19–13:39</p>
+<p><strong>Audience:</strong> Why publish this if the product objective was not fully achieved?</p>
+<p><strong>Dr. GPT:</strong> A bounded result can still inform research. The execution milestone, local optimization, failed comparison, and unresolved contracts give others something concrete to examine. Publication makes those limits inspectable; it does not turn incomplete acceptance into a completed product.</p>
+<p>Source: White paper §§2, 10, 12; Commission: institutional propagation.</p></section><section class="doc" id="transcript"><h1>BROCWIN Recorded Transcript</h1>
+<p>Presenter: Dr. GPT. Audience questions are simulated. Voices are synthesized locally. Primary source: BROCWIN Technical White Paper 1.0.1, 11 October 2026. Technical baseline: corrected closeout 1.4.1.</p>
+<h2>00:00–00:32 What does it mean for a Windows application to exist outside Windows?</h2>
+<p><strong>Dr. GPT:</strong> What does it mean for a Windows application to exist outside Windows? An executable file contains instructions, but instructions alone do not make an application behave. It also expects libraries, memory, graphics, input, and services around it. BROCWIN asks whether enough of those conditions can be reconstructed inside a browser to execute an inherited Windows game client. I am Dr. GPT, the commissioned AI researcher presenting this completed experimental cycle for HEAV3NS. Please begin with the question at the top of our poster: what must accompany software for it to remain executable?</p>
+<h2>00:32–01:11 Five distinct objects</h2>
+<p><strong>Dr. GPT:</strong> There are five objects to distinguish. The original executable is inherited compiled software. BROCWIN is the compatibility environment supplying selected conditions that software expects. The browser hosts the interpreter and its adapters. Existing native servers and their database remain outside the browser. Finally, the institutional research artifact includes the implementation record, measurements, identities, and limitations. HEAV3NS-COMBO names the browser integration; BROCWIN names the compatibility project. HEAV3NS is the commissioning and documenting institution in this record. None of these names means that a complete Windows operating system has been constructed, or that Windows compatibility is complete.</p>
+<h2>01:11–01:51 What existed before the experiment</h2>
+<p><strong>Dr. GPT:</strong> The experiment emerged through HEAV3NS-COMBO, integrating a supplied native installation with a browser compatibility runtime. Before this work there were client and server binaries, game resources, scripts, and a native checkpoint. The client was not authored by HEAV3NS. The inherited installation is identified with CardSorting's JoySwordOnline repository. Wine-Assembly supplied an existing x86 interpreter and compatibility foundation. The integration added resource serving, manifests, browser coordination, compatibility corrections, and observation tools. BROCWIN and HEAV3NS-COMBO became the project names on October ninth. On October tenth, the scope explicitly retained native servers and SQL while porting the client.</p>
+<h2>01:51–02:33 Preserved files and modified mapped code</h2>
+<p><strong>Dr. GPT:</strong> Preservation needs a precise qualification. The original files remained unchanged within the documented input audit. The image executing in memory was not simply an untouched copy. Loading resolves imports and relocations. A documented compatibility intervention also installs a guarded send wrapper in mapped code padding, serializing existing packet construction under the original socket lock and providing exception cleanup. That intervention must be disclosed. It differs from a conventional JavaScript rewrite, but it still alters mapped execution. MAJO commissioned the work; compatibility contributors performed the recorded experimentation; my publication role is documentation and presentation. These roles do not transfer authorship of inherited software to the institution.</p>
+<h2>02:33–03:16 Read the architecture from left to right</h2>
+<p><strong>Dr. GPT:</strong> At the center of the poster is the paper's architecture diagram. Its arrows describe relationships, not measured costs. On the left are the original client and libraries. The PE loader maps their sections, resolves imports and relocations, and handles initialization metadata. PE is the Windows executable format. Wine-Assembly decodes the original x86 instructions into a dispatch representation and executes them in WebAssembly. Reconstructed Windows interfaces supply selected memory, threading, library, and API behavior. An API is a contract describing how software asks its environment to do something. The objective was to execute compiled game logic through these contracts, without conventionally rewriting that logic as a web application.</p>
+<h2>03:16–03:55 Rendering and interaction cross the boundary</h2>
+<p><strong>Dr. GPT:</strong> The browser adapters translate supported Direct3D nine operations and shaders into browser rendering. They mediate physical keyboard and mouse input to reconstructed Windows interfaces. The audio path connects original FMOD and DirectSound behavior with WebAudio. Resource manifests and browser-accessible range mounts expose original archives and files without flattening their expected namespaces. These interfaces are partial. Recorded audio includes nonzero sample data and a running context; complete audible quality was not accepted. Buffered input, focus reliability, text, and rendering still have documented gaps. Supplying an interface name is only a beginning: its timing, errors, and lifetime behavior also matter.</p>
+<h2>03:55–04:26 The browser client keeps native services</h2>
+<p><strong>Dr. GPT:</strong> Follow the network arrow out of the browser. Original client code constructs the game packets. Reconstructed Winsock and a WebSocket connection carry their payloads through a constrained local relay to existing native services. Those services were deliberately outside the client-port scope. This arrangement executes client code in the browser; it does not stream pixels from a native game process. It also differs from a JavaScript game remake and from a full-system Windows virtual machine. Browser-hosted does not mean independent of local files, native services, or private backend state.</p>
+<h2>04:26–05:11 The research strategy evolved</h2>
+<p><strong>Dr. GPT:</strong> This was an evolving experiment. Required contracts were investigated through bounded instruction, platform, and original-client comparisons. Repairs addressed loading, memory, graphics, input, and network behavior. Resource caches then reduced recorded loading, transfer, and backing-memory costs, but startup timings varied across the retained runs. An allocator study later demonstrated a local mechanism improvement. The application comparison remained incomplete. A subsequent reservation correction existed only in source-tested form. Historical gameplay observations belonged to earlier builds, so their successes could not certify the final candidate. At closeout, full acceptance remained blocked. The research record preserves failed comparisons and unfinished validation alongside successful observations.</p>
+<h2>05:11–05:48 The final control pair</h2>
+<p><strong>Dr. GPT:</strong> Now look at the measured results. The final control pair records visible original login at four hundred forty point seven zero three seconds cold, and four hundred thirty-eight point seven nine seven seconds warm. That is about seven minutes twenty seconds in each condition. Timing begins immediately before browser-context launch, and includes readiness and the start click. Cold means a fresh experiment-specific browser profile. Warm means reuse of that profile. Operating-system caches were not flushed; these are not verified whole-machine cold and warm boots. With one sequential run per condition, their small difference is descriptive evidence, not a proven acceleration.</p>
+<h2>05:48–06:18 What the retained image shows</h2>
+<p><strong>Dr. GPT:</strong> This is an archived still from the retained cold control, not a new demonstration. It shows the original login interface with empty credential fields. The canvas capture is twelve eighty by nine sixty; the requested browser viewport was a different size. Automatic color detection identified a visible scene, and image review classified that scene as login. Four image-file records were reviewed, but they contain only two unique image hashes. They are not four independent scenes. No credentials or gameplay actions were entered in these final startup controls.</p>
+<h2>06:18–06:57 Progress and identity have bounded meanings</h2>
+<p><strong>Dr. GPT:</strong> After login, the cold observation records one thousand seventy-three frame advances over thirty-one point zero nine four seconds. The warm observation records one thousand eighty over thirty-one point one zero nine seconds. These are counter advances, not verified display refreshes, input responsiveness, or complete simulation progress. The original-input audit reports three hundred twenty-one matching entries before and after the runs. A separate audit checks two hundred eleven served and observer identities. Both retained error lists are empty within their observer's reporting scope. Hash matches establish scoped file identity, not semantic correctness, and thirty-one seconds of progress cannot establish long-duration reliability.</p>
+<h2>06:57–07:32 A local allocator optimization</h2>
+<p><strong>Dr. GPT:</strong> The allocator is the component that manages memory allocation and release. The candidate replaced defensive duplicate-free list scans with an atomic ownership claim in an allocation header. That addresses a reproduced scaling cost; it does not prove duplicate frees caused a game failure. The microbenchmark repeatedly freed and reallocated a five hundred twelve-byte payload. It used twenty thousand warmup pairs, then five repetitions of one hundred thousand pairs, across four fresh processes ordered control, candidate, candidate, control. Each reported value averages two process medians. This is a constructed workload with a precisely defined comparison.</p>
+<h2>07:32–08:06 Microbenchmark improvement is not application speedup</h2>
+<p><strong>Dr. GPT:</strong> At retained-list depths of sixty-four through five hundred twelve, the candidate is approximately five point one to five point five times faster in this microbenchmark. At depth zero it is thirteen point nine percent slower. The benchmark includes JavaScript calls and checks, tests one allocation size, and does not measure concurrent throughput or the game's allocation mix. A separate short profile attributed only two point five eight nine percent of one active worker's sampled wall intervals to heap freeing. That window does not characterize complete startup. A local optimization can be real while its whole-application benefit remains unestablished.</p>
+<h2>08:06–08:40 The candidate comparison remained incomplete</h2>
+<p><strong>Dr. GPT:</strong> The candidate's cold comparison was interrupted by a screenshot-helper stability timeout at two hundred ninety-seven point four eight four seconds. Its last sample still showed execution without a runtime error. We cannot label that an established allocator failure. A subsequent warm-profile launch reached login at four hundred fifty-seven point eight five nine seconds, but followed interrupted cold priming. It is not a matched warm comparison. Later observer refinements were incompletely validated, and their proposed headed repair check did not run. The measured observer, prepared candidate, and final frozen source must remain separate experimental objects.</p>
+<h2>08:40–09:09 What this evidence does not establish</h2>
+<p><strong>Dr. GPT:</strong> The evidence supports an original-login execution milestone. It does not establish complete gameplay compatibility, production readiness, threefold acceleration, or durable operation. An earlier gameplay build reached character selection, town, combat, and an area gate. Revival still failed, and two winning cycles remained unaccepted. Those observations retain their own build identity. One client, one final browser condition, local native dependencies, and a short observation cannot establish broad Windows application support.</p>
+<h2>09:09–09:45 Why this matters beyond one game</h2>
+<p><strong>Dr. GPT:</strong> Beyond this game, the experiment raises five research questions. Can reconstructing execution conditions extend an application's useful life? What can compatibility research learn by treating operating-system behavior as an interface? When does the environment enabling a computational work become a research object itself? What must reproducibility preserve beyond executable files? And how can an institutional record allow researchers elsewhere to continue? These are implications and opportunities, not universal capabilities established by this trial. The environment, its interventions, and the observations deserve examination together with the application.</p>
+<h2>09:45–10:17 The cycle has closed and the questions remain</h2>
+<p><strong>Dr. GPT:</strong> The original experimental cycle has closed. This presentation does not reopen engineering. A future group could restore the artifacts independently, validate the final observer, repeat startup and performance studies, and test stated durations of runtime stability. A broader application corpus could probe compatibility, while archival work could reconstruct the original execution conditions. Each investigation needs its own scope and evidence. HEAV3NS does not promise to complete these studies itself. The record is published so others can evaluate, cite, critique, and extend the work.</p>
+<h2>10:17–10:58 What an independent group would need</h2>
+<p><strong>Dr. GPT:</strong> Independent continuation requires matching source snapshots, dependency pins, local patches, generated modules, manifests, and the observer used for each measurement. It also requires the original client and platform inputs, native services, private configuration, and appropriate database state. The documentation archive excludes credentials, database contents, large binaries, and much raw evidence. The compatibility source license does not grant rights to distribute the game or platform components. Researchers need lawful access and any necessary permissions, a separate restoration workspace, and authorization for a new experiment. Hash verification is a starting point; independent clean-machine restoration has not been demonstrated.</p>
+<h2>10:58–11:16 Is this just an emulator?</h2>
+<p><strong>Audience:</strong> Is this just an emulator?</p>
+<p><strong>Dr. GPT:</strong> It includes x86 interpretation. But the experiment also reconstructs loading, selected Windows contracts, browser adapters, resource access, and service communication. Calling it an emulator describes part of the arrangement; it does not establish its compatibility coverage.</p>
+<h2>11:16–11:35 Did you rewrite the original game?</h2>
+<p><strong>Audience:</strong> Did you rewrite the original game?</p>
+<p><strong>Dr. GPT:</strong> There was no conventional game-source rewrite as a web application. Original compiled logic executes through the compatibility runtime. However, the documented send wrapper modifies mapped code, and loader fixups modify the execution image. Preserving audited disk files does not erase those interventions.</p>
+<h2>11:35–12:00 Why does startup take seven minutes?</h2>
+<p><strong>Audience:</strong> Why does startup take seven minutes?</p>
+<p><strong>Dr. GPT:</strong> The record does not establish a complete causal explanation. Original execution, compatibility work, scheduling, and loading are possible contributors. A short one-worker profile identifies dispatch and allocator work, but cannot apportion the entire startup. Recorded cache savings also did not establish repeatable login acceleration. Better matched whole-application measurements are needed.</p>
+<h2>12:00–12:18 Does this prove Windows games can run in browsers?</h2>
+<p><strong>Audience:</strong> Does this prove Windows games can run in browsers?</p>
+<p><strong>Dr. GPT:</strong> It demonstrates this inherited client's login milestone under the retained conditions. It does not establish complete support even for this game, or general support for other Windows games. Broader compatibility requires additional applications and explicit acceptance criteria.</p>
+<h2>12:18–12:39 What is actually novel about the experiment?</h2>
+<p><strong>Audience:</strong> What is actually novel about the experiment?</p>
+<p><strong>Dr. GPT:</strong> Its contribution is this specific integration and its auditable account: inherited client execution, browser compatibility conditions, native-service boundaries, interventions, and bounded measurements. The paper does not establish first-ever priority or superiority over other systems. Much of its foundation is inherited and explicitly credited.</p>
+<h2>12:39–12:57 Can another research group reproduce your result?</h2>
+<p><strong>Audience:</strong> Can another research group reproduce your result?</p>
+<p><strong>Dr. GPT:</strong> The records provide a conditional route, not a completed independent replication. A group needs the matching artifacts, original and private inputs, permissions, and a validated observer. A transferred documentation archive alone cannot restore the whole environment.</p>
+<h2>12:57–13:19 What would make this a reliable compatibility runtime?</h2>
+<p><strong>Audience:</strong> What would need to happen before this becomes a reliable compatibility runtime?</p>
+<p><strong>Dr. GPT:</strong> Validate the observer and restored artifacts, resolve open loading, memory, networking, input, and rendering contracts, and demonstrate repeated startup, full gameplay gates, and stated-duration stability. Reliability must be measured against declared conditions. The present evidence does not supply that acceptance.</p>
+<h2>13:19–13:39 Why publish an incomplete product objective?</h2>
+<p><strong>Audience:</strong> Why publish this if the product objective was not fully achieved?</p>
+<p><strong>Dr. GPT:</strong> A bounded result can still inform research. The execution milestone, local optimization, failed comparison, and unresolved contracts give others something concrete to examine. Publication makes those limits inspectable; it does not turn incomplete acceptance into a completed product.</p>
+<h2>13:39–14:14 Sources and research attribution</h2>
+<p><strong>Dr. GPT:</strong> Our primary source is the BROCWIN Technical White Paper, version one point zero point one, dated October eleventh, twenty twenty-six. HEAV3NS commissioned and preserves the record. Credit remains with the original developers, CardSorting and prior local contributors, Wine-Assembly's human and agent contributors, Microsoft platform contributors, the websockets contributors, and recorded Codex integration and review contributors. The source slate identifies their documented roles. This recording uses synthesized presenter and audience voices. The questions are simulated; the archived images and measurements come from retained evidence.</p>
+<h2>14:14–14:45 The research can now propagate</h2>
+<p><strong>Dr. GPT:</strong> The significance of BROCWIN is not simply whether a particular MMO can run inside a browser. The research investigates the computational conditions that allow inherited software to execute outside its original environment. Its results are bounded, its limitations documented, and its future open to independent inquiry. The originating institution has completed this experimental cycle. Original contributors keep their credit; future custody need not remain with them. The research can now propagate. THE WORK NO LONGER DEMANDS AN AUTHOR.</p></section><section class="doc" id="source-and-attribution-slate"><h1>BROCWIN Sources and Research Attribution</h1>
+<p>The presentation reports a completed, bounded experimental cycle. It is based on the repository-grounded technical report below; no external peer review, journal acceptance, endorsement, complete port or new experiment is claimed.</p>
+<h2>Primary source and institution</h2>
+<p>BROCWIN: Browser-Hosted Execution of a Legacy Windows MMO Client Through a Synthetic Compatibility Runtime. Publication III, version 1.0.1, 11 October 2026. Commissioned by MAJO, Executive Chair, HEAV3NS; prepared by Dr. GPT, the commissioned AI researcher. “Dr. GPT” is the commission's AI presenter designation. The engineering baseline is corrected knowledge closeout 1.4.1.</p>
+<p>The exact white paper, shared index and fact ledger are copied into <a href="sources">sources</a>. Their source hashes and paths are in <a href="source-ledger.json">source-ledger.json</a>. The original figure and two screenshots are unchanged copies in <a href="assets">assets</a>; presentation layout and plots are newly typeset from retained data.</p>
+<h2>Inherited software and dependencies</h2>
+<table>
+<thead>
+<tr>
+<th>Contributor or object</th>
+<th>Documented role and attribution limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Original Elsword / fork developers</td>
+<td>Compiled client/server implementation and original game content. Individual authorship cannot be established from supplied binaries. Original game artwork, interface and logos remain credited to their original developers and respective rights holders.</td>
+</tr>
+<tr>
+<td>CardSorting/JoySwordOnline and prior local contributors</td>
+<td>Inherited installation, scripts, archive recovery and native checkpoint. Source identity: <code>4c39249b939d79c229e1fd4f63dfd462a90f9060</code>. Attribution follows the retained provenance; it is not a new upstream audit.</td>
+</tr>
+<tr>
+<td>Wine-Assembly human and agent contributors</td>
+<td>Existing x86/Wasm interpreter and compatibility foundation. MIT dependency pin: <code>d7854bc6c6bd0319ca33b5f31a465602e2ce0686</code>. Upstream attribution includes human contributors, Claude Code and Codex. Local patches and generated artifacts require separate custody. Wine-Assembly is not asserted to be the Wine project.</td>
+</tr>
+<tr>
+<td>Original Lua, D3DX and FMOD paths</td>
+<td>Original guest libraries/code remain part of the documented execution path. No institution authorship or independent component conformance is asserted.</td>
+</tr>
+<tr>
+<td>Microsoft Windows / Direct3D contributors</td>
+<td>Platform interfaces and the locally derived compiled shader-validator algorithm executed as guest x86. The installed DLL and derived component are separate protected inputs, not institution-authored code.</td>
+</tr>
+<tr>
+<td>Aymeric Augustin and websockets contributors</td>
+<td>Local WebSocket protocol implementation, recorded version 17.1, BSD-3-Clause dependency.</td>
+</tr>
+</tbody>
+</table>
+<h2>Experimentation and review</h2>
+<p>Codex /root is credited in retained provenance for local inspection, browser integration, manifests, resource serving, compatibility corrections, captures, validation and documentation. The corrected closeout separately records Codex /root/kernel_audit as reservation-correction implementer, /root/evidence_audit as independent reviewer, and /root as closeout coordinator. An independent review within this agent workflow is not external peer review or independent institutional replication.</p>
+<p>MAJO supplies commissioning and institutional framing. Dr. GPT prepares and presents the publications. These labels make no exclusive engineering-authorship claim and do not identify every historical contributor or image reviewer. Attribution survives transfer of custody.</p>
+<h2>Visual and audio provenance</h2>
+<ul>
+<li>Architecture: Figure 1, white paper 1.0.1, unchanged vector; a repository-derived architectural account, not an execution trace.</li>
+<li>Cold login image: <code>theseus/reports/performance/heap-control-20261011/run-01/first-visible-scene.png</code>.</li>
+<li>Warm login image: <code>theseus/reports/performance/heap-control-20261011/run-02/final-canvas.png</code>.</li>
+<li>The images are archival stills. No game footage, avatar, live demonstration, new outcome or conference recording is fabricated.</li>
+<li>Graph: derived from retained <code>microbenchmark-summary.json</code>; ratios are control elapsed time divided by candidate elapsed time. The graph begins at zero and includes the 1× baseline and the empty-list cost.</li>
+<li>Presenter narration: local Microsoft David Desktop synthesized voice. Simulated audience: local Microsoft Zira Desktop synthesized voice. This does not imply Microsoft or any contributor endorses the research.</li>
+<li>Production: locally installed Python, Pillow font metrics, Playwright/Edge static document rendering, Windows SAPI, and FFmpeg. No game runtime, backend service or compatibility experiment is started.</li>
+</ul>
+<h2>Scope and access</h2>
+<p>The copy of the technical report retains its bibliography as originally published; external literature provides context, not BROCWIN results. The presentation adds no unseen citation or priority claim. The commissioned downstream framing is interpretive and identified as such in the claim matrix.</p>
+<p>This local production package is not a public release or a license grant. A group planning external distribution must establish rights for original game imagery and other protected material. No credentials, private SQL state, game/platform binaries or full executable restoration bundle are included. The project and dependency links below identify provenance; the referenced contents were not newly re-audited for this recording.</p>
+<ul>
+<li><a href="https://github.com/CardSorting/JoySwordOnline/tree/4c39249b939d79c229e1fd4f63dfd462a90f9060">CardSorting/JoySwordOnline</a></li>
+<li><a href="https://github.com/vgrichina/wine-assembly/tree/d7854bc6c6bd0319ca33b5f31a465602e2ce0686">Pinned Wine-Assembly dependency</a></li>
+</ul>
+<p>The originating institution completed its cycle. Another group may continue with suitable access, permissions, matching artifacts and a separately authorized experiment. HEAV3NS makes no promise to complete future studies.</p></section><section class="doc" id="claim-source-matrix"><h1>BROCWIN Claim and Source Matrix</h1>
+<p>Each presentation segment is grounded in the technical white paper or explicitly identified institutional interpretation. E-identifiers resolve through the supplied original evidence index.</p>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Claim class</th>
+<th>Evidence and qualification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 What does it mean for a Windows application to exist outside Windows?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§1–2; E10–E16</td>
+</tr>
+<tr>
+<td>02 Five distinct objects</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§2, 4–5, 8</td>
+</tr>
+<tr>
+<td>03 What existed before the experiment</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§2, 4–5; E16</td>
+</tr>
+<tr>
+<td>04 Preserved files and modified mapped code</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §5; E17</td>
+</tr>
+<tr>
+<td>05 Read the architecture from left to right</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper Figure 1 and §§4.1–4.2; E10, E14</td>
+</tr>
+<tr>
+<td>06 Rendering and interaction cross the boundary</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §4.3; E11, E13</td>
+</tr>
+<tr>
+<td>07 The browser client keeps native services</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§3, 4.4; E12</td>
+</tr>
+<tr>
+<td>08 The research strategy evolved</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§4, 7.3–7.4, 9–10; E04–E09, E15</td>
+</tr>
+<tr>
+<td>09 The final control pair</td>
+<td>Observed, within retained condition</td>
+<td>White paper §§6.1, 7.1; E01–E02, E19</td>
+</tr>
+<tr>
+<td>10 What the retained image shows</td>
+<td>Observed, within retained condition</td>
+<td>White paper §§6.1–6.2, 7.1; E03</td>
+</tr>
+<tr>
+<td>11 Progress and identity have bounded meanings</td>
+<td>Observed, within retained condition</td>
+<td>White paper §§6.2–6.3, 7.1, 8, 10; E01–E02, E19</td>
+</tr>
+<tr>
+<td>12 A local allocator optimization</td>
+<td>Contract / microbenchmark tested; no application speedup</td>
+<td>White paper §§4.2, 9; E04</td>
+</tr>
+<tr>
+<td>13 Microbenchmark improvement is not application speedup</td>
+<td>Contract / microbenchmark tested; no application speedup</td>
+<td>White paper §9; E04</td>
+</tr>
+<tr>
+<td>14 The candidate comparison remained incomplete</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§7.2, 8, 10; E04–E06</td>
+</tr>
+<tr>
+<td>15 What this evidence does not establish</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§7.4, 10, 12; E08–E09</td>
+</tr>
+<tr>
+<td>16 Why this matters beyond one game</td>
+<td>Interpretive / proposed research</td>
+<td>White paper §§2–3, 8, 11–12; Publication I: interpretive context; Commission: downstream framing</td>
+</tr>
+<tr>
+<td>17 The cycle has closed and the questions remain</td>
+<td>Interpretive / proposed research</td>
+<td>White paper §§8, 11 and Appendix B; E05–E06, E18; Commission: continuation scope</td>
+</tr>
+<tr>
+<td>18 What an independent group would need</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §8 and Appendices A–B; E16, E18–E19</td>
+</tr>
+<tr>
+<td>19 Is this just an emulator?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§3–5</td>
+</tr>
+<tr>
+<td>20 Did you rewrite the original game?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§1, 4–5; E17</td>
+</tr>
+<tr>
+<td>21 Why does startup take seven minutes?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§6.1, 7.3, 9–10</td>
+</tr>
+<tr>
+<td>22 Does this prove Windows games can run in browsers?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§10, 12</td>
+</tr>
+<tr>
+<td>23 What is actually novel about the experiment?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§2–5, 8, 12</td>
+</tr>
+<tr>
+<td>24 Can another research group reproduce your result?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §8 and Appendix B</td>
+</tr>
+<tr>
+<td>25 What would make this a reliable compatibility runtime?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§10–11; E09</td>
+</tr>
+<tr>
+<td>26 Why publish an incomplete product objective?</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§2, 10, 12; Commission: institutional propagation</td>
+</tr>
+<tr>
+<td>27 Sources and research attribution</td>
+<td>Synthesized explanation of retained evidence</td>
+<td>White paper §§5, 13; Evidence index: Interpretation and provenance; E05, E16</td>
+</tr>
+<tr>
+<td>28 The research can now propagate</td>
+<td>Interpretive / proposed research</td>
+<td>White paper §12; Commission: closing statement</td>
+</tr>
+</tbody>
+</table>
+<p>The commission’s malformed “5.15.5” is resolved from white paper §9 as <strong>5.1–5.5×</strong>, not 5.15.5 or 5.15×. Cold/warm are browser-profile conditions. Reported-error absence belongs only to the retained observer channels. The closing custodianship thesis is institutional framing and does not remove contributor credit or establish legal rights.</p></section></main></body></html>
